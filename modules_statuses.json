@@ -1,0 +1,11 @@
+{
+    "Security": true,
+    "Onlineshop": true,
+    "Blog": true,
+    "Sales": true,
+    "Helpdesk": true,
+    "CMS": true,
+    "Purchases": true,
+    "Health": true,
+    "Academic": true
+}
