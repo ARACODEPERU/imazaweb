@@ -3,8 +3,7 @@
 
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\KenthaController;
-use App\Http\Controllers\CapperuController;
+
 use App\Http\Controllers\KardexController;
 use App\Http\Controllers\LocalSaleController;
 use App\Http\Controllers\ParametersController;
@@ -18,61 +17,7 @@ use App\Mail\StudentRegistrationMailable;
 use Illuminate\Support\Facades\Mail;
 use Modules\Blog\Http\Controllers\BlogController;
 
-/* Sitio Webs KENTHA
-Route::get('/kentha', [WebController::class, 'index'])->name('cms_principal');
-Route::get('/nosotros', [KenthaController::class, 'nosotros'])->name('web_nosotros');
-Route::get('/servicios', [KenthaController::class, 'servicios'])->name('web_servicios');
-Route::get('/proyectos', [KenthaController::class, 'proyectos'])->name('web_proyectos');
-Route::get('/contacto', [KenthaController::class, 'contacto'])->name('web_contacto');
-*/
-
-//Route::redirect('/cvinnova', 'http://campus.capperu.com');
-Route::get('/cvinnova', function () {
-    return redirect()->away('http://campus.capperu.com'); //ruta del campus https de ser necesario cambiar
-});
-
-Route::get('/test-image/{content}/{fecha?}', [WebController::class, 'testimage'])->name('test-image');
-Route::get('/',                             [WebController::class, 'capperu'])->name('cms_principal');
-Route::get('/nosotros',                     [CapperuController::class, 'nosotros'])->name('web_nosotros');
-Route::get('/categoria-sector/{sector}',    [CapperuController::class, 'categoriasector'])->name('web_categoria_sector');
-Route::get('/categoria-modalidad',          [CapperuController::class, 'categoriamodalidad'])->name('web_categoria_modalidad');
-Route::get('/categoria-modalidad-en-vivo',  [CapperuController::class, 'categoriamodalidadenvivo'])->name('web_categoria_modalidad_en_vivo');
-Route::get('/categoria-modalidad-e-learning', [CapperuController::class, 'categoriamodalidadelearning'])->name('web_categoria_modalidad_e_learning');
-Route::get('/categoria-programa-cursos',    [CapperuController::class, 'categoriaprogramacursos'])->name('web_categoria_programa_cursos');
-Route::get('/categoria-programa-diplomados', [CapperuController::class, 'categoriaprogramadiplomados'])->name('web_categoria_programa_diplomados');
-Route::get('/modalidad-presencial',         [CapperuController::class, 'modalidadpresencial'])->name('web_modalidad_presencial');
-Route::get('/sectors/{sector}/{tipo}',      [CapperuController::class, 'sector_programs'])->name('web_sectors');
-Route::get('/descripcion-programa/{id}',    [CapperuController::class, 'descripcionPrograma'])->name('web_descripcion_programa'); //describe cursos, diplomados, e-learning o en vivo
-Route::get('/descripcion-e-learning',       [CapperuController::class, 'descripcionelearning'])->name('web_descripcion_e_learning');
-Route::get('/perfil-docente/{teacher_id}',  [CapperuController::class, 'perfildocente'])->name('web_perfil_docente');
-Route::match(['get', 'post'], '/alumnos',   [CapperuController::class, 'alumnos'])->name('web_alumnos');
-Route::get('/perfil-alumno/{id}',           [CapperuController::class, 'perfilalumno'])->name('web_perfil_alumno');
-Route::get('/articles',                     [CapperuController::class, 'blog'])->name('web_blog');
-Route::get('/article/{url}/article',        [CapperuController::class, 'blogdescripcion'])->name('web_blog_descripcion');
-Route::get('/carrito',                      [CapperuController::class, 'carrito'])->name('web_carrito');
-Route::get('/pagar',                        [CapperuController::class, 'pagar'])->name('web_pagar');
-Route::get('/gracias/{sale_id}',            [CapperuController::class, 'gracias'])->name('web_gracias');
-
-Route::get('/convenios',                    [CapperuController::class, 'convenios'])->name('web_convenios');
-Route::get('/contacto',                     [CapperuController::class, 'contacto'])->name('web_contacto');
-
-
-Route::get('/categorias', [CapperuController::class, 'categorias'])->name('web_categorias');
-
-
-
-Route::get('/download/brochure/{id}', [CapperuController::class, 'download_brochure'])->name('download_brochure');
-
-Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
-Route::get('/article/{url}', [BlogController::class, 'article'])->name('blog_article_by_url');
-Route::get('/category/{id}', [BlogController::class, 'category'])->name('blog_category');
-Route::get('/policies', [BlogController::class, 'policies'])->name('blog_policies');
-Route::get('/contact-us', [BlogController::class, 'contactUs'])->name('blog_contact_us');
-
-Route::get('/stories/article/{url}', [BlogController::class, 'storiesArticle'])->name('blog_stories_article_by_url');
-Route::get('/stories/policies', [BlogController::class, 'storiesPolicies'])->name('blog_stories_policies');
-Route::get('/stories/contact-us', [BlogController::class, 'storiesContactUs'])->name('blog_stories_contact_us');
-
+Route::get('/', [WebController::class, 'index'])->name('tmp_home');
 
 Route::get('/mipais', function () {
     $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
