@@ -4,8 +4,10 @@
             <div class="main-header--one__top-inner clearfix">
                 <div class="main-header--one__top-left">
                     <div class="main-header--one__top-logo">
-                        <a href="index.html"><img src="{{ URL('themes/imazaweb/images/resources/logo-1.png') }}"
-                                alt="" /></a>
+                        <a href="index.html">
+                            <img src="{{ asset('storage/'.$header[0]->content) }}"
+                                alt="" />
+                        </a>
                     </div>
                 </div>
 
