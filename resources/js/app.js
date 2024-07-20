@@ -19,7 +19,7 @@ import { TippyPlugin } from '../../node_modules/tippy.vue/dist/TippyPlugin.js';
 import { PerfectScrollbarPlugin } from '../../node_modules/vue3-perfect-scrollbar/dist/PerfectScrollbarPlugin.js';
 import HeightTransition from '@/Components/vristo/transitions/HeightTransition.vue';
 import Popper from '../../node_modules/vue3-popper/dist/Popper.js';
-import * as Maska from 'maska';
+import * as Maska from '../../node_modules/maska/dist/maska.js';
 
 const appName =
     window.document.getElementsByTagName("title")[0]?.innerText || "Laravel";
