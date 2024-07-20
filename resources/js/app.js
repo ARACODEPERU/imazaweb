@@ -16,7 +16,7 @@ import i18n from '@/i18n';
 import { createHead } from '../../node_modules/@vueuse/head/dist/createHead.js';
 import appSetting from '@/app-setting';
 import { TippyPlugin } from '../../node_modules/tippy.vue/dist/TippyPlugin.js';
-import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
+import { PerfectScrollbarPlugin } from '../../node_modules/vue3-perfect-scrollbar/dist/PerfectScrollbarPlugin.js';
 import HeightTransition from '@/Components/vristo/transitions/HeightTransition.vue';
 import Popper from 'vue3-popper';
 import * as Maska from 'maska';
