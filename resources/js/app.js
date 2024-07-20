@@ -11,7 +11,7 @@ import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueTheMask from "vue-the-mask";
 import Permissions from "./Plugins/Permissions";
-import { createPinia } from 'pinia';
+import { createPinia } from '/node_modules/pinia/dist/pinia';
 import i18n from '@/i18n';
 import { createHead } from '@vueuse/head';
 import appSetting from '@/app-setting';
