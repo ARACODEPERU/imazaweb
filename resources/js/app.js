@@ -18,7 +18,7 @@ import appSetting from '@/app-setting';
 import { TippyPlugin } from '../../node_modules/tippy.vue/dist/TippyPlugin.js';
 import { PerfectScrollbarPlugin } from '../../node_modules/vue3-perfect-scrollbar/dist/PerfectScrollbarPlugin.js';
 import HeightTransition from '@/Components/vristo/transitions/HeightTransition.vue';
-import Popper from 'vue3-popper';
+import Popper from '../../node_modules/vue3-popper/dist/Popper.js';
 import * as Maska from 'maska';
 
 const appName =
