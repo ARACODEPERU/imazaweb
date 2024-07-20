@@ -1,7 +1,7 @@
 import "./bootstrap";
 import "../css/app.css";
-import "../../public/themes/vristo/css/app.css";
-import '/node_modules/easymde/dist/easymde.min.css';
+import "../../public/themes/vristo/css/app.css"
+import 'easymde/dist/easymde.min.css';
 
 import { createApp, h } from "vue";
 import VueGates from "vue-gates";
@@ -11,15 +11,15 @@ import { ZiggyVue } from "../../vendor/tightenco/ziggy/dist/vue.m";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueTheMask from "vue-the-mask";
 import Permissions from "./Plugins/Permissions";
-import { createPinia } from '/node_modules/pinia/dist/pinia';
+import { createPinia } from 'pinia';
 import i18n from '@/i18n';
-import { createHead } from '../../node_modules/@vueuse/head/dist/createHead.js';
+import { createHead } from '@vueuse/head';
 import appSetting from '@/app-setting';
-import { TippyPlugin } from '../../node_modules/tippy.vue/dist/TippyPlugin.js';
-import { PerfectScrollbarPlugin } from '../../node_modules/vue3-perfect-scrollbar/dist/PerfectScrollbarPlugin.js';
+import { TippyPlugin } from 'tippy.vue';
+import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
 import HeightTransition from '@/Components/vristo/transitions/HeightTransition.vue';
-import Popper from '../../node_modules/vue3-popper/dist/Popper.js';
-import * as Maska from '../../node_modules/maska/dist/maska.js';
+import Popper from 'vue3-popper';
+import * as Maska from 'maska';
 
 const appName =
     window.document.getElementsByTagName("title")[0]?.innerText || "Laravel";
