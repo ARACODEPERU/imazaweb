@@ -13,7 +13,7 @@ import VueTheMask from "vue-the-mask";
 import Permissions from "./Plugins/Permissions";
 import { createPinia } from '/node_modules/pinia/dist/pinia';
 import i18n from '@/i18n';
-import { createHead } from '@vueuse/head';
+import { createHead } from '../../node_modules/@vueuse/head/dist/createHead.js';
 import appSetting from '@/app-setting';
 import { TippyPlugin } from 'tippy.vue';
 import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar';
