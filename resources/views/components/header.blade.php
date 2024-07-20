@@ -13,10 +13,12 @@
 
                 <div class="main-header--one__top-right clearfix">
                     <ul class="main-header--one__top-social-link list-unstyled clearfix">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ $header[1]->content }}" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="{{ $header[2]->content }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ $header[3]->content }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="{{ $header[4]->content }}" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="{{ $header[5]->content }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="{{ $header[6]->content }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     </ul>
 
                     <div class="main-header--one__top-contact-info clearfix">
@@ -26,8 +28,8 @@
                                     <span class="icon-phone-call-1"></span>
                                 </div>
                                 <div class="text">
-                                    <h6>Call Agent</h6>
-                                    <p><a href="tel:123456789">92 888 666 0000</a></p>
+                                    <h6>Llamanos al:</h6>
+                                    <p><a href="tel:{{ $header[7]->content }}">{{ $header[7]->content }}</a></p>
                                 </div>
                             </li>
                             <li class="main-header--one__top-contact-info-list-item">
@@ -35,8 +37,8 @@
                                     <span class="icon-message"></span>
                                 </div>
                                 <div class="text">
-                                    <h6>Call Agent</h6>
-                                    <p><a href="mailto:info@templatepath.com">needhelp@company.com</a></p>
+                                    <h6>Escribenos al:</h6>
+                                    <p><a href="mailto:{{ $header[8]->content }}">{{ $header[8]->content }}</a></p>
                                 </div>
                             </li>
                         </ul>
