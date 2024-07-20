@@ -69,7 +69,7 @@
                         <animateTransform attributeName="transform" type="rotate" from="0 67 67" to="360 67 67" dur="8s" repeatCount="indefinite" />
                     </path>
                 </svg> -->
-                <img :src="baseURL+'themes/vristo/images/logo_gif.gif'" width="64" height="64" />
+                <img :src="baseURL+'themes/vristo/images/logo_gif.gif'" width="234" height="64" />
             </div>
 
             <div class="fixed bottom-6 ltr:right-6 rtl:left-6 z-50">
