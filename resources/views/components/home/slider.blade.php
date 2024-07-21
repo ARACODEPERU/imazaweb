@@ -24,7 +24,7 @@
                         alt="" />
                 </div>
                 <div class="image-layer"
-                    style="background-image:url({{ $slide->item->items[0]->content }});">
+                    style="background-image:url({{ $slide->item->items[0]->content }})">
                 </div>
                 <div class="container">
                     <div class="main-slider__content">
