@@ -11,7 +11,6 @@ class Header extends Component
 {
     
     protected $header;
-    protected $transmissions;
 
     public function __construct()
     {

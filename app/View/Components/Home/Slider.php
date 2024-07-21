@@ -5,15 +5,18 @@ namespace App\View\Components\Home;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\CMS\Entities\CmsSectionItem;
 
 class Slider extends Component
 {
-    /**
-     * Create a new component instance.
-     */
+    
+    protected $sliders;
+
     public function __construct()
     {
-        //
+
+        $this->sliders = CmsSectionItem::with('item.items')->where('section_id', 2)->get();
+
     }
 
     /**
@@ -21,6 +24,8 @@ class Slider extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.home.slider');
+        return view('components.home.slider', [
+            'sliders' => $this->sliders
+        ]);
     }
 }

@@ -49,7 +49,6 @@
         </div>
     </div>
 
-
     <div class="main-header-one__bottom clearfix">
         <div class="container">
             <div class="main-header-one__bottom-inner clearfix">
@@ -60,59 +59,52 @@
                         <div class="left">
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
-                                    <a href="index.html">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index-2.html">Home Two</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header One</a></li>
-                                                <li><a href="index-2.html">Header Two</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a href="about.html">Home</a>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="dropdown">
-                                    <a href="#">Courses</a>
+                                <li><a href="about.html">Nosotros</a></li>
+                                <li>
+                                    <a href="about.html">Cursos</a>
+                                    <!--
                                     <ul>
                                         <li><a href="courses.html">Courses</a></li>
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
+                                    -->
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#"> Teachers</a>
-                                    <ul>
-                                        <li><a href="teachers-1.html"> Teachers</a></li>
-                                        <li><a href="teachers-2.html">Become Teacher</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">News</a>
+                                <li>
+                                    <a href="about.html">Blog</a>
+                                    <!--
                                     <ul>
                                         <li><a href="news.html">News</a></li>
                                         <li><a href="news-details.html">News Details</a></li>
                                     </ul>
+                                    -->
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="about.html">Contacto</a></li>
                             </ul>
                         </div>
 
                         <div class="right">
                             <div class="main-menu__right">
+                                <!--
                                 <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
                                         <li><a href="#">Login</a></li>
                                         <li><a href="#">Register</a></li>
                                     </ul>
                                 </div>
+                                -->
                                 <div class="main-menu__right-cart-search">
+                                    <!--
                                     <div class="main-menu__right-cart-box">
                                         <a href="#"><span class="icon-shopping-cart"></span></a>
                                     </div>
                                     <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>
+                                    </div>
+                                    -->
+                                    <div class="main-menu__right-search-box">
+                                        <a href="https://marketingdespega.com/login" target="_blamk" class="thm-btn">Campus Virtual</a>
                                     </div>
                                 </div>
                             </div>
