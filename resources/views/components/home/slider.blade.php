@@ -25,6 +25,8 @@
                 </div>
                 <div class="image-layer"
                     style="background-image:url({{ $slide->item->items[0]->content }})">
+                    
+                    <img src="{{ $slide->item->items[0]->content }}" class="img-fluid" alt="img" />
                 </div>
                 <div class="container">
                     <div class="main-slider__content">
