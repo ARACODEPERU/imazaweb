@@ -29,27 +29,27 @@ const MenuData = ref([
     menuConfig,
     // menuPurchases,
     menuSales,
-    // {
-    //     status: false,
-    //     text: 'Ventas en línea',
-    //     icom: faGlobe,
-    //     route: 'module',
-    //     permissions: 'onli_dashboard',
-    //     items: [
-    //         {
-    //             route: route('onlineshop_items'),
-    //             status: false,
-    //             text: 'Productos & servicios',
-    //             permissions: 'onli_items',
-    //         },
-    //         {
-    //             route: route('onlineshop_sales'),
-    //             status: false,
-    //             text: 'Pedidos',
-    //             permissions: 'onli_pedidos',
-    //         },
-    //     ]
-    // },
+    {
+        status: false,
+        text: 'Ventas en línea',
+        icom: faGlobe,
+        route: 'module',
+        permissions: 'onli_dashboard',
+        items: [
+            {
+                route: route('onlineshop_items'),
+                status: false,
+                text: 'Productos & servicios',
+                permissions: 'onli_items',
+            },
+            {
+                route: route('onlineshop_sales'),
+                status: false,
+                text: 'Pedidos',
+                permissions: 'onli_pedidos',
+            },
+        ]
+    },
     {
         status:false,
         text: 'Facturación Electrónica',
