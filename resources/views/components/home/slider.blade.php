@@ -14,7 +14,37 @@
             }}'>
 
         <div class="swiper-wrapper">
-            <!--Start Single Swiper Slide-->
+            
+            @foreach ($sliders as $k => $slide)
+            <div class="swiper-slide">
+                <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
+                        alt="" />
+                </div>
+                <div class="shape2"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape2.png') }}"
+                        alt="" />
+                </div>
+                <div class="image-layer">
+                    <img src="{{ asset('storage/'.$slide->item->items[0]->content) }}" class="img-fluid" alt="img" />
+                </div>
+                <div class="container">
+                    <div class="main-slider__content">
+                        <div class="main-slider__content-tagline">
+                            <h2>{{ $slide->item->items[1]->content }}</h2>
+                        </div>
+                        <h2 class="main-slider__content-title" style="width: 50%;">
+                            {{ $slide->item->items[2]->content }}
+                        </h2>
+                        <p class="main-slider__content-text" style="width: 45%;">
+                            {{ $slide->item->items[3]->content }}
+                        </p>
+                        <div class="main-slider__content-btn">
+                            <a href="{{ $slide->item->items[4]->content }}" class="thm-btn">Descubrir Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            <!--
             <div class="swiper-slide">
                 <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
                         alt="" />
@@ -23,45 +53,24 @@
                         alt="" />
                 </div>
                 <div class="image-layer"
-                    style="background-image: url({{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-1.jpg') }});">
+                    style="background-image: url({{ URL('themes/imazaweb/images/slider/slider_01.jpg') }});">
                 </div>
-                <!-- /.image-layer -->
                 <div class="container">
                     <div class="main-slider__content">
-                        <div class="main-slider__content-icon-one">
-                            <span class="icon-lamp"></span>
-                        </div>
-                        <div class="main-slider__content-icon-two">
-                            <span class="icon-human-resources"></span>
-                        </div>
-                        <div class="main-slider-one__round-box">
-                            <div class="main-slider-one__round-box-inner">
-                                <p>Professional <br>teachers</p>
-                                <div class="icon">
-                                    <i class="fas fa-sort-up"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="main-slider__content-tagline">
-                            <h2>Ready to learn?</h2>
+                            <h2>#Capacitación</h2>
                         </div>
-                        <h2 class="main-slider__content-title">Learn new <br>things daily</h2>
-                        <p class="main-slider__content-text">Get free access to 6800+ different courses from
-                            <br> 680 professional teachers
+                        <h2 class="main-slider__content-title">Título <br>vendedor</h2>
+                        <p class="main-slider__content-text">Aqui vendria una breve descripción
+                            <br> del servicio 
                         </p>
                         <div class="main-slider__content-btn">
-                            <a href="#" class="thm-btn">Discover more</a>
-                        </div>
-                        <div class="main-slider-one__img">
-                            <img src="{{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-img.png') }}"
-                                alt="" />
+                            <a href="#" class="thm-btn">Descubrir Más</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Single Swiper Slide-->
 
-            <!--Start Single Swiper Slide-->
             <div class="swiper-slide">
                 <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
                         alt="" />
@@ -70,45 +79,24 @@
                         alt="" />
                 </div>
                 <div class="image-layer"
-                    style="background-image: url({{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-1.jpg') }});">
+                    style="background-image: url({{ URL('themes/imazaweb/images/slider/slider_01.jpg') }});">
                 </div>
-                <!-- /.image-layer -->
                 <div class="container">
                     <div class="main-slider__content">
-                        <div class="main-slider__content-icon-one">
-                            <span class="icon-lamp"></span>
-                        </div>
-                        <div class="main-slider__content-icon-two">
-                            <span class="icon-human-resources"></span>
-                        </div>
-                        <div class="main-slider-one__round-box">
-                            <div class="main-slider-one__round-box-inner">
-                                <p>Professional <br>teachers</p>
-                                <div class="icon">
-                                    <i class="fas fa-sort-up"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="main-slider__content-tagline">
-                            <h2>Ready to learn?</h2>
+                            <h2>#Suscripción</h2>
                         </div>
-                        <h2 class="main-slider__content-title">Learn new <br>things daily</h2>
-                        <p class="main-slider__content-text">Get free access to 6800+ different courses from
-                            <br> 680 professional teachers
+                        <h2 class="main-slider__content-title">Título <br>vendedor</h2>
+                        <p class="main-slider__content-text">Aqui vendria una breve descripción
+                            <br> del servicio 
                         </p>
                         <div class="main-slider__content-btn">
-                            <a href="#" class="thm-btn">Discover more</a>
-                        </div>
-                        <div class="main-slider-one__img">
-                            <img src="{{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-img.png') }}"
-                                alt="" />
+                            <a href="#" class="thm-btn">Descubrir Más</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Single Swiper Slide-->
 
-            <!--Start Single Swiper Slide-->
             <div class="swiper-slide">
                 <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
                         alt="" />
@@ -117,43 +105,50 @@
                         alt="" />
                 </div>
                 <div class="image-layer"
-                    style="background-image: url({{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-1.jpg') }});">
+                    style="background-image: url({{ URL('themes/imazaweb/images/slider/slider_01.jpg') }});">
                 </div>
-                <!-- /.image-layer -->
                 <div class="container">
                     <div class="main-slider__content">
-                        <div class="main-slider__content-icon-one">
-                            <span class="icon-lamp"></span>
-                        </div>
-                        <div class="main-slider__content-icon-two">
-                            <span class="icon-human-resources"></span>
-                        </div>
-                        <div class="main-slider-one__round-box">
-                            <div class="main-slider-one__round-box-inner">
-                                <p>Professional <br>teachers</p>
-                                <div class="icon">
-                                    <i class="fas fa-sort-up"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="main-slider__content-tagline">
-                            <h2>Ready to learn?</h2>
+                            <h2>#Automatización</h2>
                         </div>
-                        <h2 class="main-slider__content-title">Learn new <br>things daily</h2>
-                        <p class="main-slider__content-text">Get free access to 6800+ different courses from
-                            <br> 680 professional teachers
+                        <h2 class="main-slider__content-title">Título <br>vendedor</h2>
+                        <p class="main-slider__content-text">Aqui vendria una breve descripción
+                            <br> del servicio 
                         </p>
                         <div class="main-slider__content-btn">
-                            <a href="#" class="thm-btn">Discover more</a>
-                        </div>
-                        <div class="main-slider-one__img">
-                            <img src="{{ URL('themes/imazaweb/images/backgrounds/main-slider-v1-img.png') }}"
-                                alt="" />
+                            <a href="#" class="thm-btn">Descubrir Más</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Single Swiper Slide-->
+
+            <div class="swiper-slide">
+                <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
+                        alt="" />
+                </div>
+                <div class="shape2"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape2.png') }}"
+                        alt="" />
+                </div>
+                <div class="image-layer"
+                    style="background-image: url({{ URL('themes/imazaweb/images/slider/slider_01.jpg') }});">
+                </div>
+                <div class="container">
+                    <div class="main-slider__content">
+                        <div class="main-slider__content-tagline">
+                            <h2>#Agencia</h2>
+                        </div>
+                        <h2 class="main-slider__content-title">Título <br>vendedor</h2>
+                        <p class="main-slider__content-text">Aqui vendria una breve descripción
+                            <br> del servicio 
+                        </p>
+                        <div class="main-slider__content-btn">
+                            <a href="#" class="thm-btn">Descubrir Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             -->
         </div>
 
         <!-- If we need navigation buttons -->

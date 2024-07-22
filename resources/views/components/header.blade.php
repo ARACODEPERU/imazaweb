@@ -4,17 +4,21 @@
             <div class="main-header--one__top-inner clearfix">
                 <div class="main-header--one__top-left">
                     <div class="main-header--one__top-logo">
-                        <a href="index.html"><img src="{{ URL('themes/imazaweb/images/resources/logo-1.png') }}"
-                                alt="" /></a>
+                        <a href="index.html">
+                            <img src="{{ asset('storage/'.$header[0]->content) }}"
+                                alt="" />
+                        </a>
                     </div>
                 </div>
 
                 <div class="main-header--one__top-right clearfix">
                     <ul class="main-header--one__top-social-link list-unstyled clearfix">
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ $header[1]->content }}" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="{{ $header[2]->content }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ $header[3]->content }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="{{ $header[4]->content }}" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="{{ $header[5]->content }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="{{ $header[6]->content }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
                     </ul>
 
                     <div class="main-header--one__top-contact-info clearfix">
@@ -24,8 +28,8 @@
                                     <span class="icon-phone-call-1"></span>
                                 </div>
                                 <div class="text">
-                                    <h6>Call Agent</h6>
-                                    <p><a href="tel:123456789">92 888 666 0000</a></p>
+                                    <h6>Llamanos al:</h6>
+                                    <p><a href="tel:{{ $header[7]->content }}">{{ $header[7]->content }}</a></p>
                                 </div>
                             </li>
                             <li class="main-header--one__top-contact-info-list-item">
@@ -33,8 +37,8 @@
                                     <span class="icon-message"></span>
                                 </div>
                                 <div class="text">
-                                    <h6>Call Agent</h6>
-                                    <p><a href="mailto:info@templatepath.com">needhelp@company.com</a></p>
+                                    <h6>Escribenos al:</h6>
+                                    <p><a href="mailto:{{ $header[8]->content }}">{{ $header[8]->content }}</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -44,7 +48,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="main-header-one__bottom clearfix">
         <div class="container">
@@ -56,59 +59,52 @@
                         <div class="left">
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
-                                    <a href="index.html">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Home One</a></li>
-                                        <li><a href="index-2.html">Home Two</a></li>
-                                        <li class="dropdown">
-                                            <a href="#">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header One</a></li>
-                                                <li><a href="index-2.html">Header Two</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <a href="about.html">Home</a>
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="dropdown">
-                                    <a href="#">Courses</a>
+                                <li><a href="about.html">Nosotros</a></li>
+                                <li>
+                                    <a href="about.html">Cursos</a>
+                                    <!--
                                     <ul>
                                         <li><a href="courses.html">Courses</a></li>
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
+                                    -->
                                 </li>
-                                <li class="dropdown">
-                                    <a href="#"> Teachers</a>
-                                    <ul>
-                                        <li><a href="teachers-1.html"> Teachers</a></li>
-                                        <li><a href="teachers-2.html">Become Teacher</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">News</a>
+                                <li>
+                                    <a href="about.html">Blog</a>
+                                    <!--
                                     <ul>
                                         <li><a href="news.html">News</a></li>
                                         <li><a href="news-details.html">News Details</a></li>
                                     </ul>
+                                    -->
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="about.html">Contacto</a></li>
                             </ul>
                         </div>
 
                         <div class="right">
                             <div class="main-menu__right">
+                                <!--
                                 <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
                                         <li><a href="#">Login</a></li>
                                         <li><a href="#">Register</a></li>
                                     </ul>
                                 </div>
+                                -->
                                 <div class="main-menu__right-cart-search">
+                                    <!--
                                     <div class="main-menu__right-cart-box">
                                         <a href="#"><span class="icon-shopping-cart"></span></a>
                                     </div>
                                     <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>
+                                    </div>
+                                    -->
+                                    <div class="main-menu__right-search-box">
+                                        <a href="https://marketingdespega.com/login" target="_blamk" class="thm-btn">Campus Virtual</a>
                                     </div>
                                 </div>
                             </div>
