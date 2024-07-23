@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Modules\CMS\Entities\CmsSection;
 
-class listCard extends Component
+class ListCard extends Component
 {
     
     protected $listcard;
@@ -32,9 +32,8 @@ class listCard extends Component
      */
     public function render(): View|Closure|string
     {
-        /*
         return view('components.courses.list-card', [
             'listcard' => $this->listcard
-        ]);*/
+        ]);
     }
 }
