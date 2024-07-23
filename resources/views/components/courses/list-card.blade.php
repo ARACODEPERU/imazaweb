@@ -2,8 +2,8 @@
     <section class="courses-one">
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline"> {{ $listcard[0]->content }} </span>
-                <h2 class="section-title__title"> {{ $listcard[1]->content }}</h2>
+                <span class="section-title__tagline"> {{ $courseshome[0]->content }} </span>
+                <h2 class="section-title__title"> {{ $courseshome[1]->content }}</h2>
             </div>
             <div class="row">
                 <!--Start Single Courses One-->
