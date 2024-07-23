@@ -1,7 +1,7 @@
 <section class="courses-one">
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">{{ $coursesArea[0]->content }}</span>
+            <span class="section-title__tagline"> {{ $coursesArea[0]->content }} </span>
             <h2 class="section-title__title"> {{ $coursesArea[1]->content }}</h2>
         </div>
         <div class="row">

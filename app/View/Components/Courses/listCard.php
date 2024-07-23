@@ -11,6 +11,7 @@ class listCard extends Component
 {
     
     protected $coursesArea;
+    
     public function __construct()
     {
 
