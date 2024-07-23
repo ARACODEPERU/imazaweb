@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Modules\CMS\Entities\CmsSection;
 
 class WebPageController extends Controller
 {
