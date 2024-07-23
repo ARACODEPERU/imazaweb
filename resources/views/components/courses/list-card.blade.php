@@ -1,8 +1,8 @@
 <section class="courses-one">
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">Checkout New List</span>
-            <h2 class="section-title__title">Explore Courses</h2>
+            <span class="section-title__tagline">Nuevos ingresos en</span>
+            <h2 class="section-title__title"> Cursos - Talleres</h2>
         </div>
         <div class="row">
             <!--Start Single Courses One-->
