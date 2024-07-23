@@ -32,6 +32,7 @@ class listCard extends Component
      */
     public function render(): View|Closure|string
     {
+        dd($this->listcard);
         return view('components.courses.list-card', [
             'listcard' => $this->listcard
         ]);
