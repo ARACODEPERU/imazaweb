@@ -10,12 +10,12 @@ use Modules\CMS\Entities\CmsSection;
 class listCard extends Component
 {
     
-    protected $coursesarea;
+    protected $listcard;
 
     public function __construct()
     {
 
-        $this->coursesarea = CmsSection::where('component_id', 'cursos_area_5')
+        $this->listcard = CmsSection::where('component_id', 'cursos_area_5')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -33,7 +33,7 @@ class listCard extends Component
     public function render(): View|Closure|string
     {
         return view('components.courses.list-card', [
-            'coursesarea' => $this->coursesarea
+            'listcard' => $this->listcard
         ]);
     }
 }
