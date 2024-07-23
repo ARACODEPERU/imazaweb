@@ -25,6 +25,7 @@ class listCard extends Component
             ->orderBy('cms_section_items.position')
             ->get();
 
+            dd($this->listcard);
     }
 
     /**
@@ -32,7 +33,6 @@ class listCard extends Component
      */
     public function render(): View|Closure|string
     {
-        dd($this->listcard);
         return view('components.courses.list-card', [
             'listcard' => $this->listcard
         ]);
