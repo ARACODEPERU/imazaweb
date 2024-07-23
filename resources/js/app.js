@@ -1,6 +1,6 @@
 import "./bootstrap";
 import "../css/app.css";
-import "../../public/themes/vristo/css/app.css";
+import "../../public/themes/vristo/css/app.css"
 import 'easymde/dist/easymde.min.css';
 
 import { createApp, h } from "vue";

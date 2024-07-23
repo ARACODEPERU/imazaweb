@@ -4,9 +4,9 @@ namespace Modules\CRM\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\CRM\Database\factories\CrmParticipantFactory;
+use Modules\CRM\Database\factories\CrmMessagesFactory;
 
-class CrmParticipant extends Model
+class CrmMessage extends Model
 {
     use HasFactory;
 
@@ -15,14 +15,11 @@ class CrmParticipant extends Model
      */
     protected $fillable = [
         'conversation_id',
-        'user_id',
-        'person_id'
+        'person_id',
+        'content',
+        'server_response',
+        'type'
     ];
-
-    protected static function newFactory(): CrmParticipantFactory
-    {
-        //return CrmParticipantFactory::new();
-    }
 
     public function conversation()
     {
