@@ -14,11 +14,31 @@
                             <a href="">
                                 <div class="categories-one__single">
                                     <div class="categories-one__single-img">
-                                        <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img1.jpg') }}"
+                                        <img src="{{ asset('storage/'.$services[2]->content) }}"
                                             alt="" />
                                         <div class="categories-one__single-overlay">
                                             <div class="categories-one__single-overlay-text1">
-                                                <p style="color: #fff;">30 full courses</p>
+                                                <p style="color: #fff;">01</p>
+                                            </div>
+                                            <div class="categories-one__single-overlay-text2">
+                                                <h4>{{ $services[3]->content }}</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms"
+                            data-wow-duration="1500ms">
+                            <a href="">
+                                <div class="categories-one__single">
+                                    <div class="categories-one__single-img">
+                                        <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img2.jpg') }}"
+                                            alt="" />
+                                        <div class="categories-one__single-overlay">
+                                            <div class="categories-one__single-overlay-text1">
+                                                <p style="color: #fff;">2</p>
                                             </div>
                                             <div class="categories-one__single-overlay-text2">
                                                 <h4>Art & Design</h4>
@@ -27,43 +47,6 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
-
-                        {{-- 
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0ms"
-                            data-wow-duration="1500ms">
-                            <div class="categories-one__single">
-                                <div class="categories-one__single-img">
-                                    <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img1.jpg') }}"
-                                        alt="" />
-                                    <div class="categories-one__single-overlay">
-                                        <div class="categories-one__single-overlay-text1">
-                                            <p style="color: #fff;">30 full courses</p>
-                                        </div>
-                                        <div class="categories-one__single-overlay-text2">
-                                            <h4>Art & Design</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms"
-                            data-wow-duration="1500ms">
-                            <div class="categories-one__single">
-                                <div class="categories-one__single-img">
-                                    <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img2.jpg') }}"
-                                        alt="" />
-                                    <div class="categories-one__single-overlay">
-                                        <div class="categories-one__single-overlay-text1">
-                                            <p style="color: #fff;">30 full courses</p>
-                                        </div>
-                                        <div class="categories-one__single-overlay-text2">
-                                            <h4>Art & Design</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms"
@@ -101,7 +84,6 @@
                                 </div>
                             </div>
                         </div> 
-                        --}}
 
                     </div>
                 </div>
