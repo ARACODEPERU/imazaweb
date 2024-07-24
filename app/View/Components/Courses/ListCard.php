@@ -7,7 +7,7 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Modules\CMS\Entities\CmsSection;
 
-class listCard extends Component
+class ListCard extends Component
 {
     
     protected $coursesHome;
