@@ -8,8 +8,7 @@
     <!--About One Start-->
     <x-about />
     <!--About One End-->
-    <!--Courses One Start
-    <x-courses.list-card :listcard="$listcard"/>-->
+    <!--Courses One Start-->
     <x-courses.list-card />
     <!--Courses One End-->
     <!--Registration One Start-->

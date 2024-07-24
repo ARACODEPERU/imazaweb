@@ -9,13 +9,13 @@ use Modules\CMS\Entities\CmsSection;
 
 class ListCard extends Component
 {
-    
-    protected $coursesHome;
+
+    protected $courses;
 
     public function __construct()
     {
 
-        $this->coursesHome = CmsSection::where('component_id', 'cursos_area_5')
+        $this->courses = CmsSection::where('component_id', 'cursos_area_5')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -24,7 +24,12 @@ class ListCard extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
+<<<<<<< HEAD
             
+=======
+
+        //dd($this->courses);
+>>>>>>> 9824c52eada536028dc953e46bd97d3ade14e8f2
     }
 
     /**
@@ -33,7 +38,7 @@ class ListCard extends Component
     public function render(): View|Closure|string
     {
         return view('components.courses.list-card', [
-            'coursesHome' => $this->coursesHome
+            'courses' => $this->courses
         ]);
     }
 }
