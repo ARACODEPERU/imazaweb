@@ -1,4 +1,4 @@
-<div>
+
     <section class="courses-one">
         <div class="container">
             <div class="section-title text-center">
@@ -322,4 +322,3 @@
             </div>
         </div>
     </section>
-</div>
