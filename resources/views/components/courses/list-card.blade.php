@@ -327,5 +327,9 @@
                 </div>
                 <!--End Single Courses One-->
             </div>
+            
+            <div class="categories-one__btn text-center">
+                <a href="#" class="thm-btn">view all courses</a>
+            </div>
         </div>
     </section>

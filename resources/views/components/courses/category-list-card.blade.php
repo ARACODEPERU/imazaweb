@@ -34,14 +34,14 @@
                             <a href="">
                                 <div class="categories-one__single">
                                     <div class="categories-one__single-img">
-                                        <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img2.jpg') }}"
+                                        <img src="{{ asset('storage/'.$services[5]->content) }}"
                                             alt="" />
                                         <div class="categories-one__single-overlay">
                                             <div class="categories-one__single-overlay-text1">
-                                                <p style="color: #fff;">2</p>
+                                                <p style="color: #fff;">02</p>
                                             </div>
                                             <div class="categories-one__single-overlay-text2">
-                                                <h4>Art & Design</h4>
+                                                <h4>{{ $services[4]->content }}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -53,14 +53,14 @@
                             data-wow-duration="1500ms">
                             <div class="categories-one__single">
                                 <div class="categories-one__single-img">
-                                    <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img3.jpg') }}"
+                                        <img src="{{ asset('storage/'.$services[7]->content) }}"
                                         alt="" />
                                     <div class="categories-one__single-overlay">
                                         <div class="categories-one__single-overlay-text1">
-                                            <p style="color: #fff;">30 full courses</p>
+                                            <p style="color: #fff;">03</p>
                                         </div>
                                         <div class="categories-one__single-overlay-text2">
-                                            <h4>Art & Design</h4>
+                                            <h4>{{ $services[6]->content }}</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -71,14 +71,14 @@
                             data-wow-duration="1500ms">
                             <div class="categories-one__single">
                                 <div class="categories-one__single-img">
-                                    <img src="{{ URL('themes/imazaweb/images/resources/categories-v1-img4.jpg') }}"
+                                        <img src="{{ asset('storage/'.$services[9]->content) }}"
                                         alt="" />
                                     <div class="categories-one__single-overlay">
                                         <div class="categories-one__single-overlay-text1">
                                             <p style="color: #fff;">30 full courses</p>
                                         </div>
                                         <div class="categories-one__single-overlay-text2">
-                                            <h4>Art & Design</h4>
+                                            <h4>{{ $services[8]->content }}</h4>
                                         </div>
                                     </div>
                                 </div>
