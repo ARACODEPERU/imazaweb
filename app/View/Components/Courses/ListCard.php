@@ -24,12 +24,6 @@ class ListCard extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
-<<<<<<< HEAD
-            
-=======
-
-        //dd($this->courses);
->>>>>>> 9824c52eada536028dc953e46bd97d3ade14e8f2
     }
 
     /**
