@@ -14,14 +14,14 @@
                             <a href="">
                                 <div class="categories-one__single">
                                     <div class="categories-one__single-img">
-                                        <img src="{{ asset('storage/'.$services[2]->content) }}"
+                                        <img src="{{ asset('storage/'.$services[3]->content) }}"
                                             alt="" />
                                         <div class="categories-one__single-overlay">
                                             <div class="categories-one__single-overlay-text1">
                                                 <p style="color: #fff;">01</p>
                                             </div>
                                             <div class="categories-one__single-overlay-text2">
-                                                <h4>{{ $services[3]->content }}</h4>
+                                                <h4>{{ $services[2]->content }}</h4>
                                             </div>
                                         </div>
                                     </div>
