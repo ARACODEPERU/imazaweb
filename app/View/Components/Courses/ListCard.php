@@ -24,6 +24,7 @@ class ListCard extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
+            
     }
 
     /**
