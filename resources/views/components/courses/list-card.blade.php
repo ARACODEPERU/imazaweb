@@ -2,15 +2,16 @@
     <section class="courses-one">
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline"> {{ $coursesHome[0]->content }} </span>
-                <h2 class="section-title__title"> {{ $coursesHome[1]->content }}</h2>
+                <span class="section-title__tagline"> {{ $courses[0]->content }} </span>
+                <h2 class="section-title__title"> {{ $courses[1]->content }}</h2>
             </div>
             <div class="row">
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="" />
+                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}"
+                                alt="" />
                             <div class="overlay-text">
                                 <p>Featured</p>
                             </div>
@@ -45,12 +46,13 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img2.jpg') }}" alt="" />
+                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img2.jpg') }}"
+                                alt="" />
                             <div class="overlay-text">
                                 <p>free</p>
                             </div>
@@ -85,12 +87,13 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img3.jpg') }}" alt="" />
+                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img3.jpg') }}"
+                                alt="" />
                             <div class="overlay-text">
                                 <p>Featured</p>
                             </div>
@@ -125,12 +128,13 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img4.jpg') }}" alt="" />
+                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img4.jpg') }}"
+                                alt="" />
                         </div>
                         <div class="courses-one__single-content">
                             <div class="courses-one__single-content-overlay-img">
@@ -162,12 +166,13 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img5.jpg') }}" alt="" />
+                            <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img5.jpg') }}"
+                                alt="" />
                         </div>
                         <div class="courses-one__single-content">
                             <div class="courses-one__single-content-overlay-img">
@@ -199,10 +204,11 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="courses-one__single wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1000ms">
+                    <div class="courses-one__single wow fadeInLeft" data-wow-delay="100ms"
+                        data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
                             <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img6.jpg') }}"
                                 alt="" />
@@ -240,7 +246,7 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
                     <div class="courses-one__single wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1000ms">
@@ -278,10 +284,11 @@
                     </div>
                 </div>
                 <!--End Single Courses One-->
-    
+
                 <!--Start Single Courses One-->
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="courses-one__single wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1000ms">
+                    <div class="courses-one__single wow fadeInRight" data-wow-delay="100ms"
+                        data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
                             <img src="{{ URL('themes/imazaweb/images/resources/courses-v1-img8.jpg') }}"
                                 alt="" />
