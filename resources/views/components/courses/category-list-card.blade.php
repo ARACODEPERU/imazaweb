@@ -75,7 +75,7 @@
                                         alt="" />
                                     <div class="categories-one__single-overlay">
                                         <div class="categories-one__single-overlay-text1">
-                                            <p style="color: #fff;">30 full courses</p>
+                                            <p style="color: #fff;">04</p>
                                         </div>
                                         <div class="categories-one__single-overlay-text2">
                                             <h4>{{ $services[8]->content }}</h4>
