@@ -29,7 +29,7 @@
                                         </p>
                                         <div class="testimonials-one__single-client-info">
                                             <div class="testimonials-one__single-client-info-img">
-                                                <img src="{{ asset('storage/'.$group->item->items[2]->content) }}"
+                                                <img style="width: 52px; height: 52px;" src="{{ asset('storage/'.$group->item->items[2]->content) }}"
                                                     alt="" />
                                             </div>
                                             <div class="testimonials-one__single-client-info-text">
