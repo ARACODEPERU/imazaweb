@@ -15,7 +15,7 @@ class Presentation extends Component
     public function __construct()
     {
 
-        $this->blog = CmsSection::where('component_id', 'cursos_area_5')
+        $this->blog = CmsSection::where('component_id', 'blog_area_10')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
