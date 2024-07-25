@@ -64,7 +64,7 @@
                 <div class="why-choose-one__right wow slideInRight animated clearfix" data-wow-delay="0ms"
                     data-wow-duration="1500ms">
                     <div class="why-choose-one__right-img clearfix">
-                        <img src="{{ URL('themes/imazaweb/images/resources/why-choose-v1-img.jpg') }}" alt="" />
+                        <img src="{{ asset('storage/'.$elegirnos[7]->content) }}" alt="" />
                         
                     </div>
                 </div>
