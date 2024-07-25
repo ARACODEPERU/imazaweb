@@ -1,8 +1,8 @@
 <section class="testimonials-one clearfix">
     <div class="auto-container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">Our Testimonials</span>
-            <h2 class="section-title__title">What They Say?</h2>
+            <span class="section-title__tagline">{{ $titles[0]->item->content }}</span>
+            <h2 class="section-title__title">{{ $titles[1]->item->content }}</h2>
         </div>
         <div class="row">
             <div class="col-xl-12">
@@ -17,8 +17,31 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
-                                <!--Start Single Testimonials One -->
+                                @foreach ($data as $k => $group)  
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="testimonials-one__single-inner">
+                                        <h4 class="testimonials-one__single-title">
+                                            {{ $group->item->items[0]->content }}
+                                        </h4>
+                                        <p class="testimonials-one__single-text">
+                                            {{ $group->item->items[1]->content }}
+                                        </p>
+                                        <div class="testimonials-one__single-client-info">
+                                            <div class="testimonials-one__single-client-info-img">
+                                                <img src="{{ asset('storage/'.$group->item->items[2]->content) }}"
+                                                    alt="" />
+                                            </div>
+                                            <div class="testimonials-one__single-client-info-text">
+                                                <h5>{{ $group->item->items[3]->content }}</h5>
+                                                <p>{{ $group->item->items[4]->content }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+
+                                {{-- <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
                                         <h4 class="testimonials-one__single-title">Amazing Courses</h4>
@@ -38,9 +61,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -61,9 +81,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -84,8 +101,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -106,8 +121,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -128,8 +141,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -150,8 +161,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--End Single Testimonials One -->
-                                <!--Start Single Testimonials One -->
                                 <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                     data-wow-duration="1500ms">
                                     <div class="testimonials-one__single-inner">
@@ -171,8 +180,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!--End Single Testimonials One -->
+                                </div> --}}
                             </div>
                         </div>
                     </div>
