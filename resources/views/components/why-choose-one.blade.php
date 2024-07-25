@@ -5,18 +5,20 @@
             <div class="col-xl-6 col-lg-6">
                 <div class="why-choose-one__left">
                     <div class="section-title">
-                        <span class="section-title__tagline">Why Choose Us?</span>
-                        <h2 class="section-title__title">Benefits of Learning <br>from Zilom</h2>
+                        <span class="section-title__tagline">{{ $elegirnos[0]->content }}</span>
+                        <h2 class="section-title__title">
+                            {{ $elegirnos[1]->content }}
+                        </h2>
                     </div>
-                    <p class="why-choose-one__left-text">There cursus massa at urnaaculis estie. Sed
-                        aliquamellus vitae ultrs condmentum leo massa mollis estiegittis miristum nulla sed medy
-                        fringilla vitae.</p>
+                    <p class="why-choose-one__left-text">
+                        {{ $elegirnos[2]->content }}
+                    </p>
                     <div class="why-choose-one__left-learning-box">
                         <div class="icon">
                             <span class="icon-professor"></span>
                         </div>
                         <div class="text">
-                            <h4>Start learning from our experts and <br>enhance your skills</h4>
+                            <h4>{{ $elegirnos[3]->content }}</h4>
                         </div>
                     </div>
                     <div class="why-choose-one__left-list">
@@ -26,7 +28,7 @@
                                     <span class="icon-confirmation"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Making this the first true on the Internet</p>
+                                    <p>{{ $elegirnos[4]->content }}</p>
                                 </div>
                             </li>
 
@@ -35,7 +37,7 @@
                                     <span class="icon-confirmation"></span>
                                 </div>
                                 <div class="text">
-                                    <p>Lorem Ipsum is not simply random text</p>
+                                    <p>{{ $elegirnos[5]->content }}</p>
                                 </div>
                             </li>
 
@@ -44,11 +46,15 @@
                                     <span class="icon-confirmation"></span>
                                 </div>
                                 <div class="text">
-                                    <p> If you are going to use a passage</p>
+                                    <p> {{ $elegirnos[6]->content }}</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <br>
+                <div class="categories-one__btn text-left">
+                    <a href="#" class="thm-btn">Nuestros Cursos</a>
                 </div>
             </div>
             <!--End Why Choose One Left-->
@@ -59,9 +65,7 @@
                     data-wow-duration="1500ms">
                     <div class="why-choose-one__right-img clearfix">
                         <img src="{{ URL('themes/imazaweb/images/resources/why-choose-v1-img.jpg') }}" alt="" />
-                        <div class="why-choose-one__right-img-overlay">
-                            <p>We’re the best institution</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

@@ -329,7 +329,7 @@
             </div>
             
             <div class="categories-one__btn text-center">
-                <a href="#" class="thm-btn">view all courses</a>
+                <a href="#" class="thm-btn">Nuestros Cursos</a>
             </div>
         </div>
     </section>

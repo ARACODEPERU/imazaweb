@@ -21,7 +21,7 @@
     <x-testimonials />
     <!--Testimonials One End-->
     <!--Company Logos One Start-->
-    <x-company-clients />
+    {{-- <x-company-clients /> --}}
     <!--Company Logos One End-->
     <!--Why Choose One Start-->
     <x-why-choose-one />
