@@ -11,6 +11,8 @@
 |
 */
 
+use Modules\Academic\Http\Controllers\AcaModuleController;
+
 Route::middleware(['auth', 'verified', 'invalid_updated_information'])->prefix('academic')->group(function () {
     Route::middleware(['middleware' => 'permission:aca_dashboard'])
         ->get('dashboard', 'AcademicController@index')
@@ -124,6 +126,8 @@ Route::middleware(['auth', 'verified', 'invalid_updated_information'])->prefix('
         ->delete('agreement/destroy/{id}', 'AcaAgreementController@destroy')
         ->name('aca_agreements_destroy');
 
+    Route::get('courses/modules/{id}/panel', [AcaModuleController::class, 'index'])->name('aca_courses_module_panel');
+
     Route::post('courses/modules/store', 'AcaModuleController@store')->name('aca_courses_module_store');
     Route::put('courses/modules/update/{id}', 'AcaModuleController@update')->name('aca_courses_module_update');
     Route::delete('courses/modules/destroy/{id}', 'AcaModuleController@destroy')->name('aca_courses_module_destroy');
@@ -175,4 +179,8 @@ Route::middleware(['auth', 'verified', 'invalid_updated_information'])->prefix('
     Route::middleware(['middleware' => 'permission:aca_estudiante_cobrar'])
         ->post('student/sale/store', 'AcaSalesController@store')
         ->name('aca_student_invoice_store');
+
+    Route::middleware(['middleware' => 'permission:aca_miscursos'])
+        ->post('student/dashboard/courses', 'AcaStudentController@getCourses')
+        ->name('aca_student_dashboard_courses');
 });
