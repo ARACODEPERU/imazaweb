@@ -1,8 +1,8 @@
 <section class="blog-one">
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">Directly from the Blog</span>
-            <h2 class="section-title__title">Latest Articles</h2>
+            <span class="section-title__tagline">{{ $blog[0]->content }}</span>
+            <h2 class="section-title__title">{{ $blog[1]->content }}</h2>
         </div>
         <div class="row">
             <!--Start Single Blog One-->

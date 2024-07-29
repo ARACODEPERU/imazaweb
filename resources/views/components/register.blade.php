@@ -1,6 +1,6 @@
 <section class="registration-one jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%">
     <div class="registration-one__bg"
-        style="background-image: url({{ URL('themes/imazaweb/images/resources/registration-one-bg.jpg') }});">
+        style="background-image: url('{{ asset('storage/'.$register[6]->content) }}');">
     </div>
     <div class="container">
         <div class="row">
@@ -8,20 +8,23 @@
             <div class="col-xl-7 col-lg-7">
                 <div class="registration-one__left">
                     <div class="section-title">
-                        <span class="section-title__tagline">Get Free Registration</span>
-                        <h2 class="section-title__title">Register your Account<br> Get free Access to <span
-                                class="odometer" data-count="66000">00</span> <br>Online Courses</h2>
+                        <span class="section-title__tagline">{{ $register[0]->content }}</span>
+                        <h2 class="section-title__title">
+                            {{ $register[1]->content }}
+                        </h2>
                     </div>
-                    <p class="registration-one__left-text">There are many variations of passages of lorem ipsum
-                        available but the majority have suffered alteration in some form.</p>
+                    <p class="registration-one__left-text">
+                        {{ $register[2]->content }}
+                    </p>
                     <div class="registration-one__left-transform-box">
                         <div class="registration-one__left-transform-box-icon">
                             <span class="icon-online-course"></span>
                         </div>
                         <div class="registration-one__left-transform-box-text">
-                            <h3><a href="#">Transform Access To Education</a></h3>
-                            <p>Discover creative projects limited editions of 100 <br>from artists, designers,
-                                and more.</p>
+                            <h3><a href="#">{{ $register[3]->content }}</a></h3>
+                            <p>
+                                {{ $register[4]->content }}
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -33,7 +36,7 @@
                 <div class="registration-one__right wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="registration-one__right-form">
                         <div class="title-box">
-                            <h4>Fill your Registration</h4>
+                            <h4>{{ $register[5]->content }}</h4>
                         </div>
                         <div class="form-box">
                             <form method="post" action="index.html">

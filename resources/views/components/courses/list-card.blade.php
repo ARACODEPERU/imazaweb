@@ -1,4 +1,4 @@
-<div>
+
     <section class="courses-one">
         <div class="container">
             <div class="section-title text-center">
@@ -327,6 +327,9 @@
                 </div>
                 <!--End Single Courses One-->
             </div>
+            
+            <div class="categories-one__btn text-center">
+                <a href="#" class="thm-btn">Nuestros Cursos</a>
+            </div>
         </div>
     </section>
-</div>
