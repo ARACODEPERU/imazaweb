@@ -59,7 +59,6 @@
                             <div class="hidde-5">
                                 {!! $article->content_text !!}
                             </div>
-                            <br>
                             <div class="about-one__btn">
                                 <a href="" class="thm-btn">Inicia sesión para seguir</a>
                             </div>
@@ -68,7 +67,7 @@
                         <style>
                             .hidde-5{
                                 overflow: hidden;
-                                max-height: 5em;
+                                max-height: 7em;
                                 line-height: 1.2em;
                             }
                         </style>
