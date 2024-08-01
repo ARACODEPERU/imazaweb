@@ -1,35 +1,38 @@
 <section class="blog-one">
     <div class="container">
         <div class="section-title text-center">
-            <span class="section-title__tagline">{{ $blog[0]->content }}</span>
-            <h2 class="section-title__title">{{ $blog[1]->content }}</h2>
+            <span class="section-title__tagline">{{ $blog_title[0]->content }}</span>
+            <h2 class="section-title__title">{{ $blog_title[1]->content }}</h2>
         </div>
         <div class="row">
-            <!--Start Single Blog One-->
-            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                <div class="blog-one__single">
-                    <div class="blog-one__single-img">
-                        <img src="{{ URL('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt="" />
-                    </div>
-                    <div class="blog-one__single-content">
-                        <div class="blog-one__single-content-overlay-mata-info">
-                            <ul class="list-unstyled">
-                                <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                <li><a href="#"><span class="icon-user"></span>Admin </a></li>
-                                <li><a href="#"><span class="icon-chat"></span> Comments</a></li>
-                            </ul>
+
+            @foreach ($blogs as $blog )
+                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="blog-one__single">
+                        <div class="blog-one__single-img">
+                            <img src="{{ URL('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt="" />
                         </div>
-                        <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers
-                                Stand out in Discussions</a></h2>
-                        <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by
-                            copytyping refreshing the whole area.</p>
+                        <div class="blog-one__single-content">
+                            <div class="blog-one__single-content-overlay-mata-info">
+                                <ul class="list-unstyled">
+                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
+                                    <li><a href="#"><span class="icon-user"></span>Admin </a></li>
+                                    <li><a href="#"><span class="icon-chat"></span> Comments</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="blog-one__single-content-title">
+                                <a href="news-details.html">
+                                    {{ $blog->title }}
+                                </a>
+                                </h2>
+                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by
+                                copytyping refreshing the whole area.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--End Single Blog One-->
+            @endforeach
 
-            <!--Start Single Blog One-->
-            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+            {{-- <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                 <div class="blog-one__single">
                     <div class="blog-one__single-img">
                         <img src="{{ URL('themes/imazaweb/images/blog/blog-v1-img2.jpg') }}" alt="" />
@@ -49,9 +52,6 @@
                     </div>
                 </div>
             </div>
-            <!--End Single Blog One-->
-
-            <!--Start Single Blog One-->
             <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
                 <div class="blog-one__single">
                     <div class="blog-one__single-img">
@@ -71,8 +71,7 @@
                             copytyping refreshing the whole area.</p>
                     </div>
                 </div>
-            </div>
-            <!--End Single Blog One-->
+            </div> --}}
         </div>
     </div>
 </section>

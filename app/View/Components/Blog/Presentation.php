@@ -5,17 +5,20 @@ namespace App\View\Components\Blog;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\Blog\Entities\BlogArticle;
 use Modules\CMS\Entities\CmsSection;
+
 
 class Presentation extends Component
 {
 
-    protected $blog;
+    protected $blog_title;
+    protected $blogs;
 
     public function __construct()
     {
 
-        $this->blog = CmsSection::where('component_id', 'blog_area_10')
+        $this->blog_title = CmsSection::where('component_id', 'blog_area_10')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -24,6 +27,8 @@ class Presentation extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
+        
+        $this->blogs = BlogArticle::limit(3)->get();
             
     }
 
@@ -33,7 +38,8 @@ class Presentation extends Component
     public function render(): View|Closure|string
     {
         return view('components.blog.presentation', [
-            'blog' => $this->blog
+            'blog_title' => $this->blog_title,
+            'blogs' => $this->blogs
         ]);
     }
 }
