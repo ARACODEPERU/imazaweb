@@ -22,10 +22,13 @@
                                     <img width="50" height="50" src="{{ asset('storage/'.$course->course->teacher->person->image) }}"
                                         alt="" />
                                 </div>
-                                <h6 class="courses-one__single-content-name">Kevin Martin</h6>
-                                <h4 class="courses-one__single-content-title"><a href="course-details.html">Become a
-                                        React Developer</a></h4>
-                                <div class="courses-one__single-content-review-box">
+                                <h6 class="courses-one__single-content-name">{{ $course->course->teacher->person->full_name }}</h6>
+                                <h4 class="courses-one__single-content-title">
+                                    <a href="course-details.html">
+                                        {{ $course->name }}
+                                    </a>
+                                    </h4>
+                                {{-- <div class="courses-one__single-content-review-box">
                                     <ul class="list-unstyled">
                                         <li><i class="fa fa-star"></i></li>
                                         <li><i class="fa fa-star"></i></li>
@@ -36,13 +39,13 @@
                                     <div class="rateing-box">
                                         <span>(4)</span>
                                     </div>
-                                </div>
-                                <p class="courses-one__single-content-price">$30.00</p>
-                                <ul class="courses-one__single-content-courses-info list-unstyled">
+                                </div> --}}
+                                <p class="courses-one__single-content-price">S/ {{ $course->price }}</p>
+                                {{-- <ul class="courses-one__single-content-courses-info list-unstyled">
                                     <li>2 Lessons</li>
                                     <li>10 Hours</li>
                                     <li>Beginner</li>
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                     </div>
@@ -87,7 +90,7 @@
                     </div>
                 </div> --}}
             </div>
-            
+
             <div class="categories-one__btn text-center">
                 <a href="#" class="thm-btn">Nuestros Cursos</a>
             </div>
