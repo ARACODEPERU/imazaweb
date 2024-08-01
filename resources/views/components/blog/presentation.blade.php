@@ -10,7 +10,7 @@
                 <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="blog-one__single">
                         <div class="blog-one__single-img">
-                            <img src="{{ URL('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt="" />
+                            <img src="{{ asset('storage/'.$blog->imagen) }}" alt="" />
                         </div>
                         <div class="blog-one__single-content">
                             <div class="blog-one__single-content-overlay-mata-info">
@@ -25,8 +25,9 @@
                                     {{ $blog->title }}
                                 </a>
                                 </h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by
-                                copytyping refreshing the whole area.</p>
+                            <p class="blog-one__single-content-text">
+                                {{ $blog->short_description }}
+                            </p>
                         </div>
                     </div>
                 </div>
