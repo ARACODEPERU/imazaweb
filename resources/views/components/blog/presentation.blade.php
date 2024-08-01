@@ -15,9 +15,9 @@
                         <div class="blog-one__single-content">
                             <div class="blog-one__single-content-overlay-mata-info">
                                 <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin </a></li>
-                                    <li><a href="#"><span class="icon-chat"></span> Comments</a></li>
+                                    <li><a href="#"><span class="icon-clock"></span>{{ formatShortMonth($blog->created_at) }}</a></li>
+                                    <li><a href="#"><span class="icon-user"></span>{{ $blog->author->name }} </a></li>
+                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
                                 </ul>
                             </div>
                             <h2 class="blog-one__single-content-title">

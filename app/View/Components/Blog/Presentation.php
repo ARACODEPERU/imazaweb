@@ -28,7 +28,7 @@ class Presentation extends Component
             ->orderBy('cms_section_items.position')
             ->get();
         
-        $this->blogs = BlogArticle::limit(3)->get();
+        $this->blogs = BlogArticle::with("author")->limit(3)->get();
             
     }
 
