@@ -37,7 +37,7 @@
                     <div class="news-details__left">
                         <div class="blog-one__single style2">
                             <div class="blog-one__single-img">
-                                <img src="{{ $article->image }}" alt=""/>
+                                <img src="{{ $article->imagen }}" alt=""/>
                             </div>
                             <div class="blog-one__single-content">
                                 <div class="blog-one__single-content-overlay-mata-info">
