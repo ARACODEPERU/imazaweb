@@ -269,9 +269,9 @@
                             <div class="col-lg-6 form-section">
                                 <div class="form-inner">
                                     <a href="login-5.html" class="logo">
-                                        <img src="{{ asset('storage/'.$company->logo) }}" alt="logo">
+                                        <img src="{{ asset('storage/'.$company->logo_document) }}" alt="logo">
                                     </a>
-                                    <h3>Inisiar Sesión</h3>
+                                    <h3>Iniciar Sesión</h3>
                                     <form action="#" method="GET">
                                         <div class="form-group form-box">
                                             <input type="email" name="email" class="form-control" placeholder="Correo Electrónico" aria-label="Email Address">
