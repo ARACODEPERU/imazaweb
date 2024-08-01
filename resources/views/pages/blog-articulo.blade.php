@@ -59,6 +59,7 @@
                             <div class="hidde-5">
                                 {!! substr($article->content_text,0,500) !!}
                             </div>
+                            <button class="btn btn-primary">Inicia sesión para seguir</button>
                         @endif
 
                         <style>
