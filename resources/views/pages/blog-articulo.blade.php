@@ -59,8 +59,8 @@
                             <div class="hidde-5">
                                 {!! $article->content_text !!}
                             </div>
-                            <div class="about-one__btn">
-                                <a href="" class="thm-btn">Inicia sesión para seguir</a>
+                            <div class="about-one__btn" style="text-align: right;">
+                                <a href="{{ route('login') }}" class="thm-btn">Inicia sesión para seguir</a>
                             </div>
                         @endif
 
