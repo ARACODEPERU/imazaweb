@@ -1,7 +1,7 @@
 @extends('layouts.webpage')
 
 @section('content')
-    
+
 
     <!--Page Header Start-->
     <section class="page-header clearfix" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
@@ -37,14 +37,14 @@
                     <div class="news-details__left">
                         <div class="blog-one__single style2">
                             <div class="blog-one__single-img">
-                                <img src="assets/images/blog/news-details-img1.jpg" alt=""/>
+                                <img src="{{ $article->image }}" alt=""/>
                             </div>
                             <div class="blog-one__single-content">
                                 <div class="blog-one__single-content-overlay-mata-info">
                                     <ul class="list-unstyled">
-                                        <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                        <li><a href="#"><span class="icon-user"></span>Admin </a></li>
-                                        <li><a href="#"><span class="icon-chat"></span> Comments</a></li>
+                                        <li><a href="#"><span class="icon-clock"></span>{{ formatShortMonth($article->created_at) }}</a></li>
+                                        <li><a href="#"><span class="icon-user"></span>{{ $article->author->name }} </a></li>
+                                        {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
                                     </ul>
                                 </div>
                                 <h2 class="blog-one__single-content-title">
@@ -56,7 +56,7 @@
                         @if (Auth::check())
                             {!! $article->content_text !!}
                         @else
-                            {!! substr($article->content_text,0,50) !!}
+                            {!! substr($article->content_text,0,500) !!}
                         @endif
 
 
