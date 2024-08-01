@@ -53,7 +53,13 @@
                             </div>
                         </div>
 
-                        {!! $article->content_text !!}
+                        @if (Auth::check())
+                            {!! $article->content_text !!}
+                        @else
+                            {!! substr($article->content_text,0,50) !!}
+                        @endif
+
+
 
                         <!--Start News Details Bottom -->
                         <div class="news-details__bottom">
