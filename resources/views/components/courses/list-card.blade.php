@@ -19,7 +19,7 @@
                             </div>
                             <div class="courses-one__single-content">
                                 <div class="courses-one__single-content-overlay-img">
-                                    <img src="{{ $course->course->teacher->person->image }}"
+                                    <img src="{{ asset('storage/'.$course->course->teacher->person->image) }}"
                                         alt="" />
                                 </div>
                                 <h6 class="courses-one__single-content-name">Kevin Martin</h6>
