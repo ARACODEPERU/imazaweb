@@ -53,7 +53,7 @@
                             </div>
                         </div>
 
-                        {{ $article->content_text }}
+                        { !! $article->content_text !! }
 
                         <!--Start News Details Bottom -->
                         <div class="news-details__bottom">
