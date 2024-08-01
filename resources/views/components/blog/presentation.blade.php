@@ -21,7 +21,7 @@
                                 </ul>
                             </div>
                             <h2 class="blog-one__single-content-title">
-                                <a href="news-details.html">
+                                <a href="{{ route('blog_article_by_url', $blog->url) }}">
                                     {{ $blog->title }}
                                 </a>
                                 </h2>

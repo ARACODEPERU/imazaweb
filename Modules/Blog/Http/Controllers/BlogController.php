@@ -79,7 +79,7 @@ class BlogController extends Controller
 
         $article->increment('views');
 
-        return view('blog::kentha.article', [
+        return view('pages.blog-articulo', [
             'categories'        => $categories,
             'article'           => $article,
             'latest_articles'   => $latest_articles
