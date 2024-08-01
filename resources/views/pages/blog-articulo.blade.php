@@ -59,7 +59,10 @@
                             <div class="hidde-5">
                                 {!! $article->content_text !!}
                             </div>
-                            <button class="btn btn-primary">Inicia sesión para seguir</button>
+                            <br>
+                            <div class="about-one__btn">
+                                <a href="" class="thm-btn">Inicia sesión para seguir</a>
+                            </div>
                         @endif
 
                         <style>
