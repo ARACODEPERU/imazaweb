@@ -47,20 +47,13 @@
                                         <li><a href="#"><span class="icon-chat"></span> Comments</a></li>
                                     </ul>
                                 </div>
-                                <h2 class="blog-one__single-content-title">Helping Answers Stand out in Discussions</h2>
+                                <h2 class="blog-one__single-content-title">
+                                    {{ $article->title }}
+                                </h2>
                             </div>
                         </div>
 
-                        <div class="news-details__text1">
-                            <p>Tliq is notm hendr erit a augue insu image pellen tes que id erat quis sollicitud. Lorem ipsum dolor sit amet, consectetur adipiscing ullam blandit hendrerit faucibus suspendisse. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-                        </div>
-                        <div class="news-details__text2">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum ley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-
-                        <div class="news-details__text3">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version.</p>
-                        </div>
+                        {{ $article->content_text }}
 
                         <!--Start News Details Bottom -->
                         <div class="news-details__bottom">
