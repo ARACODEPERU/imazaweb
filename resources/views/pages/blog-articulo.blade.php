@@ -69,7 +69,7 @@
                         <style>
                             .hidde-5{
                                 overflow: hidden;
-                                max-height: 7em;
+                                max-height: 5em;
                                 line-height: 1.2em;
                             }
                         </style>
