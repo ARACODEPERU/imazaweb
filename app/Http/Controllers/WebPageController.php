@@ -30,4 +30,9 @@ class WebPageController extends Controller
             'listcard' => $this->listcard
         ]);
     }
+    
+    public function construction()
+    {
+        return view('pages.construction');
+    }
 }

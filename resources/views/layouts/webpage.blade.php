@@ -40,12 +40,13 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom-responsive.css') }}" />
+
 </head>
 
 <body>
 
     <div class="preloader">
-        <img class="preloader__image" width="60" src="{{ URL('themes/imazaweb/images/loader.png') }}"
+        <img class="preloader__image" width="350" src="{{ URL('themes/imazaweb/images/logoLoader.png') }}"
             alt="" />
     </div>
 
@@ -166,6 +167,10 @@
         myModal.addEventListener('shown.bs.modal', function () {
         myInput.focus()
         })
+    </script>
+
+    <script>
+        // josh
     </script>
 
 

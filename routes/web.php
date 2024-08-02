@@ -24,8 +24,11 @@ use Modules\Blog\Http\Controllers\BlogController;
 
 
 // pagina web con otra base 
-Route::get('/', [WebPageController::class, 'index'])
+Route::get('/home', [WebPageController::class, 'index'])
     ->name('index_main');
+
+    Route::get('/', [WebPageController::class, 'construction'])
+    ->name('construction');
 
 Route::get('/computer/store', [LandingController::class, 'computerStore'])->name('index_computer_store');
 
