@@ -60,8 +60,8 @@
                                 {!! $article->content_text !!}
                             </div>
                             <div class="about-one__btn" style="text-align: right;">
-                                <a href="" class="thm-btn"  style="padding: 5px 25px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Inicia sesión para seguir
+                                <a href="" class="thm-btn"  style="padding: 5px 25px;" data-bs-toggle="modal" data-bs-target="#login">
+                                    Login / Registrar
                                 </a>
                             </div>
                         @endif
@@ -104,7 +104,7 @@
                         <!--End Author One -->
 
                         <!--Start Comment One -->
-                        <div class="comment-one">
+                        {{-- <div class="comment-one">
                             <h3 class="comment-one__title">2 Comments</h3>
                             <div class="comment-one__single">
                                 <div class="comment-one__image">
@@ -138,11 +138,11 @@
                                     <p>Cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs <br>condmentum lightly believable. If you are going to use a of <br>you need to be sure there.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--End Comment One -->
 
                         <!--Start Comment Form -->
-                        <div class="comment-form">
+                        {{-- <div class="comment-form">
                             <h3 class="comment-form__title">Leave a Comment</h3>
                             <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated"
                                 novalidate="novalidate">
@@ -167,7 +167,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> --}}
                         <!--End Comment Form -->
                     </div>
                 </div>
@@ -260,7 +260,7 @@
     <!--News Details End-->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="login-7">
@@ -275,7 +275,7 @@
                                         <div class="form-section align-self-center">
                                             <div class="btn-section clearfix">
                                                 <a href="login-7.html" class="link-btn active btn-1 active-bg default-bg">Login</a>
-                                                <a href="register-7.html" class="link-btn btn-2">Register</a>
+                                                <a href="register-7.html" class="link-btn btn-2">Registrar</a>
                                             </div>
                                             <div class="logo">
                                                 <a href="login-7.html">
@@ -313,7 +313,8 @@
                                         </div>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-info">
                                         <div class="form-section align-self-center">
@@ -341,14 +342,14 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Ape. Paterno:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ape. Paterno" aria-label="Full Name">
+                                                            <label for="first_field" class="form-label">Ap. Paterno:</label>
+                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ap. Paterno" aria-label="Full Name">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Ape. Materno:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ape. Materno" aria-label="Full Name">
+                                                            <label for="first_field" class="form-label">Ap. Materno:</label>
+                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ap. Materno" aria-label="Full Name">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
