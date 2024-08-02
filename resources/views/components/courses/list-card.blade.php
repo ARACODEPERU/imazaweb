@@ -41,6 +41,9 @@
                                     </div>
                                 </div> --}}
                                 <p class="courses-one__single-content-price">S/ {{ $course->price }}</p>
+                                <a href="" class="thm-btn" style="padding: 5px 25px; font-size: 12px;">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar 
+                                </a>
                                 {{-- <ul class="courses-one__single-content-courses-info list-unstyled">
                                     <li>2 Lessons</li>
                                     <li>10 Hours</li>
