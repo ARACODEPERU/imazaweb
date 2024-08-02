@@ -40,6 +40,7 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom-responsive.css') }}" />
+
 </head>
 
 <body>
@@ -166,6 +167,10 @@
         myModal.addEventListener('shown.bs.modal', function () {
         myInput.focus()
         })
+    </script>
+
+    <script>
+        // josh
     </script>
 
 
