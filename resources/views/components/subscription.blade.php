@@ -5,7 +5,8 @@
             <div class="col-xl-6 col-lg-6">
                 <div class="newsletter-one__left">
                     <div class="section-title">
-                        <h2 class="section-title__title">Subscribe to Our <br>Newsletter to Get Daily
+                        <h2 class="section-title__title">
+                            Subscribe to Our <br>Newsletter to Get Daily
                             <br>Content!
                         </h2>
                     </div>
