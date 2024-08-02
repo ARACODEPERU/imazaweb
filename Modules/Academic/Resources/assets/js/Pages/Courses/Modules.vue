@@ -133,10 +133,11 @@
 
     const saveContent = () => {
         btnContentLoading.value = true;
-        axios.post(route('aca_courses_module_themes_content_store'), contentForm,{
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
+        axios({
+            method: 'post',
+            url: route('aca_courses_module_themes_content_store'),
+            data: contentForm,
+            headers: {'Content-Type': 'multipart/form-data'}
         }).then((response) => {
             if(response.data.success){
                 let newContent = response.data.content;
