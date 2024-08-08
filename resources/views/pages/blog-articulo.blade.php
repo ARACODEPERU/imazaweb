@@ -27,8 +27,6 @@
     <!--Page Header End-->
 
 
-
-
     <!--News Details Start-->
     <section class="news-details">
         <div class="container">
@@ -390,105 +388,105 @@
         .form-control:focus {
             box-shadow: none;
         }
-/** Login 7 start **/
-.login-7-inner {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    padding: 30px 0;
-}
+        /** Login 7 start **/
+        .login-7-inner {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 30px 0;
+        }
 
-.login-7-inner:before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: url(../img/img-7.jpg) top left repeat;
-    z-index: -99;
-}
+        .login-7-inner:before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(../img/img-7.jpg) top left repeat;
+            z-index: -99;
+        }
 
-.login-7-bg{
-    background-image: linear-gradient(to bottom, #9143f9, #23067a);
-}
+        .login-7-bg{
+            background-image: linear-gradient(to bottom, #9143f9, #23067a);
+        }
 
-.login-7-inner #particles-js {
-    background-size: cover;
-    background-position: 50% 50%;
-    position: fixed;
-    min-height: 100vh;
-    width: 100%;
-    z-index: -999;
-}
+        .login-7-inner #particles-js {
+            background-size: cover;
+            background-position: 50% 50%;
+            position: fixed;
+            min-height: 100vh;
+            width: 100%;
+            z-index: -999;
+        }
 
-.login-7 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Jost', sans-serif;
-}
+        .login-7 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+            font-family: 'Jost', sans-serif;
+        }
 
-.login-7 .logo {
-    top: 80px;
-    position: absolute;
-}
+        .login-7 .logo {
+            top: 80px;
+            position: absolute;
+        }
 
-.login-7 .logo img {
-    height: 30px;
-}
+        .login-7 .logo img {
+            height: 30px;
+        }
 
-.login-7 .form-info {
-    background: #fff;
-    border-radius: 0;
-    max-width: 580px;
-    margin: 0 auto;
-}
+        .login-7 .form-info {
+            background: #fff;
+            border-radius: 0;
+            max-width: 580px;
+            margin: 0 auto;
+        }
 
-.login-7 .form-section {
-    padding: 160px 80px 60px;
-    border-radius: 10px 0 0 10px;
-    text-align: left;
-    position: relative;
-}
+        .login-7 .form-section {
+            padding: 160px 80px 60px;
+            border-radius: 10px 0 0 10px;
+            text-align: left;
+            position: relative;
+        }
 
-.login-7 label {
-    color: #535353;
-    font-size: 16px;
-    margin-bottom: 5px;
-}
+        .login-7 label {
+            color: #535353;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
 
-.login-7 .form-section p{
-    font-size: 16px;
-    color: #535353;
-}
+        .login-7 .form-section p{
+            font-size: 16px;
+            color: #535353;
+        }
 
-.login-7 .form-section a{
-    color: #535353;
-    text-decoration: none;
-    font-size: 16px;
-}
+        .login-7 .form-section a{
+            color: #535353;
+            text-decoration: none;
+            font-size: 16px;
+        }
 
-.login-7 .form-section p {
-    margin-bottom: 30px;
-}
+        .login-7 .form-section p {
+            margin-bottom: 30px;
+        }
 
-.login-7 .form-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
-}
+        .login-7 .form-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
 
-.login-7 .form-section .social-list li {
-    display: inline-block;
-    margin-bottom: 5px;
-}
+        .login-7 .form-section .social-list li {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
 
-.login-7 .form-section .thembo {
-    margin-left: 4px;
-}
+        .login-7 .form-section .thembo {
+            margin-left: 4px;
+        }
 
 .login-7 .form-section h1 {
     font-size: 27px;

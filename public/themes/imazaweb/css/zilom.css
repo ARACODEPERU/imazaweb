@@ -2727,13 +2727,14 @@ ul {
     background-position: center center;
     background-attachment: scroll;
     z-index: 1;
+    height: 230px;
 }
 
 .page-header:before {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 230px;
     width: 100%;
     content: "";
     background: rgba(var(--thm-black-rgb), 0.5);
@@ -2743,7 +2744,7 @@ ul {
 .page-header__wrapper {
     position: relative;
     display: block;
-    padding-top: 150px;
+    padding-top: 90px;
     z-index: 3;
 }
 
@@ -2765,6 +2766,7 @@ ul {
     position: relative;
     display: block;
     float: right;
+    margin-top: -45px;
 }
 
 .page-header__menu-list {

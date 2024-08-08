@@ -24,13 +24,23 @@ class WebPageController extends Controller
             ->get();
 
     }
+
     public function index()
     {
         return view('pages.home', [
             'listcard' => $this->listcard
         ]);
     }
-    
+
+    public function quienessomos()
+    {
+        return view('pages.quienes-somos');
+    }
+
+    public function cursodescripcion()
+    {
+        return view('pages.curso-descripcion');
+    }
     public function construction()
     {
         return view('pages.construction');

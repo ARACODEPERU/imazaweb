@@ -27,8 +27,9 @@ use Modules\Blog\Http\Controllers\BlogController;
 Route::get('/home', [WebPageController::class, 'index'])
     ->name('index_main');
 
-    Route::get('/', [WebPageController::class, 'construction'])
-    ->name('construction');
+Route::get('/', [WebPageController::class, 'construction'])->name('construction');
+Route::get('/quienes-somos', [WebPageController::class, 'quienessomos'])->name('web_quienes_somos');
+Route::get('/curso-descripcion', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
 
 Route::get('/computer/store', [LandingController::class, 'computerStore'])->name('index_computer_store');
 
