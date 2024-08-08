@@ -206,7 +206,7 @@
                                 @foreach ($latest_articles as $item )
                                 <li>
                                     <div class="sidebar__post-image">
-                                        <img src="{{ $item->imagen }}" alt="">
+                                        <img style="width: 50px;" src="{{ $item->imagen }}" alt="">
                                     </div>
                                     <div class="sidebar__post-content">
                                         <ul class="list-unstyled">
