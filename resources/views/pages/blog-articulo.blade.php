@@ -10,12 +10,12 @@
                 <div class="col-xl-12">
                     <div class="page-header__wrapper clearfix">
                         <div class="page-header__title">
-                            <h2>News</h2>
+                            <h2>Blog</h2>
                         </div>
                         <div class="page-header__menu">
                             <ul class="page-header__menu-list list-unstyled clearfix">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">News</li>
+                                <li><a href="{{ route('index_main') }}">Home</a></li>
+                                <li class="active">Blog</li>
                             </ul>
                         </div>
                     </div>

@@ -4,7 +4,7 @@
             <div class="main-header--one__top-inner clearfix">
                 <div class="main-header--one__top-left">
                     <div class="main-header--one__top-logo">
-                        <a href="index.html">
+                        <a href="{{ route('index_main') }}">
                             <img style="width: 250px;" src="{{ asset('storage/'.$header[0]->content) }}"
                                 alt="" /> 
 
