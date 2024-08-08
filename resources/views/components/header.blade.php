@@ -17,11 +17,11 @@
                 <div class="main-header--one__top-right clearfix">
                     <ul class="main-header--one__top-social-link list-unstyled clearfix">
                         <li><a href="{{ $header[1]->content }}" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="{{ $header[2]->content }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="{{ $header[3]->content }}" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        {{-- <li><a href="{{ $header[2]->content }}" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="{{ $header[3]->content }}" target="_blank"><i class="fab fa-youtube"></i></a></li> --}}
                         <li><a href="{{ $header[4]->content }}" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-                        <li><a href="{{ $header[5]->content }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="{{ $header[6]->content }}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        {{-- <li><a href="{{ $header[5]->content }}" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="{{ $header[6]->content }}" target="_blank"><i class="fab fa-twitter"></i></a></li> --}}
                     </ul>
 
                     <div class="main-header--one__top-contact-info clearfix">
