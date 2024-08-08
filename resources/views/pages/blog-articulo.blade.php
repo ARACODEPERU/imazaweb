@@ -79,20 +79,21 @@
                         <div class="news-details__bottom">
                             <p class="news-details__tags">
                                 <span>Tags</span>
-                                <a href="#">Education</a>
-                                <a href="#">Courses</a>
+                                @foreach ( $article->keywords as $tag)
+                                    <a href="#">{{ $tag }}</a>
+                                @endforeach
                             </p>
-                            <div class="news-details__social-list">
+                            {{-- <div class="news-details__social-list">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="clr-fb"><i class="fab fa-facebook"></i></a>
                                 <a href="#" class="clr-dri"><i class="fab fa-dribbble"></i></a>
                                 <a href="#" class="clr-ins"><i class="fab fa-instagram"></i></a>
-                            </div>
+                            </div> --}}
                         </div>
                         <!--End News Details Bottom -->
 
                         <!--Start Author One -->
-                        <div class="author-one">
+                        {{-- <div class="author-one">
                             <div class="author-one__image">
                                 <img src="assets/images/blog/news-details-author.jpg" alt="">
                             </div>
@@ -100,7 +101,7 @@
                                 <h3>Kevin Martin</h3>
                                 <p>Cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum lightly believable. If you are going to use a of you need to be sure there.</p>
                             </div>
-                        </div>
+                        </div> --}}
                         <!--End Author One -->
 
                         <!--Start Comment One -->
@@ -175,14 +176,14 @@
                 <!--Start Sidebar-->
                 <div class="col-xl-4 col-lg-5">
                     <div class="sidebar">
-                        <div class="sidebar__single sidebar__search wow fadeInUp animated animated animated" data-wow-delay="0.1s" data-wow-duration="1200m">
+                        {{-- <div class="sidebar__single sidebar__search wow fadeInUp animated animated animated" data-wow-delay="0.1s" data-wow-duration="1200m">
                             <form action="#" class="sidebar__search-form">
                                 <input type="search" placeholder="Search">
                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
-                        </div>
+                        </div> --}}
                         <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.1s">
-                            <h3 class="sidebar__title">Recent Posts</h3>
+                            <h3 class="sidebar__title">Curso recomendado</h3>
                             <ul class="sidebar__post-list list-unstyled">
                                 <li>
                                     <div class="sidebar__post-image">
@@ -191,66 +192,50 @@
                                     <div class="sidebar__post-content">
                                         <ul class="list-unstyled">
                                             <li>
-                                                <p><a href="#"><i class="far fa-user-circle"></i>Admin</a></p>
                                                 <h3><a href="news-details.html">Learn how access to new courses</a></h3>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
+                            </ul>
+                        </div>
 
+                        <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.1s">
+                            <h3 class="sidebar__title">Posts recientes</h3>
+                            <ul class="sidebar__post-list list-unstyled">
+                                @foreach ($latest_articles as $item )
                                 <li>
                                     <div class="sidebar__post-image">
-                                        <img src="assets/images/blog/recent-posts-img2.png" alt="">
+                                        <img src="{{ $item->imagen }}" alt="">
                                     </div>
                                     <div class="sidebar__post-content">
                                         <ul class="list-unstyled">
                                             <li>
-                                                <p><a href="#"><i class="far fa-user-circle"></i>Admin</a></p>
-                                                <h3><a href="news-details.html">Learn how access to new courses</a></h3>
+                                                <p><a href="#"><i class="far fa-user-circle"></i>{{ $item->author->name }}</a></p>
+                                                <h3><a href="news-details.html">{{ $item->title }}</a></h3>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-
-                                <li>
-                                    <div class="sidebar__post-image">
-                                        <img src="assets/images/blog/recent-posts-img3.png" alt="">
-                                    </div>
-                                    <div class="sidebar__post-content">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <p><a href="#"><i class="far fa-user-circle"></i>Admin</a></p>
-                                                <h3><a href="news-details.html">Learn how access to new courses</a></h3>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
 
                         <div class="sidebar__single sidebar__category wow fadeInUp animated" data-wow-delay="0.3s">
-                            <h3 class="sidebar__title">All Categories</h3>
+                            <h3 class="sidebar__title">Todas las categorias</h3>
                             <ul class="sidebar__category-list list-unstyled">
-                                <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Programing</a></li>
-                                <li class="active"><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Teaching & Academics</a></li>
-                                <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Health & Fitness</a></li>
-                                <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Business</a></li>
-                                <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Art & Design</a></li>
-                                <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>Education</a></li>
+                                @foreach ( $categories as $category)
+                                    <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>{{ $category->description }}</a></li>
+                                @endforeach
                             </ul>
                         </div>
 
-                        <div class="sidebar__single sidebar__tags wow fadeInUp animated" data-wow-delay="0.5s">
+                        {{-- <div class="sidebar__single sidebar__tags wow fadeInUp animated" data-wow-delay="0.5s">
                             <h3 class="sidebar__title">Tags</h3>
                             <ul class="sidebar__tags-list list-unstyled">
-                                <li><a href="#">Education</a></li>
-                                <li><a href="#">Programing</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Academics</a></li>
-                                <li><a href="#">Art</a></li>
-                                <li><a href="#">Teachings</a></li>
+                                    <li><a href="#">{{ $etiqueta }}</a></li>
                             </ul>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <!--End Sidebar-->

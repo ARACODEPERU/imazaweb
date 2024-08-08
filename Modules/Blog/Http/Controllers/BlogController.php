@@ -67,12 +67,7 @@ class BlogController extends Controller
                 ->first();
         }
 
-        $latest_articles = BlogArticle::select(
-            'title',
-            'imagen',
-            'url',
-            'created_at'
-        )
+        $latest_articles = BlogArticle::with('author')
             ->where('status', true)
             ->latest('created_at') // Ordena por la columna created_at en orden descendente
             ->take(4) // Limita el resultado a 4 registros
@@ -80,6 +75,7 @@ class BlogController extends Controller
 
         $company = Company::first();
         $article->increment('views');
+
 
         return view('pages.blog-articulo', [
             'categories'        => $categories,

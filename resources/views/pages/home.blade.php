@@ -30,6 +30,6 @@
     <x-blog.presentation />
     <!--Blog One End-->
     <!--Start Newsletter One-->
-    <x-subscription />
+    {{-- <x-subscription /> --}}
     <!--End Newsletter One-->
 @stop
