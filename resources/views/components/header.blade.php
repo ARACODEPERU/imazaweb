@@ -74,7 +74,7 @@
                                     -->
                                 </li>
                                 <li>
-                                    <a href="web_blog">Blog</a>
+                                    <a href="blog_principal">Blog</a>
                                     <!--
                                     <ul>
                                         <li><a href="news.html">News</a></li>
@@ -82,7 +82,7 @@
                                     </ul>
                                     -->
                                 </li>
-                                <li><a href="about.html">Contacto</a></li>
+                                <li><a href="">Contacto</a></li>
                             </ul>
                         </div>
 
