@@ -266,7 +266,7 @@
                 <div class="col-xl-4 col-lg-4">
                     <div class="course-details__sidebar">
                         <div class="course-details__price wow fadeInUp animated" data-wow-delay="0.1s">
-                            <h2 class="course-details__price-amount">S/ {{ $item->price }}<span><del>S/ {{ $item->price*1.2 }}</del></span></h2>
+                            <h2 class="course-details__price-amount">S/ {{ $item->price }}<span><del>S/ {{ substr_replace($item->price*1.2, '0', -1) }}</del></span></h2>
                             <div class="course-details__price-btn">
                                 <a href="" onclick="alert({{ $item->id }})" class="thm-btn">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i>

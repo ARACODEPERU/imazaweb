@@ -61,7 +61,7 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 filter-item {{ $course->category_description }}">
                         <div class="courses-one__single wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <div class="courses-one__single-img">
-                                <a href="{{ route('web_curso_descripcion', $course->id) }}"><img  href="{{ route('web_curso_descripcion', $course->id) }}" src="{{ asset('storage/'.$course->course->image) }}" alt=""/></a>
+                                <a href="{{ route('web_curso_descripcion', $course->id) }}"><img src="{{ asset('storage/'.$course->course->image) }}" alt=""/></a>
                                 <div class="overlay-text">
                                     <p>{{ $course->category_description }}</p>
                                 </div>
