@@ -35,7 +35,7 @@
                         <!--Start Single Courses One-->
                         <div class="courses-one__single style2 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <div class="courses-one__single-img">
-                                <img src="assets/images/resources/course-details-img1.jpg" alt=""/>
+                                <img src="{{ asset('themes/imazaweb/images/resources/course-details-img1.jpg') }}" alt=""/>
                                 <div class="overlay-text">
                                     <p>Categoria</p>
                                 </div>
@@ -64,50 +64,6 @@
                                     <p>Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                                 </div>
 
-                                <div class="course-details__content-text2">
-                                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of lorem ipsum amet finibus eros.  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-                                </div>
-
-                                <div class="course-details__content-list">
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-confirmation"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>It has survived not only five centuries</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-confirmation"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Lorem Ipsum is simply dummy text of the new design</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-confirmation"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Printng and type setting ipsum</p>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="icon">
-                                                <span class="icon-confirmation"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Take a look at our round up of the best shows</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
                         </div>
                         <!--End Single Courses One-->
@@ -117,8 +73,10 @@
                             <h2 class="course-details__curriculum-title">Plan Curricular</h2>
                             <!--Start Single Course Details Curriculum-->
                             <div class="course-details__curriculum-single">
-                                <h3 class="course-details__curriculum-single-title">Starting Beginners Level Course</h3>
-                                <p class="course-details__curriculum-single-text">Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.</p>
+                                <h3 class="course-details__curriculum-single-title" style="color: #000;">Título del Módulo</h3>
+                                {{-- <p class="course-details__curriculum-single-text">
+                                    Aelltes port lacus quis enim var sed efficitur turpis gilla
+                                </p> --}}
                                 <ul class="course-details__curriculum-list list-unstyled">
                                     <li>
                                         <div class="course-details__curriculum-list-left">
@@ -126,23 +84,7 @@
                                                 <i class="fa fa-play" aria-hidden="true"></i>
                                             </div>
                                             <a href="#" class="course-details__curriculum-list-left-title">Introduction to Editing</a>
-                                            <span>Preview</span>
-                                        </div>
-                                        <div class="course-details__curriculum-list-right">
-                                            <p>16 minutes</p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                            </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Overview of Editing</a>
-                                            <span>Preview</span>
-                                        </div>
-                                        <div class="course-details__curriculum-list-right">
-                                            <p>10 minutes</p>
+                                            {{-- <span>Preview</span> --}}
                                         </div>
                                     </li>
 
@@ -162,29 +104,22 @@
                                             </div>
                                             <a href="#" class="course-details__curriculum-list-left-title">Quiz</a>
                                         </div>
-                                        <div class="course-details__curriculum-list-right">
-                                            <p>6 questions</p>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
-                            <!--End Single Course Details Curriculum-->
-
-                            <!--Start Single Course Details Curriculum-->
-                            <div class="course-details__curriculum-single mar-buttom0">
-                                <h3 class="course-details__curriculum-single-title">Intermediate Level Course</h3>
-                                <p class="course-details__curriculum-single-text">Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since.</p>
-                                <ul class="course-details__curriculum-list style2 list-unstyled">
+                            <div class="course-details__curriculum-single">
+                                <h3 class="course-details__curriculum-single-title" style="color: #000;">Título del Módulo</h3>
+                                {{-- <p class="course-details__curriculum-single-text">
+                                    Aelltes port lacus quis enim var sed efficitur turpis gilla
+                                </p> --}}
+                                <ul class="course-details__curriculum-list list-unstyled">
                                     <li>
                                         <div class="course-details__curriculum-list-left">
                                             <div class="course-details__curriculum-list-left-icon">
                                                 <i class="fa fa-play" aria-hidden="true"></i>
                                             </div>
                                             <a href="#" class="course-details__curriculum-list-left-title">Introduction to Editing</a>
-                                            <span>Preview</span>
-                                        </div>
-                                        <div class="course-details__curriculum-list-right">
-                                            <p>16 minutes</p>
+                                            {{-- <span>Preview</span> --}}
                                         </div>
                                     </li>
 
@@ -193,7 +128,7 @@
                                             <div class="course-details__curriculum-list-left-icon">
                                                 <i class="fa fa-folder" aria-hidden="true"></i>
                                             </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Introduction to Editing</a>
+                                            <a href="#" class="course-details__curriculum-list-left-title">Basic Editing Technology</a>
                                         </div>
                                     </li>
 
@@ -204,13 +139,11 @@
                                             </div>
                                             <a href="#" class="course-details__curriculum-list-left-title">Quiz</a>
                                         </div>
-                                        <div class="course-details__curriculum-list-right">
-                                            <p>6 questions</p>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
                             <!--End Single Course Details Curriculum-->
+
                         </div>
                         <!--End Course Details Curriculum-->
 
