@@ -43,7 +43,7 @@
                                 </div>
                                 <h4 class="courses-one__single-content-title">{{ $item->name }}</h4>
                                 <h6 class="courses-one__single-content-name">
-                                    <span>{{ formatShortMonth($item->created_at) }}--> Campo no existe</span>
+                                    <span>{{ $course->course_day."/".$course->course_month."/".$course->course_year }}</span>
                                 </h6>
                                 {{-- <div class="courses-one__single-content-review-box">
                                     <ul class="list-unstyled">
