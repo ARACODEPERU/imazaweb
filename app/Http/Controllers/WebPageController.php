@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Modules\CMS\Entities\CmsSection;
+use Modules\Onlineshop\Entities\OnliItem;
+use Modules\Academic\Entities\AcaCourse;
+use Modules\Academic\Entities\AcaCategoryCourse;
+
+
+
 
 class WebPageController extends Controller
 {
@@ -39,12 +45,41 @@ class WebPageController extends Controller
 
     public function cursos()
     {
-        return view('pages.cursos');
+        $courses = OnliItem::with('course')->get();
+        $categories = AcaCategoryCourse::all();
+
+        return view('pages.cursos',[
+            'courses' => $courses,
+            'categories' => $categories
+        ]);
     }
 
-    public function cursodescripcion()
+    public function cursodescripcion($id)
     {
-        return view('pages.curso-descripcion');
+        $item = OnliItem::find($id);
+
+        $course = AcaCourse::with('category')
+            ->with('modality')
+            ->with('modules')
+            ->with('teachers.teacher.person.resumes')
+            ->with('brochure')
+            ->with('agreements')
+            ->where('id', $item->item_id)
+            ->first();
+
+            $latest_courses = OnliItem::with('course')
+            ->orderBy('id', 'desc')
+            ->where('id', '!=', $id)
+            ->take(10)
+            ->get()
+            ->shuffle()
+            ->take(3);
+
+        return view('pages.curso-descripcion',[
+            'course' => $course,
+            'item' => $item,
+            'latest_courses' => $latest_courses
+        ]);
     }
 
     public function construction()

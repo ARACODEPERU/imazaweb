@@ -11,7 +11,7 @@
                     <div class="page-header__menu">
                         <ul class="page-header__menu-list list-unstyled clearfix">
                             <li><a href="{{ route('index_main') }}">Home</a></li>
-                            <li class="active">Título del Curso / Taller</li>
+                            <li class="active">{{ $item->name }}</li>
                         </ul>
                     </div>
                 </div>
@@ -32,18 +32,18 @@
                         <!--Start Single Courses One-->
                         <div class="courses-one__single style2 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <div class="courses-one__single-img">
-                                <img src="{{ asset('themes/imazaweb/images/resources/course-details-img1.jpg') }}" alt=""/>
+                                <img src="{{ asset($item->image) }}" alt=""/>
                                 <div class="overlay-text">
-                                    <p>Categoria</p>
+                                    <p>{{ $item->category_description }}</p>
                                 </div>
                             </div>
                             <div class="courses-one__single-content">
                                 <div class="courses-one__single-content-overlay-img">
                                     <img src="assets/images/resources/course-details-overlay-img.png" alt=""/>
                                 </div>
-                                <h4 class="courses-one__single-content-title">Título del curso / taller</h4>
+                                <h4 class="courses-one__single-content-title">{{ $item->name }}</h4>
                                 <h6 class="courses-one__single-content-name">
-                                    <span>Aqui va la fecha de inicio</span>
+                                    <span>{{ formatShortMonth($item->created_at) }}--> Campo no existe</span>
                                 </h6>
                                 {{-- <div class="courses-one__single-content-review-box">
                                     <ul class="list-unstyled">
@@ -58,7 +58,7 @@
                                     </div>
                                 </div> --}}
                                 <div class="course-details__content-text1">
-                                    <p>Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                    <p>{{ $item->description }}</p>
                                 </div>
 
                             </div>
@@ -68,78 +68,47 @@
                         <!--Start Course Details Curriculum-->
                         <div class="course-details__curriculum">
                             <h2 class="course-details__curriculum-title">Plan Curricular</h2>
-                            <!--Start Single Course Details Curriculum-->
-                            <div class="course-details__curriculum-single">
-                                <h3 class="course-details__curriculum-single-title" style="color: #000;">Título del Módulo</h3>
-                                {{-- <p class="course-details__curriculum-single-text">
-                                    Aelltes port lacus quis enim var sed efficitur turpis gilla
-                                </p> --}}
-                                <ul class="course-details__curriculum-list list-unstyled">
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                            </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Introduction to Editing</a>
-                                            {{-- <span>Preview</span> --}}
-                                        </div>
-                                    </li>
+                            @foreach ( $course->modules as $module )
+                                <div class="course-details__curriculum-single">
+                                    <h3 class="course-details__curriculum-single-title" style="color: #000;">{{ $module->description }}</h3>
+                                    {{-- <p class="course-details__curriculum-single-text">
+                                        Aelltes port lacus quis enim var sed efficitur turpis gilla
+                                    </p> --}}
+                                    <ul class="course-details__curriculum-list list-unstyled">
+                                        @foreach ($module->themes as $theme )
+                                            <li>
+                                                <div class="course-details__curriculum-list-left">
+                                                    <div class="course-details__curriculum-list-left-icon">
+                                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                                    </div>
+                                                    <a href="#" class="course-details__curriculum-list-left-title">{{ $theme->description }}</a>
+                                                    {{-- <span>Preview</span> --}}
+                                                </div>
+                                            </li>
+                                        @endforeach
 
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon">
-                                                <i class="fa fa-folder" aria-hidden="true"></i>
+                                        {{-- <li>
+                                            <div class="course-details__curriculum-list-left">
+                                                <div class="course-details__curriculum-list-left-icon">
+                                                    <i class="fa fa-folder" aria-hidden="true"></i>
+                                                </div>
+                                                <a href="#" class="course-details__curriculum-list-left-title">Basic Editing Technology</a>
                                             </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Basic Editing Technology</a>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon style2">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                        <li>
+                                            <div class="course-details__curriculum-list-left">
+                                                <div class="course-details__curriculum-list-left-icon style2">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                                </div>
+                                                <a href="#" class="course-details__curriculum-list-left-title">Quiz</a>
                                             </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Quiz</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="course-details__curriculum-single">
-                                <h3 class="course-details__curriculum-single-title" style="color: #000;">Título del Módulo</h3>
-                                {{-- <p class="course-details__curriculum-single-text">
-                                    Aelltes port lacus quis enim var sed efficitur turpis gilla
-                                </p> --}}
-                                <ul class="course-details__curriculum-list list-unstyled">
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon">
-                                                <i class="fa fa-play" aria-hidden="true"></i>
-                                            </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Introduction to Editing</a>
-                                            {{-- <span>Preview</span> --}}
-                                        </div>
-                                    </li>
+                                        </li> --}}
+                                    </ul>
+                                </div>
+                            @endforeach
 
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon">
-                                                <i class="fa fa-folder" aria-hidden="true"></i>
-                                            </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Basic Editing Technology</a>
-                                        </div>
-                                    </li>
 
-                                    <li>
-                                        <div class="course-details__curriculum-list-left">
-                                            <div class="course-details__curriculum-list-left-icon style2">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
-                                            </div>
-                                            <a href="#" class="course-details__curriculum-list-left-title">Quiz</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--End Single Course Details Curriculum-->
 
                         </div>
                         <!--End Course Details Curriculum-->
@@ -297,9 +266,9 @@
                 <div class="col-xl-4 col-lg-4">
                     <div class="course-details__sidebar">
                         <div class="course-details__price wow fadeInUp animated" data-wow-delay="0.1s">
-                            <h2 class="course-details__price-amount">S/ 30.00<span><del>S/ 60.00</del></span></h2>
+                            <h2 class="course-details__price-amount">S/ {{ $item->price }}<span><del>S/ {{ $item->price*1.2 }}</del></span></h2>
                             <div class="course-details__price-btn">
-                                <a href="about.html" class="thm-btn">
+                                <a href="" onclick="alert({{ $item->id }})" class="thm-btn">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i>
                                     Agregar al Carrito
                                 </a>
@@ -364,8 +333,8 @@
                             </ul>
                         </div> --}}
 
-                        
-                        <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s" 
+
+                        <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s"
                              style="padding: 15px 25px; text-align:center;">
                             <div class="row">
                                 <div class="col-md-12">
@@ -386,42 +355,23 @@
                             </div>
                         </div>
 
+
                         <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s">
                             <h3 class="course-details__new-courses-title">Nuevos Cursos</h3>
                             <ul class="course-details__new-courses-list list-unstyled">
-                                <li class="course-details__new-courses-list-item">
-                                    <div class="course-details__new-courses-list-item-img">
-                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
-                                    </div>
-                                    <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title">
-                                            <a href="#">Título del curso</a>
-                                        </h4>
-                                        <p class="course-details__new-courses-price">S/ 30.00</p>
-                                    </div>
-                                </li>
-                                <li class="course-details__new-courses-list-item">
-                                    <div class="course-details__new-courses-list-item-img">
-                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
-                                    </div>
-                                    <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title">
-                                            <a href="#">Título del curso</a>
-                                        </h4>
-                                        <p class="course-details__new-courses-price">S/ 30.00</p>
-                                    </div>
-                                </li>
-                                <li class="course-details__new-courses-list-item">
-                                    <div class="course-details__new-courses-list-item-img">
-                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
-                                    </div>
-                                    <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title">
-                                            <a href="#">Título del curso</a>
-                                        </h4>
-                                        <p class="course-details__new-courses-price">S/ 30.00</p>
-                                    </div>
-                                </li>
+                                @foreach ($latest_courses as $latest)
+                                    <li class="course-details__new-courses-list-item">
+                                        <div class="course-details__new-courses-list-item-img">
+                                            <a href="{{ route('web_curso_descripcion', $latest->id) }}"><img src="{{ asset($latest->image) }}" width="90px" alt=""/></a>
+                                        </div>
+                                        <div class="course-details__new-courses-list-item-content">
+                                            <h4 class="course-details__new-courses-list-item-content-title">
+                                                <a href="{{ route('web_curso_descripcion', $latest->id) }}">{{ $latest->name }}</a>
+                                            </h4>
+                                            <p class="course-details__new-courses-price">S/ {{ $latest->price }}</p>
+                                        </div>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
