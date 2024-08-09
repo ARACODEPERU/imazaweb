@@ -5,7 +5,7 @@
                 <div class="main-header--one__top-left">
                     <div class="main-header--one__top-logo">
                         <a href="{{ route('index_main') }}">
-                            <img style="width: 250px;" src="{{ asset('storage/'.$header[0]->content) }}"
+                            <img style="width: 250px; height: 60px;" src="{{ asset('storage/'.$header[0]->content) }}"
                                 alt="" /> 
                             {{-- <img style="width: 250px;"  src="{{  URL('themes/imazaweb/images/resources/logo.png')  }}"
                                     alt="" /> --}}
