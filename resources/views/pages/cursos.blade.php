@@ -61,13 +61,13 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 filter-item {{ $course->category_description }}">
                         <div class="courses-one__single wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <div class="courses-one__single-img">
-                                <img src="{{ asset($course->course->image) }}" alt=""/>
+                                <a href="{{ route('web_curso_descripcion', $course->id) }}"><img src="{{ asset($course->course->image) }}" alt=""/></a>
                                 <div class="overlay-text">
                                     <p>{{ $course->category_description }}</p>
                                 </div>
                             </div>
                             <div class="courses-one__single-content">
-                                <h4 class="courses-one__single-content-title"><a href="course-details.html">{{ $course->name }}</a></h4>
+                                <h4 class="courses-one__single-content-title"><a href="{{ route('web_curso_descripcion', $course->id) }}">{{ $course->name }}</a></h4>
                                 <p class="course-details__new-courses-price" style="margin-bottom: 5px;">S/ {{ $course->price }}</p>
                                 <a href="" onclick="alert({{ $course->id, $course->price }})" class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar al carrito
