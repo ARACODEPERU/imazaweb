@@ -2727,14 +2727,14 @@ ul {
     background-position: center center;
     background-attachment: scroll;
     z-index: 1;
-    height: 230px;
+    height: 180px;
 }
 
 .page-header:before {
     position: absolute;
     top: 0;
     left: 0;
-    height: 230px;
+    height: 180px;
     width: 100%;
     content: "";
     background: rgba(var(--thm-black-rgb), 0.5);
@@ -2766,7 +2766,7 @@ ul {
     position: relative;
     display: block;
     float: right;
-    margin-top: -45px;
+    margin-top: 55px;
 }
 
 .page-header__menu-list {

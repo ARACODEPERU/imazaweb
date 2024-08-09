@@ -37,10 +37,16 @@ class WebPageController extends Controller
         return view('pages.quienes-somos');
     }
 
+    public function cursos()
+    {
+        return view('pages.cursos');
+    }
+
     public function cursodescripcion()
     {
         return view('pages.curso-descripcion');
     }
+
     public function construction()
     {
         return view('pages.construction');

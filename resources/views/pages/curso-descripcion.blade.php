@@ -300,13 +300,16 @@
                 <div class="col-xl-4 col-lg-4">
                     <div class="course-details__sidebar">
                         <div class="course-details__price wow fadeInUp animated" data-wow-delay="0.1s">
-                            <h2 class="course-details__price-amount">$30.00<span><del>$60.00</del></span></h2>
+                            <h2 class="course-details__price-amount">S/ 30.00<span><del>S/ 60.00</del></span></h2>
                             <div class="course-details__price-btn">
-                                <a href="about.html" class="thm-btn">Buy this course</a>
+                                <a href="about.html" class="thm-btn">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i>
+                                    Agregar al Carrito
+                                </a>
                             </div>
                         </div>
 
-                        <div class="course-details__sidebar-meta wow fadeInUp animated" data-wow-delay="0.3s">
+                        {{-- <div class="course-details__sidebar-meta wow fadeInUp animated" data-wow-delay="0.3s">
                             <ul class="course-details__sidebar-meta-list list-unstyled">
                                 <li class="course-details__sidebar-meta-list-item">
                                     <div class="icon">
@@ -362,74 +365,64 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div> --}}
+
+                        
+                        <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s" 
+                             style="padding: 15px 25px; text-align:center;">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="https://api.whatsapp.com/send?phone=51967052506&text=Hola&nbsp;Despega.com&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                        target="_blanck" class="btn btn-success" style="width: 100%;">
+                                        <div style="justify-content: space-between;">
+                                            <div style="float: left; padding: 5px;">
+                                                <img style="width: 50px;"
+                                                    src="{{ asset('themes/imazaweb/images/isotipoNegativo.png') }}" alt="">
+                                            </div>
+                                            <div style="float: left; padding: 5px;">
+                                                Para cualquier consulta <br>
+                                                <b>¡Escribenos al whatsapp!</b>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="course-details__new-courses wow fadeInUp animated" data-wow-delay="0.5s">
-                            <h3 class="course-details__new-courses-title">New Courses</h3>
+                            <h3 class="course-details__new-courses-title">Nuevos Cursos</h3>
                             <ul class="course-details__new-courses-list list-unstyled">
                                 <li class="course-details__new-courses-list-item">
                                     <div class="course-details__new-courses-list-item-img">
-                                        <img src="assets/images/resources/course-details-sidebar-img1.png" alt=""/>
+                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
                                     </div>
                                     <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title"><a href="#">React – The Complete <br>Instruction</a></h4>
-                                        <div class="course-details__new-courses-rateing-box">
-                                            <ul class="list-unstyled">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <div class="course-details__new-courses-rateing-count">
-                                                <span>(4)</span>
-                                            </div>
-                                        </div>
-                                        <p class="course-details__new-courses-price">$30.00</p>
+                                        <h4 class="course-details__new-courses-list-item-content-title">
+                                            <a href="#">Título del curso</a>
+                                        </h4>
+                                        <p class="course-details__new-courses-price">S/ 30.00</p>
                                     </div>
                                 </li>
-
                                 <li class="course-details__new-courses-list-item">
                                     <div class="course-details__new-courses-list-item-img">
-                                        <img src="assets/images/resources/course-details-sidebar-img2.png" alt=""/>
+                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
                                     </div>
                                     <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title"><a href="#">React – The Complete <br>Instruction</a></h4>
-                                        <div class="course-details__new-courses-rateing-box">
-                                            <ul class="list-unstyled">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <div class="course-details__new-courses-rateing-count">
-                                                <span>(4)</span>
-                                            </div>
-                                        </div>
-                                        <p class="course-details__new-courses-price">$30.00</p>
+                                        <h4 class="course-details__new-courses-list-item-content-title">
+                                            <a href="#">Título del curso</a>
+                                        </h4>
+                                        <p class="course-details__new-courses-price">S/ 30.00</p>
                                     </div>
                                 </li>
-
                                 <li class="course-details__new-courses-list-item">
                                     <div class="course-details__new-courses-list-item-img">
-                                        <img src="assets/images/resources/course-details-sidebar-img3.png" alt=""/>
+                                        <img src="{{ asset('themes/imazaweb/images/resources/course-details-sidebar-img1.png') }}" alt=""/>
                                     </div>
                                     <div class="course-details__new-courses-list-item-content">
-                                        <h4 class="course-details__new-courses-list-item-content-title"><a href="#">React – The Complete <br>Instruction</a></h4>
-                                        <div class="course-details__new-courses-rateing-box">
-                                            <ul class="list-unstyled">
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                                <li><i class="fas fa-star"></i></li>
-                                            </ul>
-                                            <div class="course-details__new-courses-rateing-count">
-                                                <span>(4)</span>
-                                            </div>
-                                        </div>
-                                        <p class="course-details__new-courses-price">$30.00</p>
+                                        <h4 class="course-details__new-courses-list-item-content-title">
+                                            <a href="#">Título del curso</a>
+                                        </h4>
+                                        <p class="course-details__new-courses-price">S/ 30.00</p>
                                     </div>
                                 </li>
                             </ul>

@@ -7,7 +7,6 @@
                         <a href="{{ route('index_main') }}">
                             <img style="width: 250px;" src="{{ asset('storage/'.$header[0]->content) }}"
                                 alt="" /> 
-
                             {{-- <img style="width: 250px;"  src="{{  URL('themes/imazaweb/images/resources/logo.png')  }}"
                                     alt="" /> --}}
                         </a>
@@ -62,11 +61,11 @@
                         <div class="left">
                             <ul class="main-menu__list">
                                 <li class="dropdown current">
-                                    <a href="about.html">Home</a>
+                                    <a href="{{ route('index_main') }}">Home</a>
                                 </li>
                                 <li><a href="about.html">Nosotros</a></li>
                                 <li>
-                                    <a href="about.html">Cursos</a>
+                                    <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <!--
                                     <ul>
                                         <li><a href="courses.html">Courses</a></li>
@@ -89,23 +88,19 @@
 
                         <div class="right">
                             <div class="main-menu__right">
-                                <!--
                                 <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Iniciar Sesión</a></li>
+                                        <li><a href="#">Registrarme</a></li>
                                     </ul>
                                 </div>
-                                -->
                                 <div class="main-menu__right-cart-search">
-                                    <!--
                                     <div class="main-menu__right-cart-box">
                                         <a href="#"><span class="icon-shopping-cart"></span></a>
                                     </div>
-                                    <div class="main-menu__right-search-box">
+                                    {{-- <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>
-                                    </div>
-                                    -->
+                                    </div> --}}
                                     <div class="main-menu__right-search-box">
                                         <a href="https://marketingdespega.com/login" target="_blamk" class="thm-btn">Campus Virtual</a>
                                     </div>

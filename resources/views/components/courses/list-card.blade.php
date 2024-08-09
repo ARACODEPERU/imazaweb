@@ -27,28 +27,11 @@
                                     <a href="course-details.html">
                                         {{ $course->name }}
                                     </a>
-                                    </h4>
-                                {{-- <div class="courses-one__single-content-review-box">
-                                    <ul class="list-unstyled">
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                    <div class="rateing-box">
-                                        <span>(4)</span>
-                                    </div>
-                                </div> --}}
-                                <p class="courses-one__single-content-price">S/ {{ $course->price }}</p>
-                                <a href="" class="thm-btn" style="padding: 5px 25px; font-size: 12px;">
-                                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar 
+                                </h4>
+                                <p class="course-details__new-courses-price" style="margin-bottom: 5px;">S/ {{ $course->price }}</p>
+                                <a href="" class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar al carrito
                                 </a>
-                                {{-- <ul class="courses-one__single-content-courses-info list-unstyled">
-                                    <li>2 Lessons</li>
-                                    <li>10 Hours</li>
-                                    <li>Beginner</li>
-                                </ul> --}}
                             </div>
                         </div>
                     </div>
