@@ -78,7 +78,7 @@
             </div>
 
             <div class="categories-one__btn text-center">
-                <a href="#" class="thm-btn">Nuestros Cursos</a>
+                <a href="{{ route('web_cursos') }}" class="thm-btn">Todos los Cursos</a>
             </div>
         </div>
     </section>
