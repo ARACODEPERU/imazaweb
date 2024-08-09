@@ -4,14 +4,14 @@
 
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="page-header__wrapper clearfix">
-                        <div class="page-header__title">
-                            <h2>Blog</h2>
-                        </div>
+                        {{-- <div class="page-header__title">
+                            <h2>Todos muestros cursos y talleres</h2>
+                        </div> --}}
                         <div class="page-header__menu">
                             <ul class="page-header__menu-list list-unstyled clearfix">
                                 <li><a href="{{ route('index_main') }}">Home</a></li>
