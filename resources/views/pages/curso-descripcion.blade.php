@@ -8,9 +8,6 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="page-header__wrapper clearfix">
-                    <div class="page-header__title">
-                        <h2>Título del Curso / Taller</h2>
-                    </div>
                     <div class="page-header__menu">
                         <ul class="page-header__menu-list list-unstyled clearfix">
                             <li><a href="{{ route('index_main') }}">Home</a></li>
