@@ -74,7 +74,7 @@
                                     -->
                                 </li>
                                 <li>
-                                    <a href="blog_principal">Blog</a>
+                                    <a href="{{ route('blog_principal') }}">Blog</a>
                                     <!--
                                     <ul>
                                         <li><a href="news.html">News</a></li>
