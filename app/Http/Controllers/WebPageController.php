@@ -83,8 +83,14 @@ class WebPageController extends Controller
         ]);
     }
 
+    public function contacto()
+    {
+        return view('pages.contacto');
+    }
+
     public function construction()
     {
         return view('pages.construction');
     }
+
 }

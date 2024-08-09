@@ -82,7 +82,7 @@
                                     </ul>
                                     -->
                                 </li>
-                                <li><a href="">Contacto</a></li>
+                                <li><a href="{{ route('web_contacto') }}">Contacto</a></li>
                             </ul>
                         </div>
 
