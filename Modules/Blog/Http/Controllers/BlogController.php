@@ -36,7 +36,7 @@ class BlogController extends Controller
             ->get();
 
 
-        return view('blog::index_kentha', [
+        return view('pages.blog', [
             'categories'        => $categories,
             'articles'          => $articles,
             'latest_articles'   => $latest_articles

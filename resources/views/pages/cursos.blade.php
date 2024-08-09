@@ -2,28 +2,28 @@
 
 @section('content')
 
-<!--Page Header Start-->
-<section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="page-header__wrapper clearfix">
-                    {{-- <div class="page-header__title">
-                        <h2>Todos muestros cursos y talleres</h2>
-                    </div> --}}
-                    <div class="page-header__menu">
-                        <ul class="page-header__menu-list list-unstyled clearfix">
-                            <li><a href="{{ route('index_main') }}">Home</a></li>
-                            <li class="active">Cursos</li>
-                        </ul>
+    <!--Page Header Start-->
+    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="page-header__wrapper clearfix">
+                        {{-- <div class="page-header__title">
+                            <h2>Todos muestros cursos y talleres</h2>
+                        </div> --}}
+                        <div class="page-header__menu">
+                            <ul class="page-header__menu-list list-unstyled clearfix">
+                                <li><a href="{{ route('index_main') }}">Home</a></li>
+                                <li class="active">Cursos</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
-<!--Page Header End-->
+    </section>
+    <!--Page Header End-->
 
 
 

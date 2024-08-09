@@ -74,7 +74,7 @@
                                     -->
                                 </li>
                                 <li>
-                                    <a href="about.html">Blog</a>
+                                    <a href="web_blog">Blog</a>
                                     <!--
                                     <ul>
                                         <li><a href="news.html">News</a></li>
