@@ -6,7 +6,7 @@
                     <div class="main-header--one__top-logo">
                         <a href="{{ route('index_main') }}">
                             <img style="width: 250px; height: 60px;" src="{{ asset('storage/'.$header[0]->content) }}"
-                                alt="" /> 
+                                alt="" />
                             {{-- <img style="width: 250px;"  src="{{  URL('themes/imazaweb/images/resources/logo.png')  }}"
                                     alt="" /> --}}
                         </a>
@@ -60,11 +60,11 @@
 
                         <div class="left">
                             <ul class="main-menu__list">
-                                <li class="dropdown current">
+                                <li class="{{ Route::currentRouteName()== 'index_main' ? "dropdown current" : '' }}">
                                     <a href="{{ route('index_main') }}">Home</a>
                                 </li>
-                                <li><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
-                                <li>
+                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}"><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
+                                <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <!--
                                     <ul>
@@ -73,7 +73,7 @@
                                     </ul>
                                     -->
                                 </li>
-                                <li>
+                                <li class="{{ Route::currentRouteName()== 'blog_principal' ? "dropdown current" : '' }}">
                                     <a href="{{ route('blog_principal') }}">Blog</a>
                                     <!--
                                     <ul>
@@ -82,7 +82,7 @@
                                     </ul>
                                     -->
                                 </li>
-                                <li><a href="{{ route('web_contacto') }}">Contacto</a></li>
+                                <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}"><a href="{{ route('web_contacto') }}">Contacto</a></li>
                             </ul>
                         </div>
 
