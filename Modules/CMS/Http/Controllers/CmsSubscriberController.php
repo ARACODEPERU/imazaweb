@@ -71,7 +71,7 @@ class CmsSubscriberController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Datos registrados con exito'
+            'message' => 'Mensaje registrado con éxito'
         ]);
     }
 
