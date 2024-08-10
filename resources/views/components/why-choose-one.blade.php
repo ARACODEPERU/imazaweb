@@ -54,7 +54,7 @@
                 </div>
                 <br>
                 <div class="categories-one__btn text-left">
-                    <a href="#" class="thm-btn">Nuestros Cursos</a>
+                    <a href="{{ route('web_cursos') }}" class="thm-btn">Nuestros Cursos</a>
                 </div>
             </div>
             <!--End Why Choose One Left-->
