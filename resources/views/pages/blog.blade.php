@@ -22,120 +22,36 @@
     </section>
     <!--Page Header End-->
 
-    
+
     <!--Blog One Start-->
     <section class="blog-one blog-one--blog">
         <div class="container">
             <div class="row">
                 <!--Start Single Blog One-->
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
+                @foreach ($articles as $article)
+                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="blog-one__single">
+                            <div class="blog-one__single-img">
+                                <img src="{{ $article->imagen }}" alt=""/>
                             </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
+                            <div class="blog-one__single-content">
+                                <div class="blog-one__single-content-overlay-mata-info">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"><span class="icon-clock"></span>{{ formatShortMonth($article->created_at) }}</a></li>
+                                        <li><a href="#"><span class="icon-user"></span>{{ $article->author->name }}</a></li>
+                                        {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
+                                    </ul>
+                                </div>
+                                <h2 class="blog-one__single-content-title"><a href="{{ route('blog_article_by_url', $article->url) }}">{{ $article->title }}</a></h2>
+                                <p class="blog-one__single-content-text">{{ $article->short_description }}</p>
+                            </div>
                         </div>
                     </div>
+                @endforeach
+                <div>
+                    {{ $articles->links() }}
                 </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
-                            </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
-                            </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
-                            </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
-                            </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="blog-one__single">
-                        <div class="blog-one__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/blog/blog-v1-img1.jpg') }}" alt=""/>
-                        </div>
-                        <div class="blog-one__single-content">
-                            <div class="blog-one__single-content-overlay-mata-info">
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><span class="icon-clock"></span>20 June</a></li>
-                                    <li><a href="#"><span class="icon-user"></span>Admin  </a></li>
-                                    {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
-                                </ul>
-                            </div>
-                            <h2 class="blog-one__single-content-title"><a href="news-details.html">Helping Answers Stand out in Discussions</a></h2>
-                            <p class="blog-one__single-content-text">Lorem ipsum is simply free text on used by copytyping refreshing the whole area.</p>
-                        </div>
-                    </div>
-                </div>
+
                 <!--End Single Blog One-->
             </div>
         </div>

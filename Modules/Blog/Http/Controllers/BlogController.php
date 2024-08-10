@@ -22,7 +22,8 @@ class BlogController extends Controller
 
         $articles = BlogArticle::with('category')->with('author')
             ->where('status', true)
-            ->paginate(10);
+            ->orderBy('created_at', 'desc')
+            ->simplePaginate(9);
 
         $latest_articles = BlogArticle::select(
             'title',
