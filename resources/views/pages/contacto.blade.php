@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="col-xl-6 col-lg-6">
                                     <div class="comment-form__input-box">
-                                        <input type="text" placeholder="Motivo" name="Subject">
+                                        <input type="text" placeholder="Motivo" name="subject">
                                     </div>
                                 </div>
                             </div>
@@ -94,6 +94,11 @@
                 </div>
             </div>
         </div>
+        <!-- Agrega SweetAlert2 CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+<!-- Agrega SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             let form = document.getElementById('pageContactForm');
             form.addEventListener('submit', function(e) {
