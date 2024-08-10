@@ -43,6 +43,8 @@ class CmsSubscriberController extends Controller
             $request->all(),
             [
                 'email' => 'required|email|unique:cms_subscribers,email|max:255',
+                'subject' => 'required|max:255',
+                'message' => 'required'
             ],
             [
                 'email.unique' => 'El correo electrónico ya existe',
