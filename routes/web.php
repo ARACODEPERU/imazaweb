@@ -28,7 +28,7 @@ Route::get('/home', [WebPageController::class, 'index'])
     ->name('index_main');
 
 Route::get('/', [WebPageController::class, 'construction'])->name('construction');
-Route::get('/quienes-somos', [WebPageController::class, 'quienessomos'])->name('web_quienes_somos');
+Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosotros');
 Route::get('/cursos', [WebPageController::class, 'cursos'])->name('web_cursos');
 Route::get('/curso-descripcion/{id}', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
 Route::get('/contacto', [WebPageController::class, 'contacto'])->name('web_contacto');

@@ -63,7 +63,7 @@
                                 <li class="dropdown current">
                                     <a href="{{ route('index_main') }}">Home</a>
                                 </li>
-                                <li><a href="about.html">Nosotros</a></li>
+                                <li><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
                                 <li>
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <!--

@@ -38,9 +38,9 @@ class WebPageController extends Controller
         ]);
     }
 
-    public function quienessomos()
+    public function nosotros()
     {
-        return view('pages.quienes-somos');
+        return view('pages.nosotros');
     }
 
     public function cursos()
