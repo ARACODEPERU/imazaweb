@@ -24,7 +24,7 @@
                                 </div>
                                 <h6 class="courses-one__single-content-name">{{ $course->course->teacher->person->full_name }}</h6> --}}
                                 <h4 class="courses-one__single-content-title">
-                                    <a href="course-details.html">
+                                    <a href="{{ route('web_curso_descripcion', $course->id) }}">
                                         {{ $course->name }}
                                     </a>
                                 </h4>
