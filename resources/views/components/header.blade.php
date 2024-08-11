@@ -57,7 +57,6 @@
                 <nav class="main-menu main-menu--1">
                     <div class="main-menu__inner">
                         <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-
                         <div class="left">
                             <ul class="main-menu__list">
                                 <li class="{{ Route::currentRouteName()== 'index_main' ? "dropdown current" : '' }}">
@@ -96,7 +95,12 @@
                                 </div>
                                 <div class="main-menu__right-cart-search">
                                     <div class="main-menu__right-cart-box">
-                                        <a href="#"><span class="icon-shopping-cart"></span></a>
+                                        <a href="#">
+                                            <span class="icon-shopping-cart"></span>
+                                            <span style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
+                                                       9
+                                            </span>
+                                        </a>
                                     </div>
                                     {{-- <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>

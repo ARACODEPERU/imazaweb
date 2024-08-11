@@ -10,8 +10,6 @@ use Modules\Academic\Entities\AcaCourse;
 use Modules\Academic\Entities\AcaCategoryCourse;
 
 
-
-
 class WebPageController extends Controller
 {
     protected $listcard;
@@ -86,6 +84,16 @@ class WebPageController extends Controller
     public function contacto()
     {
         return view('pages.contacto');
+    }
+
+    public function carrito()
+    {
+        return view('pages.carrito');
+    }
+
+    public function pagar()
+    {
+        return view('pages.pagar');
     }
 
     public function construction()

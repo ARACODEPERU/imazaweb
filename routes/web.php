@@ -32,6 +32,8 @@ Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosot
 Route::get('/cursos', [WebPageController::class, 'cursos'])->name('web_cursos');
 Route::get('/curso-descripcion/{id}', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
 Route::get('/contacto', [WebPageController::class, 'contacto'])->name('web_contacto');
+Route::get('/carrito', [WebPageController::class, 'carrito'])->name('web_carrito');
+Route::get('/pagar', [WebPageController::class, 'pagar'])->name('web_pagar');
 
 Route::get('/computer/store', [LandingController::class, 'computerStore'])->name('index_computer_store');
 
