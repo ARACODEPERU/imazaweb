@@ -268,7 +268,8 @@
                         <div class="course-details__price wow fadeInUp animated" data-wow-delay="0.1s">
                             <h2 class="course-details__price-amount">S/ {{ $item->price }}<span><del>S/ {{ substr_replace($item->price*1.2, '0', -1) }}</del></span></h2>
                             <div class="course-details__price-btn">
-                                <a href="" onclick="alert({{ $item->id }})" class="thm-btn">
+                                <a href="#" onclick="agregarAlCarrito({ id: {{ $item->id }}, nombre: '{{ $item->name }}', precio: {{ $item->price }} })"
+                                 class="thm-btn">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i>
                                     Agregar al Carrito
                                 </a>
