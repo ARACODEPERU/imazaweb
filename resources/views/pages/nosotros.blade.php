@@ -3,7 +3,7 @@
 @section('content')
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+    <section class="page-header clearfix" style="background-image: url({{ $banner->content }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
