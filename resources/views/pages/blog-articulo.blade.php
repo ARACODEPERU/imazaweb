@@ -4,7 +4,8 @@
 
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+    <section class="page-header clearfix"
+        style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -35,13 +36,16 @@
                     <div class="news-details__left">
                         <div class="blog-one__single style2">
                             <div class="blog-one__single-img">
-                                <img src="{{ $article->imagen }}" alt=""/>
+                                <img src="{{ $article->imagen }}" alt="" />
                             </div>
                             <div class="blog-one__single-content">
                                 <div class="blog-one__single-content-overlay-mata-info">
                                     <ul class="list-unstyled">
-                                        <li><a href="#"><span class="icon-clock"></span>{{ formatShortMonth($article->created_at) }}</a></li>
-                                        <li><a href="#"><span class="icon-user"></span>{{ $article->author->name }} </a></li>
+                                        <li><a href="#"><span
+                                                    class="icon-clock"></span>{{ formatShortMonth($article->created_at) }}</a>
+                                        </li>
+                                        <li><a href="#"><span class="icon-user"></span>{{ $article->author->name }}
+                                            </a></li>
                                         {{-- <li><a href="#"><span class="icon-chat"></span> Comments</a></li> --}}
                                     </ul>
                                 </div>
@@ -58,14 +62,15 @@
                                 {!! $article->content_text !!}
                             </div>
                             <div class="about-one__btn" style="text-align: right;">
-                                <a href="" class="thm-btn"  style="padding: 5px 25px;" data-bs-toggle="modal" data-bs-target="#login">
+                                <a href="" class="thm-btn" style="padding: 5px 25px;" data-bs-toggle="modal"
+                                    data-bs-target="#login">
                                     Login / Registrar
                                 </a>
                             </div>
                         @endif
 
                         <style>
-                            .hidde-5{
+                            .hidde-5 {
                                 overflow: hidden;
                                 max-height: 5em;
                                 line-height: 1.2em;
@@ -77,7 +82,7 @@
                         <div class="news-details__bottom">
                             <p class="news-details__tags">
                                 <span>Tags</span>
-                                @foreach ( $article->keywords as $tag)
+                                @foreach ($article->keywords as $tag)
                                     <a href="#">{{ $tag }}</a>
                                 @endforeach
                             </p>
@@ -201,20 +206,22 @@
                         <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.1s">
                             <h3 class="sidebar__title">Posts recientes</h3>
                             <ul class="sidebar__post-list list-unstyled">
-                                @foreach ($latest_articles as $item )
-                                <li>
-                                    <div class="sidebar__post-image">
-                                        <img style="width: 50px;" src="{{ $item->imagen }}" alt="">
-                                    </div>
-                                    <div class="sidebar__post-content">
-                                        <ul class="list-unstyled">
-                                            <li>
-                                                <p><a href="#"><i class="far fa-user-circle"></i>{{ $item->author->name }}</a></p>
-                                                <h3><a href="news-details.html">{{ $item->title }}</a></h3>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                @foreach ($latest_articles as $item)
+                                    <li>
+                                        <div class="sidebar__post-image">
+                                            <img style="width: 50px;" src="{{ $item->imagen }}" alt="">
+                                        </div>
+                                        <div class="sidebar__post-content">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <p><a href="#"><i
+                                                                class="far fa-user-circle"></i>{{ $item->author->name }}</a>
+                                                    </p>
+                                                    <h3><a href="news-details.html">{{ $item->title }}</a></h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -222,8 +229,10 @@
                         <div class="sidebar__single sidebar__category wow fadeInUp animated" data-wow-delay="0.3s">
                             <h3 class="sidebar__title">Todas las categorias</h3>
                             <ul class="sidebar__category-list list-unstyled">
-                                @foreach ( $categories as $category)
-                                    <li><a href="#"><i class="far fa-arrow-alt-circle-right"></i>{{ $category->description }}</a></li>
+                                @foreach ($categories as $category)
+                                    <li><a href="#"><i
+                                                class="far fa-arrow-alt-circle-right"></i>{{ $category->description }}</a>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -249,19 +258,26 @@
                 <div class="login-7">
                     <div class="login-7-inner">
                         <div id="particles-js">
-                            <canvas class="particles-js-canvas-el" width="1903" height="952" style="width: 100%; height: 100%;"></canvas>
+                            <canvas class="particles-js-canvas-el" width="1903" height="952"
+                                style="width: 100%; height: 100%;"></canvas>
                         </div>
                         <div class="container">
-                            <div class="row">
+                            <div id="divLogin" class="row">
                                 <div class="col-lg-12">
                                     <div class="form-info">
                                         <div class="form-section align-self-center">
                                             <div class="btn-section clearfix">
-                                                <a href="login-7.html" class="link-btn active btn-1 active-bg default-bg">Login</a>
-                                                <a href="register-7.html" class="link-btn btn-2">Registrar</a>
+                                                <button id="btnLogin1" onclick="displayLogin()"
+                                                    class="link-btn active btn-1 active-bg">
+                                                    Login
+                                                </button>
+                                                <button id="btnRegister1" onclick="displayRegister()"
+                                                    class="link-btn btn-2 default-bg">
+                                                    Registrar
+                                                </button>
                                             </div>
                                             <div class="logo">
-                                                <a href="login-7.html">
+                                                <a href="/">
                                                     <img src="{{ $company->logo }}" alt="logo">
                                                 </a>
                                             </div>
@@ -270,15 +286,31 @@
                                                 <h3>Iniciar sesión en su cuenta</h3>
                                             </div>
                                             <div class="clearfix"></div>
-                                            <form action="#" method="GET">
+                                            <form action="{{ route('web_login') }}" method="POST">
+                                                @csrf
                                                 <div class="form-group">
-                                                    <label for="first_field" class="form-label">Correo Electrónico</label>
-                                                    <input name="email" type="email" class="form-control" id="first_field" placeholder="Correo Electrónico" aria-label="Email Address">
+                                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                                    <input name="email" type="email" class="form-control"
+                                                        id="email" placeholder="Correo Electrónico"
+                                                        aria-label="Email Address" value="{{ old('email') }}">
+                                                    @error('email')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <label for="second_field" class="form-label">Contraseña</label>
-                                                    <input name="password" type="password" class="form-control" autocomplete="off" id="second_field" placeholder="Contraseña" aria-label="Password">
+                                                    <label for="password" class="form-label">Contraseña</label>
+                                                    <input name="password" type="password" class="form-control"
+                                                        autocomplete="off" id="password" placeholder="Contraseña"
+                                                        aria-label="Password" value="{{ old('password') }}">
+                                                    @error('password')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+
                                                 <div class="checkbox form-group clearfix">
                                                     <div class="form-check float-start mb-0">
                                                         <input class="form-check-input" type="checkbox" id="rememberme">
@@ -286,27 +318,35 @@
                                                             Recordarme
                                                         </label>
                                                     </div>
-                                                    <a href="forgot-password-7.html" class="float-end forgot-password">¿Olvidaste tu contraseña?</a>
+                                                    <a href="forgot-password-7.html"
+                                                        class="float-end forgot-password">¿Olvidaste tu contraseña?</a>
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <button type="submit" class="btn btn-primary btn-lg btn-theme">Login</button>
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-lg btn-theme">Login</button>
                                                 </div>
                                             </form>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div id="divRegister" class="row" style="display: none">
                                 <div class="col-lg-12">
                                     <div class="form-info">
                                         <div class="form-section align-self-center">
                                             <div class="btn-section clearfix">
-                                                <a href="login-7.html" class="link-btn active btn-1 default-bg">Login</a>
-                                                <a href="register-7.html" class="link-btn btn-2 active-bg">Registrar</a>
+                                                <button id="btnLogin2" onclick="displayLogin()"
+                                                    class="link-btn active btn-1 default-bg">
+                                                    Login
+                                                </button>
+                                                <button id="btnRegister2" onclick="displayRegister()"
+                                                    class="link-btn btn-2 active-bg">
+                                                    Registrar
+                                                </button>
                                             </div>
                                             <div class="logo">
-                                                <a href="login-7.html">
+                                                <a href="/">
                                                     <img src="assets/img/logos/logo-2.png" alt="logo">
                                                 </a>
                                             </div>
@@ -315,49 +355,98 @@
                                                 <h3>Crea una cuenta</h3>
                                             </div>
                                             <div class="clearfix"></div>
-                                            <form action="#" method="GET">
+                                            <form action="{{ route('web_register') }}" method="POST">
+                                                @csrf
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Nombres:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Nombres" aria-label="Full Name">
+                                                            <label for="name" class="form-label">Nombres:</label>
+                                                            <input name="name" type="text" class="form-control"
+                                                                id="name" placeholder="Nombres"
+                                                                aria-label="Full Name" value="{{ old('name') }}">
                                                         </div>
+                                                        @error('name')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Ap. Paterno:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ap. Paterno" aria-label="Full Name">
+                                                            <label for="app" class="form-label">Ap.
+                                                                Paterno:</label>
+                                                            <input name="app" type="text" class="form-control"
+                                                                id="app" placeholder="Ap. Paterno"
+                                                                aria-label="Full Name" value="{{ old('app') }}">
                                                         </div>
+                                                        @error('app')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Ap. Materno:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Ap. Materno" aria-label="Full Name">
+                                                            <label for="apm" class="form-label">Ap.
+                                                                Materno:</label>
+                                                            <input name="apm" type="text" class="form-control"
+                                                                id="apm" placeholder="Ap. Materno"
+                                                                aria-label="Full Name" value="{{ old('apm') }}">
                                                         </div>
+                                                        @error('apm')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">DNI:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="DNI" aria-label="Full Name">
+                                                            <label for="dni" class="form-label">DNI:</label>
+                                                            <input name="dni" type="text" class="form-control"
+                                                                id="dni" placeholder="DNI" aria-label="Full Name"
+                                                                value="{{ old('dni') }}">
                                                         </div>
+                                                        @error('dni')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="first_field" class="form-label">Teléfono:</label>
-                                                            <input name="name" type="text" class="form-control" id="first_field" placeholder="Teléfono" aria-label="Full Name">
+                                                            <label for="phone" class="form-label">Teléfono:</label>
+                                                            <input name="phone" type="text" class="form-control"
+                                                                id="phone" placeholder="Teléfono"
+                                                                aria-label="Full Name" value="{{ old('phone') }}">
                                                         </div>
+                                                        @error('phone')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="second_field" class="form-label">Correo Electrónico</label>
-                                                            <input name="email" type="email" class="form-control" id="second_field" placeholder="Correo Electrónico" aria-label="Email Address">
+                                                            <label for="email_register" class="form-label">Correo
+                                                                Electrónico</label>
+                                                            <input name="email_register" type="email"
+                                                                class="form-control" id="email_register"
+                                                                placeholder="Correo Electrónico"
+                                                                aria-label="Email Address"
+                                                                value="{{ old('email_register') }}">
                                                         </div>
+                                                        @error('email_register')
+                                                            <span class="invalid-feedback" role="alert">
+                                                                <strong>{{ $message }}</strong>
+                                                            </span>
+                                                        @enderror
                                                     </div>
                                                 </div>
                                                 <div class="form-group checkbox clearfix">
                                                     <div class="clearfix float-start">
                                                         <div class="form-check mb-0">
-                                                            <input class="form-check-input" type="checkbox" id="rememberme">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="rememberme">
                                                             <label class="form-check-label" for="rememberme">
                                                                 Estoy de acuerdo con las politicas de privacidad
                                                             </label>
@@ -365,7 +454,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group clearfix">
-                                                    <button type="submit" class="btn btn-primary btn-lg btn-theme">Registrar</button>
+                                                    <button type="submit"
+                                                        class="btn btn-primary btn-lg btn-theme">Registrar</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -380,14 +470,15 @@
     </div>
 
     <style>
-
         .img-fluid {
             max-width: 100% !important;
             height: auto;
         }
+
         .form-control:focus {
             box-shadow: none;
         }
+
         /** Login 7 start **/
         .login-7-inner {
             position: relative;
@@ -412,7 +503,7 @@
             z-index: -99;
         }
 
-        .login-7-bg{
+        .login-7-bg {
             background-image: linear-gradient(to bottom, #9143f9, #23067a);
         }
 
@@ -425,7 +516,18 @@
             z-index: -999;
         }
 
-        .login-7 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        .login-7 h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
             font-family: 'Jost', sans-serif;
         }
 
@@ -458,12 +560,12 @@
             margin-bottom: 5px;
         }
 
-        .login-7 .form-section p{
+        .login-7 .form-section p {
             font-size: 16px;
             color: #535353;
         }
 
-        .login-7 .form-section a{
+        .login-7 .form-section a {
             color: #535353;
             text-decoration: none;
             font-size: 16px;
@@ -488,242 +590,262 @@
             margin-left: 4px;
         }
 
-.login-7 .form-section h1 {
-    font-size: 27px;
-    font-weight: 600;
-    color: #7878ff;
-}
+        .login-7 .form-section h1 {
+            font-size: 27px;
+            font-weight: 600;
+            color: #7878ff;
+        }
 
-.login-7 .form-section h3 {
-    margin: 0 0 35px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #040404;
-}
+        .login-7 .form-section h3 {
+            margin: 0 0 35px;
+            font-size: 20px;
+            font-weight: 500;
+            color: #040404;
+        }
 
-.login-7 .form-section .typing > *{
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typingAnim 3s steps(50);
-    text-transform: uppercase;
-}
+        .login-7 .form-section .typing>* {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typingAnim 3s steps(50);
+            text-transform: uppercase;
+        }
 
-@keyframes typingAnim {
-    from {width:0}
-    to {width:100%}
-}
+        @keyframes typingAnim {
+            from {
+                width: 0
+            }
 
-.login-7 .form-section .form-group {
-    margin-bottom: 25px;
-}
+            to {
+                width: 100%
+            }
+        }
 
-.login-7 .form-section .form-control {
-    padding: 10px 20px;
-    font-size: 16px;
-    outline: none;
-    height: 50px;
-    color: #535353;
-    border-radius: 3px;
-    font-weight: 500;
-    border: 1px solid #d3d3d3!important;
-}
+        .login-7 .form-section .form-group {
+            margin-bottom: 25px;
+        }
 
-.login-7 .form-section .checkbox .terms {
-    margin-left: 3px;
-}
+        .login-7 .form-section .form-control {
+            padding: 10px 20px;
+            font-size: 16px;
+            outline: none;
+            height: 50px;
+            color: #535353;
+            border-radius: 3px;
+            font-weight: 500;
+            border: 1px solid #d3d3d3 !important;
+        }
 
-.login-7 .form-section .terms {
-    margin-left: 3px;
-}
+        .login-7 .form-section .checkbox .terms {
+            margin-left: 3px;
+        }
 
-.login-7 .btn-section {
-    border-radius: 50px;
-    margin-bottom: 0;
-    display: inline-block;
-    top: 80px;
-    position: absolute;
-    right: 90px;
-}
+        .login-7 .form-section .terms {
+            margin-left: 3px;
+        }
 
-.login-7 .btn-section .link-btn {
-    font-size: 14px;
-    float: left;
-    text-align: center;
-    width: 100px;
-    padding: 6px 5px;
-    margin-left: 5px;
-    color: #535353;
-    border-radius: 3px;
-    background: #fff;
-    border: 1px solid #d3d3d3;
-}
+        .login-7 .btn-section {
+            border-radius: 50px;
+            margin-bottom: 0;
+            display: inline-block;
+            top: 80px;
+            position: absolute;
+            right: 90px;
+        }
 
-.login-7 .btn-section .active-bg {
-    color: #fff;
-    background: #7878ff;
-    border: 1px solid #7878ff;
-}
+        .login-7 .btn-section .link-btn {
+            font-size: 14px;
+            float: left;
+            text-align: center;
+            width: 100px;
+            padding: 6px 5px;
+            margin-left: 5px;
+            color: #535353;
+            border-radius: 3px;
+            background: #fff;
+            border: 1px solid #d3d3d3;
+        }
 
-.login-7 .btn-section .link-btn:hover {
-    color: #fff;
-    background: #7878ff;
-    border: 1px solid #7878ff;
-}
+        .login-7 .btn-section .active-bg {
+            color: #fff;
+            background: #7878ff;
+            border: 1px solid #7878ff;
+        }
 
-.login-7 .form-check-input:focus {
-    box-shadow: none;
-}
+        .login-7 .btn-section .link-btn:hover {
+            color: #fff;
+            background: #7878ff;
+            border: 1px solid #7878ff;
+        }
 
-.login-7 .form-section .form-check-input {
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
-    border: 1px solid #d3d3d3;
-    border-radius: 3px;
-    position: absolute;
-    background-color: #fff;
-}
+        .login-7 .form-check-input:focus {
+            box-shadow: none;
+        }
 
-.login-7 .form-check-input:checked {
-    background-color: #7878ff;
-    border: solid #7878ff;
-}
+        .login-7 .form-section .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            position: absolute;
+            background-color: #fff;
+        }
 
-.login-7 .form-section .form-check-label {
-    padding-left: 5px;
-    margin-bottom: 0;
-    font-size: 16px;
-    color: #535353;
-}
+        .login-7 .form-check-input:checked {
+            background-color: #7878ff;
+            border: solid #7878ff;
+        }
 
-.login-7 .btn-theme {
-    color: #fff;
-    text-align: center;
-    border: 2px solid transparent;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: all .7s ease;
-    border-radius: 3px;
-    font-size: 17px;
-    font-weight: 400;
-    font-family: 'Jost', sans-serif;
-}
+        .login-7 .form-section .form-check-label {
+            padding-left: 5px;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: #535353;
+        }
 
-.login-7 .btn-theme:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .7s ease;
-    z-index: -1;
-    border-radius: 3px;
-}
+        .login-7 .btn-theme {
+            color: #fff;
+            text-align: center;
+            border: 2px solid transparent;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: all .7s ease;
+            border-radius: 3px;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'Jost', sans-serif;
+        }
 
-.login-7 .btn-theme:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .7s ease;
-    z-index: -1;
-}
+        .login-7 .btn-theme:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .7s ease;
+            z-index: -1;
+            border-radius: 3px;
+        }
 
-.login-7 .btn-theme:hover {
-    background: transparent;
-}
+        .login-7 .btn-theme:after {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .7s ease;
+            z-index: -1;
+        }
 
-.login-7 .btn-theme:hover:before {
-    width: 0;
-    opacity: 1;
-    visibility: visible;
-}
+        .login-7 .btn-theme:hover {
+            background: transparent;
+        }
 
-.login-7 .btn-theme:hover:after {
-    width: 0;
-    opacity: 1;
-    visibility: visible;
-}
+        .login-7 .btn-theme:hover:before {
+            width: 0;
+            opacity: 1;
+            visibility: visible;
+        }
 
-.login-7 .btn-lg{
-    padding: 0 50px;
-    line-height: 46px;
-}
+        .login-7 .btn-theme:hover:after {
+            width: 0;
+            opacity: 1;
+            visibility: visible;
+        }
 
-.login-7 .btn{
-    box-shadow: none!important;
-}
+        .login-7 .btn-lg {
+            padding: 0 50px;
+            line-height: 46px;
+        }
 
-.login-7 .btn-md{
-    padding: 0 45px;
-    line-height: 41px;
-}
+        .login-7 .btn {
+            box-shadow: none !important;
+        }
 
-.login-7 .btn-primary {
-    background: #7878ff;
-}
+        .login-7 .btn-md {
+            padding: 0 45px;
+            line-height: 41px;
+        }
 
-.login-7 .btn-primary:before {
-    background: #7878ff;
-}
+        .login-7 .btn-primary {
+            background: #7878ff;
+        }
 
-.login-7 .btn-primary:after {
-    background: #7878ff;
-}
+        .login-7 .btn-primary:before {
+            background: #7878ff;
+        }
 
-.login-7 .btn-primary:hover {
-    color: #7878ff;
-    border: 2px solid #7878ff;
-}
+        .login-7 .btn-primary:after {
+            background: #7878ff;
+        }
 
-.login-7 .social-list a {
-    font-size: 18px;
-    margin-right: 15px;
-    color: #535353;
-}
+        .login-7 .btn-primary:hover {
+            color: #7878ff;
+            border: 2px solid #7878ff;
+        }
 
-.login-7 .social-list a:hover {
-    color: #7878ff;
-}
+        .login-7 .social-list a {
+            font-size: 18px;
+            margin-right: 15px;
+            color: #535353;
+        }
 
-@media (max-width: 992px) {
-    .login-7-inner:before {
-        background: none;
-    }
+        .login-7 .social-list a:hover {
+            color: #7878ff;
+        }
 
-    .login-7 .form-section {
-        padding: 120px 34px 40px;
-        border-radius: 10px 0 0 10px;
-    }
+        @media (max-width: 992px) {
+            .login-7-inner:before {
+                background: none;
+            }
 
-    .login-7 .logo {
-        top: 40px;
-        left: 40px;
-    }
+            .login-7 .form-section {
+                padding: 120px 34px 40px;
+                border-radius: 10px 0 0 10px;
+            }
 
-    .login-7 .btn-section {
-        top: 40px;
-        right: 40px;
-    }
+            .login-7 .logo {
+                top: 40px;
+                left: 40px;
+            }
 
-    .login-7-bodycolor .ripple-background{
-        display: none;
-    }
-}
-/** Login 7 end **/
+            .login-7 .btn-section {
+                top: 40px;
+                right: 40px;
+            }
 
+            .login-7-bodycolor .ripple-background {
+                display: none;
+            }
+        }
 
-
-
+        /** Login 7 end **/
     </style>
 
 
+@stop
+@section('javascripts')
+    <script>
+        const divLogin = document.getElementById('divLogin');
+        const divRegister = document.getElementById('divRegister');
+
+        function displayLogin() {
+            divLogin.style.display = 'block';
+            divRegister.style.display = 'none';
+        }
+
+        function displayRegister() {
+
+            divRegister.style.display = 'block';
+            divLogin.style.display = 'none';
+
+        }
+    </script>
 @stop

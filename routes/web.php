@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthWebController;
 use App\Http\Controllers\CalendarController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CompanyController;
@@ -39,6 +40,11 @@ Route::get('/computer/store', [LandingController::class, 'computerStore'])->name
 
 //////mensajes de whatsapp///////
 Route::get('/ask/product/{id}', [LandingController::class, 'redirectToWhatsApp'])->name('whatsapp_send');
+
+////////////iniciar session desde la pagina web """""""""""""!!!!!!!!
+
+Route::post('/web/login', [AuthWebController::class, 'login'])->name('web_login');
+Route::post('/web/register', [AuthWebController::class, 'register'])->name('web_register');
 
 
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
