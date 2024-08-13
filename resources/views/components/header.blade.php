@@ -2,10 +2,10 @@
     <div class="main-header--one__top clearfix">
         <div class="container">
             <div class="main-header--one__top-inner clearfix">
-                <div class="main-header--one__top-left">
+                <div class="main-header--one__top-left" style="padding: 0px;">
                     <div class="main-header--one__top-logo">
                         <a href="{{ route('index_main') }}">
-                            <img style="width: 250px; height: 60px;" src="{{ asset('storage/'.$header[0]->content) }}"
+                            <img style="height: 40px;" src="{{ asset('storage/'.$header[0]->content) }}"
                                 alt="" />
                             {{-- <img style="width: 250px;"  src="{{  URL('themes/imazaweb/images/resources/logo.png')  }}"
                                     alt="" /> --}}
