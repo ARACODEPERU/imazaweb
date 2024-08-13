@@ -39,21 +39,41 @@
                             <h4>{{ $register[5]->content }}</h4>
                         </div>
                         <div class="form-box">
-                            <form method="post" action="index.html">
-                                <div class="form-group">
-                                    <input type="text" name="username" placeholder="Your Name" required="">
+                            <form method="post" action="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="name" placeholder="Nombres" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="app" placeholder="Ap. Paterno" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="apm" placeholder="Ap. Materno" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="dni" placeholder="DNI" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="phone" placeholder="Teléfono" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" name="email" placeholder="Email Address" required="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Email Address" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="phone" placeholder="Phone" required="">
-                                </div>
-                                <div class="form-group">
-                                    <textarea placeholder="Comment"></textarea>
-                                </div>
-                                <button class="registration-one__right-form-btn" type="submit" name="submit-form">
-                                    <span class="thm-btn">apply for it</span>
+                                <button class="registration-one__right-form-btn" type="submit" name="submit-form" style="margin-top: 10px;">
+                                    <span class="thm-btn">Registrar</span>
                                 </button>
                             </form>
                         </div>

@@ -77,7 +77,7 @@
                         </ul>
 
                         <div class="about-one__btn">
-                            <a href="" class="thm-btn">Más sobre nosotros</a>
+                            <a href="{{ route('web_nosotros') }}" class="thm-btn">Más sobre nosotros</a>
                         </div>
                     </div>
                 </div>

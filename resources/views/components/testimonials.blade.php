@@ -7,12 +7,11 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="testimonials-one__wrapper">
-                    <div class="testimonials-one__pattern"><img
-                            src="{{ URL('themes/imazaweb/images/pattern/testimonials-one-left-pattern.png') }}"
-                            alt="" />
+                    <div class="testimonials-one__pattern">
+                        <img src="{{ URL('themes/imazaweb/images/pattern/testimonials-one-left-pattern.png') }}" alt="" />
                     </div>
-                    <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}"
-                            alt="" />
+                    <div class="shape1">
+                        <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
                     </div>
                     <div class="row">
                         <div class="col-xl-12">

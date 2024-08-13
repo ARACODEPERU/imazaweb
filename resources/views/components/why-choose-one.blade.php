@@ -65,7 +65,6 @@
                     data-wow-duration="1500ms">
                     <div class="why-choose-one__right-img clearfix">
                         <img src="{{ asset('storage/'.$elegirnos[7]->content) }}" alt="" />
-                        
                     </div>
                 </div>
             </div>
