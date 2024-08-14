@@ -85,6 +85,24 @@
                             </div>
                         </div> 
 
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="600ms"
+                            data-wow-duration="1500ms">
+                            <div class="categories-one__single">
+                                <div class="categories-one__single-img">
+                                        <img src="{{ asset('storage/'.$services[11]->content) }}"
+                                        alt="" />
+                                    <div class="categories-one__single-overlay">
+                                        <div class="categories-one__single-overlay-text1">
+                                            <p style="color: #fff;">05</p>
+                                        </div>
+                                        <div class="categories-one__single-overlay-text2">
+                                            <h4>{{ $services[10]->content }}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
                     </div>
                 </div>
             </div>
