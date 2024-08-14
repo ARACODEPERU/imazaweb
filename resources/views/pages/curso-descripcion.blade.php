@@ -340,7 +340,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <a href="https://api.whatsapp.com/send?phone=51967052506&text=Hola&nbsp;Despega.com&nbsp;me&nbsp;pueden&nbsp;ayudar?"
-                                        target="_blanck" class="btn btn-success" style="width: 100%;">
+                                        target="_blanck" class="btn btn-success" style="width: 100%; background: #c843be;">
                                         <div style="justify-content: space-between;">
                                             <div style="float: left; padding: 5px;">
                                                 <img style="width: 50px;"

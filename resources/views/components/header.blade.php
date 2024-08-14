@@ -39,7 +39,7 @@
                                     <span class="icon-message"></span>
                                 </div>
                                 <div class="text">
-                                    <h6>Escribenos al:</h6>
+                                    <h6>Escribenos a:</h6>
                                     <p><a href="mailto:{{ $header[8]->content }}">{{ $header[8]->content }}</a></p>
                                 </div>
                             </li>
