@@ -78,7 +78,7 @@
                         <style>
                             .hidde-5 {
                                 overflow: hidden;
-                                max-height: 17em;
+                                max-height: 16em;
                                 line-height: 1.2em;
                             }
                         </style>
