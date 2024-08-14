@@ -61,7 +61,13 @@
                             <div class="hidde-5">
                                 {!! $article->content_text !!}
                             </div>
-                            <div class="about-one__btn" style="text-align: right;">
+                            <div class="about-one__btn" 
+                                 style=" padding: 20px; text-align: left; border: 2px solid #c843be; border-radius: 10px;">
+                                <p>
+                                    <b>Disfruta de contenido gratuito.</b>
+                                    <br> 
+                                    Si eres nuevo, solo regístrate para continuar leyendo. Si ya eres suscriptor, inicia sesión.
+                                </p>
                                 <a href="" class="thm-btn" style="padding: 5px 25px;" data-bs-toggle="modal"
                                     data-bs-target="#login">
                                     Continuar leyendo
@@ -72,7 +78,7 @@
                         <style>
                             .hidde-5 {
                                 overflow: hidden;
-                                max-height: 5em;
+                                max-height: 15em;
                                 line-height: 1.2em;
                             }
                         </style>
