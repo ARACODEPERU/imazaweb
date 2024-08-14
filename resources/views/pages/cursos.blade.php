@@ -3,7 +3,7 @@
 @section('content')
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+    <section class="page-header clearfix" style="background-image: url({{ asset('storage/'.$banner->content) }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -31,8 +31,8 @@
     <section class="courses-one courses-one--courses">
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline">Consultar nueva lista</span>
-                <h2 class="section-title__title">Explora Cursos - Talleres</h2>
+                <span class="section-title__tagline">{{ $title[0]->content }}</span>
+                <h2 class="section-title__title">{{ $title[1]->content }}</h2>
             </div>
 
             <div class="row">
