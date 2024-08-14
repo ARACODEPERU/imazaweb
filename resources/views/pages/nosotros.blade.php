@@ -3,7 +3,7 @@
 @section('content')
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ $banner->content }});">
+    <section class="page-header clearfix" style="background-image: url({{ asset('storage/'.$banner->content) }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="about-two__single-img">
-                            <img src="{{ $visions[3]->content }}" alt=""/>
+                            <img src="{{ asset('storage/'.$visions[3]->content) }}" alt=""/>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8">
@@ -73,7 +73,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="about-two__single-img">
-                            <img src="{{ $lider[4]->content }}" alt=""/>
+                            <img src="{{ asset('storage/'.$lider[4]->content) }}" alt=""/>
                         </div>
                     </div>
                 </div>
