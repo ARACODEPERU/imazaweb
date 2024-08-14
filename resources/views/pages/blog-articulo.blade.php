@@ -64,7 +64,7 @@
                             <div class="about-one__btn" style="text-align: right;">
                                 <a href="" class="thm-btn" style="padding: 5px 25px;" data-bs-toggle="modal"
                                     data-bs-target="#login">
-                                    Login / Registrar
+                                    Continuar leyendo
                                 </a>
                             </div>
                         @endif
