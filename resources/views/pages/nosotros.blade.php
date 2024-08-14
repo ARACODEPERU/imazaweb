@@ -29,20 +29,20 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="about-two__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/resources/categories-v1-img2.jpg') }}" alt=""/>
+                            <img src="{{ $visions[3]->content }}" alt=""/>
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-8">
                         <div class="about-two__text-box">
                             <div class="section-title">
-                                <h2 class="section-title__title">Nuestra Visión</h2>
+                                <h2 class="section-title__title">{{ $visions[0]->content }}</h2>
                             </div>
                             <p class="about-two__text-box-text">
-                                Ser aliados clave para empresas de todos los tamaños, proporcionando herramientas de automatización y estrategias de marketing que impulsan el crecimiento y la eficiencia. Nos esforzamos por ofrecer soluciones fáciles de implementar que satisfagan plenamente las necesidades de nuestros clientes, garantizando su competitividad y éxito sostenido.
+                                {{ $visions[1]->content }}
                             </p>
                             <br>
                             <p class="about-two__text-box-text">
-                                En nuestra práctica, nos apasiona ayudar a las empresas a alcanzar su máximo potencial a través de la automatización y el marketing estratégico. Somos tu aliado esencial para impulsar tu crecimiento y eficiencia.
+                                {{ $visions[2]->content }}
                             </p>
                         </div>
                     </div>
@@ -60,20 +60,20 @@
                     <div class="col-xl-8 col-lg-8">
                         <div class="about-two__text-box">
                             <div class="section-title">
-                                <span class="section-title__tagline">#Lider</span>
-                                <h2 class="section-title__title">Jose Ronald Suclupe</h2>
+                                <span class="section-title__tagline">{{ $lider[0]->content }}</span>
+                                <h2 class="section-title__title">{{ $lider[1]->content }}</h2>
                                 <span class="section-title__tagline">
-                                    Especialista en Marketing & Automatización | Trainer Comercial
+                                    {{ $lider[2]->content }}
                                 </span>
                             </div>
                             <p class="about-two__text-box-text">
-                                Soy un apasionado del marketing, la gestión comercial y la atención al cliente, con más de 10 años de experiencia liderando proyectos académicos y dirigiendo equipos comerciales. Como fundador y CEO de DESPEGA Marketing & Automatización, mi misión es impulsar a nuestros clientes hacia el éxito, ayudándolos a alcanzar y superar sus objetivos con soluciones innovadoras y personalizadas. Mi trayectoria se destaca por la capacidad de entender las necesidades de los clientes y convertir esos insights en estrategias efectivas que generen resultados tangibles. Creo en el poder de la automatización y el marketing estratégico para transformar negocios, haciendo que cada interacción con los clientes sea una oportunidad para crear valor y fomentar el crecimiento sostenible.
+                                {{ $lider[3]->content }}
                             </p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="about-two__single-img">
-                            <img src="{{ asset('themes/imazaweb/images/resources/categories-v1-img2.jpg') }}" alt=""/>
+                            <img src="{{ $lider[4]->content }}" alt=""/>
                         </div>
                     </div>
                 </div>
