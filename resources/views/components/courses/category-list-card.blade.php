@@ -9,7 +9,7 @@
                 <div class="categories-one__wrapper">
                     <div class="row">
 
-                        <div class="col-md-2 wow fadeInUp" data-wow-delay="0ms"
+                        <div class="col-md-3 wow fadeInUp" data-wow-delay="0ms"
                             data-wow-duration="1500ms">
                             <a href="">
                                 <div class="categories-one__single">
@@ -29,7 +29,7 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2 wow fadeInUp" data-wow-delay="200ms"
+                        <div class="col-md-3 wow fadeInUp" data-wow-delay="200ms"
                             data-wow-duration="1500ms">
                             <a href="">
                                 <div class="categories-one__single">
@@ -49,7 +49,7 @@
                             </a>
                         </div>
 
-                        <div class="col-md-2 wow fadeInUp" data-wow-delay="400ms"
+                        <div class="col-md-3 wow fadeInUp" data-wow-delay="400ms"
                             data-wow-duration="1500ms">
                             <div class="categories-one__single">
                                 <div class="categories-one__single-img">
@@ -67,11 +67,7 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2"></div>
-
-                        <div class="col-md-4 wow fadeInUp" data-wow-delay="600ms"
+                        <div class="col-md-3 wow fadeInUp" data-wow-delay="600ms"
                             data-wow-duration="1500ms">
                             <div class="categories-one__single">
                                 <div class="categories-one__single-img">
@@ -89,7 +85,11 @@
                             </div>
                         </div> 
 
-                        <div class="col-md-4 wow fadeInUp" data-wow-delay="600ms"
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+
+                        <div class="col-md-3 wow fadeInUp" data-wow-delay="600ms"
                             data-wow-duration="1500ms">
                             <div class="categories-one__single">
                                 <div class="categories-one__single-img">
@@ -107,7 +107,7 @@
                             </div>
                         </div> 
                         
-                        <div class="col-md-2"></div>
+                        <div class="col-md-3"></div>
                     </div>
                 </div>
             </div>
