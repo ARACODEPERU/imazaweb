@@ -261,14 +261,10 @@
 
     <!-- Modal -->
     <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="login-7">
-                    <div class="login-7-inner">
-                        <div id="particles-js">
-                            <canvas class="particles-js-canvas-el" width="1903" height="952"
-                                style="width: 100%; height: 100%;"></canvas>
-                        </div>
+                    <div class="login-7-inner login-7-bg">
                         <div class="container">
                             <div id="divLogin" class="row">
                                 <div class="col-md-12">
@@ -491,13 +487,12 @@
         .login-7-inner {
             position: relative;
             width: 100%;
-            min-height: 100vh;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            padding: 30px 0;
+            padding: 15px 0px;
         }
 
         .login-7-inner:before {
@@ -507,12 +502,12 @@
             position: absolute;
             top: 0;
             right: 0;
-            background: url(../img/img-7.jpg) top left repeat;
+            background: url("{{ asset('themes/imazaweb/images/bg-modal-1.jpg') }}") top left repeat;
             z-index: -99;
         }
 
         .login-7-bg {
-            background-image: linear-gradient(to bottom, #9143f9, #23067a);
+            background-image: linear-gradient(to bottom, #c843be, #833fdb);
         }
 
         .login-7-inner #particles-js {
@@ -551,7 +546,7 @@
         .login-7 .form-info {
             background: #fff;
             border-radius: 0;
-            max-width: 580px;
+            max-width: 100%;
             margin: 0 auto;
         }
 
