@@ -39,8 +39,7 @@
                                 <th scope="col">Acción</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <div id="cart"></div>
+                        <tbody id="cart">
                             <tr>
                                 <td>
                                     <img style="width: 80px;" src="{{ asset('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="">
@@ -114,9 +113,14 @@
                               <label for="inputEmail4" class="form-label">Correo Electrónico :</label>
                               <input type="email" class="form-control" id="inputEmail4">
                             </div>
-                            <div class="col-12">
-                                <button type="submit" class="thm-btn" style="padding: 10px 20px;">
-                                    <i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp; Comprar
+                            <div class="col-md-12">
+                                <button class="btn btn-primary g-recaptcha" style="width: 100%;" id="btn-crear-cuenta"
+                                data-sitekey="reCAPTCHA_site_key"
+                                data-callback='onSubmit'
+                                data-action='submit'
+                                disabled>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    &nbsp;Crear Cuenta
                                 </button>
                             </div>
                         </form>
@@ -209,58 +213,71 @@
                 var modalidad = respuesta.additional;
                 var url_campus = "";
                 var url_descripcion_programa = "/descripcion-programa/"+id; // esta ruta deberá corregirse si se cambia el el get de la RUTA :S
-                cart.innerHTML += `
-            <div class="col-md-12" style="padding: 10px;" id="` + id + `_pc">
-                            <div class="row contact-inner" style="padding: 10px; border: 1px solid #f2f2f2;">
-                                <div class="col-md-2">
-                                    <div class="single-course-wrap">
-                                        <div class="thumb">
-                                            <img style="height: 90px; object-fit: cover;" src="` + image + `" alt="img">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h6><a href="`+url_descripcion_programa+`" target="_blank">` + name + `</a></h6>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4 user-details">
-                                            <img style="width: 30px; height: 30px; border-radius: 50%;" src="` +
-                    url_campus + avatar + `" alt="img">
-                                            <a>` + teacher + `</a>
-                                        </div>
-                                        <div class="col-md-4">
 
-                                        </div>
-                                        <div class="col-md-4">
-                                            <a href="">
-                                                <span style="color:orange;">
-                                                    <b>` + modalidad + `</b>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="single-course-wrap">
-                                            <div class="price-wrap">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-12">
-                                                        <b>S/. ` + price + `</b>&nbsp;&nbsp;
-                                                        <a onclick="eliminarproducto({ id: ` + id + `, nombre: '` +
-                    name + `', precio: ` + price + ` });"  class="btn btn-danger">
-                                                            <i class="fa fa-trash" aria-hidden="true"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        `;
+                var temporal =`<tr><td id="` + id + `_pc">
+                                    <img style="width: 80px;" src="` + image + `" alt="">
+                                </td>
+                                <a href="`+url_descripcion_programa+`"><td style="line-height: 3em;">` + name + `</td></a>
+                                <td style="line-height: 3em;">S/ 150.00</td>
+                                <td style="line-height: 2em;">
+                                    <a href=""
+                                    onclick="eliminarproducto({ id: ` + id + `, nombre: '` +
+                    name + `', precio: ` + price + ` });" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                </td></tr>`;
+                cart.innerHTML += temporal;
+
+            //     `
+            // <div class="col-md-12" style="padding: 10px;" id="` + id + `_pc">
+            //                 <div class="row contact-inner" style="padding: 10px; border: 1px solid #f2f2f2;">
+            //                     <div class="col-md-2">
+            //                         <div class="single-course-wrap">
+            //                             <div class="thumb">
+            //                                 <img style="height: 90px; object-fit: cover;" src="` + image + `" alt="img">
+            //                             </div>
+            //                         </div>
+            //                     </div>
+            //                     <div class="col-md-7">
+            //                         <div class="row">
+            //                             <div class="col-md-12">
+            //                                 <h6><a href="`+url_descripcion_programa+`" target="_blank">` + name + `</a></h6>
+            //                             </div>
+            //                         </div>
+            //                         <div class="row">
+            //                             <div class="col-md-4 user-details">
+            //                                 <img style="width: 30px; height: 30px; border-radius: 50%;" src="` +
+            //         url_campus + avatar + `" alt="img">
+            //                                 <a>` + teacher + `</a>
+            //                             </div>
+            //                             <div class="col-md-4">
+
+            //                             </div>
+            //                             <div class="col-md-4">
+            //                                 <a href="">
+            //                                     <span style="color:orange;">
+            //                                         <b>` + modalidad + `</b>
+            //                                     </span>
+            //                                 </a>
+            //                             </div>
+            //                         </div>
+            //                     </div>
+            //                     <div class="col-md-3">
+            //                         <div class="single-course-wrap">
+            //                                 <div class="price-wrap">
+            //                                     <div class="row align-items-center">
+            //                                         <div class="col-md-12">
+            //                                             <b>S/. ` + price + `</b>&nbsp;&nbsp;
+            //                                             <a onclick="eliminarproducto({ id: ` + id + `, nombre: '` +
+            //         name + `', precio: ` + price + ` });"  class="btn btn-danger">
+            //                                                 <i class="fa fa-trash" aria-hidden="true"></i>
+            //                                             </a>
+            //                                         </div>
+            //                                     </div>
+            //                                 </div>
+            //                         </div>
+            //                     </div>
+            //                 </div>
+            //             </div>
+            //             `;
             }
         }
     </script>
