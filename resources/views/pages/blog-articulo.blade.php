@@ -284,7 +284,7 @@
                                             </div>
                                             <div class="logo">
                                                 <a href="/">
-                                                    <img src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
+                                                    <img style="width: 100%;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="logo">
                                                 <a href="/">
-                                                    <img src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
+                                                    <img style="width: 100%;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
