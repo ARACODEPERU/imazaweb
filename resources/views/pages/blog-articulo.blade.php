@@ -284,7 +284,7 @@
                                             </div>
                                             <div class="logo">
                                                 <a href="/">
-                                                    <img src="{{ $company->logo }}" alt="logo">
+                                                    <img src="{{ asset('storage/'.$company->logo) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="logo">
                                                 <a href="/">
-                                                    <img src="assets/img/logos/logo-2.png" alt="logo">
+                                                    <img src="{{ asset('storage/'.$company->logo) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
@@ -454,7 +454,7 @@
                                                             <input class="form-check-input" type="checkbox"
                                                                 id="rememberme">
                                                             <label class="form-check-label" for="rememberme">
-                                                                Estoy de acuerdo con las politicas de privacidad
+                                                                Estoy de acuerdo con las <a href="{{ route('web_privacidad') }}" target="_blamk">politicas de privacidad</a>
                                                             </label>
                                                         </div>
                                                     </div>

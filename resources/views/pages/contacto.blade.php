@@ -87,6 +87,7 @@
                                     <button id="submitPageContactButton" type="submit" class="thm-btn comment-form__btn">
                                         <i class="fa fa-paper-plane" aria-hidden="true" style="font-size: 16px;"></i> Enviar
                                     </button>
+                                    <a href="{{ route('web_privacidad') }}" target="_blank">&nbsp;&nbsp;Politicas de Privacidad</a>
                                 </div>
                             </div>
                         </form>
