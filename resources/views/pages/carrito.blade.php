@@ -82,6 +82,9 @@
                     <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.3s">
                         <h2 class="sidebar__title">DATOS DEL COMPRADOR</h2>
                         <form class="row g-3">
+                            @csrf
+                            <div id="divCartHidden" style="display: none">
+                            </div>
                             <div class="col-md-12">
                               <label for="inputName" class="form-label">Nombres :</label>
                               <input type="text" class="form-control" id="inputName">
