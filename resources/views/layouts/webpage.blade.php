@@ -40,7 +40,12 @@
     <!-- template styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom-responsive.css') }}" />
-
+    <style>
+        /* Estilo para el enlace sin atributo href */
+        a:not([href]) {
+            cursor: pointer; /* Cambia el cursor a una mano */
+        }
+    </style>
 </head>
 
 <body>

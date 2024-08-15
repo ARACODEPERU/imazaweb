@@ -29,7 +29,7 @@
                                     </a>
                                 </h4>
                                 <p class="course-details__new-courses-price" style="margin-bottom: 5px;">S/ {{ $course->price }}</p>
-                                <a href="" class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
+                                <a onclick="agregarAlCarrito({ id: {{ $course->id }}, nombre: '{{ $course->name }}', precio: {{ $course->price }} })" class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar al carrito
                                 </a>
                             </div>

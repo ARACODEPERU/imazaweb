@@ -29,6 +29,9 @@
     <section class="courses-one courses-one--courses">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <b id="total_productos">03 cursos en el carrito</b>
+                </div>
                 <div class="col-md-8">
                     <table class="table wow fadeInUp animated" data-wow-delay="0.1s">
                         <thead class="table-light">
@@ -40,7 +43,7 @@
                             </tr>
                         </thead>
                         <tbody id="cart">
-                            <tr>
+                            {{-- <tr>
                                 <td>
                                     <img style="width: 80px;" src="{{ asset('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="">
                                 </td>
@@ -69,12 +72,12 @@
                                 <td style="line-height: 2em;">
                                     <a href="#" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
                     <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s" style="padding: 15px 25px;">
                         <h2 class="sidebar__title" style="margin-top: 10px;">
-                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAl : &nbsp; S/ 450.00
+                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAL : &nbsp; <div id="totalid">S/ 450.00</div>
                         </h2>
                     </div>
                 </div>
@@ -175,9 +178,10 @@
                 success: function(respuesta) {
                     // Obtén una referencia al elemento div por su ID
                     var divCartHidden = document.getElementById("divCartHidden");
-
                     respuesta.items.forEach(function(item) {
                         // Accede a las propiedades del objeto
+
+                    console.log("Aqui la respuesta--->>"+item.id);
                         renderProducto(item);
                         // Crea un elemento input oculto
                         let inputHidden = document.createElement("input");
@@ -215,15 +219,15 @@
                 var price = respuesta.price;
                 var modalidad = respuesta.additional;
                 var url_campus = "";
-                var url_descripcion_programa = "/descripcion-programa/"+id; // esta ruta deberá corregirse si se cambia el el get de la RUTA :S
+                var url_descripcion_programa = "/curso-descripcion/"+id; // esta ruta deberá corregirse si se cambia el el get de la RUTA :S
 
-                var temporal =`<tr><td id="` + id + `_pc">
+                var temporal =`<tr id="` + id + `_pc"><td>
                                     <img style="width: 80px;" src="` + image + `" alt="">
                                 </td>
-                                <a href="`+url_descripcion_programa+`"><td style="line-height: 3em;">` + name + `</td></a>
-                                <td style="line-height: 3em;">S/ 150.00</td>
+                                <td style="line-height: 3em;"><a target="_blank" href="`+url_descripcion_programa+`">` + name + `</a></td>
+                                <td style="line-height: 3em;">S/ ` + price + `</td>
                                 <td style="line-height: 2em;">
-                                    <a href=""
+                                    <a href="#"
                                     onclick="eliminarproducto({ id: ` + id + `, nombre: '` +
                     name + `', precio: ` + price + ` });" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                 </td></tr>`;

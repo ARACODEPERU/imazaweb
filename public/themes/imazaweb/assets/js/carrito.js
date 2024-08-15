@@ -127,10 +127,10 @@ function getTotal() {
         for (let i = 0; i < carritoTemp.length; i++) {
             total += carritoTemp[i].precio;
         }
-        document.getElementById("totalid").textContent = "S/. " + total + ".00";
+        document.getElementById("totalid").textContent = "S/ " + total + ".00";
         total_productos = carritoTemp.length;
         document.getElementById("total_productos").innerHTML =
-            total_productos + " programas en el carrito.";
+            total_productos + " cursos en el carrito.";
     }
 }
 function cargarContadorCarrito() {

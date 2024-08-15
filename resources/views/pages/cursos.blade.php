@@ -69,7 +69,8 @@
                             <div class="courses-one__single-content">
                                 <h4 class="courses-one__single-content-title"><a href="{{ route('web_curso_descripcion', $course->id) }}">{{ $course->name }}</a></h4>
                                 <p class="course-details__new-courses-price" style="margin-bottom: 5px;">S/ {{ $course->price }}</p>
-                                <a href="" onclick="alert({{ $course->id, $course->price }})" class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
+                                <a  onclick="agregarAlCarrito({ id: {{ $course->id }}, nombre: '{{ $course->name }}', precio: {{ $course->price }} })"
+                                    class="thm-btn" style="padding: 5px 15px; font-size: 11px;">
                                     <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 16px;"></i> Agregar al carrito
                                 </a>
                             </div>

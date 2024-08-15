@@ -98,10 +98,10 @@
                                         <a href="{{ route('web_carrito') }}">
                                             <span class="icon-shopping-cart"></span>
                                             <span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
-                                                       9
+
                                             </span>
                                             <span style="display:none" id="contadorCarritoWeb" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
-                                                9
+
                                             </span>
                                         </a>
                                     </div>
