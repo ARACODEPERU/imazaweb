@@ -87,15 +87,26 @@ class BlogController extends Controller
             ->take(4) // Limita el resultado a 4 registros
             ->get();
 
-        $company = Company::first();
+        // $company = Company::first();
         $article->increment('views');
+
+        $logo = CmsSection::where('component_id', 'header_area_1')  //siempre cambiar el id del componente
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
 
         return view('pages.blog-articulo', [
             'categories'        => $categories,
             'article'           => $article,
             'latest_articles'   => $latest_articles,
-            'company'           => $company
+            'logo'   => $logo
+            // 'company'           => $company
         ]);
     }
 
