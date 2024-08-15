@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <!--Start Footer Widget Column-->
-                <div class="col-xl-2 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.1s">
+                {{-- <div class="col-xl-2 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.1s">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__about-logo">
                             <a href="{{ route('index_main') }}">
@@ -15,13 +15,30 @@
                             </a>
                         </div>
                     </div>
+                </div> --}}
+                <!--End Footer Widget Column-->
+                <div class="col-md-2 wow animated fadeInUp" data-wow-delay="0.5s">
+                </div>
+
+                <!--Start Footer Widget Column-->
+                <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.5s">
+                    <div class="footer-widget__column footer-widget__links">
+                        <h3 class="footer-widget__title">Links :</h3>
+                        <ul class="footer-widget__links-list list-unstyled">
+                            <li><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
+                            <li><a href="{{ route('web_cursos') }}">Cursos</a></li>
+                            <li><a href="{{ route('blog_principal') }}">Blog</a></li>
+                            <li><a href="{{ route('web_contacto') }}">Contacto</a></li>
+                            <li><a href="{{ route('web_privacidad') }}">Politicas de Privacidad</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!--End Footer Widget Column-->
 
                 <!--Start Footer Widget Column-->
-                <div class="col-xl-2 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.3s">
+                <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.3s">
                     <div class="footer-widget__column footer-widget__courses">
-                        <h3 class="footer-widget__title">Cursos</h3>
+                        <h3 class="footer-widget__title">Nuevos Cursos :</h3>
                         <ul class="footer-widget__courses-list list-unstyled">
                             <li><a href="#">UI/UX Design</a></li>
                             <li><a href="#">WordPress Development</a></li>
@@ -34,34 +51,14 @@
                 <!--End Footer Widget Column-->
 
                 <!--Start Footer Widget Column-->
-                <div class="col-xl-2 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.5s">
-                    <div class="footer-widget__column footer-widget__links">
-                        <h3 class="footer-widget__title">Links</h3>
-                        <ul class="footer-widget__links-list list-unstyled">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Overview</a></li>
-                            <li><a href="teachers-1.html">Teachers</a></li>
-                            <li><a href="#">Join Us</a></li>
-                            <li><a href="news.html">Our News</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!--End Footer Widget Column-->
-
-                <!--Start Footer Widget Column-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.7s">
+                <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.7s">
                     <div class="footer-widget__column footer-widget__contact">
-                        <h3 class="footer-widget__title">Contactanos</h3>
-                        <p class="text">88 broklyn street, New York USA</p>
-                        <p><a href="mailto:info@templatepath.com">needhelp@company.com</a></p>
+                        <h3 class="footer-widget__title">Contactanos :</h3>
                         <p class="phone"><a href="tel:123456789">92 888 666 0000</a></p>
+                        <p><a href="mailto:info@templatepath.com">needhelp@company.com</a></p>
                     </div>
-                </div>
-                <!--End Footer Widget Column-->
-
-                <!--Start Footer Widget Column-->
-                <div class="col-xl-3 col-lg-6 col-md-6 wow animated fadeInUp" data-wow-delay="0.9s">
                     <div class="footer-widget__column footer-widget__social-links">
+                        <h3 class="footer-widget__title">Siguenos en :</h3>
                         <ul class="footer-widget__social-links-list list-unstyled clearfix">
                             <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
@@ -78,14 +75,12 @@
     </div>
 
     <!--Start Footer One Bottom-->
-    <div class="footer-one__bottom">
+    <div class="footer-one__bottom" style="padding: 10px 0px; background: #000; height: 60px;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="footer-one__bottom-inner">
-                        <div class="footer-one__bottom-text text-center">
-                            <p>&copy; Copyright {{ date('Y') }} by {{ env('APP_NAME') }}</p>
-                        </div>
+                <div class="col-md-12">
+                    <div class="text-center" style="color: #fff;">
+                        <p>&copy; Copyright {{ date('Y') }} by {{ env('APP_NAME') }}</p>
                     </div>
                 </div>
             </div>
