@@ -220,8 +220,10 @@
                                         <div class="sidebar__post-content">
                                             <ul class="list-unstyled">
                                                 <li>
-                                                    <p><a href="#"><i
-                                                                class="far fa-user-circle"></i>{{ $item->author->name }}</a>
+                                                    <p>
+                                                        <a href="#">
+                                                            <i class="far fa-user-circle"></i>{{ $item->author->name }}
+                                                        </a>
                                                     </p>
                                                     <h3><a href="news-details.html">{{ $item->title }}</a></h3>
                                                 </li>
@@ -454,7 +456,7 @@
                                                             <input class="form-check-input" type="checkbox"
                                                                 id="rememberme">
                                                             <label class="form-check-label" for="rememberme">
-                                                                Estoy de acuerdo con las <a href="{{ route('web_privacidad') }}" target="_blamk">politicas de privacidad</a>
+                                                                Estoy de acuerdo con las <a href="{{ route('web_privacidad') }}" target="_blamk"><b>politicas de privacidad</b></a>
                                                             </label>
                                                         </div>
                                                     </div>
@@ -543,7 +545,7 @@
         }
 
         .login-7 .logo img {
-            height: 30px;
+            height: 45px;
         }
 
         .login-7 .form-info {
@@ -599,7 +601,7 @@
         .login-7 .form-section h1 {
             font-size: 27px;
             font-weight: 600;
-            color: #7878ff;
+            color: #833fdb;
         }
 
         .login-7 .form-section h3 {
@@ -673,14 +675,14 @@
 
         .login-7 .btn-section .active-bg {
             color: #fff;
-            background: #7878ff;
-            border: 1px solid #7878ff;
+            background: #833fdb; 
+            border: 1px solid #833fdb; 
         }
 
         .login-7 .btn-section .link-btn:hover {
             color: #fff;
-            background: #7878ff;
-            border: 1px solid #7878ff;
+            background: #c843be;
+            border: 1px solid #c843be;
         }
 
         .login-7 .form-check-input:focus {
@@ -698,8 +700,8 @@
         }
 
         .login-7 .form-check-input:checked {
-            background-color: #7878ff;
-            border: solid #7878ff;
+            background-color: #833fdb; 
+            border: solid #833fdb; 
         }
 
         .login-7 .form-section .form-check-label {
@@ -781,20 +783,20 @@
         }
 
         .login-7 .btn-primary {
-            background: #7878ff;
+            background: #833fdb; 
         }
 
         .login-7 .btn-primary:before {
-            background: #7878ff;
+            background: #833fdb; 
         }
 
         .login-7 .btn-primary:after {
-            background: #7878ff;
+            background: #833fdb; 
         }
 
         .login-7 .btn-primary:hover {
-            color: #7878ff;
-            border: 2px solid #7878ff;
+            color: #833fdb; 
+            border: 2px solid #833fdb; 
         }
 
         .login-7 .social-list a {
@@ -804,7 +806,7 @@
         }
 
         .login-7 .social-list a:hover {
-            color: #7878ff;
+            color: #833fdb; 
         }
 
         @media (max-width: 992px) {
