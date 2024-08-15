@@ -177,6 +177,25 @@ class WebPageController extends Controller
     {
         return view('pages.pagar');
     }
+    
+    public function privacidad()
+    {
+        
+        $banner = CmsSection::where('component_id', 'nosotros_banner_area_11')  //siempre cambiar el id del componente
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        return view('pages.politicas-de-privacidad', [
+            'banner' => $banner
+        ]);
+
+    }
 
     public function construction()
     {
