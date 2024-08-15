@@ -3,7 +3,7 @@
 @section('content')
 
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+    <section class="page-header clearfix" style="background-image: url({{ asset('storage/'.$banner->content) }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -30,14 +30,14 @@
     <section class="contact-page" style="padding-top: 30px;">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-4">
+                <div class="col-md-5">
                     <div class="contact-details-one__single">
                         <div class="contact-details-one__single-icon">
                             <span class="icon-chat"></span>
                         </div>
                         <div class="contact-details-one__single-text">
-                            <h4><a href="tel:123456789">92 666 888 0000</a></h4>
-                            <p>Llamanos</p>
+                            <p>Llamanos a:</p>
+                            <h4><a href="tel:123456789">{{ $title[7]->content }}</a></h4>
                         </div>
                     </div>
 
@@ -46,12 +46,12 @@
                             <span class="icon-message-1"></span>
                         </div>
                         <div class="contact-details-one__single-text">
-                            <h4><a href="mailto:info@templatepath.com">info@company.com</a></h4>
-                            <p>Envia un email</p>
+                            <p>Envia un e-mail a:</p>
+                            <h4><a href="mailto:{{ $title[8]->content }}">{{ $title[8]->content }}</a></h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-8">
+                <div class="col-md-7">
                     <div class="contact-page__right">
                         <form id="pageContactForm" action="{{ route('apisubscriber') }}" class="comment-one__form contact-form-validated" novalidate="novalidate">
                             @csrf
