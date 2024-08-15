@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="logo" style="background: red;">
                                                 <a href="/">
-                                                    <img style="width: 100%; height: 50px;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
+                                                    <img style="height: 45px;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
