@@ -269,7 +269,7 @@
                         </div>
                         <div class="container">
                             <div id="divLogin" class="row">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
                                     <div class="form-info">
                                         <div class="form-section align-self-center">
                                             <div class="btn-section clearfix">
@@ -338,7 +338,7 @@
                                 </div>
                             </div>
                             <div id="divRegister" class="row" style="display: none">
-                                <div class="col-lg-12">
+                                <div class="col-md-12">
                                     <div class="form-info">
                                         <div class="form-section align-self-center">
                                             <div class="btn-section clearfix">
@@ -353,7 +353,7 @@
                                             </div>
                                             <div class="logo" style="background: red;">
                                                 <a href="/">
-                                                    <img style="width: 100%; height: 60px;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
+                                                    <img style="width: 100%; height: 50px;" src="{{ asset('storage/'.$logo[0]->content) }}" alt="logo">
                                                 </a>
                                             </div>
                                             <h1>Bienvenido!</h1>
