@@ -73,10 +73,52 @@
                             <br>
                             <h4>3. Compartir tu Información</h4>
                             <p class="about-two__text-box-text">
-                                <b>3.1 Proveedores de Servicios:</b> Podemos compartir tu información con terceros que prestan servicios en nuestro nombre, como procesadores de pagos, plataformas de correo electrónico y proveedores de análisis de datos. Estos terceros están obligados a proteger tu información y solo la utilizan en la medida en que sea necesario para realizar sus funciones.
+                                <b>3.1 Proveedores de Servicios:</b> Podemos compartir tu información con terceros que prestan servicios en 
+                                nuestro nombre, como procesadores de pagos, plataformas de correo electrónico y proveedores de análisis de datos. 
+                                Estos terceros están obligados a proteger tu información y solo la utilizan en la medida en que sea necesario para 
+                                realizar sus funciones.
                             </p>
                             <p class="about-two__text-box-text">
-                                <b>3.2 Cumplimiento Legal:</b> Podemos divulgar tu información si es necesario para cumplir con la ley, responder a una orden judicial, o proteger los derechos, la propiedad o la seguridad de [Nombre de tu Empresa/Sitio Web], nuestros usuarios u otros.
+                                <b>3.2 Cumplimiento Legal:</b> Podemos divulgar tu información si es necesario para cumplir con la ley, responder 
+                                a una orden judicial, o proteger los derechos, la propiedad o la seguridad de [Nombre de tu Empresa/Sitio Web], 
+                                nuestros usuarios u otros.
+                            </p>
+                            <br>
+                            <h4>4. Seguridad de la Información</h4>
+                            <p class="about-two__text-box-text">
+                                Tomamos medidas razonables para proteger tu información personal de accesos no autorizados, uso indebido, pérdida 
+                                o divulgación. Sin embargo, debes saber que ningún método de transmisión por Internet o de almacenamiento 
+                                electrónico es 100% seguro.
+                            </p>
+                            <br>
+                            <h4>5. Tus Derechos</h4>
+                            <p class="about-two__text-box-text">
+                                <b>5.1 Acceso y Rectificación:</b> Tienes derecho a acceder a la información personal que tenemos sobre ti y a 
+                                solicitar su rectificación si es incorrecta o está desactualizada.
+                            </p>
+                            <p class="about-two__text-box-text">
+                                <b>5.2 Cancelación y Oposición:</b> Puedes solicitar la eliminación de tu información personal o limitar el uso que 
+                                hacemos de ella en cualquier momento. Sin embargo, esto puede afectar nuestra capacidad para proporcionarte 
+                                algunos de nuestros servicios.
+                            </p>
+                            <p class="about-two__text-box-text">
+                                <b>5.3 Retiro del Consentimiento:</b> Si has dado tu consentimiento para que usemos tu información para fines de 
+                                marketing, puedes retirarlo en cualquier momento utilizando el enlace de "cancelar suscripción" en nuestros 
+                                correos electrónicos.
+                            </p>
+                            <br>
+                            <h4>6. Cambios a Esta Política de Privacidad</h4>
+                            <p class="about-two__text-box-text">
+                                Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Cualquier cambio 
+                                será publicado en esta página y, si los cambios son significativos, te lo notificaremos a través de un aviso 
+                                en nuestro sitio web o por correo electrónico.
+                            </p>
+                            <br>
+                            <h4>7. Contacto</h4>
+                            <p class="about-two__text-box-text">
+                                Si tienes preguntas o inquietudes sobre nuestra política de privacidad o el manejo de tu información personal, 
+                                puedes contactarnos a través de [Dirección de correo electrónico de contacto] o [Dirección física de la empresa, 
+                                si aplica].
                             </p>
                         </div>
                     </div>
