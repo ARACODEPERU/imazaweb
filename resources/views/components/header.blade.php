@@ -89,8 +89,8 @@
                             <div class="main-menu__right">
                                 <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Iniciar Sesión</a></li>
-                                        <li><a href="#">Registrarme</a></li>
+                                        <li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
+                                        <li><a href="{{ route('register') }}">Registrarme</a></li>
                                     </ul>
                                 </div>
                                 <div class="main-menu__right-cart-search">
@@ -109,7 +109,7 @@
                                         <a href="#" class="thm-btn search-toggler">Search</a>
                                     </div> --}}
                                     <div class="main-menu__right-search-box">
-                                        <a href="https://marketingdespega.com/login" target="_blamk" class="thm-btn">Campus Virtual</a>
+                                        <a href="{{ route('login') }}" target="_blamk" class="thm-btn">Campus Virtual</a>
                                     </div>
                                 </div>
                             </div>
