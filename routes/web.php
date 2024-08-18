@@ -31,6 +31,8 @@ Route::get('/home', [WebPageController::class, 'index'])
 Route::get('/', [WebPageController::class, 'construction'])->name('construction');
 Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosotros');
 Route::get('/cursos', [WebPageController::class, 'cursos'])->name('web_cursos');
+Route::get('/servicios', [WebPageController::class, 'servicios'])->name('web_servicios');
+Route::get('/capacitacion', [WebPageController::class, 'capacitacion'])->name('web_capacitacion');
 Route::get('/curso-descripcion/{id}', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
 Route::get('/contacto', [WebPageController::class, 'contacto'])->name('web_contacto');
 Route::get('/carrito', [WebPageController::class, 'carrito'])->name('web_carrito');

@@ -62,7 +62,9 @@
                                 <li class="{{ Route::currentRouteName()== 'index_main' ? "dropdown current" : '' }}">
                                     <a href="{{ route('index_main') }}">Home</a>
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}"><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
+                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_nosotros') }}">Nosotros</a>
+                                </li>
                                 <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <!--
@@ -71,6 +73,16 @@
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
                                     -->
+                                </li>
+                                <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_servicios') }}">Servicios</a>
+                                    <ul>
+                                        <li><a href="{{ route('web_capacitacion') }}">Capacitación</a></li>
+                                        <li><a href="">Suscripción</a></li>
+                                        <li><a href="">Automatización</a></li>
+                                        <li><a href="">Agencia</a></li>
+                                        <li><a href="">Imagen profesional</a></li>
+                                    </ul>
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'blog_principal' ? "dropdown current" : '' }}">
                                     <a href="{{ route('blog_principal') }}">Blog</a>
