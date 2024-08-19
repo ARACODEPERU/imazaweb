@@ -79,6 +79,8 @@ class BlogController extends Controller
         if ($url != null) {
             $article = BlogArticle::with('author')->where('url', $url)
                 ->first();
+
+            $article->increment('views');
         }
 
         $latest_articles = BlogArticle::with('author')
@@ -88,7 +90,7 @@ class BlogController extends Controller
             ->get();
 
         // $company = Company::first();
-        $article->increment('views');
+
 
         $logo = CmsSection::where('component_id', 'header_area_1')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -232,5 +234,4 @@ class BlogController extends Controller
             'latest_articles'   => $latest_articles
         ]);
     }
-
 }

@@ -1,9 +1,10 @@
 @extends('layouts.webpage')
 
 @section('content')
-
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <!--Page Header Start-->
-    <section class="page-header clearfix" style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
+    <section class="page-header clearfix"
+        style="background-image: url({{ asset('themes/imazaweb/images/backgrounds/page-header-02.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -35,45 +36,35 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <img style="width: 80px;" src="{{ asset('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="">
-                                </td>
-                                <td style="line-height: 3em;">Marketing de 0 a Ninja</td>
-                                <td style="line-height: 3em;">S/ 150.00</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img style="width: 80px;" src="{{ asset('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="">
-                                </td>
-                                <td style="line-height: 3em;">Marketing de 0 a Ninja</td>
-                                <td style="line-height: 3em;">S/ 150.00</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img style="width: 80px;" src="{{ asset('themes/imazaweb/images/resources/courses-v1-img1.jpg') }}" alt="">
-                                </td>
-                                <td style="line-height: 3em;">Marketing de 0 a Ninja</td>
-                                <td style="line-height: 3em;">S/ 150.00</td>
-                            </tr>
+                            @foreach ($products as $item)
+                                <tr>
+                                    <td>
+                                        <img style="width: 80px;" src="{{ $item['image'] }}" alt="">
+                                    </td>
+                                    <td style="line-height: 3em;">{{ $item['name'] }}</td>
+                                    <td style="line-height: 3em;">S/ {{ $item['total'] }}</td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
-                    <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s" style="padding: 15px 25px;">
+                    <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s"
+                        style="padding: 15px 25px;">
                         <h2 class="sidebar__title" style="margin-top: 10px;">
-                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAl : &nbsp; S/ 450.00
+                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAl : &nbsp; S/ {{ $total }}
                         </h2>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s" style="padding: 15px 25px;">
-                        <h2 class="sidebar__title">JESÚS ANAYA AGUIRRE</h2>
+                    <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s"
+                        style="padding: 15px 25px;">
+                        <h2 class="sidebar__title">{{ $person_name }}</h2>
                         <p>
-                            Agradecemos su preferencia por nuestros productos. Por favor, proceda a registrar 
+                            Agradecemos su preferencia por nuestros productos. Por favor, proceda a registrar
                             sus datos para confirmar la compra.
                         </p>
                     </div>
                     <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.3s">
-                        <h2 class="sidebar__title">AQUI VENDRIA EL MERCADO PAGO INTEGRADO COMO CELMOVIL</h2>
+                        <div id="cardPaymentBrick_container"></div>
                     </div>
                 </div>
             </div>
@@ -81,4 +72,86 @@
     </section>
 
 
+@stop
+@section('javascripts')
+
+    @if ($preference)
+        <script>
+            const mp = new MercadoPago("{{ env('MERCADOPAGO_KEY') }}", {
+                locale: 'es-PE'
+            });
+            const bricksBuilder = mp.bricks();
+            const renderCardPaymentBrick = async (bricksBuilder) => {
+                const settings = {
+                    initialization: {
+                        preferenceId: "{{ $preference }}",
+                        amount: {{ $total }},
+                    },
+                    customization: {
+                        visual: {
+                            style: {
+                                customVariables: {
+                                    theme: 'bootstrap',
+                                }
+                            }
+                        },
+                        paymentMethods: {
+                            maxInstallments: 1,
+                        }
+                    },
+                    callbacks: {
+                        onReady: () => {
+                            // callback llamado cuando Brick esté listo
+                        },
+                        onSubmit: (cardFormData) => {
+                            //  callback llamado cuando el usuario haga clic en el botón enviar los datos
+                            //  ejemplo de envío de los datos recolectados por el Brick a su servidor
+                            return new Promise((resolve, reject) => {
+                                fetch("{{ route('web_process_payment', $sale_id) }}", {
+                                        method: "PUT",
+                                        headers: {
+                                            "Content-Type": "application/json",
+                                            "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                                        },
+                                        body: JSON.stringify(cardFormData)
+                                    })
+                                    .then((response) => {
+                                        if (!response.ok) {
+                                            return response.json().then(error => {
+                                                throw new Error(error.error);
+                                            });
+                                        }
+                                        return response.json();
+
+                                    })
+                                    .then((data) => {
+                                        if (data.status == 'approved') {
+                                            window.location.href = data.url;
+                                        } else {
+                                            alert('No se pudo continuar el proceso');
+                                            window.location.href = data.url;
+                                        }
+                                    })
+                                    .catch((error) => {
+                                        if (error instanceof SyntaxError) {
+                                            // Si hay un error de sintaxis al analizar la respuesta JSON
+                                            alert('Error al procesar el pago.');
+                                        } else {
+                                            // Mostrar la alerta con el mensaje de error devuelto por el backend
+                                            alert(error.message);
+                                        }
+                                    })
+                            });
+                        },
+                        onError: (error) => {
+                            console.log(error)
+                        },
+                    },
+                };
+                window.cardPaymentBrickController = await bricksBuilder.create('cardPayment',
+                    'cardPaymentBrick_container', settings);
+            };
+            renderCardPaymentBrick(bricksBuilder);
+        </script>
+    @endif
 @stop
