@@ -109,9 +109,9 @@
                                     <div class="main-menu__right-cart-box">
                                         <a href="{{ route('web_carrito') }}">
                                             <span class="icon-shopping-cart"></span>
-                                            <div><span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
+                                            <span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
 
-                                            </span></div>
+                                            </span>
                                             <span style="display:none" id="contadorCarritoWeb" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
 
                                             </span>
