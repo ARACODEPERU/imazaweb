@@ -78,10 +78,10 @@
                                     <a href="{{ route('web_servicios') }}">Servicios</a>
                                     <ul>
                                         <li><a href="{{ route('web_capacitacion') }}">Capacitación</a></li>
-                                        <li><a href="">Suscripción</a></li>
-                                        <li><a href="">Automatización</a></li>
-                                        <li><a href="">Agencia</a></li>
-                                        <li><a href="">Imagen profesional</a></li>
+                                        <li><a href="{{ route('web_suscripcion') }}">Suscripción</a></li>
+                                        <li><a href="{{ route('web_automatizacion') }}">Automatización</a></li>
+                                        <li><a href="{{ route('web_agencia') }}">Agencia</a></li>
+                                        <li><a href="{{ route('web_imagen_profesional') }}">Imagen profesional</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'blog_principal' ? "dropdown current" : '' }}">
