@@ -143,21 +143,25 @@ function cargarContadorCarrito() {
 function actualizarContador(valor) {
     // Obtener el elemento del contador
     var contadorCarritoMovil = document.getElementById("contadorCarritoMovil");
-    var contadorCarritoMovilClass1 = document.getElementsByClassName("contadorCarritoMovil")[0];
-    var contadorCarritoMovilClass2 = document.getElementsByClassName("contadorCarritoMovil")[1];
+    var contadorCarritoMovilClass = document.getElementsByClassName("contadorCarritoMovil");
     var contadorCarritoWeb = document.getElementById("contadorCarritoWeb");
 
     if (valor == 0) {
-        contadorCarritoMovilClass1.setAttribute("hidden", true); // Ocultar el contador
-        contadorCarritoMovilClass2.setAttribute("hidden", true); // Ocultar el contador
-        contadorCarritoMovil.setAttribute("hidden", true); // Ocultar el contador
+        contadorCarritoMovilClass.setAttribute("hidden", true); // Ocultar el contador
         contadorCarritoWeb.setAttribute("hidden", true); // Ocultar el contador
+        for (var i = 0; i < contadorCarritoMovilClass.length; i++) {
+            contadorCarritoMovilClass[i].setAttribute("hidden", true); // Ocultar el contador
+        }
     } else {
         contadorCarritoMovil.removeAttribute("hidden"); // Mostrar el contador
-        contadorCarritoMovilClass1.removeAttribute("hidden"); // Mostrar el contador
-        contadorCarritoMovilClass2.removeAttribute("hidden"); // Mostrar el contador
         contadorCarritoWeb.removeAttribute("hidden"); // Mostrar el contador
+        for (var i = 0; i < contadorCarritoMovilClass.length; i++) {
+            contadorCarritoMovilClass[i].removeAttribute("hidden"); // Mostrar el contador
+        }
     }
     contadorCarritoMovil.innerHTML = valor;
     contadorCarritoWeb.innerHTML = valor;
+    for (var i = 0; i < contadorCarritoMovilClass.length; i++) {
+        contadorCarritoMovilClass[i].innerHTML = valor; // Agregar contenido con la variable
+    }
 }
