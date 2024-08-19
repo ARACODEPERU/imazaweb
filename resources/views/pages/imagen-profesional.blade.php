@@ -14,7 +14,7 @@
                         <div class="page-header__menu">
                             <ul class="page-header__menu-list list-unstyled clearfix">
                                 <li><a href="{{ route('index_main') }}">Home</a></li>
-                                <li class="active">Capacitación</li>
+                                <li class="active">Imagen Profesional</li>
                             </ul>
                         </div>
                     </div>
@@ -31,40 +31,43 @@
             <div class="about-two__bottom-content">
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about-two__text-box">
-                            <h1 class="">¿Estás listo para llevar tu negocio al siguiente nivel?</h1>
-                            <p class="about-two__text-box-text">
-                                En un mundo en constante evolución, la automatización y el marketing estratégico son las 
-                                claves para el éxito. Con nuestra capacitación, adquirirás las habilidades y el conocimiento 
-                                necesarios para transformar tu negocio y alcanzar resultados extraordinarios.
-                            </p>
-                        </div>
+                        <p class="about-two__text-box-text">
+                            Ofrecemos tarjetas personales en la web por un año con una inversión muy accesible. 
+                            Con estas tarjetas, podrás detallar los productos o servicios que brindas, asegurando 
+                            que tus clientes siempre tengan un medio para contactarte. 
+                        </p>
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-3 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="about-two__single-img">
                             {{-- <img src="{{ asset('storage/'.$visions[3]->content) }}" alt=""/> --}}
                             <img src="" alt=""/>
                         </div>
                     </div>
-                    <div class="col-md-9 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4>Nuestra capacitación te ofrece:</h4>
+                    <div class="col-md-8 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        <h4>Beneficios:</h4>
                         <ul style="list-style: none;">
                             <li>
-                                a) Descubrir y aplicar los secretos de la automatización y el marketing estratégico con 
-                                contenidos prácticos diseñados para una implementación inmediata. Desde el primer día, 
-                                transformarás tu negocio con estrategias probadas y efectivas.
+                                <b>•	Visibilidad continua: </b> Mantendrás presencia en línea permanente,
+                                facilitando que tus clientes te encuentren y se comuniquen contigo en todo momento.
                             </li>
                             <li>
-                                b) Despertarás tu pasión por el marketing digital y la gestión comercial con expertos que 
-                                inspiran. Aprenderás con un enfoque estratégico y práctico, y llevarás tu negocio a un paso adelante de tu competencia.
+                                <b>•	Información detallada: </b> Presentarás de manera clara y profesional 
+                                todos los productos o servicios que ofreces.
                             </li>
                             <li>
-                                c) Con nuestra plataforma E-Learning, no solo tendrás acceso a un conocimiento invaluable; lo tendrás para siempre. 
-                                Revivirás cada lección, cada descubrimiento, siempre que lo necesites. Además, recibirás un certificado que valida tu 
-                                capacitación y la de tu equipo, sin preocuparte por la fecha de vencimiento.
+                                <b>•	Accesibilidad: </b> Tus clientes podrán acceder a tu información desde 
+                                cualquier dispositivo, en todo lugar.
+                            </li>
+                            <li>
+                                <b>•	Profesionalismo: </b> Mejorarás tu imagen profesional con una tarjeta 
+                                personal en línea que refleja tu marca y tus valores.
+                            </li>
+                            <li>
+                                <b>•	Integración de redes sociales: </b> Incluye botones para todas tus redes 
+                                sociales y opciones de contacto, permitiendo que tus clientes se comuniquen contigo con un solo clic.
                             </li>
                         </ul>
                     </div>
@@ -72,8 +75,24 @@
                 <br>
                 <div class="row">
                     <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4 style="color: #833fdb;">
-                            Invertir en capacitación es invertir en el futuro de tu negocio.
+                        <p class="about-two__text-box-text">
+                            Aprovecha esta oportunidad para fortalecer tu presencia en línea y mantener una 
+                            comunicación fluida con tus clientes.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                        
+                        <h4 style="color: #833fdb; text-align:center">
+                            Al elegirnos obtienes más que una agencia de consultoría. Obtienes un socio estratégico 
+                            que te acompañará en cada paso del camino hacia el éxito.
+                        </h4>
+                        <br>
+                        
+                        <h4 style="color: #833fdb; text-align:center">
+                            ¡Tu éxito es nuestro éxito!
                         </h4>
                     </div>
                 </div>

@@ -279,7 +279,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.capacitacion',[
+        return view('pages.imagen-profesional',[
             'banner' => $banner,
             'title' => $title
         ]);
