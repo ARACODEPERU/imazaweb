@@ -109,9 +109,9 @@
                                     <div class="main-menu__right-cart-box">
                                         <a href="{{ route('web_carrito') }}">
                                             <span class="icon-shopping-cart"></span>
-                                            <span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
+                                            <div><span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
 
-                                            </span>
+                                            </span></div>
                                             <span style="display:none" id="contadorCarritoWeb" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
 
                                             </span>
@@ -121,7 +121,7 @@
                                         <a href="#" class="thm-btn search-toggler">Search</a>
                                     </div> --}}
                                     <div class="main-menu__right-search-box">
-                                        <a href="{{ route('login') }}" target="_blamk" class="thm-btn">Campus Virtual</a>
+                                        <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
                                     </div>
                                 </div>
                             </div>
