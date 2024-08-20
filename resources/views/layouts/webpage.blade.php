@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
         href="{{ URL('themes/imazaweb/images/favicons/favicon-16x16.png') }}" />
     <link rel="manifest" href="{{ URL('themes/imazaweb/images/favicons/site.webmanifest') }}" />
-    <meta name="description" content="Crsine HTML Template For Car Services" />
+    <meta name="description" content="Si tus clientes son atendidos en tiempo real, aumentarán las probabilidades de venta, por eso AUTOMATIZAMOS la atención 24/7 en WhatsApp, e-commerce y página web." />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
