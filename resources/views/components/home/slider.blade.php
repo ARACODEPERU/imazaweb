@@ -17,11 +17,11 @@
             
             @foreach ($sliders as $k => $slide)
             <div class="swiper-slide">
-                <div class="shape1"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}"
-                        alt="" />
+                <div class="shape1">
+                    <img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape1.png') }}" alt="" />
                 </div>
-                <div class="shape2"><img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape2.png') }}"
-                        alt="" />
+                <div class="shape2">
+                    <img src="{{ URL('themes/imazaweb/images/shapes/slider-v1-shape2.png') }}" alt="" />
                 </div>
                 <div class="image-layer">
                     <img src="{{ asset('storage/'.$slide->item->items[0]->content) }}" class="img-fluid" alt="img" />

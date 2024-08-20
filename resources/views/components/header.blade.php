@@ -62,7 +62,9 @@
                                 <li class="{{ Route::currentRouteName()== 'index_main' ? "dropdown current" : '' }}">
                                     <a href="{{ route('index_main') }}">Home</a>
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}"><a href="{{ route('web_nosotros') }}">Nosotros</a></li>
+                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_nosotros') }}">Nosotros</a>
+                                </li>
                                 <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <!--
@@ -71,6 +73,16 @@
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
                                     -->
+                                </li>
+                                <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_servicios') }}">Servicios</a>
+                                    <ul>
+                                        <li><a href="{{ route('web_capacitacion') }}">Capacitación</a></li>
+                                        <li><a href="{{ route('web_suscripcion') }}">Suscripción</a></li>
+                                        <li><a href="{{ route('web_automatizacion') }}">Automatización</a></li>
+                                        <li><a href="{{ route('web_agencia') }}">Agencia</a></li>
+                                        <li><a href="{{ route('web_imagen_profesional') }}">Imagen profesional</a></li>
+                                    </ul>
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'blog_principal' ? "dropdown current" : '' }}">
                                     <a href="{{ route('blog_principal') }}">Blog</a>
@@ -87,17 +99,21 @@
 
                         <div class="right">
                             <div class="main-menu__right">
-                                <div class="main-menu__right-login-register">
+                                {{-- <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
-                                        <li><a href="#">Iniciar Sesión</a></li>
-                                        <li><a href="#">Registrarme</a></li>
+                                        <li>
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#login">Iniciar Sesión</a>
+                                        </li>
+                                        <li><a href="" data-bs-toggle="modal"
+                                            data-bs-target="">Registrarme</a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="main-menu__right-cart-search">
                                     <div class="main-menu__right-cart-box">
                                         <a href="{{ route('web_carrito') }}">
                                             <span class="icon-shopping-cart"></span>
-                                            <span id="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
+                                            <span id="contadorCarritoMovil" class="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
 
                                             </span>
                                             <span style="display:none" id="contadorCarritoWeb" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
@@ -109,7 +125,7 @@
                                         <a href="#" class="thm-btn search-toggler">Search</a>
                                     </div> --}}
                                     <div class="main-menu__right-search-box">
-                                        <a href="https://marketingdespega.com/login" target="_blamk" class="thm-btn">Campus Virtual</a>
+                                        <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,3 +139,4 @@
     </div>
 
 </header>
+
