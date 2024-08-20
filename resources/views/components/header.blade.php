@@ -99,12 +99,16 @@
 
                         <div class="right">
                             <div class="main-menu__right">
-                                <div class="main-menu__right-login-register">
+                                {{-- <div class="main-menu__right-login-register">
                                     <ul class="list-unstyled">
-                                        <li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
-                                        <li><a href="{{ route('register') }}">Registrarme</a></li>
+                                        <li>
+                                            <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#login">Iniciar Sesión</a>
+                                        </li>
+                                        <li><a href="" data-bs-toggle="modal"
+                                            data-bs-target="">Registrarme</a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                                 <div class="main-menu__right-cart-search">
                                     <div class="main-menu__right-cart-box">
                                         <a href="{{ route('web_carrito') }}">
@@ -135,3 +139,4 @@
     </div>
 
 </header>
+

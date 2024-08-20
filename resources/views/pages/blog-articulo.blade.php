@@ -258,7 +258,6 @@
         </div>
     </section>
     <!--News Details End-->
-
     <!-- Modal -->
     <div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -830,10 +829,11 @@
         }
 
         /** Login 7 end **/
-    </style>
+    </style> 
 
 
 @stop
+
 @section('javascripts')
     <script>
         const divLogin = document.getElementById('divLogin');
@@ -851,4 +851,4 @@
 
         }
     </script>
-@stop
+@stop 
