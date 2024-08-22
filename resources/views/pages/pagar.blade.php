@@ -50,7 +50,7 @@
                     <div class="sidebar__single sidebar__post wow fadeInUp animated" data-wow-delay="0.2s"
                         style="padding: 15px 25px;">
                         <h2 class="sidebar__title" style="margin-top: 10px;">
-                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAl : &nbsp; S/ {{ $total }}
+                            <i class="fa fa-heart" aria-hidden="true"></i>&nbsp; TOTAL : &nbsp; S/ {{ $total }}
                         </h2>
                     </div>
                 </div>

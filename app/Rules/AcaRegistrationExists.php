@@ -29,6 +29,6 @@ class AcaRegistrationExists implements Rule
 
     public function message()
     {
-        return 'El alumno no tiene una matricula registrada para el curso elejido.';
+        return 'El alumno no tiene una matricula registrada para el curso elegido.';
     }
 }
