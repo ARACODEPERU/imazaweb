@@ -41,6 +41,7 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::resource('sales', SaleController::class);
 
     Route::get('pdf/sales/ticket/{id}', [SaleController::class, 'ticketPdf'])->name('ticketpdf_sales');
+    Route::get('pdf/product/print/barcode/{id}', [ProductController::class, 'printBarcode'])->name('product_print_barcode');
 
     Route::post('search/products', [ProductController::class, 'searchProduct'])->name('search_product');
 
@@ -73,6 +74,10 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::get('reports/saleindate', [ReportController::class, 'sales_report'])->name('sale_report');
     Route::get('reports/pettycash/{petty_cash_id}/report', [ReportController::class, 'PettyCashReport'])->name('PettyCashReport');
 
+    Route::get('reports/inventory/report/products', [ReportController::class, 'inventoryReportProducts'])->name('inventory_report_products');
+    Route::post('reports/inventory/report/products/data', [ReportController::class, 'inventoryReportProductsData'])->name('inventory_report_products_data');
+
+
     Route::get('reports/inventoryindate', [ReportController::class, 'inventory_report_export'])->name('inventory_report');
 
     Route::get('reports/inventory/{local_id}', [ReportController::class, 'inventory_report_by_local'])->name('inventory_report_by_local');
@@ -88,8 +93,12 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::post('data/payment/method/motals', [ReportController::class, 'dataPaymentMethodTotals'])->name('data_payment_method_totals');
 
     Route::post('import/product/data', [ProductController::class, 'import'])->name('import_product_data');
-
-
+    //////reports//////////
+    Route::get('reports/product/sellers/dates', [ReportController::class, 'reportProductSellersDates'])->name('report_product_sellers_dates');
+    Route::post('reports/product/sellers/table', [ReportController::class, 'reportProductSellersTable'])->name('report_product_sellers_table');
+    Route::get('reports/sales/expenses', [ReportController::class, 'reportSalesExpenses'])->name('report_sales_expenses');
+    Route::post('reports/sales/expenses/data', [ReportController::class, 'reportSalesExpensesData'])->name('report_sales_expenses_data');
+    Route::get('record/sales/income/period', [ReportController::class, 'recordSalesIncomePeriod'])->name('record_sales_income_period');
 
     Route::get('sale_document_series/{id}', [SaleDocumentController::class, 'getSerieByDocumentType'])->name('sale_document_series');
 
@@ -103,6 +112,10 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::get('saledocuments/create/fromticket/{id}', [SaleDocumentController::class, 'createFromFicket'])->name('saledocuments_create_from_ticket');
     Route::get('saledocuments/download/{id}/{type}/{file}', [SaleDocumentController::class, 'printDocument'])->name('saledocuments_download');
     Route::post('saledocuments/update/head', [SaleDocumentController::class, 'updateHead'])->name('saledocuments_update_head');
+
+    Route::post('saledocuments/cancellation/send', [SaleDocumentController::class, 'cancelDocument'])->name('saledocuments_cancel_document');
+
+    Route::get('saledocuments/table', [SaleDocumentController::class, 'tableDocument'])->name('saledocuments_table_document');
 
     ////rutas de resumen diario
     Route::get('salesummary/list', [SaleSummaryController::class, 'index'])->name('salesummaries_list');
@@ -164,4 +177,7 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::post('services/store', [ServicesController::class, 'store'])->name('store_service');
     Route::put('services/update/{id}', [ServicesController::class, 'update'])->name('update_service');
     Route::delete('services/destroy/{id}', [ServicesController::class, 'destroy'])->name('destroy_service');
+
+
+    Route::get('dashboard/minimum/stock', [SalesController::class, 'minimumStock'])->name('sales_dashboard_minimum_stock');
 });

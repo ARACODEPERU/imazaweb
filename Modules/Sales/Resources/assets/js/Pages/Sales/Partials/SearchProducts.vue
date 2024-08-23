@@ -4,7 +4,7 @@
     import SecondaryButton from '@/Components/SecondaryButton.vue';
     import { ref } from 'vue';
     import { useForm } from '@inertiajs/vue3';
-    import swal from 'sweetalert';
+    import Swal from 'sweetalert2';
     import NumberInput from '@/Components/NumberInput.vue';
 
     const astUrl = assetUrl;
@@ -33,7 +33,8 @@
     const displayResultSearch = ref(false);
     const searchProducts = async () => {
         if(formScaner.scaner){
-            axios.post(route('search_scaner_product'), form ).then((response) => {
+            var por = form.search.split('|');
+            axios.post(route('search_scaner_product'), {search: por[0]} ).then((response) => {
                 if(response.data.success){
                     displayModal.value = true;
                     form.products = [];
@@ -42,14 +43,21 @@
                     form.data.interne = response.data.product.interne;
                     form.data.stock = response.data.product.stock;
                     form.data.description = response.data.product.description;
-                    form.data.price = null;
+                    form.data.price = por[1] ?? null;
+                    form.data.size = por[2] ?? null    ;
                     form.data.total = 0;
                     form.data.quantity = 1;
                     form.data.discount = 0;
                     form.search = null;
                     
                 }else{
-                    swal(response.data.message);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops!',
+                        text: response.data.message,
+                        padding: '2em',
+                        customClass: 'sweet-alerts',
+                    });
                 }
                 
             });
@@ -59,7 +67,13 @@
                     form.products = response.data.products;
                     displayResultSearch.value = true;
                 }else{
-                    swal(response.data.message);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops!',
+                        text: response.data.message,
+                        padding: '2em',
+                        customClass: 'sweet-alerts',
+                    });
                 }
                 
             });
@@ -88,31 +102,44 @@
 
     const addProduct = (pre) => {
         if (pre){
+            
             if(form.data.size){
-                if(form.data.price){
-                    let total = parseFloat(form.data.quantity)*(parseFloat(form.data.price)-parseFloat(form.data.discount))
-                    form.data.total = total.toFixed(2);
-                    let data = {
-                        id: form.data.id,
-                        interne: form.data.interne,
-                        description: form.data.description,
-                        price: form.data.price,
-                        total: form.data.total,
-                        quantity: form.data.quantity,
-                        size: form.data.size,
-                        discount: form.data.discount,
-                        presentations: pre
+                if(form.data.quantity > 0 && form.data.quantity != ''){
+                    if(form.data.size_quantity >= form.data.quantity){
+                    
+                        if(form.data.price){
+                            let total = parseFloat(form.data.quantity)*(parseFloat(form.data.price)-parseFloat(form.data.discount))
+                            form.data.total = total.toFixed(2);
+                            let data = {
+                                id: form.data.id,
+                                interne: form.data.interne,
+                                description: form.data.description,
+                                price: form.data.price,
+                                total: form.data.total,
+                                quantity: form.data.quantity,
+                                size: form.data.size,
+                                discount: form.data.discount,
+                                presentations: pre
+                            }
+                            emit('eventdata',data);
+                            displayModal.value = false;
+                            form.data.size = null;
+                            displayResultSearch.value = false;
+                        }else{
+                            showMessage('Seleccionar Precio', 'info')
+                        }
+                    }else{
+                        showMessage('La cantidad a vender es mayor a las existencias del producto','info');
                     }
-                    emit('eventdata',data);
-                    displayModal.value = false;
-                    form.data.size = null;
-                    displayResultSearch.value = false;
+                    
                 }else{
-                    swal('Seleccionar Precio')
+                    showMessage('La cantidad a vender debe ser mayor de 0', 'info');
+                    
                 }
             }else{
-                swal('Seleccionar Talla')
+                showMessage('Seleccionar Talla', 'info')
             }
+            
         }else{
             if(form.data.price){
                 let total = parseFloat(form.data.quantity)*(parseFloat(form.data.price)-parseFloat(form.data.discount))
@@ -133,11 +160,32 @@
                 form.data.size = null;
                 displayResultSearch.value = false;
             }else{
-                swal('Seleccionar Precio')
+                showMessage('Seleccionar Precio','info')
             }
         }
         
     }
+
+    const selectSize = (item) => {
+        form.data.size = item.size
+        form.data.size_quantity = item.quantity
+    }
+
+    const showMessage = (msg = '', type = 'success') => {
+        const toast = Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 3000,
+            customClass: { container: 'toast' },
+        });
+        toast.fire({
+            icon: type,
+            title: msg,
+            padding: '10px 20px',
+        });
+    };
+
 </script>
 
 
@@ -149,7 +197,7 @@
                 <div class="bg-[#eee] flex justify-center items-center rounded-none px-3 font-semibold ltr:border-r-0 rtl:border-l-0 border-[#e0e6ed] dark:border-[#17263c] dark:bg-[#1b2e4b]">
                     <input v-model="formScaner.scaner" value="" id="scaner" type="checkbox" class="form-checkbox border-[#e0e6ed] dark:border-white-dark ltr:mr-0 rtl:ml-0" />
                 </div>
-                <input v-model="form.search" autocomplete="off" type="text" class="form-input ltr:rounded-l-none rtl:rounded-r-none ltr:rounded-r-none rtl:rounded-l-none" placeholder="Buscar por código o descripción..." required />
+                <input v-model="form.search" autofocus autocomplete="off" type="text" class="form-input ltr:rounded-l-none rtl:rounded-r-none ltr:rounded-r-none rtl:rounded-l-none" placeholder="Buscar por código o descripción..." required />
                 <button type="submit" class="btn btn-secondary ltr:rounded-l-none rtl:rounded-r-none">
                     <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </button>
@@ -203,7 +251,7 @@
     </div>
     <DialogModal 
         :show="displayModal" 
-        @close="closeModalSelectProduct"
+        :onClose="closeModalSelectProduct"
     >
         <template #title>
             Detalles del Producto
@@ -290,8 +338,7 @@
                                 <template v-for="(item, key) in JSON.parse(form.product.sizes)">
                                     <div >
                                         <label :class="item.quantity == 0 ? 'text-gray-500': ''" class="inline-flex" :for="'size'+ key ">
-                                        <input :disabled="item.quantity == 0 ? '' : disabled" v-model="form.data.size" :value="item.size" class="form-radio text-success peer" type="radio" name="sizes" :id="'size'+ key">
-                                        
+                                        <input :disabled="item.quantity == 0 ? '' : disabled" @change="selectSize(item)" :value="item.size" class="form-radio text-success peer" type="radio" name="sizes" :id="'size'+ key">
                                             <span class="peer-checked:text-success">Talla: {{ item.size }} / Cantidad: {{ item.quantity }}</span>
                                         </label>
                                     </div>
@@ -301,8 +348,7 @@
                                 <template v-for="(item, key) in JSON.parse(form.product.local_sizes)">
                                     <div >
                                         <label :class="item.quantity == 0 ? 'text-gray-500': ''" class="inline-flex" :for="'size'+ key ">
-                                            <input :disabled="item.quantity == 0 ? '' : disabled" v-model="form.data.size" :value="item.size" class="form-radio text-success peer" type="radio" name="sizes" :id="'size'+ key">
-                                        
+                                            <input :disabled="item.quantity == 0 ? '' : disabled" @change="selectSize(item)" :value="item.size" class="form-radio text-success peer" type="radio" name="sizes" :id="'size'+ key">
                                             <span class="peer-checked:text-success">Talla: {{ item.size }} / Cantidad: {{ item.quantity }}</span>
                                         </label>
                                     </div>
@@ -316,7 +362,7 @@
                         <label for="quantity" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                             Cantidad a vender
                         </label>
-                        <input v-model="form.data.quantity" type="number" id="quantity" class="form-input">
+                        <input v-model="form.data.quantity" type="number" id="quantity" min="1" class="form-input">
                     </div>
                     <div v-can="'sale_aplicar_descuento'" class="mb-4">
                         <label for="discount" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">

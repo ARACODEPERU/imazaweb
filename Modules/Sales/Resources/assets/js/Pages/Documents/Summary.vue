@@ -38,6 +38,7 @@
 
     const documents = ref([]);
     const searchDate = ref({});
+
     const getCurrentDate = () => {
         const currentDate = new Date();
         const year = currentDate.getFullYear();
@@ -52,6 +53,7 @@
     onMounted(() => {
         getCurrentDate();
     });
+
     const displaySearchLoading = ref(false);
     const displaySaveLoading = ref(false);
     const searchDocumentEarring = () => {
@@ -86,17 +88,27 @@
                     padding: '2em',
                     customClass: 'sweet-alerts',
                 });
-                router.visit(route('salesummaries_list'), { replace: true });
+                router.visit(route('salesummaries_list'), { 
+                    replace: false,
+                    preserveState: true,
+                    preserveScroll: true, 
+                });
             }else{
                 Swal.fire({
                     title: 'Error',
-                    text: 'Codigo: '+ res.data.code + '<br> Descripcion: ' + res.data.message ,
+                    html: 'Codigo: '+ res.data.code + '<br> Descripcion: ' + res.data.message ,
                     icon: 'error',
                     padding: '2em',
                     customClass: 'sweet-alerts',
                 });
             }
             displaySaveLoading.value = false;
+        }).then(() => {
+            router.visit(route('salesummaries_list'), { 
+                replace: false,
+                preserveState: true,
+                preserveScroll: true, 
+            });
         });
     }
 
@@ -105,6 +117,8 @@
         
         let btnCheck = document.getElementById('btn-check-summary'+ index);
         let spCheck = document.getElementById('sp-check-summary'+ index);
+        let spBtn= document.getElementById('sp-btn-summary'+ index);
+
         btnCheck.style.width = '120';
         btnCheck.style.cursor = 'not-allowed';
         spCheck.style.display = 'block';
@@ -118,16 +132,24 @@
                     padding: '2em',
                     customClass: 'sweet-alerts',
                 });
-                router.visit(route('salesummaries_list'), { replace: true });
+                router.visit(route('salesummaries_list'), { 
+                    replace: false,
+                    preserveState: true,
+                    preserveScroll: true, 
+                });
             }else{
                 Swal.fire({
                     title: 'Error',
-                    text: 'Codigo: '+ res.data.code + '<br> Descripcion: ' + res.data.message ,
+                    html: 'Codigo: '+ res.data.code + '<br> Descripcion: ' + res.data.message ,
                     icon: 'error',
                     padding: '2em',
                     customClass: 'sweet-alerts',
                 });
-                router.visit(route('salesummaries_list'), { replace: true });
+                router.visit(route('salesummaries_list'), { 
+                    replace: false,
+                    preserveState: true,
+                    preserveScroll: true, 
+                });
             }
         });
     }
@@ -148,30 +170,16 @@
                     padding: '2em',
                     customClass: 'sweet-alerts',
                 });
-                router.visit(route('salesummaries_list'), { replace: true });
+                router.visit(route('salesummaries_list'), { 
+                    replace: false,
+                    preserveState: true,
+                    preserveScroll: true, 
+                });
             }
         });
     }
 
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: true,
-        customClass: { container: 'toast' },
-        didOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-    })
-    
-    const activeMessage = () => {
-        Toast.fire({
-            icon: 'info',
-            title: 'Resumen diario',
-            text: 'Para comunicar las boletas de ventas emitidas o anuladas, así como las notas de crédito/débito releacionadas, necesita hacerlo mediante un resumen diario. A diferencia del envío de una factura, donde la respuesta es inmediata, en este documento debemos hacer un consulta adicional para conocer su estado utilizando el numero de ticket.',
-            padding: '10px 20px',
-        });
-    }
+   
 </script>
 
 <template>
@@ -222,71 +230,68 @@
                             </div>
                         </div>
                     </div>
-                    <div class="max-w-full overflow-x-auto">
-                        <table class="w-full table-auto">
-                            <thead class="border-b border-stroke">
-                                <tr class="bg-gray-50 text-left dark:bg-meta-4">
-                                    <th  class="py-2 px-4 text-center font-medium text-black dark:text-white">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="text-center" >
                                         Acciones
                                     </th>
-                                    <th class="py-2 px-4 font-medium text-black dark:text-white">
+                                    <th>
                                         Nmr. Documento
                                     </th>
-                                    <th class="py-2 px-4 font-medium text-black dark:text-white">
+                                    <th>
                                         Fecha
                                     </th>
-                                    <th class="py-2 px-4 font-medium text-black dark:text-white">
+                                    <th>
                                         Estado
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <template v-for="(summary, index) in summaries.data" :key="summary.id">
-                                    <tr :style="summary.status ==='registrado' ? '' : summary.status ==='Rechazado' ? 'color: #CF1504': summary.status ==='Enviado'? 'color: #03C73F' :'color: #051BC6'" :class="summary.invoice_status ==='registrado' ? 'border-b border-stroke' : ''">
-                                        <td :rowspan="summary.status ==='registrado' || summary.status ==='Enviado' ? 1 : 2" class="text-center py-2 px-2 dark:border-strokedark">
-                                            <button :id="'btn-check-summary'+index" @click="statusTicket(summary.id,summary.ticket,index)" v-if="summary.status ==='Enviado'" type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                                <svg :id="'sp-check-summary'+index" style="display: none;" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-                                                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
-                                                </svg>
-                                                Consultar
-                                            </button>
-                                            <button :id="'btn-delete-summary'+index" @click="deleteSummary(summary.id,index)" v-if="summary.status ==='Rechazado'" type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
-                                                <svg :id="'sp-delete-summary'+index" style="display: none;" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-                                                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
-                                                </svg>
-                                                Eliminar
-                                            </button>
+                                    <tr :class="summary.status ==='registrado' ? '' : summary.status ==='Rechazado' ? 'text-danger': summary.status ==='Enviado'? 'text-success' : 'text-primary'">
+                                        <td class="text-center">
+                                            <div class="flex gap-4 items-center justify-center">
+                                                <button :id="'btn-check-summary'+index" @click="statusTicket(summary.id,summary.ticket,index)" v-if="summary.status ==='Enviado'" type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                                    <svg :id="'sp-check-summary'+index" style="display: none;" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                                                        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
+                                                    </svg>
+                                                    Consultar
+                                                </button>
+                                                <button :id="'btn-delete-summary'+index" @click="deleteSummary(summary.id,index)" v-if="summary.status ==='Rechazado'" type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                                                    <svg :id="'sp-delete-summary'+index" style="display: none;" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                                                        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
+                                                    </svg>
+                                                    Eliminar
+                                                </button>
+                                            </div>
                                         </td>
-                                        <td class="py-2 dark:border-strokedark">
-                                            {{ summary.summary_name }}
+                                        <td>
+                                            <h6 class="font-semibold">
+                                                {{ summary.summary_name }}
+                                                 <span v-if="summary.status == 'Rechazado' || summary.status == 'Aceptado'" class="block text-xs">
+                                                    <code v-if="summary.response_code != 0">
+                                                    Código: {{ summary.response_code }}
+                                                    </code>
+                                                    <code>
+                                                        Descripción: {{ summary.response_description }}
+                                                    </code>
+                                                 </span>
+                                            </h6>
+                                            <p v-if="summary.notes" class="text-xs">{{ summary.notes }}</p>
+                                            <p v-if="summary.reason" class="text-xs font-black text-danger">BOLETA ANULADA POR: {{ summary.reason }}</p>
                                         </td>
-                                        <td class="py-2 px-2 dark:border-strokedark">
+                                        <td>
                                             {{ summary.summary_date }}
                                         </td>
-                                        <td  class="text-center py-2 px-2 dark:border-strokedark">
+                                        <td>
                                             <small>Estado Sunat:</small>
                                             {{ summary.status }}
                                         </td>
                                     </tr>
-                                    <template v-if="summary.status == 'Rechazado' || summary.status == 'Aceptado'" >
-                                        <tr :style="summary.status ==='Rechazado' ? 'color: #CF1504': 'color: #051BC6'" class="border-b border-stroke" >
-                                            <td colspan="2" class="text-xs">
-                                                <code v-if="summary.response_code != 0">
-                                                    Código: {{ summary.response_code }}
-                                                </code>
-                                                <code>
-                                                    Descripción: {{ summary.response_description }}
-                                                </code>
-                                            </td>
-                                            <td class="text-center text-xs">
-                                               <template v-if="summary.notes">
-                                                    {{ summary.notes }}
-                                               </template> 
-                                            </td>
-                                        </tr>
-                                    </template>
                                 </template>
                             </tbody>
                         </table>
@@ -336,7 +341,7 @@
                     <table class="w-full">
                         <thead class="uppercase text-sm">
                             <tr>
-                                <th ">
+                                <th>
                                     
                                 </th>
                                 <th scope="col">
@@ -360,7 +365,7 @@
                               </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="(item,ko) in documents" class="text-sm">
+                            <tr v-for="(item, ko) in documents" class="text-sm">
                                 <th scope="row">
                                     
                                 </th>
@@ -391,14 +396,15 @@
             </template>
             <template #buttons>
                 <PrimaryButton class="mr-2"
-                :class="{ 'opacity-25': displaySaveLoading }" :disabled="displaySaveLoading"
-                @click="saveSummary()"
-                >
-                <svg v-show="displaySaveLoading" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-                    <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
-                </svg>
-               Guardar</PrimaryButton> 
+                    :class="{ 'opacity-25': displaySaveLoading }" :disabled="displaySaveLoading"
+                    @click="saveSummary()"
+                    >
+                    <svg v-show="displaySaveLoading" aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
+                    </svg>
+                    Guardar
+                </PrimaryButton> 
             </template>
         </ModalLarge>
     </AppLayout>

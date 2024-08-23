@@ -2,9 +2,13 @@
 
 namespace Modules\Sales\Http\Controllers;
 
+use App\Models\Product;
+use App\Models\SaleDocument;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\DB;
+use Inertia\Inertia;
 
 class SalesController extends Controller
 {
@@ -36,24 +40,16 @@ class SalesController extends Controller
         //
     }
 
-    /**
-     * Show the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function show($id)
+    public function minimumStock()
     {
-        return view('sales::show');
-    }
+        $products = Product::where('stock', '<=', DB::raw('stock_min'))
+            ->where('is_product', true)
+            ->limit(100)
+            ->get();
 
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('sales::edit');
+        return response()->json([
+            'products' => $products
+        ]);
     }
 
     /**
@@ -62,9 +58,29 @@ class SalesController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $id)
+    public function clientSearchDocument(Request $request)
     {
-        //
+        $document = SaleDocument::select(
+            'id',
+            'client_number',
+            'client_rzn_social',
+            'invoice_serie',
+            'invoice_correlative',
+            'number',
+            'invoice_mto_imp_sale',
+            'invoice_type_doc'
+        )
+            ->where('invoice_type_doc', $request->get('type'))
+            ->where('invoice_serie', $request->get('serie'))
+            ->where('invoice_correlative', $request->get('number'))
+            ->where('client_number', $request->get('client'))
+            ->where('invoice_mto_imp_sale', $request->get('amount'))
+            ->where('invoice_broadcast_date', $request->get('date'))
+            ->get();
+
+        return response()->json([
+            'document' => $document
+        ]);
     }
 
     /**
@@ -72,8 +88,11 @@ class SalesController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function destroy($id)
+    public function findInvoice()
     {
-        //
+        $saleDocumentTypes = DB::table('sale_document_types')->whereIn('sunat_id', ['01', '03'])->get();
+        return Inertia::render('Sales::Finder/Invoices', [
+            'saleDocumentTypes' => $saleDocumentTypes
+        ]);
     }
 }

@@ -189,4 +189,29 @@ Route::middleware(['auth', 'verified', 'invalid_updated_information'])->prefix('
     Route::middleware(['middleware' => 'permission:aca_dashboard'])
         ->get('dashboard/total/registration/student', 'AcademicController@studentsEnrolledMonth')
         ->name('aca_student_registration_total');
+
+    ////subscriptions/////
+    Route::middleware(['middleware' => 'permission:aca_suscripciones'])
+        ->get('subscriptions/list', 'AcaSubscriptionTypeController@index')
+        ->name('aca_subscriptions_list');
+
+    Route::middleware(['middleware' => 'permission:aca_suscripciones_nuevo'])
+        ->get('subscriptions/create', 'AcaSubscriptionTypeController@create')
+        ->name('aca_subscriptions_create');
+
+    Route::middleware(['middleware' => 'permission:aca_suscripciones_nuevo'])
+        ->post('subscriptions/store', 'AcaSubscriptionTypeController@store')
+        ->name('aca_subscriptions_store');
+
+    Route::middleware(['middleware' => 'permission:aca_suscripciones_editar'])
+        ->get('subscriptions/edit/{id}', 'AcaSubscriptionTypeController@edit')
+        ->name('aca_subscriptions_edit');
+
+    Route::middleware(['middleware' => 'permission:aca_suscripciones_editar'])
+        ->put('subscriptions/update/{id}', 'AcaSubscriptionTypeController@update')
+        ->name('aca_subscriptions_update');
+
+    Route::middleware(['middleware' => 'permission:aca_suscripciones_eliminar'])
+        ->delete('subscriptions/destroy/{id}', 'AcaSubscriptionTypeController@destroy')
+        ->name('aca_subscriptions_destroy');
 });

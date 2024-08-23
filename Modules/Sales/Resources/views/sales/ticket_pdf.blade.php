@@ -3,6 +3,13 @@
 
 <head>
     <style>
+        @page {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
         * {
             font-size: 14px;
             font-family: 'Times New Roman';
@@ -57,7 +64,9 @@
 
 <body style="padding: 0px">
     <div>
-        <img src="{{ asset('storage/' . $company->logo) }}" alt="Logotipo">
+        <div style="margin-top:16px;width:100%;text-align: center">
+            <img src="{{ asset('storage/' . $company->logo) }}" alt="Logotipo" class="centrado">
+        </div>
         <p class="centrado">
             {{-- {{ $company->name }} --}}
             <br>{{ \Carbon\Carbon::parse($document->created_at)->format('Y-m-d H:i:s') }}
@@ -92,9 +101,12 @@
                 </tr>
             </tbody>
         </table>
-        <p class="centrado">¡GRACIAS POR SU COMPRA!
-            <br>{{ $company->name }}
-        </p>
+        <div style="margin-top:16px;margin-bottom:16px;width:100%;">
+            <p class="centrado">
+                ¡Vuelve a amar cada paso con {{ $company->name }}!
+            </p>
+        </div>
+        <p class="centrado">¡GRACIAS POR SU COMPRA!</p>
     </div>
 </body>
 

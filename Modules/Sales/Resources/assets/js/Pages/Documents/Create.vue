@@ -97,6 +97,8 @@
                     showCancelButton: false,
                     confirmButtonText: 'Ok',
                     denyButtonText: `Crear serie`,
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
                 }).then((result) => {
                     if (result.isDenied) {
                         router.visit(route('establishments.index'),{
@@ -167,6 +169,8 @@
                     title: 'Información Importante',
                     text: "El cliente no cuenta con ruc para emitir una factura",
                     icon: 'info',
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
                 });
             }
         }
@@ -274,6 +278,8 @@
                     title: 'Información Importante',
                     text: "El cliente debe tener ruc para emitir una factura",
                     icon: 'error',
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
                 });
                 formDocument.processing = false
                 return;
@@ -316,7 +322,9 @@
                     cancelButtonText: 'Seguir vendiendo',
                     showDenyButton: true,
                     denyButtonText: `Solo Imprimir`,
-                    denyButtonColor: '#5E5A5A'
+                    denyButtonColor: '#5E5A5A',
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
                 }).then((result) => {
                     if (result.isConfirmed) {
                         if(res.data.invoice_type_doc == '01'){
@@ -326,6 +334,8 @@
                                 title: 'Información Importante',
                                 text: "Las boletas se envian mediante un resumen",
                                 icon: 'info',
+                                padding: '2em',
+                                customClass: 'sweet-alerts',
                             });
                         }
                     } else if (result.isDenied) {
@@ -340,6 +350,8 @@
                 title: 'Información Importante',
                 text: "Elejir serie de documento",
                 icon: 'error',
+                padding: '2em',
+                customClass: 'sweet-alerts',
             });
             formDocument.processing = false
             return;
@@ -417,6 +429,8 @@
             confirmButtonText: 'Enviar',
             showLoaderOnConfirm: true,
             clickOutside: false,
+            padding: '2em',
+            customClass: 'sweet-alerts',
             preConfirm: () => {
                 return axios.get(route('saledocuments_send', [document.id,document.invoice_type_doc])).then((res) => {
                     if (!res.data.success) {
@@ -444,6 +458,8 @@
                     title: `${result.value.data.message}`,
                     html: `${cadena}`,
                     icon: 'success',
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
                 }).then(() => {
                     router.visit(route('saledocuments_list'),{
                         method: 'get'
@@ -632,10 +648,10 @@
                                                     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                                                 </svg>
                                                 <span class="sr-only">Info</span>
+                                                <div class="flex">
                                                 <div v-can="'sale_registar_producto_alvender'">
-                                                    Click en <span class="p-1 bg-blue-700 text-white"><font-awesome-icon @click="newItems" :icon="faPlus" /></span> para agregar o click en <span class="p-1 bg-gray-700 text-white"><font-awesome-icon @click="displaySearchProducts = true" :icon="faMagnifyingGlass" /></span> para buscar producto o servicio
+                                                    Click en <span class="p-1 bg-blue-700 text-white"><font-awesome-icon @click="newItems" :icon="faPlus" /></span> para agregar o 
                                                 </div>
-                                                <div v-can-else>
                                                     Click en <span class="p-1 bg-gray-700 text-white"><font-awesome-icon @click="displaySearchProducts = true" :icon="faMagnifyingGlass" /></span> para buscar producto o servicio
                                                 </div>
                                             </div>
