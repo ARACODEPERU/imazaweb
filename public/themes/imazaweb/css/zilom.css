@@ -1384,7 +1384,7 @@ ul {
 
 
 .mobile-nav__content {
-    width: 300px;
+    width: 70%;
     background-color: #1c1e27;
     z-index: 10;
     position: relative;
@@ -3262,9 +3262,15 @@ ul {
 
 }
 
-.courses-one__single-content-title {
+/* .courses-one__single-content-title {
     font-size: 16px;
     line-height: 26px;
+    font-weight: 700;
+} */
+
+.courses-one__single-content-title {
+    font-size: 16px;
+    line-height: 19px;
     font-weight: 700;
 }
 
@@ -4252,9 +4258,15 @@ ul {
     font-weight: 700;
 }
 
-.blog-one__single-content-title {
+/* .blog-one__single-content-title {
     font-size: 24px;
     line-height: 34px;
+    font-weight: 700;
+} */
+
+.blog-one__single-content-title {
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
 }
 
@@ -4270,6 +4282,7 @@ ul {
 
 .blog-one__single-content-text {
     margin: 0;
+    line-height: 30px;
     margin-top: 22px;
 }
 

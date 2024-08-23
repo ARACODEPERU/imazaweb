@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Person;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Modules\CMS\Entities\CmsSection;
@@ -132,7 +135,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -161,7 +164,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -190,7 +193,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -219,7 +222,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -248,7 +251,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -277,7 +280,7 @@ class WebPageController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
+
         $title = CmsSection::where('component_id', 'cursos_titulo_area_15')  //siempre cambiar el id del componente
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -406,6 +409,20 @@ class WebPageController extends Controller
                 'status' => true
             ]);
 
+            $user = User::firstOrNew(['email' => $person->email]);
+
+            if ($user->exists) {
+                // El usuario ya existe, redirige al usuario a iniciar sesión
+                return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
+            } else {
+                $user = User::create([
+                    'name' => $person->names,
+                    'email' => $person->email,
+                    'password' => Hash::make($person->number),
+                ]);
+                Auth::login($user);
+            }
+
             $sale = OnliSale::create([
                 'module_name'                   => 'Onlineshop',
                 'person_id'                     => $person->id,
@@ -417,9 +434,16 @@ class WebPageController extends Controller
 
             $productquantity = 1;
 
+            $student = AcaStudent::firstOrCreate(
+                ['person_id' => $person->id],
+                ['student_code' => $person->number, 'status' => true]
+            );
+
             foreach ($productids as $key => $id) {
 
                 $product = OnliItem::find($id);
+
+                $this->matricular_curso($id, $student);
 
                 array_push($items, [
                     'id' => $id,
@@ -474,6 +498,12 @@ class WebPageController extends Controller
             'sale_id' => $sale->id
         ]);
     }
+
+    public function gracias()
+    {
+        return view('pages.gracias');
+    }
+
 
     public function privacidad()
     {
@@ -573,5 +603,18 @@ class WebPageController extends Controller
             'products' => $products,
             'sale' => $sale
         ]);
+    }
+
+    private function matricular_curso($producto_id, $student){
+
+        $course_id = $producto_id->item_id;
+
+        $registration = AcaCapRegistration::create([
+            'student_id' => $student->id,
+            'course_id' => $course_id,
+            'status' => true,
+            'modality_id' => 3
+        ]);
+
     }
 }
