@@ -128,7 +128,7 @@
                                     @enderror
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputDNI" class="form-label">DNI :</label>
+                                    <label for="inputDNI" class="form-label">N° Doc :</label>
                                     <input type="text" name="dni" value="{{ old('dni') }}" class="form-control"
                                         id="inputDNI" required>
                                     @error('dni')

@@ -499,6 +499,12 @@ class WebPageController extends Controller
         ]);
     }
 
+    public function gracias()
+    {
+        return view('pages.gracias');
+    }
+
+
     public function privacidad()
     {
 
