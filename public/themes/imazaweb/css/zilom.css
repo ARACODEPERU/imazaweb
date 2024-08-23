@@ -3262,9 +3262,15 @@ ul {
 
 }
 
-.courses-one__single-content-title {
+/* .courses-one__single-content-title {
     font-size: 16px;
     line-height: 26px;
+    font-weight: 700;
+} */
+
+.courses-one__single-content-title {
+    font-size: 16px;
+    line-height: 18px;
     font-weight: 700;
 }
 
