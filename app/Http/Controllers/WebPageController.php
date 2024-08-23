@@ -22,6 +22,8 @@ use App\Mail\StudentRegistrationMailable;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ConfirmPurchaseMail;
 use Carbon\Carbon;
+use Modules\Academic\Entities\AcaStudent;
+use Modules\Academic\Entities\AcaCapRegistration;
 
 class WebPageController extends Controller
 {
