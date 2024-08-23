@@ -3270,7 +3270,7 @@ ul {
 
 .courses-one__single-content-title {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 19px;
     font-weight: 700;
 }
 
@@ -4258,9 +4258,15 @@ ul {
     font-weight: 700;
 }
 
-.blog-one__single-content-title {
+/* .blog-one__single-content-title {
     font-size: 24px;
     line-height: 34px;
+    font-weight: 700;
+} */
+
+.blog-one__single-content-title {
+    font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
 }
 
@@ -4276,6 +4282,7 @@ ul {
 
 .blog-one__single-content-text {
     margin: 0;
+    line-height: 30px;
     margin-top: 22px;
 }
 
