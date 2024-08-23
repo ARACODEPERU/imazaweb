@@ -93,7 +93,9 @@
                                     </ul>
                                     -->
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}"><a href="{{ route('web_contacto') }}">Contacto</a></li>
+                                <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_contacto') }}">Contacto</a>
+                                </li>
                             </ul>
                         </div>
 
@@ -140,3 +142,41 @@
 
 </header>
 
+
+
+<div class="mobile-nav__wrapper">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
+        <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+        <div class="logo-box">
+            <a href="index.html" aria-label="logo image">
+                <img src="{{ asset('storage/'.$header[9]->content) }}" width="155" alt="" />
+            </a>
+        </div>
+        <!-- /.logo-box -->
+        <div class="mobile-nav__container"></div>
+        <!-- /.mobile-nav__container -->
+
+        <ul class="mobile-nav__contact list-unstyled">
+            <li>
+                <i class="icon-phone-call"></i>
+                <a href="tel:{{ $header[7]->content }}">{{ $header[7]->content }}</a>
+            </li>
+            <li>
+                <i class="icon-letter"></i>
+                <a href="mailto:{{ $header[8]->content }}">{{ $header[8]->content }}</a>
+            </li>
+        </ul>
+        <!-- /.mobile-nav__contact -->
+        <div class="mobile-nav__top" style="padding: 20px 8px;">
+            <div class="mobile-nav__social">
+                <a href="{{ $header[1]->content }}" target="_blank" class="fab fa-facebook" style=" font-size: 20px;"></a>
+                <a href="{{ $header[4]->content }}" target="_blank" class="fab fa-tiktok" style=" font-size: 20px;"></a>
+            </div><!-- /.mobile-nav__social -->
+        </div><!-- /.mobile-nav__top -->
+    </div>
+    <!-- /.mobile-nav__content -->
+</div>
+<!-- /.mobile-nav__wrapper -->
