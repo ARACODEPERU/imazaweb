@@ -32,13 +32,13 @@ class StudentRegistrationMailable extends Mailable
     {
         return new Envelope(
             from: new Address(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME')),
-            subject: 'Student Registration Mailable',
+            subject: 'Gracias por unirte a Marketing Despega',
         );
     }
 
     public function build()
     {
-        return $this->view('capperu.email.gratitude', [
+        return $this->view('email.gratitude', [
             'data' => $this->data
         ]);
     }
