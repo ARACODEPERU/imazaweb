@@ -445,7 +445,7 @@ class WebPageController extends Controller
 
                 $product = OnliItem::find($id);
 
-                $this->matricular_curso($id, $student);
+                $this->matricular_curso($product, $student);
 
                 array_push($items, [
                     'id' => $id,
@@ -607,9 +607,9 @@ class WebPageController extends Controller
         ]);
     }
 
-    private function matricular_curso($producto_id, $student){
+    private function matricular_curso($producto, $student){
 
-        $course_id = $producto_id->item_id;
+        $course_id = $producto->item_id;
 
         $registration = AcaCapRegistration::create([
             'student_id' => $student->id,
