@@ -498,8 +498,8 @@ class WebPageController extends Controller
             $response = $e->getApiResponse();
             //dd($response); // Mostrar la respuesta para obtener más detalles
         }
-
-            $this->graciasCompra($sale->id);
+            route('web_gracias_por_comprar_tu_entrada', $sale->id);
+            //$this->graciasCompra($sale->id);
     }
 
     public function gracias()
