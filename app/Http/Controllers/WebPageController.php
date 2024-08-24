@@ -415,7 +415,11 @@ class WebPageController extends Controller
 
             if ($user->exists) {
                 // El usuario ya existe, redirige al usuario a iniciar sesión
-                return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
+                if(Auth::check()){
+
+                }else{
+                    return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
+                }
             } else {
                 $user = User::create([
                     'name' => $person->names,
@@ -652,11 +656,6 @@ class WebPageController extends Controller
 
         $courses = [];
         foreach ($details as $k => $detail) {
-            AcaCapRegistration::where('student_id', $student->id)
-                ->where('course_id', $detail->item_id)
-                ->update([
-                    'status' => true
-                ]);
             $item = OnliItem::find($detail->onli_item_id);
             $courses[$k] = [
                 'image'       => $item->image,
@@ -692,7 +691,8 @@ class WebPageController extends Controller
             'student_id' => $student->id,
             'course_id' => $course_id,
             'status' => true,
-            'modality_id' => 3
+            'modality_id' => 3,
+            'unlimited' => true
         ]);
 
     }
