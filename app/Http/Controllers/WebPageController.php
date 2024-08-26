@@ -25,6 +25,7 @@ use Carbon\Carbon;
 use Modules\Academic\Entities\AcaStudent;
 use Modules\Academic\Entities\AcaCapRegistration;
 use Illuminate\Support\Facades\DB;
+use Spatie\Permission\Models\Role;
 
 class WebPageController extends Controller
 {
@@ -426,8 +427,14 @@ class WebPageController extends Controller
                     'name' => $person->names,
                     'email' => $person->email,
                     'password' => Hash::make($person->number),
+                    'person_id' => $person->id
                 ]);
                 Auth::login($user);
+                //asignar el rol de estudiante....
+                if (!$user->hasRole('Alumno')) {
+                    $role = Role::where('name', 'Alumno')->first();
+                    $user->assignRole($role);
+                }
             }
 
             $sale = OnliSale::create([
