@@ -426,6 +426,7 @@ class WebPageController extends Controller
                     'name' => $person->names,
                     'email' => $person->email,
                     'password' => Hash::make($person->number),
+                    'person_id' => $person->id
                 ]);
                 Auth::login($user);
             }
