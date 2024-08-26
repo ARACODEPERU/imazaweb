@@ -22,6 +22,9 @@ use App\Mail\StudentRegistrationMailable;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ConfirmPurchaseMail;
 use Carbon\Carbon;
+use Modules\Academic\Entities\AcaStudent;
+use Modules\Academic\Entities\AcaCapRegistration;
+use Illuminate\Support\Facades\DB;
 
 class WebPageController extends Controller
 {
@@ -362,7 +365,6 @@ class WebPageController extends Controller
 
     public function pagar(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'names' => 'required|string|max:255',
             'app' => 'required|string|max:255',
@@ -387,6 +389,7 @@ class WebPageController extends Controller
 
         $preference_id = null;
         try {
+            DB::beginTransaction();
             MercadoPagoConfig::setAccessToken(env('MERCADOPAGO_TOKEN'));
             $client = new PreferenceClient();
             $items = [];
@@ -413,7 +416,11 @@ class WebPageController extends Controller
 
             if ($user->exists) {
                 // El usuario ya existe, redirige al usuario a iniciar sesión
-                return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
+                if(Auth::check()){
+
+                }else{
+                    return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
+                }
             } else {
                 $user = User::create([
                     'name' => $person->names,
@@ -443,7 +450,7 @@ class WebPageController extends Controller
 
                 $product = OnliItem::find($id);
 
-                $this->matricular_curso($id, $student);
+                $this->matricular_curso($product, $student);
 
                 array_push($items, [
                     'id' => $id,
@@ -484,19 +491,16 @@ class WebPageController extends Controller
             // );
 
             $preference_id =  $preference->id;
+            DB::commit();
         } catch (\MercadoPago\Exceptions\MPApiException $e) {
             // Manejar la excepción
+            DB::rollback();
             $response = $e->getApiResponse();
-            dd($response); // Mostrar la respuesta para obtener más detalles
+            //dd($response); // Mostrar la respuesta para obtener más detalles
         }
+            //route('web_gracias_por_comprar_tu_entrada', $sale->id);
 
-        return view('pages.pagar', [
-            'preference' => $preference_id,
-            'products' => $products,
-            'person_name' => $person->full_name,
-            'total' => $total,
-            'sale_id' => $sale->id
-        ]);
+            $this->graciasCompra($sale->id);
     }
 
     public function gracias()
@@ -597,23 +601,100 @@ class WebPageController extends Controller
 
     public function graciasCompra($id)
     {
-        $products[0] = null;
+        /*
+        $sale = OnliSale::find($sale_id);
+        $saleDetails = OnliSaleDetail::where('sale_id', $sale_id)->get();
+        //dd($request->all());
+        $sale->response_status = $request->get('collection_status');
+        $sale->response_id = $request->get('collection_id');
+        $sale->response_date_approved = Carbon::now()->format('Y-m-d');
+        $sale->response_payer = json_encode($request->all());
+        $sale->response_payment_method_id = $request->get('payment_type');
+
+        $sale->save();
+
+        $person = Person::where('id', $sale->person_id)->first();
+        $student = AcaStudent::where('person_id', $sale->person_id)->first();
+
+        // al hacer el pago se realiza activa la patricula
+        $courses = [];
+        foreach ($saleDetails as $k => $detail) {
+            AcaCapRegistration::where('student_id', $student->id)
+                ->where('course_id', $detail->item_id)
+                ->update([
+                    'status' => true
+                ]);
+            $item = OnliItem::find($detail->onli_item_id);
+            $courses[$k] = [
+                'image'       => $item->image,
+                'name'        => $item->name,
+                'description' => $item->description,
+                'type'        => $item->additional,
+                'modality'    => $item->additional1,
+                'sector'      => $item->category_description
+            ];
+        }
+
+        //////////codigo enviar correo /////
+        Mail::to('elrodriguez2423@gmail.com')
+            ->send(new StudentRegistrationMailable([
+                'courses'   => $courses,
+                'user'      => $person->email,
+                'password'  => $person->number
+            ]));
+
+        return view('capperu/gracias', [
+            'person' => $person
+        ]);
+
+        */
+
         $sale = OnliSale::where('id', $id)->with('details.item')->first();
-        return view('pages/gracias-compra', [
+        $person = Person::where('id', $sale->person_id)->first();
+        $details = $sale->details;
+        $itemIds = $details->pluck('item_id')->toArray();
+        $products = OnliItem::whereIn('item_id', $itemIds)->get();
+        $student = AcaStudent::where('person_id', $person->id)->first();
+
+        $courses = [];
+        foreach ($details as $k => $detail) {
+            $item = OnliItem::find($detail->onli_item_id);
+            $courses[$k] = [
+                'image'       => $item->image,
+                'name'        => $item->name,
+                'description' => $item->description,
+                'type'        => $item->additional,
+                'modality'    => $item->additional1,
+                'price'      => $item->price
+            ];
+        }
+
+        //////////codigo enviar correo /////
+        Mail::to($person->email)
+            ->send(new StudentRegistrationMailable([
+                'courses'   => $courses,
+                'names'     => $person->names,
+                'email'      => $person->email,
+                'password'  => $person->number
+            ]));
+
+        return view('pages.gracias', [
             'products' => $products,
-            'sale' => $sale
+            'sale' => $sale,
+            'person' => $person,
         ]);
     }
 
-    private function matricular_curso($producto_id, $student){
+    private function matricular_curso($producto, $student){
 
-        $course_id = $producto_id->item_id;
+        $course_id = $producto->item_id;
 
         $registration = AcaCapRegistration::create([
             'student_id' => $student->id,
             'course_id' => $course_id,
             'status' => true,
-            'modality_id' => 3
+            'modality_id' => 3,
+            'unlimited' => true
         ]);
 
     }
