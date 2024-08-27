@@ -55,7 +55,10 @@ class DashboardController extends Controller
             ->selectRaw('count(aca_cap_registrations.id) as registrations_count')
             ->groupBy([
                 'onitem_id',
+                'people.names',
                 'aca_courses.id',
+                'people.father_lastname',
+                'people.image',
                 'aca_courses.status',
                 'aca_courses.description',
                 'aca_courses.course_day',
@@ -69,7 +72,7 @@ class DashboardController extends Controller
                 'aca_courses.type_description',
                 'aca_courses.teacher_id',
                 'aca_courses.sector_description',
-                'aca_courses.price'
+                'aca_courses.price',
             ])
             ->orderByDesc('registrations_count')
             ->take('4')
