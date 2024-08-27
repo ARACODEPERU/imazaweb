@@ -507,7 +507,6 @@ class WebPageController extends Controller
         }
             //route('web_gracias_por_comprar_tu_entrada', $sale->id);
 
-            $this->graciasCompra($sale->id);
     }
 
     public function gracias()
@@ -579,11 +578,12 @@ class WebPageController extends Controller
                         ->send(new ConfirmPurchaseMail(OnliSale::with('details.item')->where('id', $id)->first()));
 
                     $sale->save();
+                    $this->enviar_correo_con_cursos($id);
 
                     return response()->json([
                         'status' => $payment->status,
                         'message' => $payment->status_detail,
-                        'url' => route('web_gracias_por_comprar_tu_entrada', $sale->id)
+                        'url' => route('web_gracias_por_cursos', $sale->id) // AQUI solo la ruta q muestre datos de la compra
                     ]);
                 } else {
 
@@ -608,29 +608,15 @@ class WebPageController extends Controller
 
     public function graciasCompra($id)
     {
-        /*
-        $sale = OnliSale::find($sale_id);
-        $saleDetails = OnliSaleDetail::where('sale_id', $sale_id)->get();
-        //dd($request->all());
-        $sale->response_status = $request->get('collection_status');
-        $sale->response_id = $request->get('collection_id');
-        $sale->response_date_approved = Carbon::now()->format('Y-m-d');
-        $sale->response_payer = json_encode($request->all());
-        $sale->response_payment_method_id = $request->get('payment_type');
-
-        $sale->save();
-
+        $sale = OnliSale::where('id', $id)->with('details.item')->first();
         $person = Person::where('id', $sale->person_id)->first();
-        $student = AcaStudent::where('person_id', $sale->person_id)->first();
+        $details = $sale->details;
+        $itemIds = $details->pluck('item_id')->toArray();
+        $products = OnliItem::whereIn('item_id', $itemIds)->get();
+        //$student = AcaStudent::where('person_id', $person->id)->first();
 
-        // al hacer el pago se realiza activa la patricula
         $courses = [];
-        foreach ($saleDetails as $k => $detail) {
-            AcaCapRegistration::where('student_id', $student->id)
-                ->where('course_id', $detail->item_id)
-                ->update([
-                    'status' => true
-                ]);
+        foreach ($details as $k => $detail) {
             $item = OnliItem::find($detail->onli_item_id);
             $courses[$k] = [
                 'image'       => $item->image,
@@ -638,30 +624,24 @@ class WebPageController extends Controller
                 'description' => $item->description,
                 'type'        => $item->additional,
                 'modality'    => $item->additional1,
-                'sector'      => $item->category_description
+                'price'      => $item->price
             ];
         }
 
-        //////////codigo enviar correo /////
-        Mail::to('elrodriguez2423@gmail.com')
-            ->send(new StudentRegistrationMailable([
-                'courses'   => $courses,
-                'user'      => $person->email,
-                'password'  => $person->number
-            ]));
-
-        return view('capperu/gracias', [
-            'person' => $person
+        return view('pages.gracias', [
+            'products' => $products,
+            'sale' => $sale,
+            'person' => $person,
         ]);
+    }
 
-        */
-
-        $sale = OnliSale::where('id', $id)->with('details.item')->first();
+    private function enviar_correo_con_cursos($sale_id){
+        $sale = OnliSale::where('id', $sale_id)->with('details.item')->first();
         $person = Person::where('id', $sale->person_id)->first();
         $details = $sale->details;
-        $itemIds = $details->pluck('item_id')->toArray();
-        $products = OnliItem::whereIn('item_id', $itemIds)->get();
-        $student = AcaStudent::where('person_id', $person->id)->first();
+        //$itemIds = $details->pluck('item_id')->toArray();
+//        $products = OnliItem::whereIn('item_id', $itemIds)->get();
+       // $student = AcaStudent::where('person_id', $person->id)->first();
 
         $courses = [];
         foreach ($details as $k => $detail) {
@@ -684,12 +664,6 @@ class WebPageController extends Controller
                 'email'      => $person->email,
                 'password'  => $person->number
             ]));
-
-        return view('pages.gracias', [
-            'products' => $products,
-            'sale' => $sale,
-            'person' => $person,
-        ]);
     }
 
     private function matricular_curso($producto, $student){

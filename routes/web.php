@@ -41,12 +41,12 @@ Route::get('/imagen-profesional', [WebPageController::class, 'imagenprofesional'
 Route::get('/curso-descripcion/{id}', [WebPageController::class, 'cursodescripcion'])->name('web_curso_descripcion');
 Route::get('/contacto', [WebPageController::class, 'contacto'])->name('web_contacto');
 Route::get('/carrito', [WebPageController::class, 'carrito'])->name('web_carrito');
-Route::post('/pagar', [WebPageController::class, 'pagar'])->name('web_pagar');
+Route::post('/pagar', [WebPageController::class, 'processPayment'])->name('web_pagar');
 Route::get('/gracias', [WebPageController::class, 'gracias'])->name('web_gracias');
 Route::get('/politicas-de-privacidad', [WebPageController::class, 'privacidad'])->name('web_privacidad');
 Route::put('/process_payment/{id}', [WebPageController::class, 'processPayment'])->name('web_process_payment');
 Route::get('/computer/store', [LandingController::class, 'computerStore'])->name('index_computer_store');
-Route::get('/gracias-compra/{id}', [WebPageController::class, 'graciasCompra'])->name('web_gracias_por_comprar_tu_entrada');
+Route::get('/gracias-compra/{id}', [WebPageController::class, 'graciasCompra'])->name('web_gracias_por_cursos');
 //////mensajes de whatsapp///////
 Route::get('/ask/product/{id}', [LandingController::class, 'redirectToWhatsApp'])->name('whatsapp_send');
 
