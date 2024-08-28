@@ -7,6 +7,8 @@
     import Archives from '../../components/Archives.vue';
     import Comments from '../../components/Comments.vue';
     import Carousel from '../../components/Carousel.vue';
+    import IconCalendar from '@/Components/vristo/icon/icon-calendar.vue';
+    import IconMessage from '@/Components/vristo/icon/icon-message.vue';
 
     import { ref } from 'vue';
 
@@ -28,6 +30,10 @@
             default: () => ({})
         },
         comments: {
+            type: Object,
+            default: () => ({})
+        },
+        relatedArticles: {
             type: Object,
             default: () => ({})
         }
@@ -86,7 +92,7 @@
                             <li class="ltr:ml-3 rtl:mr-3">
                                 <div class="flex items-center">
                                     <div class="shrink-0">
-                                        <i class="uil uil-calendar-alt"></i>
+                                        <icon-calendar />
                                     </div>
                                     <div class="ltr:ml-2 rtl:mr-2">
                                         <p class="mb-0 dark:text-gray-300"> {{ formatDate(article.created_at) }}</p>
@@ -96,10 +102,10 @@
                             <li class="ltr:ml-3 rtl:mr-3">
                                 <div class="flex items-center">
                                     <div class="shrink-0">
-                                        <i class="uil uil-comments-alt"></i>
+                                        <icon-message />
                                     </div>
                                     <div class="ltr:ml-2 rtl:mr-2 flex-grow-1">
-                                        <p class="mb-0 dark:text-gray-300"> 2 Comments</p>
+                                        <p class="mb-0 dark:text-gray-300"> {{ article.comments_count }} Comentarios</p>
                                     </div>
                                 </div>
                             </li>
@@ -142,10 +148,10 @@
                                 </li>
                             </ul> -->
                             
-                            <Comments :comments="comments" :article="article" />                            
+                            <Comments :comments="comments" :article="{id:article.id,url:article.url}" />                            
                         </div>
                         <div class="mt-8">
-                            <Carousel />
+                            <Carousel :articles="relatedArticles" />
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-4">

@@ -12,6 +12,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Modules\Blog\Entities\BlogCategory;
+use Modules\Blog\Entities\BlogComment;
 
 class BlogArticlesController extends Controller
 {
@@ -203,7 +204,7 @@ class BlogArticlesController extends Controller
         $blogArticle = BlogArticle::find($request->get('id'));
 
         $this->validate($request, [
-            'title' => 'required|max:255|unique:blog_articles,url,' . $blogArticle->id,
+            'title' => 'required|max:255|unique:blog_articles,title,' . $blogArticle->id,
             'content_text' => 'required',
         ]);
 
@@ -271,6 +272,7 @@ class BlogArticlesController extends Controller
     public function show($url)
     {
         $article = BlogArticle::with('category')
+            ->withCount('comments')
             ->with('author')
             ->where('url', $url)->first();
 
@@ -284,8 +286,56 @@ class BlogArticlesController extends Controller
             ->orderByDesc('month')
             ->get();
 
+        $relatedArticles = BlogArticle::where('category_id', $article->category_id)->take(4)->get();
+        //dd($relatedArticles);
+        $comments = BlogComment::with('person')
+            ->with('comments.person')
+            ->where('article_id', $article->id)
+            ->whereNull('comment_id')
+            ->get();
+
+        $article->increment('views');
+
         return Inertia::render('Blog::articles/Show', [
             'article' => $article,
+            'categories' => $categories,
+            'articles' => $articles,
+            'archives' => $archives,
+            'comments' => $comments,
+            'relatedArticles' => $relatedArticles
+        ]);
+    }
+
+    public function searchArticles(Request $request)
+    {
+        $search = $request->get('search');
+        $articles = BlogArticle::with('author')->whereLike('title', '%' . $search . '%')->get();
+
+        return response()->json([
+            'articles' => $articles
+        ]);
+    }
+
+    public function articlesArchive($year, $month)
+    {
+        $articlesArchive = BlogArticle::with(['author', 'comments'])
+            ->withCount('comments')
+            ->whereYear('created_at', $year) // Filtrar por año
+            ->whereMonth('created_at', $month) // Filtrar por mes
+            ->get();
+
+        $categories = BlogCategory::where('status', true)->get();
+
+        $articles = BlogArticle::orderByDesc('views')->take(4)->get();
+
+        $archives = BlogArticle::selectRaw('YEAR(created_at) as year, MONTH(created_at) as month, COUNT(*) as total_articles')
+            ->groupBy('year', 'month')
+            ->orderByDesc('year')
+            ->orderByDesc('month')
+            ->get();
+
+        return Inertia::render('Blog::articles/ShowArchives', [
+            'articlesArchive' => $articlesArchive,
             'categories' => $categories,
             'articles' => $articles,
             'archives' => $archives
