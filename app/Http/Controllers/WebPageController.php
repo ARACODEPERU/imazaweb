@@ -505,6 +505,14 @@ class WebPageController extends Controller
             $response = $e->getApiResponse();
             //dd($response); // Mostrar la respuesta para obtener más detalles
         }
+
+        return view('pages.pagar', [
+            'preference' => $preference_id,
+            'products' => $products,
+            'person_name' => $person->full_name,
+            'total' => $total,
+            'sale_id' => $sale->id
+        ]);
             //route('web_gracias_por_comprar_tu_entrada', $sale->id);
 
     }
