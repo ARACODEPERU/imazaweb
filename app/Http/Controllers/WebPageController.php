@@ -457,8 +457,6 @@ class WebPageController extends Controller
 
                 $product = OnliItem::find($id);
 
-                $this->matricular_curso($product, $student);
-
                 array_push($items, [
                     'id' => $id,
                     'title' => $product->name,
@@ -551,12 +549,13 @@ class WebPageController extends Controller
         MercadoPagoConfig::setAccessToken(env('MERCADOPAGO_TOKEN'));
 
         $client = new PaymentClient();
-        $sale = OnliSale::find($id);
-
+        $sale = OnliSale::with('details')->find($id);
+        $itemIds = $sale->details->pluck('item_id')->all(); //obteniendo el id de productos o cursos
         if ($sale->response_status == 'approved') {
             return response()->json(['error' => 'el pedido ya fue procesado, ya no puede volver a pagar'], 412);
         } else {
             try {
+
 
                 $payment = $client->create([
                     "token" => $request->get('token'),
@@ -586,7 +585,14 @@ class WebPageController extends Controller
                         ->send(new ConfirmPurchaseMail(OnliSale::with('details.item')->where('id', $id)->first()));
 
                     $sale->save();
+
                     $this->enviar_correo_con_cursos($id);
+                    $person_id = $sale->person_id;
+                    $student_id = AcaStudent::select('id')->where('person_id', $person_id)->first();
+                    foreach ($itemIds as $key => $item) {
+
+                        $this->matricular_curso($item, $student_id);
+                    }
 
                     return response()->json([
                         'status' => $payment->status,
@@ -674,17 +680,22 @@ class WebPageController extends Controller
             ]));
     }
 
-    private function matricular_curso($producto, $student){
+    private function matricular_curso($item_id, $student_id){
 
-        $course_id = $producto->item_id;
+        $course_id = $item_id;
 
         $registration = AcaCapRegistration::create([
-            'student_id' => $student->id,
+            'student_id' => $student_id,
             'course_id' => $course_id,
             'status' => true,
             'modality_id' => 3,
             'unlimited' => true
         ]);
+
+    }
+
+    private function error_pagar_delete_user($person_id, $rm_person, $rm_student, $rm_user){
+        //rm de remove true or false
 
     }
 }
