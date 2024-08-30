@@ -309,7 +309,7 @@
     <section style="padding: 15px;">
         <div class="contenedor">
             <div class="columna" style="text-align: center; padding: 15px; background-color: #F9FAFD;">
-                <a href="{{ route('web_inicio') }}" class="btn primary" style="font-size: 18px;">Visitar Sitio Web</a>
+                <a href="{{ route('web_nosotros') }}" class="btn primary" style="font-size: 18px;">Visitar Sitio Web</a>
             </div>
         </div>
     </section>

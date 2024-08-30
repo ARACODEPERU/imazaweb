@@ -150,7 +150,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.servicios',[
+        return view('pages.servicios', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -179,7 +179,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.capacitacion',[
+        return view('pages.capacitacion', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -208,7 +208,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.suscripcion',[
+        return view('pages.suscripcion', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -237,7 +237,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.automatizacion',[
+        return view('pages.automatizacion', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -266,7 +266,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.agencia',[
+        return view('pages.agencia', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -295,7 +295,7 @@ class WebPageController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        return view('pages.imagen-profesional',[
+        return view('pages.imagen-profesional', [
             'banner' => $banner,
             'title' => $title
         ]);
@@ -417,9 +417,8 @@ class WebPageController extends Controller
 
             if ($user->exists) {
                 // El usuario ya existe, redirige al usuario a iniciar sesión
-                if(Auth::check()){
-
-                }else{
+                if (Auth::check()) {
+                } else {
                     return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
                 }
             } else {
@@ -511,7 +510,7 @@ class WebPageController extends Controller
             'total' => $total,
             'sale_id' => $sale->id
         ]);
-            //route('web_gracias_por_comprar_tu_entrada', $sale->id);
+        //route('web_gracias_por_comprar_tu_entrada', $sale->id);
 
     }
 
@@ -588,7 +587,8 @@ class WebPageController extends Controller
 
                     $this->enviar_correo_con_cursos($id);
                     $person_id = $sale->person_id;
-                    $student_id = AcaStudent::select('id')->where('person_id', $person_id)->first();
+                    $student_id = AcaStudent::where('person_id', $person_id)->value('id');
+
                     foreach ($itemIds as $key => $item) {
 
                         $this->matricular_curso($item, $student_id);
@@ -597,7 +597,7 @@ class WebPageController extends Controller
                     return response()->json([
                         'status' => $payment->status,
                         'message' => $payment->status_detail,
-                        'url' => route('web_gracias_por_cursos', $sale->id) // AQUI solo la ruta q muestre datos de la compra
+                        'url' => route('web_gracias_por_comprar_tu_entrada', $sale->id) // AQUI solo la ruta q muestre datos de la compra
                     ]);
                 } else {
 
@@ -649,13 +649,14 @@ class WebPageController extends Controller
         ]);
     }
 
-    private function enviar_correo_con_cursos($sale_id){
+    private function enviar_correo_con_cursos($sale_id)
+    {
         $sale = OnliSale::where('id', $sale_id)->with('details.item')->first();
         $person = Person::where('id', $sale->person_id)->first();
         $details = $sale->details;
         //$itemIds = $details->pluck('item_id')->toArray();
-//        $products = OnliItem::whereIn('item_id', $itemIds)->get();
-       // $student = AcaStudent::where('person_id', $person->id)->first();
+        //        $products = OnliItem::whereIn('item_id', $itemIds)->get();
+        // $student = AcaStudent::where('person_id', $person->id)->first();
 
         $courses = [];
         foreach ($details as $k => $detail) {
@@ -680,7 +681,8 @@ class WebPageController extends Controller
             ]));
     }
 
-    private function matricular_curso($item_id, $student_id){
+    private function matricular_curso($item_id, $student_id)
+    {
 
         $course_id = $item_id;
 
@@ -691,10 +693,10 @@ class WebPageController extends Controller
             'modality_id' => 3,
             'unlimited' => true
         ]);
-
     }
 
-    private function error_pagar_delete_user($person_id, $rm_person, $rm_student, $rm_user){
+    private function error_pagar_delete_user($person_id, $rm_person, $rm_student, $rm_user)
+    {
         //rm de remove true or false
 
     }
