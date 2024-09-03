@@ -34,14 +34,14 @@ const props = defineProps({
                  <!--modulo seguridad -->
                 <StorageIndicator v-if="role.name == 'admin' || role.name == 'webAdmin' || role.name == 'Administrador'" />
                 <!-- ventas stock Minimo -->
-                <MinimumStockNotice v-if="role.name == 'admin' || role.name == 'webAdmin' || role.name == 'Administrador'" />
-                <StatusProducts v-if="role.name == 'admin' || role.name == 'webAdmin' || role.name == 'Administrador'" />
+                <!-- <MinimumStockNotice v-if="role.name == 'admin' || role.name == 'webAdmin' || role.name == 'Administrador'" />
+                <StatusProducts v-if="role.name == 'admin' || role.name == 'webAdmin' || role.name == 'Administrador'" /> -->
                 <!-- fin modulo academico -->
-                <!-- <div v-if="role.name == 'admin' || role.name == 'webAdmin'" class="col-span-3 sm:col-span-2"> -->
+                <div v-if="role.name == 'admin' || role.name == 'webAdmin'" class="col-span-3 sm:col-span-2"> -->
                     <!--modulo academico -->
-                    <!-- <StudentsEnrolledMonth /> -->
+                    <StudentsEnrolledMonth />
                     <!-- fin modulo academico -->
-                <!--</div> -->
+                </div>
             </div>
         </template>
     </AppLayout>
