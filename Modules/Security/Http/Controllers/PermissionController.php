@@ -53,7 +53,7 @@ class PermissionController extends Controller
         ]);
 
         $permission = Permission::create([
-            'name'       => $request->get('name'),
+            'name'       => trim($request->get('name')),
             'guard_name' => 'web'
         ]);
 
