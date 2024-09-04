@@ -29,7 +29,7 @@ import Swal2 from 'sweetalert2';
     });
 
     const user_email = usePage().props.auth.user.email;
-console.log(user_email)
+
     const form = useForm({
         id: props.person ? props.person.id : null,
         document_type_id: props.person ? props.person.document_type_id : 99,
@@ -69,6 +69,8 @@ console.log(user_email)
         }
         
     });
+
+
 
   const savePerson = () => {
     form.social_networks = socialData.value;
@@ -144,7 +146,7 @@ console.log(user_email)
                 </div>
                 <div>
                     <label for="email">Correo electrónico</label>
-                    <input v-model="form.email" class="form-input" />
+                    <input v-model="form.email" class="form-input bg-gray-100" disabled />
                     <InputError class="mt-2" :message="form.errors.email" />
                 </div>
                 <div>
