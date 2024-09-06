@@ -397,42 +397,40 @@ class WebPageController extends Controller
             $products = [];
             $total = 0;
 
-            $person = Person::create([
-                'document_type_id' => $request->get('type'),
-                'short_name' => $comprador_nombre,
-                'full_name' => $comprador_nombre . ' ' . $request->get('app') . ' ' . $request->get('apm'),
-                'number' => $request->get('dni'),
-                'telephone' => $comprador_telefono,
-                'email' => $comprador_email,
-                'is_provider' => false,
-                'is_client' => true,
-                'names' => $comprador_nombre,
-                'father_lastname' => $request->get('app'),
-                'mother_lastname' => $request->get('apm'),
-                'gender' => 'M',
-                'status' => true
+            $person = Person::firstOrNew([
+                'email' => $comprador_email
             ]);
 
-            $user = User::firstOrNew(['email' => $person->email]);
+            // Verificar si el modelo ya existe en la base de datos
+            if (!$person->exists) {
+                // Si no existe, asignar los valores a los campos correspondientes
+                $person->document_type_id = $request->get('type');
+                $person->short_name = $comprador_nombre;
+                $person->full_name = $comprador_nombre . ' ' . $request->get('app') . ' ' . $request->get('apm');
+                $person->number = $request->get('dni');
+                $person->telephone = $comprador_telefono;
+                $person->is_provider = false;
+                $person->is_client = true;
+                $person->names = $comprador_nombre;
+                $person->father_lastname = $request->get('app');
+                $person->mother_lastname = $request->get('apm');
+                $person->gender = 'M';
+                $person->status = true;
+            }
 
-            if ($user->exists) {
-                // El usuario ya existe, redirige al usuario a iniciar sesión
-                if (Auth::check()) {
-                } else {
-                    return redirect()->route('login')->with('message', 'Este correo electrónico ya está registrado. Por favor, inicia sesión.');
-                }
-            } else {
-                $user = User::create([
-                    'name' => $person->names,
-                    'email' => $person->email,
-                    'password' => Hash::make($person->number),
-                    'person_id' => $person->id
-                ]);
-                Auth::login($user);
-                //asignar el rol de estudiante....
-                if (!$user->hasRole('Alumno')) {
-                    $role = Role::where('name', 'Alumno')->first();
+            $person->save();
+
+            $user = Auth::user(); // Obtenemos el usuario autenticado
+
+            // Asignar el rol de estudiante si el usuario no tiene el rol 'Alumno'
+            if (!$user->hasRole('Alumno')) {
+                $role = Role::where('name', 'Alumno')->first();
+
+                if ($role) {
                     $user->assignRole($role);
+                } else {
+                    // Manejo de error si no se encuentra el rol 'Alumno'
+                    // Puedes agregar tu lógica aquí, como lanzar una excepción o registrar un mensaje de error
                 }
             }
 
