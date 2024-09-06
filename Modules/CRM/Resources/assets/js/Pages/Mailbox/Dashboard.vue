@@ -196,7 +196,6 @@
         },
         placeholder: '',
     });
-
     const quillEditorObj = ref(null);
 
     const checkAllCheckbox = computed(() => {

@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Modules\Academic\Entities\AcaCapRegistration;
 use Modules\Academic\Entities\AcaCourse;
+use Modules\Academic\Entities\AcaModule;
 
 class AcaStudentController extends Controller
 {
@@ -386,12 +387,33 @@ class AcaStudentController extends Controller
 
     public function courseLessons($id)
     {
-        $course = AcaCourse::with('modules.themes.contents')
-            ->with('questions')
+        $course = AcaCourse::with('modules')
             ->where('id', $id)
             ->first();
+
         return Inertia::render('Academic::Students/Lessons', [
             'course' => $course
+        ]);
+    }
+
+    public function courseLessonThemes($id)
+    {
+
+
+        $module = AcaModule::with(['themes' => function ($query) {
+            $query->orderBy('position')
+                ->with('contents')
+                ->with('comments.user'); // Cargar los contenidos de cada theme
+        }])
+            ->where('id', $id)
+            ->first();
+
+        $course = AcaCourse::with('teacher.person')->where('id', $module->course_id)
+            ->first();
+
+        return Inertia::render('Academic::Students/Themes', [
+            'course' => $course,
+            'module' => $module
         ]);
     }
 
