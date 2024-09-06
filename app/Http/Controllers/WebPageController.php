@@ -371,9 +371,9 @@ class WebPageController extends Controller
             'app' => 'required|string|max:255',
             'apm' => 'required|string|max:255',
             'type' => 'required|string|max:255',
-            'dni' => 'required|numeric|unique:people,number',
+            'dni' => 'required|numeric',
             'phone' => 'required|string|max:255',
-            'email' => 'required|unique:people,email',
+            'email' => 'required',
         ]);
 
         if ($validator->fails()) {
