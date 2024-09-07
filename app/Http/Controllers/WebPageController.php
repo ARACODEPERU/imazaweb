@@ -391,7 +391,7 @@ class WebPageController extends Controller
         $preference_id = null;
         try {
             DB::beginTransaction();
-            MercadoPagoConfig::setAccessToken(env('MERCADOPAGO_TOKEN'));
+            MercadoPagoConfig::setAccessToken('TEST-7310437214436886-103010-b28ce9b11b0b7e1f7d94fecfc65d0662-1528538523');
             $client = new PreferenceClient();
             $items = [];
             $products = [];
@@ -499,7 +499,7 @@ class WebPageController extends Controller
             // Manejar la excepción
             DB::rollback();
             $response = $e->getApiResponse();
-            //dd($response); // Mostrar la respuesta para obtener más detalles
+            dd($response); // Mostrar la respuesta para obtener más detalles
         }
 
         return view('pages.pagar', [
@@ -544,16 +544,17 @@ class WebPageController extends Controller
 
     public function processPayment(Request $request, $id)
     {
-        MercadoPagoConfig::setAccessToken(env('MERCADOPAGO_TOKEN'));
+        MercadoPagoConfig::setAccessToken('TEST-7310437214436886-103010-b28ce9b11b0b7e1f7d94fecfc65d0662-1528538523');
 
         $client = new PaymentClient();
         $sale = OnliSale::with('details')->find($id);
+
         $itemIds = $sale->details->pluck('item_id')->all(); //obteniendo el id de productos o cursos
         if ($sale->response_status == 'approved') {
             return response()->json(['error' => 'el pedido ya fue procesado, ya no puede volver a pagar'], 412);
         } else {
             try {
-
+                //dd($payment);
 
                 $payment = $client->create([
                     "token" => $request->get('token'),
@@ -563,7 +564,7 @@ class WebPageController extends Controller
                     "installments" => $request->get('installments'),
                     "payer" => $request->get('payer')
                 ]);
-
+                //dd($payment);
                 if ($payment->status == 'approved') {
 
                     $sale->email = $request->get('payer')['email'];
@@ -577,7 +578,7 @@ class WebPageController extends Controller
                     $sale->response_payment_method_id = $request->get('payment_type');
                     $sale->mercado_payment_id = $payment->id;
                     $sale->mercado_payment = json_encode($payment);
-
+                    //dd($sale);
                     ///enviar correo
                     Mail::to($sale->email)
                         ->send(new ConfirmPurchaseMail(OnliSale::with('details.item')->where('id', $id)->first()));
@@ -612,7 +613,7 @@ class WebPageController extends Controller
                 // Manejar la excepción
                 $response = $e->getApiResponse();
                 $content  = $response->getContent();
-
+                //dd($content, $response);
                 $message = $content['message'];
                 return response()->json(['error' => 'Error al procesar el pago: ' . $message], 412);
             }

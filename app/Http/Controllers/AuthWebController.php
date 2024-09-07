@@ -90,7 +90,7 @@ class AuthWebController extends Controller
 
         // Obtener la URL anterior a la que el usuario accedió
         $previousUrl = $request->session()->previousUrl();
-
+        //return to_route('users.index');
         // Redirigir al usuario a la página anterior
         return redirect($previousUrl);
     }
