@@ -494,7 +494,7 @@ class WebPageController extends Controller
             // );
 
             $preference_id =  $preference->id;
-
+            DB::commit();
         } catch (\MercadoPago\Exceptions\MPApiException $e) {
             // Manejar la excepción
             DB::rollback();
@@ -593,7 +593,6 @@ class WebPageController extends Controller
                         $this->matricular_curso($item, $student_id);
                     }
 
-                    DB::commit();
                     return response()->json([
                         'status' => $payment->status,
                         'message' => $payment->status_detail,
@@ -608,11 +607,9 @@ class WebPageController extends Controller
                     ]);
 
                     $sale->delete();
-                    DB::rollback();
                 }
             } catch (\MercadoPago\Exceptions\MPApiException $e) {
                 // Manejar la excepción
-                DB::rollback();
                 $response = $e->getApiResponse();
                 $content  = $response->getContent();
 
