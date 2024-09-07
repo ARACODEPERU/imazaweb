@@ -554,7 +554,7 @@ class WebPageController extends Controller
         } else {
             try {
 
-                dd($request->all());
+
                 $payment = $client->create([
                     "token" => $request->get('token'),
                     "issuer_id" => $request->get('issuer_id'),
@@ -563,7 +563,7 @@ class WebPageController extends Controller
                     "installments" => $request->get('installments'),
                     "payer" => $request->get('payer')
                 ]);
-
+                dd($payment);
                 if ($payment->status == 'approved') {
 
                     $sale->email = $request->get('payer')['email'];
