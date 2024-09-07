@@ -550,10 +550,11 @@ class WebPageController extends Controller
         $sale = OnliSale::with('details')->find($id);
         $itemIds = $sale->details->pluck('item_id')->all(); //obteniendo el id de productos o cursos
         if ($sale->response_status == 'approved') {
+            dd("553");
             return response()->json(['error' => 'el pedido ya fue procesado, ya no puede volver a pagar'], 412);
         } else {
             try {
-
+                dd("557");
 
                 $payment = $client->create([
                     "token" => $request->get('token'),
@@ -563,7 +564,7 @@ class WebPageController extends Controller
                     "installments" => $request->get('installments'),
                     "payer" => $request->get('payer')
                 ]);
-                dd($payment);
+
                 if ($payment->status == 'approved') {
 
                     $sale->email = $request->get('payer')['email'];
@@ -610,6 +611,7 @@ class WebPageController extends Controller
                 }
             } catch (\MercadoPago\Exceptions\MPApiException $e) {
                 // Manejar la excepción
+                dd("614");
                 $response = $e->getApiResponse();
                 $content  = $response->getContent();
 
