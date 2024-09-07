@@ -548,8 +548,8 @@ class WebPageController extends Controller
 
         $client = new PaymentClient();
         $sale = OnliSale::with('details')->find($id);
-        dd($sale);
         $itemIds = $sale->details->pluck('item_id')->all(); //obteniendo el id de productos o cursos
+        dd($itemIds);
         if ($sale->response_status == 'approved') {
             return response()->json(['error' => 'el pedido ya fue procesado, ya no puede volver a pagar'], 412);
         } else {
