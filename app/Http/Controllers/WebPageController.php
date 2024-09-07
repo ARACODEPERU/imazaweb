@@ -544,6 +544,7 @@ class WebPageController extends Controller
 
     public function processPayment(Request $request, $id)
     {
+        dd("hola");
         MercadoPagoConfig::setAccessToken(env('MERCADOPAGO_TOKEN'));
 
         $client = new PaymentClient();
