@@ -160,6 +160,8 @@ class SaleController extends Controller
                     'sale_id'   => $sale->id,
                     'serie_id'  => $serie_id,
                     'number'    => str_pad($serie->number, 9, '0', STR_PAD_LEFT),
+                    'overall_total'     => $request->get('total'),
+                    'user_id'  => Auth::id()
                 ]);
 
                 $serie->increment('number', 1);
@@ -345,6 +347,43 @@ class SaleController extends Controller
         $file = public_path('ticket/') . $seller->id . '-ticket.pdf';
         $pdf = PDF::loadView('sales::sales.ticket_pdf', $data);
         $pdf->setPaper(array(0, 0, 273, 500), 'portrait');
+        $pdf->save($file);
+
+        return response()->download($file);
+    }
+
+    public function printA4Pdf($id)
+    {
+        $sale = Sale::find($id);
+        $document = SaleDocument::join('series', 'serie_id', 'series.id')
+            ->select(
+                'series.description',
+                'sale_documents.created_at',
+                'sale_documents.number'
+            )
+            ->where('sale_documents.sale_id', $sale->id)
+            ->first();
+        $local = LocalSale::find($sale->local_id);
+        $products = SaleProduct::where('sale_id', $sale->id)->get();
+        $company = Company::first();
+        $seller = User::find($sale->user_id);
+        $client = Person::find($sale->client_id);
+
+        $data = [
+            'local'     => $local,
+            'sale'      => $sale,
+            'products'  => $products,
+            'document'  => $document,
+            'company'   => $company,
+            'seller'    => $seller,
+            'client'    => $client
+        ];
+
+        //return view('sales::sales.A4_pdf', $data);
+
+        $file = public_path('ticket/') . $seller->id . '-A4.pdf';
+        $pdf = PDF::loadView('sales::sales.A4_pdf', $data);
+        $pdf->setPaper('a4', 'portrait');
         $pdf->save($file);
 
         return response()->download($file);

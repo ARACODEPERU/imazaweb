@@ -206,8 +206,28 @@ class ReportController extends Controller
             ->where('sales.petty_cash_id', '=', $petty_cash_id)
             ->where('sales.status', '=', 1)
             ->where('physical', 3)
+            ->where('sale_physical_documents.status', '<>', 'A')
             ->orderBy('id', 'desc')
             ->get();
+
+        $documents = Sale::join('local_sales', 'sales.local_id', 'local_sales.id')
+            ->join('sale_documents', 'sale_documents.sale_id', 'sales.id')
+            ->join('sale_document_items', 'sale_document_items.document_id', 'sale_documents.id')
+            ->join('products', 'products.id', 'sale_document_items.product_id')
+            ->select(
+                'sales.*',
+                'sale_document_items.cod_product AS interne',
+                'sale_document_items.decription_product as product_description',
+                'products.image',
+                'sale_document_items.price_sale as price',
+                'sale_document_items.quantity as quantity'
+            )
+            ->where('sales.petty_cash_id', '=', $petty_cash_id)
+            ->where('sales.status', '=', 1)
+            ->orderBy('id', 'desc')
+            ->orderBy('sale_document_items.id', 'desc')
+            ->get();
+
 
         $total = 0;
 
@@ -218,6 +238,10 @@ class ReportController extends Controller
             $total = $total + $physical->total;
         }
 
+        foreach ($documents as $document) {
+            $total = $total + $document->total;
+        }
+
 
         $expenses = Expense::where('petty_cash_id', $petty_cash_id)->get();
 
@@ -225,6 +249,7 @@ class ReportController extends Controller
             'locals' => LocalSale::all(),
             'tickets' => $tickets,
             'physicals' => $physicals,
+            'documents' => $documents,
             'petty_cash' => $petty_cash,
             'date' => $petty_cash->date_opening . $petty_cash->time_opening,
             'start' => $petty_cash->date_closed,

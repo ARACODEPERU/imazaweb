@@ -50,7 +50,8 @@
         address: '',
         ubigeo: '',
         ubigeo_description: '',
-        presentations: false
+        presentations: false,
+        is_client: true
     });
     
     const disabledBtnSelect = ref(true);
@@ -71,7 +72,13 @@
             } else {
                 form.errors.document_type = res.data.document_type;
                 form.errors.number = res.data.number;
-                Swal2.fire('Información Importante',res.data.alert,'info');
+                Swal2.fire({
+                    title: 'Información Importante',
+                    text: res.data.alert,
+                    icon: 'info',
+                    padding: '2em',
+                    customClass: 'sweet-alerts',
+                });
                 disabledBtnSelect.value = true;
             }
 

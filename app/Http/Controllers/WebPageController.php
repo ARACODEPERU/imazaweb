@@ -564,7 +564,11 @@ class WebPageController extends Controller
                     "installments" => $request->get('installments'),
                     "payer" => $request->get('payer')
                 ]);
+<<<<<<< HEAD
                 //dd($payment);
+=======
+                dd($payment);
+>>>>>>> b10e337df21c2311e0e48b3ba953927a4d1e7ac2
                 if ($payment->status == 'approved') {
 
                     $sale->email = $request->get('payer')['email'];

@@ -40,7 +40,9 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
 
     Route::resource('sales', SaleController::class);
 
-    Route::get('pdf/sales/ticket/{id}', [SaleController::class, 'ticketPdf'])->name('ticketpdf_sales');
+    Route::get('pdf/sales/ticket/{id}/print', [SaleController::class, 'ticketPdf'])->name('ticketpdf_sales');
+    Route::get('pdf/sales/A4/{id}/print', [SaleController::class, 'printA4Pdf'])->name('printA4pdf_sales');
+
     Route::get('pdf/product/print/barcode/{id}', [ProductController::class, 'printBarcode'])->name('product_print_barcode');
 
     Route::post('search/products', [ProductController::class, 'searchProduct'])->name('search_product');
@@ -110,7 +112,7 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
     Route::get('saledocuments/send/{id}/{type}', [SaleDocumentController::class, 'sendSunatDocument'])->name('saledocuments_send');
     Route::post('saledocuments/update/details', [SaleDocumentController::class, 'updateDetailsAndHeader'])->name('saledocuments_update_details');
     Route::get('saledocuments/create/fromticket/{id}', [SaleDocumentController::class, 'createFromFicket'])->name('saledocuments_create_from_ticket');
-    Route::get('saledocuments/download/{id}/{type}/{file}', [SaleDocumentController::class, 'printDocument'])->name('saledocuments_download');
+    Route::get('saledocuments/download/{id}/{type}/{file}/{format?}', [SaleDocumentController::class, 'printDocument'])->name('saledocuments_download');
     Route::post('saledocuments/update/head', [SaleDocumentController::class, 'updateHead'])->name('saledocuments_update_head');
 
     Route::post('saledocuments/cancellation/send', [SaleDocumentController::class, 'cancelDocument'])->name('saledocuments_cancel_document');
@@ -180,4 +182,6 @@ Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
 
 
     Route::get('dashboard/minimum/stock', [SalesController::class, 'minimumStock'])->name('sales_dashboard_minimum_stock');
+    Route::post('dashboard/total/balance/table', [SalesController::class, 'totalBalanceTables'])->name('sales_dashboard_total_balance');
+    Route::post('dashboard/total/summary/document', [SalesController::class, 'getSummaryTotals'])->name('sales_dashboard_total_summary');
 });
