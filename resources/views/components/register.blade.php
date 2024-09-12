@@ -39,7 +39,8 @@
                             <h4>{{ $register[5]->content }}</h4>
                         </div>
                         <div class="form-box">
-                            <form method="post" action="">
+                            <form method="post" action="{{ route('web_register') }}">
+                                @csrf
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -71,11 +72,36 @@
                                             <input type="email" name="email" placeholder="Email Address" required="">
                                         </div>
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="password" placeholder="Contraseña" required="" id="contrasena" oninput="ocultarTexto(this)">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="password2" placeholder="Repita su Contraseña" required="" id="contrasena2" oninput="ocultarTexto(this)">
+                                        </div>
+                                    </div>
                                 </div>
                                 <button class="registration-one__right-form-btn" type="submit" name="submit-form" style="margin-top: 10px;">
                                     <span class="thm-btn">Registrar</span>
                                 </button>
                             </form>
+
+                            <script>
+                                function ocultarTexto(input) {
+                                    const value = input.value;
+                                    const length = value.length;
+                                    const hiddenValue = '*'.repeat(length);
+                                    input.dataset.hiddenValue = hiddenValue;
+                                    input.value = hiddenValue;
+                                }
+
+                                function mostrarTexto() {
+                                    const input = document.getElementById('contrasena');
+                                    input.value = input.dataset.hiddenValue || '';
+                                }
+                                </script>
                         </div>
                     </div>
                 </div>
