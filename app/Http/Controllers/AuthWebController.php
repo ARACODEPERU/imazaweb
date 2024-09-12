@@ -42,10 +42,9 @@ class AuthWebController extends Controller
         $validatedData = $request->validate(
             [
                 'name' => ['required', 'string', 'max:255'],
-                'email_register' => ['required', 'string', 'email', 'max:255', 'unique:users,email','unique:people,email'],
-                //'email_register' => ['unique:people,email'],
-                'password' => ['required', 'string', 'min:8'],
-                'password2' => ['required', 'same:password'],
+                'email_register' => ['required', 'string', 'email', 'max:255', 'unique:users,email'],
+                'email_register' => ['unique:people,email'],
+                //'password' => ['required', 'string', 'min:8'],
                 'app' => ['required', 'string', 'max:255'],
                 'apm' => ['required', 'string', 'max:255'],
                 'phone' => ['required', 'string', 'max:255'],
@@ -59,8 +58,6 @@ class AuthWebController extends Controller
                 'unique' => 'El valor del campo :attribute ya está en uso.',
                 'confirmed' => 'La confirmación de :attribute no coincide.',
                 'min' => 'El campo :attribute debe tener al menos :min caracteres.',
-                'same' => 'El campo :attribute debe coincidir con :other.',
-                'numeric' => 'El campo :attribute debe ser un número.'
             ]
         );
 
@@ -84,7 +81,7 @@ class AuthWebController extends Controller
         $user = User::create([
             'name' => $validatedData['name'],
             'email' => $validatedData['email_register'],
-            'password' =>  Hash::make($request->get('password')),
+            'password' =>  Hash::make($request->get('dni')),
             'person' => $person->id
         ]);
 
