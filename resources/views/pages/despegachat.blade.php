@@ -111,9 +111,11 @@
     
                 <!--Start Why Choose One Right-->
                 <div class="col-xl-6 col-lg-6">
-                    <div class="why-choose-one__right wow slideInRight animated clearfix animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInRight;">
+                    <div class="why-choose-one__right wow slideInRight animated clearfix animated" 
+                         data-wow-delay="0ms" data-wow-duration="1500ms" 
+                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: slideInRight;">
                         <div class="why-choose-one__right-img clearfix">
-                            <img src="http://imazaweb.test/storage/uploads/cms/items/20240725021720.jpg" alt="">
+                            <img src="https://marketingdespega.com/storage/uploads/cms/items/20240725021720.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -123,11 +125,40 @@
         </div>
     </section>
 
-    <section>
+    <section style="padding: 80px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
+                    <h1 style="font-size: 40px; text-align:center;">
+                        Descubre la fórmula para vender más en WhatsApp
+                    </h1>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3" style="text-align: center;">
+                    <img src="" alt="">
+                    <hr>
+                    <h3>Chatea</h3>
+                    <p>Nuestros bots humanizados atienden a tus clientes 24/7.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img src="" alt="">
+                    <hr>
+                    <h3>Prospecta</h3>
+                    <p>Campañas de remarketing a todos tus clientes sin riesgos de bloqueo.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img src="" alt="">
+                    <hr>
+                    <h3>Automatiza</h3>
+                    <p>Nuestros bots humanizados responden a tus clientes 24/7 con la precisión que necesitan.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img src="" alt="">
+                    <hr>
+                    <h3>Vende</h3>
+                    <p>Cierra más negocios y lleva a tu empresa a un nivel más alto.</p>
                 </div>
             </div>
         </div>

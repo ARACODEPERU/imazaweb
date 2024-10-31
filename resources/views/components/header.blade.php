@@ -113,7 +113,7 @@
                                     </ul>
                                 </div> --}}
                                 <div class="main-menu__right-cart-search">
-                                    <div class="main-menu__right-cart-box">
+                                    {{-- <div class="main-menu__right-cart-box">
                                         <a href="{{ route('web_carrito') }}">
                                             <span class="icon-shopping-cart"></span>
                                             <span id="contadorCarritoMovil" class="contadorCarritoMovil" style="font-weight: 700; padding: 5px 7px; font-size: 16px; position: absolute; margin-top: -10px;">
@@ -123,13 +123,16 @@
 
                                             </span>
                                         </a>
-                                    </div>
+                                    </div> --}}
                                     {{-- <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>
                                     </div> --}}
                                     {{-- <div class="main-menu__right-search-box">
                                         <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
                                     </div> --}}
+                                    <div class="main-menu__right-search-box">
+                                        <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Contactanos</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
