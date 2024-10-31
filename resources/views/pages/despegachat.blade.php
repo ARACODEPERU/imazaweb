@@ -125,7 +125,7 @@
         </div>
     </section>
 
-    <section style="padding: 80px 0px;">
+    <section style="padding: 160px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -164,22 +164,179 @@
         </div>
     </section>
 
-    <section style="padding: 80px 0px; background: #833fdb;">
+    <section style="padding: 120px 0px; background: #833fdb;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    hola
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 style="font-size: 40px; text-align:center; color: #fff;">
+                        Toda tu comunicación y equipo de ventas, reunidos en un solo lugar.
+                    </h1>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Unifica tu camunicación</h4>
+                            <p>Integra Messenger, Instagram y WhatsApp en un solo lugar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Agiliza la atención al cliente</h4>
+                            <p>Todo tu equipo comercial conectado atendiendo y cerrando más negocios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Supervisa a todo tu equipo</h4>
+                            <p>Supervisa las conversaciones con los clientes</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section style="padding: 80px 0px;">
+    <section style="padding: 120px 0px;">
         <div class="container">
-            <div class="col-md-12">
-                <h1 style="font-size: 40px; text-align:center;">
-                    Integra tu WhatsApp con aplicaciones externas
-                </h1>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1 style="font-size: 40px; text-align:center;">
+                        Integra tu WhatsApp con aplicaciones externas
+                    </h1>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <img style="width: 100%;" src="https://cdn.prod.website-files.com/6410e1eea16628fb630ae69b/67225d835ddba9ccceb37d2e_integracion%20con%20Mercately-p-500.png" alt="">
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section style="padding: 120px 0px; background: #f8f8f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 style="font-size: 40px; text-align:center;">
+                        Funciones de Marketing que te facilitarán la vida y aumentarán tus ventas con WhatsApp.
+                    </h1>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Chat Multiagente</h4>
+                            <p>Delegue el trabajo creando usuarios con varios permisos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Chat de WhatsApp</h4>
+                            <p>Te brindamos una experiencia de mensajería intuitiva, sin complicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Bots 24/7</h4>
+                            <p>Crea respuestas automáticas a las preguntas frecuentes. También puedes usar bots inteligentes con IA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>API para conectarse a otros servicios</h4>
+                            <p>Conexión perfecta entre diferentes servicios, lo que permite compartir datos e integrar funciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Flujos de trabajo</h4>
+                            <p>Podrás crear flujos de conversación personalizados para cada etapa del proceso de venta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Múltiples números de teléfono</h4>
+                            <p>Admite varios números de teléfono para la misma cuenta comercial de WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Botones interactivos</h4>
+                            <p>Los bots interactivos brindan respuestas inteligentes y atractivas, además de imágenes, documentos, videos, audios y botones interactivos para mejorar la interacción del usuario.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Gestión de plantillas</h4>
+                            <p>Maneje las plantillas directamente dentro de la aplicación sin necesidad de visitar Meta para crear plantillas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow fadeInUp animated" 
+                     data-wow-delay="0ms" data-wow-duration="1500ms" 
+                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Administrar contactos</h4>
+                            <p>Importe y exporte contactos sin esfuerzo usando el formato XLSX.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
