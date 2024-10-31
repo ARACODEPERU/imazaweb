@@ -137,25 +137,25 @@
             <br>
             <div class="row">
                 <div class="col-md-3" style="text-align: center;">
-                    <img src="" alt="">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/chateabots.png') }}" alt="">
                     <hr>
                     <h3>Chatea</h3>
                     <p>Nuestros bots humanizados atienden a tus clientes 24/7.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
-                    <img src="" alt="">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/remarketing.png') }}" alt="">
                     <hr>
                     <h3>Prospecta</h3>
                     <p>Campañas de remarketing a todos tus clientes sin riesgos de bloqueo.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
-                    <img src="" alt="">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/automatiza.png') }}" alt="">
                     <hr>
                     <h3>Automatiza</h3>
                     <p>Nuestros bots humanizados responden a tus clientes 24/7 con la precisión que necesitan.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
-                    <img src="" alt="">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/vende.png') }}" alt="">
                     <hr>
                     <h3>Vende</h3>
                     <p>Cierra más negocios y lleva a tu empresa a un nivel más alto.</p>
