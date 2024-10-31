@@ -134,7 +134,7 @@
                     </h1>
                 </div>
             </div>
-            <br>
+            <br><br>
             <div class="row">
                 <div class="col-md-3" style="text-align: center;">
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/chateabots.png') }}" alt="">
