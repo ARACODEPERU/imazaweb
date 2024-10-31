@@ -129,7 +129,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="font-size: 40px; text-align:center;">
+                    <h1 style="font-size: 50px; text-align:center;">
                         Descubre la fórmula para vender más en WhatsApp
                     </h1>
                 </div>
@@ -167,13 +167,11 @@
     <section style="padding: 120px 0px; background: #833fdb;">
         <div class="container">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <h1 style="font-size: 40px; text-align:center; color: #fff;">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center; color: #fff;">
                         Toda tu comunicación y equipo de ventas, reunidos en un solo lugar.
                     </h1>
                 </div>
-                <div class="col-md-1"></div>
             </div>
             <br><br>
             <div class="row">
@@ -182,7 +180,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Unifica tu camunicación</h4>
+                            <h3>Unifica tu camunicación</h3>
                             <p>Integra Messenger, Instagram y WhatsApp en un solo lugar.</p>
                         </div>
                     </div>
@@ -192,7 +190,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Agiliza la atención al cliente</h4>
+                            <h3>Agiliza la atención al cliente</h3>
                             <p>Todo tu equipo comercial conectado atendiendo y cerrando más negocios.</p>
                         </div>
                     </div>
@@ -202,7 +200,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Supervisa a todo tu equipo</h4>
+                            <h3>Supervisa a todo tu equipo</h3>
                             <p>Supervisa las conversaciones con los clientes</p>
                         </div>
                     </div>
@@ -214,13 +212,13 @@
     <section style="padding: 120px 0px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <h1 style="font-size: 40px; text-align:center;">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1 style="font-size: 50px; text-align:center;">
                         Integra tu WhatsApp con aplicaciones externas
                     </h1>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
             </div>
             <br><br>
             <div class="row">
@@ -237,13 +235,11 @@
     <section style="padding: 120px 0px; background: #f8f8f8;">
         <div class="container">
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <h1 style="font-size: 40px; text-align:center;">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center;">
                         Funciones de Marketing que te facilitarán la vida y aumentarán tus ventas con WhatsApp.
                     </h1>
                 </div>
-                <div class="col-md-1"></div>
             </div>
             <br><br>
             <div class="row">
@@ -252,7 +248,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Chat Multiagente</h4>
+                            <h3>Chat Multiagente</h3>
                             <p>Delegue el trabajo creando usuarios con varios permisos.</p>
                         </div>
                     </div>
@@ -262,7 +258,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Chat de WhatsApp</h4>
+                            <h3>Chat de WhatsApp</h3>
                             <p>Te brindamos una experiencia de mensajería intuitiva, sin complicaciones.</p>
                         </div>
                     </div>
@@ -272,7 +268,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Bots 24/7</h4>
+                            <h3>Bots 24/7</h3>
                             <p>Crea respuestas automáticas a las preguntas frecuentes. También puedes usar bots inteligentes con IA.</p>
                         </div>
                     </div>
@@ -282,7 +278,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>API para conectarse a otros servicios</h4>
+                            <h3>API para conectarse a otros servicios</h3>
                             <p>Conexión perfecta entre diferentes servicios, lo que permite compartir datos e integrar funciones.</p>
                         </div>
                     </div>
@@ -292,7 +288,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Flujos de trabajo</h4>
+                            <h3>Flujos de trabajo</h3>
                             <p>Podrás crear flujos de conversación personalizados para cada etapa del proceso de venta.</p>
                         </div>
                     </div>
@@ -302,7 +298,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Múltiples números de teléfono</h4>
+                            <h3>Múltiples números de teléfono</h3>
                             <p>Admite varios números de teléfono para la misma cuenta comercial de WhatsApp.</p>
                         </div>
                     </div>
@@ -312,7 +308,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Botones interactivos</h4>
+                            <h3>Botones interactivos</h3>
                             <p>Los bots interactivos brindan respuestas inteligentes y atractivas, además de imágenes, documentos, videos, audios y botones interactivos para mejorar la interacción del usuario.</p>
                         </div>
                     </div>
@@ -322,7 +318,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Gestión de plantillas</h4>
+                            <h3>Gestión de plantillas</h3>
                             <p>Maneje las plantillas directamente dentro de la aplicación sin necesidad de visitar Meta para crear plantillas.</p>
                         </div>
                     </div>
@@ -332,7 +328,7 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text">
-                            <h4>Administrar contactos</h4>
+                            <h3>Administrar contactos</h3>
                             <p>Importe y exporte contactos sin esfuerzo usando el formato XLSX.</p>
                         </div>
                     </div>
