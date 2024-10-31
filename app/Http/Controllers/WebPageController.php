@@ -94,10 +94,10 @@ class WebPageController extends Controller
     }
 
     
-    public function despegachat()
+    public function despegachatempresarial()
     {
 
-        return view('pages.despegachat');
+        return view('pages.despegachatempresarial');
     }
 
     public function cursos()
