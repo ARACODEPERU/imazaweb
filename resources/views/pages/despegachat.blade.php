@@ -163,6 +163,27 @@
             </div>
         </div>
     </section>
+
+    <section style="padding: 80px 0px; background: #833fdb;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    hola
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0px;">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 style="font-size: 40px; text-align:center;">
+                    Integra tu WhatsApp con aplicaciones externas
+                </h1>
+            </div>
+        </div>
+    </section>
+
     
 
 @stop
