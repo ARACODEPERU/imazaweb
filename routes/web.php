@@ -31,6 +31,7 @@ Route::get('/home', [WebPageController::class, 'index'])
 
 Route::get('/', [WebPageController::class, 'construction'])->name('construction');
 Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosotros');
+Route::get('/despega-chat', [WebPageController::class, 'despegachat'])->name('web_despegachat');
 Route::get('/cursos', [WebPageController::class, 'cursos'])->name('web_cursos');
 Route::get('/servicios', [WebPageController::class, 'servicios'])->name('web_servicios');
 Route::get('/capacitacion', [WebPageController::class, 'capacitacion'])->name('web_capacitacion');

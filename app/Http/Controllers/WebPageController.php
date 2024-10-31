@@ -93,6 +93,13 @@ class WebPageController extends Controller
         ]);
     }
 
+    
+    public function despegachat()
+    {
+
+        return view('pages.despegachat');
+    }
+
     public function cursos()
     {
         $courses = OnliItem::with('course')->get();

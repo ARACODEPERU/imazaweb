@@ -9,7 +9,7 @@
     <x-about />
     <!--About One End-->
     <!--Courses One Start-->
-    <x-courses.list-card />
+    {{-- <x-courses.list-card /> --}}
     <!--Courses One End-->
     <!--Registration One Start-->
     <x-register />

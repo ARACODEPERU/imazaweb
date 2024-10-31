@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center" style="color: #fff;">
-                        <p>&copy; Copyright {{ date('Y') }} by {{ env('APP_NAME') }}</p>
+                        <p>&copy; Copyright {{ date('Y') }} por {{ env('APP_NAME') }}</p>
                     </div>
                 </div>
             </div>

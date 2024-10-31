@@ -65,15 +65,16 @@
                                 <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_nosotros') }}">Nosotros</a>
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
+                                <li class="{{ Route::currentRouteName()== 'web_despegachat' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_despegachat') }}">DespegaChat</a>
+                                </li>
+                                {{-- <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
-                                    <!--
                                     <ul>
                                         <li><a href="courses.html">Courses</a></li>
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
-                                    -->
-                                </li>
+                                </li> --}}
                                 <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_servicios') }}">Servicios</a>
                                     <ul>
@@ -126,9 +127,9 @@
                                     {{-- <div class="main-menu__right-search-box">
                                         <a href="#" class="thm-btn search-toggler">Search</a>
                                     </div> --}}
-                                    <div class="main-menu__right-search-box">
+                                    {{-- <div class="main-menu__right-search-box">
                                         <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
