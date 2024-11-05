@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        {{-- <div class="col-md-12 wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                             <div class="features-one__single">
                                 <div class="features-one__single-icon">
                                     <span class="icon-human-resources-1"></span>
@@ -104,7 +104,7 @@
                                     <p>Con DespegaChat integras tus redes sociales, sumas a tu equipo de ventas y supervisas la atención desde el WhatsApp de tu empresa, todo en un solo lugar.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <!--End Why Choose One Left-->
@@ -164,7 +164,7 @@
         </div>
     </section>
 
-    <section style="padding: 120px 0px; background: #833fdb;">
+    {{-- <section style="padding: 120px 0px; background: #833fdb;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -207,7 +207,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section style="padding: 120px 0px;">
         <div class="container">
