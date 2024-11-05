@@ -92,12 +92,10 @@
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'blog_principal' ? "dropdown current" : '' }}">
                                     <a href="{{ route('blog_principal') }}">Blog</a>
-                                    <!--
-                                    <ul>
+                                    {{-- <ul>
                                         <li><a href="news.html">News</a></li>
                                         <li><a href="news-details.html">News Details</a></li>
-                                    </ul>
-                                    -->
+                                    </ul> --}}
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_contacto') }}">Contacto</a>
@@ -136,7 +134,7 @@
                                         <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
                                     </div> --}}
                                     <div class="main-menu__right-search-box">
-                                        <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Contactanos</a>
+                                        <a href="{{ route('web_contacto') }}" target="_bla_k" class="thm-btn">Contactanos</a>
                                     </div>
                                 </div>
                             </div>
