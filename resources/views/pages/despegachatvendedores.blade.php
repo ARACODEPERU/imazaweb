@@ -26,8 +26,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="font-size: 60px; text-align:center;">
-                        Aumenta tus ventas con atención profesional 24/7 al instante.
+                        Gana más comisiones y destaca en tu equipo con atención profesional al instante.
                     </h1>
+                    <p style="text-align: center;">
+                        Nuestra extensión está especialmente diseñada para vendedores dependientes e independientes 
+                        que gestionan numerosos leads. Con ella, podrás atender a tus clientes de manera óptima, 
+                        aumentar tus comisiones y destacar como el mejor vendedor en tu equipo.
+                    </p>
                 </div>
             </div>
             <br>
@@ -79,7 +84,7 @@
                                 </div>
                                 <div class="features-one__single-text">
                                     <h4><a href="#">Más ventas, menos esfuerzo</a></h4>
-                                    <p>Convierte tus conversaciones en ventas. DespegaChat simplifica tu comunicación y mejora tus resultados.</p>
+                                    <p>Convierte tus conversaciones en ventas. Nuestra extensión simplifica tu comunicación y mejora tus resultados.</p>
                                 </div>
                             </div>
                         </div>
@@ -89,8 +94,8 @@
                                     <span class="icon-human-resources-1"></span>
                                 </div>
                                 <div class="features-one__single-text">
-                                    <h4><a href="#">Atención profesional 24/7</a></h4>
-                                    <p>Ahorra tiempo y recursos con DespegaChat. Brinda atención profesional y personalizada, las 24 horas del día.</p>
+                                    <h4><a href="#">Atención al instante </a></h4>
+                                    <p>Ahorra tiempo y brinda atención rápida y personalizada.</p>
                                 </div>
                             </div>
                         </div>
@@ -140,19 +145,19 @@
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/chateabots.png') }}" alt="">
                     <div style="height: 10px; background-color: #ac8dd4; margin-bottom: 10px;"></div>
                     <h3>Chatea</h3>
-                    <p>Nuestros bots humanizados atienden a tus clientes 24/7.</p>
+                    <p>Nuestros bots atienden a tus clientes al instante.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/remarketing.png') }}" alt="">
                     <div style="height: 10px; background-color: #a573e7; margin-bottom: 10px;"></div>
                     <h3>Prospecta</h3>
-                    <p>Campañas de remarketing a todos tus clientes sin riesgos de bloqueo.</p>
+                    <p>Campañas de remarketing a todos tus clientes.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/automatiza.png') }}" alt="">
                     <div style="height: 10px; background-color: #9254e4; margin-bottom: 10px;"></div>
                     <h3>Automatiza</h3>
-                    <p>Nuestros bots humanizados responden a tus clientes 24/7 con la precisión que necesitan.</p>
+                    <p>Crea flujos de trabajo, respuetas rápidas, recordatorios automáticos, embudos de venta y más.</p>
                 </div>
                 <div class="col-md-3" style="text-align: center;">
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/vende.png') }}" alt="">
@@ -209,7 +214,7 @@
         </div>
     </section> --}}
 
-    <section style="padding: 120px 0px;">
+    {{-- <section style="padding: 120px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-1"></div>
@@ -229,7 +234,7 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     
     <section style="padding: 120px 0px; background: #f8f8f8;">
@@ -258,8 +263,8 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Bots 24/7</h3>
-                            <p>Crea respuestas automáticas a las preguntas frecuentes. También puedes usar bots inteligentes con IA.</p>
+                            <h3>Bots ilimitados</h3>
+                            <p>Crea respuestas automáticas a las preguntas frecuentes.</p>
                         </div>
                     </div>
                 </div>
@@ -268,8 +273,8 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Chat Multicuenta en WhatsApp</h3>
-                            <p>Podrás gestionar bajo el mismo usuario hasta 5 números de WhatsApp diferentes.</p>
+                            <h3>Define el estado del embudo en cada conversación</h3>
+                            <p>Tablero Kanvan que te permite visualizar a tus clientes según el estado del proceso de venta.</p>
                         </div>
                     </div>
                 </div>
@@ -278,17 +283,17 @@
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Define el estado del embudo en cada conversación.</h3>
-                            <p>Elige entre "Abierto" "Pendiente" y "Resuelto".</p>
+                            <h3>Gestión de etiquetas y grupos</h3>
+                            <p>Etiqueta automáticamente a tus clientes, envíalos a grupos y más funciones.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp animated" 
+                <div class="col-md-6 wow fadeInUp animated" 
                      data-wow-delay="0ms" data-wow-duration="1500ms" 
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px; text-align:center; width: 100%;">
-                            <h3>API o Webhooks para conectarse a otros servicios</h3>
+                            <h3>Flujos de trabajo</h3>
                             <p>Conexión perfecta entre diferentes servicios, lo que permite compartir datos e integrar funciones.</p>
                         </div>
                     </div>
@@ -309,17 +314,17 @@
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
                             <h3>Administrar contactos</h3>
-                            <p>Importe y exporte contactos sin esfuerzo usando el formato XLSX.</p>
+                            <p>Importe y exporte contactos sin esfuerzo usando el formato XLS.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp animated" 
+                <div class="col-md-6 wow fadeInUp animated" 
                      data-wow-delay="0ms" data-wow-duration="1500ms" 
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Campañas masivas y Chatbots AI con constructor de flujos.</h3>
-                            <p>Podrás crear y enviar campañas muy personalizadas, con imágenes, audios, videos, documentos, encuestas, y mucho más para tus clientes.</p>
+                            <h3>Campañas masivas</h3>
+                            <p>Podrás crear y enviar campañas personalizadas, con imágenes, audios, videos, documentos, contactos y mucho más para tus clientes.</p>
                         </div>
                     </div>
                 </div>

@@ -77,7 +77,7 @@
                                     <ul>
                                         <li><a href="{{ route('web_despegachatempresarial') }}">CRM - Empresarial</a></li>
                                         <li><a href="{{ route('web_despegachatpyme') }}">CRM - Pyme</a></li>
-                                        <li><a href="">CRM - Vendedores</a></li>
+                                        <li><a href="{{ route('web_despegachatvendedores') }}">CRM - Vendedores</a></li>
                                     </ul>
                                 </li>
                                 <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">

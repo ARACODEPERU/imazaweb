@@ -107,6 +107,13 @@ class WebPageController extends Controller
         return view('pages.despegachatpyme');
     }
 
+    
+    public function despegachatvendedores()
+    {
+
+        return view('pages.despegachatvendedores');
+    }
+
     public function cursos()
     {
         $courses = OnliItem::with('course')->get();

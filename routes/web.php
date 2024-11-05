@@ -33,6 +33,7 @@ Route::get('/', [WebPageController::class, 'construction'])->name('construction'
 Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosotros');
 Route::get('/despega-chat-empresarial', [WebPageController::class, 'despegachatempresarial'])->name('web_despegachatempresarial');
 Route::get('/despega-chat-pyme', [WebPageController::class, 'despegachatpyme'])->name('web_despegachatpyme');
+Route::get('/despega-chat-vendedores', [WebPageController::class, 'despegachatvendedores'])->name('web_despegachatvendedores');
 Route::get('/cursos', [WebPageController::class, 'cursos'])->name('web_cursos');
 Route::get('/servicios', [WebPageController::class, 'servicios'])->name('web_servicios');
 Route::get('/capacitacion', [WebPageController::class, 'capacitacion'])->name('web_capacitacion');
