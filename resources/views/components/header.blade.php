@@ -97,9 +97,9 @@
                                         <li><a href="news-details.html">News Details</a></li>
                                     </ul> --}}
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}">
+                                {{-- <li class="{{ Route::currentRouteName()== 'web_contacto' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_contacto') }}">Contacto</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
 
