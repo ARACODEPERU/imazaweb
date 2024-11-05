@@ -61,10 +61,10 @@
                         <h3 class="footer-widget__title">Siguenos en :</h3>
                         <ul class="footer-widget__social-links-list list-unstyled clearfix">
                             <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-tiktok"></i></a></li>
-                            {{-- <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-dribbble"></i></a></li> --}}
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            {{-- <li><a href="#"><i class="fab fa-dribbble"></i></a></li> --}}
                         </ul>
                     </div>
                 </div>
