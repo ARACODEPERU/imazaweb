@@ -72,7 +72,7 @@
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
                                 </li> --}}
-                                <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">
+                                <li class="{{ Route::currentRouteName()== 'web_despegachatempresarial' ? "dropdown current" : '' }}">
                                     <a href="">DespegaChat</a>
                                     <ul>
                                         <li><a href="{{ route('web_despegachatempresarial') }}">CRM - Empresarial</a></li>

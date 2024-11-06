@@ -29,7 +29,8 @@ use Modules\Blog\Http\Controllers\BlogController;
 Route::get('/home', [WebPageController::class, 'index'])
     ->name('index_main');
 
-Route::get('/', [WebPageController::class, 'construction'])->name('construction');
+// Route::get('/', [WebPageController::class, 'construction'])->name('construction');
+Route::get('/', [WebPageController::class, 'index'])->name('index_main');
 Route::get('/nosotros', [WebPageController::class, 'nosotros'])->name('web_nosotros');
 Route::get('/despega-chat-empresarial', [WebPageController::class, 'despegachatempresarial'])->name('web_despegachatempresarial');
 Route::get('/despega-chat-pyme', [WebPageController::class, 'despegachatpyme'])->name('web_despegachatpyme');
