@@ -59,7 +59,7 @@
                                             alt="" />
                                         <div class="categories-one__single-overlay">
                                             <div class="categories-one__single-overlay-text1">
-                                                <p style="color: #fff;">03</p>
+                                                <p style="color: #fff;">02</p>
                                             </div>
                                             <div class="categories-one__single-overlay-text2">
                                                 <h4>{{ $services[8]->content }}</h4>
@@ -79,7 +79,7 @@
                                             alt="" />
                                         <div class="categories-one__single-overlay">
                                             <div class="categories-one__single-overlay-text1">
-                                                <p style="color: #fff;">04</p>
+                                                <p style="color: #fff;">03</p>
                                             </div>
                                             <div class="categories-one__single-overlay-text2">
                                                 <h4>{{ $services[11]->content }}</h4>
