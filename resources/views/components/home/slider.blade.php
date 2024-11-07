@@ -34,11 +34,11 @@
                         <h2 class="main-slider__content-title" style="width: 50%;">
                             {{ $slide->item->items[2]->content }}
                         </h2>
-                        <p class="main-slider__content-text" style="width: 45%;">
+                        <p class="main-slider__content-text" style="width: 48%;">
                             {{ $slide->item->items[3]->content }}
                         </p>
                         <div class="main-slider__content-btn">
-                            <a href="{{ $slide->item->items[4]->content }}" class="thm-btn">Descubrir Más</a>
+                            <a href="{{ $slide->item->items[4]->content }}" class="thm-btn">Prueba gratis</a>
                         </div>
                     </div>
                 </div>
