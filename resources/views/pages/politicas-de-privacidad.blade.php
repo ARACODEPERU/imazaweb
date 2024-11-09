@@ -94,7 +94,7 @@
                             </p>
                             <br>
                             <p class="about-two__text-box-text" style="padding: 0px 25px;">
-                                <b>5.1.- Saber qué información tenemos sobre ti::</b>
+                                <b>5.1.- Saber qué información tenemos sobre ti:</b>
                                 Puedes pedirnos una copia de tus datos.
                             </p>
                             <p class="about-two__text-box-text" style="padding: 0px 25px;">
