@@ -35,7 +35,7 @@
                             <div class="section-title">
                                 <h2 class="section-title__title">Politicas De Privacidad</h2>
                             </div>
-                            <h4>Última actualización: [Fecha Actual]</h4>
+                            <h4>Última actualización: 08/11/2024</h4>
                             <p class="about-two__text-box-text" style="padding: 0px 25px;">
                                 En DespegaChat, valoramos tu privacidad y queremos que te sientas seguro al usar nuestros servicios. Esta política te explica cómo cuidamos tu información personal.
                             </p>
