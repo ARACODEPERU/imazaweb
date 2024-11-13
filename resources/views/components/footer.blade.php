@@ -30,6 +30,7 @@
                             <li><a href="{{ route('blog_principal') }}">Blog</a></li>
                             <li><a href="{{ route('web_contacto') }}">Contacto</a></li>
                             <li><a href="{{ route('web_privacidad') }}">Politicas de Privacidad</a></li>
+                            <li><a href="{{ route('web_condiciones') }}">Condiciones del Servicio</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,13 +39,9 @@
                 <!--Start Footer Widget Column-->
                 <div class="col-md-3 wow animated fadeInUp" data-wow-delay="0.3s">
                     <div class="footer-widget__column footer-widget__courses">
-                        <h3 class="footer-widget__title">Nuevos Cursos :</h3>
+                        <h2 class="footer-widget__title">Articulos Recientes:</h2>
                         <ul class="footer-widget__courses-list list-unstyled">
-                            <li><a href="#">UI/UX Design</a></li>
-                            <li><a href="#">WordPress Development</a></li>
-                            <li><a href="#">Business Strategy</a></li>
-                            <li><a href="#">Software Development</a></li>
-                            <li><a href="#">Business English</a></li>
+                            <li><a href="#">...</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,6 +54,7 @@
                         <p class="phone"><a href="tel:123456789">92 888 666 0000</a></p>
                         <p><a href="mailto:info@templatepath.com">needhelp@company.com</a></p>
                     </div>
+                    <br>
                     <div class="footer-widget__column footer-widget__social-links">
                         <h3 class="footer-widget__title">Siguenos en :</h3>
                         <ul class="footer-widget__social-links-list list-unstyled clearfix">
