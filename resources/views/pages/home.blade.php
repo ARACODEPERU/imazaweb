@@ -196,7 +196,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
@@ -218,7 +218,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
@@ -229,7 +229,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
@@ -240,7 +240,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
