@@ -156,6 +156,119 @@
         </div>
     </section>
 
+    <section class="testimonials-one clearfix">
+        <div class="auto-container" style="height: 750px;">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="section-title text-center">
+                        <h1 style="font-size: 50px; text-align:center; color: #fff;">
+                            Características generales de Despega Chat
+                        </h1>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonials-one__wrapper">
+                        <div class="testimonials-one__pattern">
+                            <img src="{{ URL('themes/imazaweb/images/pattern/testimonials-one-left-pattern.png') }}" alt="" />
+                        </div>
+                        <div class="shape1">
+                            <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Conecta Messenger, Instagram, WhatsApp business y WhatsApp Api, Web site, 
+                                                Telegram, Email y otros.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Agenda el envío de seguimientos automatizados para tus clientes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Gestiona múltiples cuentas de WhatsApp desde un solo panel.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Organiza tus chats con etiquetas ilimitadas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Analiza las métricas clave de tus conversaciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Utiliza Chat gpt para sugerir mejores respuestas en vivo.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p class="testimonials-one__single-text">
+                                                Organiza tus chats por niveles de urgencia.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
         <!--About One Start-->
         {{-- <x-about /> --}}
         <!--About One End-->
@@ -176,9 +289,7 @@
     <!--Company Logos One Start-->
     {{-- <x-company-clients /> --}}
     <!--Company Logos One End-->
-    <!--Why Choose One Start-->
-    <x-why-choose-one />
-    <!--Why Choose One End-->
+    
     <!--Blog One Start-->
     <x-blog.presentation />
     <!--Blog One End-->

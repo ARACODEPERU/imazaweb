@@ -82,6 +82,10 @@
     </section>
     <!--About Two End-->
 
+    <!--Why Choose One Start-->
+    <x-why-choose-one />
+    <!--Why Choose One End-->
+
 
 
 @stop
