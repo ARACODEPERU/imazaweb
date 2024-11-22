@@ -95,8 +95,8 @@
     <!-- /.search-popup -->
 
 
-
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+{{-- 
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a> --}}
 
 
     <script src="{{ URL('themes/imazaweb/vendors/jquery/jquery-3.5.1.min.js') }}"></script>
