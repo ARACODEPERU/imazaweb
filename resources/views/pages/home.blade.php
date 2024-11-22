@@ -1,7 +1,42 @@
 @extends('layouts.webpage')
 
 @section('content')
-    <x-home.slider />
+    {{-- <x-home.slider /> --}}
+
+    
+    <section style="padding: 80px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 60px; text-align:center;">
+                        "Eleva la experiencia de tus clientes y haz crecer tu negocio con Despega Chat"
+                    </h1>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <div class="about-one__btn" style="margin-top: 0px;">
+                        <a href="" class="thm-btn">Comienza Gratis</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="categories-one__btn" style="margin-top: 0px;">
+                        <a href="" class="thm-btn">Agenda una Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="https://cdn.prod.website-files.com/6410e1eea16628fb630ae69b/6633ac66eb9bb448a48b2284_inboxmercately.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--Features One Start-->
     <x-features />
     <!--Features One End-->

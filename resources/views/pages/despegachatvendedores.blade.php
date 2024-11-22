@@ -292,16 +292,6 @@
                      data-wow-delay="0ms" data-wow-duration="1500ms" 
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
                     <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px; text-align:center; width: 100%;">
-                            <h3>Flujos de trabajo</h3>
-                            <p>Conexión perfecta entre diferentes servicios, lo que permite compartir datos e integrar funciones.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
                         <div class="features-one__single-text" style="height: 115px;">
                             <h3>Flujos de trabajo</h3>
                             <p>Podrás crear flujos de conversación personalizados para cada etapa del proceso de venta.</p>
@@ -318,6 +308,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
                 <div class="col-md-6 wow fadeInUp animated" 
                      data-wow-delay="0ms" data-wow-duration="1500ms" 
                      style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
@@ -328,6 +319,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </section>

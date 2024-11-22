@@ -62,8 +62,11 @@
                                 <li class="{{ Route::currentRouteName()== 'index_main' ? "dropdown current" : '' }}">
                                     <a href="{{ route('index_main') }}">Home</a>
                                 </li>
-                                <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
+                                {{-- <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_nosotros') }}">Nosotros</a>
+                                </li> --}}
+                                <li class="{{ Route::currentRouteName()== 'web_despegachatvendedores' ? "dropdown current" : '' }}">
+                                    <a href="{{ route('web_despegachatvendedores') }}">CRM - Vendedores</a>
                                 </li>
                                 {{-- <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
@@ -72,14 +75,14 @@
                                         <li><a href="course-details.html">Course Details</a></li>
                                     </ul>
                                 </li> --}}
-                                <li class="{{ Route::currentRouteName()== 'web_despegachatempresarial' ? "dropdown current" : '' }}">
+                                {{-- <li class="{{ Route::currentRouteName()== 'web_despegachatempresarial' ? "dropdown current" : '' }}">
                                     <a href="">DespegaChat</a>
                                     <ul>
                                         <li><a href="{{ route('web_despegachatempresarial') }}">CRM - Empresarial</a></li>
                                         <li><a href="{{ route('web_despegachatpyme') }}">CRM - Pyme</a></li>
                                         <li><a href="{{ route('web_despegachatvendedores') }}">CRM - Vendedores</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="{{ Route::currentRouteName()== 'web_servicios' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_servicios') }}">Servicios</a>
                                     <ul>
