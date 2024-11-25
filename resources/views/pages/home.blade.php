@@ -36,6 +36,7 @@
         </div>
     </section>
 
+
     <!--Features One Start-->
     <x-features />
     <!--Features One End-->
@@ -79,9 +80,8 @@
         </div>
     </section>
 
-    
     <section style="padding: 120px 0px; background: #f8f8f8;">
-        <div class="container">
+        <div class="auto-container" style="">
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="font-size: 50px; text-align:center;">
@@ -94,70 +94,82 @@
             </div>
             <br><br>
             <div class="row">
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Automatización intuitiva:</h3>
-                            <p>
-                                Diseña chatbots inteligentes con solo unos clics sin necesidad de ser un experto en programación.
-                            </p>
+                <div class="col-md-12">
+                    <div class="testimonials-one__wrapper">
+                        <div class="testimonials-one__pattern">
+                            <img src="{{ URL('themes/imazaweb/images/pattern/testimonials-one-left-pattern.png') }}" alt="" />
+                        </div>
+                        <div class="shape1">
+                            <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                            <h3>Automatización intuitiva:</h3>
+                                            <p>
+                                                Diseña chatbots inteligentes con solo unos clics sin necesidad de ser un experto en programación.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                            <h3>
+                                                Chatbots ilimitados para tu sitio web:
+                                            </h3>
+                                            <p>
+                                                Mejora la experiencia de usuario en tu sitio web con chatbots.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                            <h3>
+                                                Sin restricciones en tus comunicaciones:
+                                            </h3>
+                                            <p>
+                                                A diferencia de otros, nuestros planes no se establecen por cantidad de contactos mensuales.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                            <h3>
+                                                Envía emails personalizados al instante:
+                                            </h3>
+                                            <p>
+                                                Delega el envío de correos electrónicos y adapta cada mensaje a tus clientes.
+                                                ¡Simplifica tu trabajo!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                            <h3>
+                                                Nadie te dejará en visto:
+                                            </h3>
+                                            <p>
+                                                Hazles seguimiento automatizado a tus clientes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Chatbots ilimitados para tu sitio web:</h3>
-                            <p>Mejora la experiencia de usuario en tu sitio web con chatbots.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Sin restricciones en tus comunicaciones:</h3>
-                            <p>A diferencia de otros, nuestros planes no se establecen por cantidad de contactos mensuales.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Envía emails personalizados al instante:</h3>
-                            <p>
-                                Delega el envío de correos electrónicos y adapta cada mensaje a tus clientes. ¡Simplifica tu trabajo!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-6 wow fadeInUp animated" 
-                     data-wow-delay="0ms" data-wow-duration="1500ms" 
-                     style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp; text-align:center;">
-                    <div class="features-one__single">
-                        <div class="features-one__single-text" style="height: 115px;">
-                            <h3>Nadie te dejará en visto:</h3>
-                            <p>
-                                Hazles seguimiento automatizado a tus clientes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3"></div>
             </div>
         </div>
     </section>
 
-    <section class="testimonials-one clearfix">
-        <div class="auto-container" style="height: 750px;">
+    <section class="testimonials-one clearfix" style="padding: 120px 0px;">
+        <div class="auto-container" style="height: 450px;">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -180,7 +192,7 @@
                             <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
                         </div>
                         <div class="row">
-                            <div class="col-xl-12">
+                            <div class="col-md-12">
                                 <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
@@ -188,8 +200,8 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
-                                                Conecta Messenger, Instagram, WhatsApp business y WhatsApp Api, Web site, 
+                                            <p style="font-size: 20px;">
+                                                Conecta Messenger, Instagram, WhatsApp business y WhatsApp Api, Web site,
                                                 Telegram, Email y otros.
                                             </p>
                                         </div>
@@ -200,7 +212,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Agenda el envío de seguimientos automatizados para tus clientes.
                                             </p>
                                         </div>
@@ -211,7 +223,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Gestiona múltiples cuentas de WhatsApp desde un solo panel.
                                             </p>
                                         </div>
@@ -222,7 +234,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Organiza tus chats con etiquetas ilimitadas.
                                             </p>
                                         </div>
@@ -233,7 +245,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Analiza las métricas clave de tus conversaciones.
                                             </p>
                                         </div>
@@ -244,7 +256,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Utiliza Chat gpt para sugerir mejores respuestas en vivo.
                                             </p>
                                         </div>
@@ -255,7 +267,7 @@
                                             <h4 class="testimonials-one__single-title">
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
-                                            <p class="testimonials-one__single-text">
+                                            <p style="font-size: 20px;">
                                                 Organiza tus chats por niveles de urgencia.
                                             </p>
                                         </div>
@@ -278,18 +290,18 @@
 
 
     <!--Registration One Start-->
-    <x-register />
+    {{-- <x-register /> --}}
     <!--Registration One End-->
     <!--Categories One Start-->
-    <x-courses.category-list-card />
+    {{-- <x-courses.category-list-card /> --}}
     <!--Categories One End-->
     <!--Testimonials One Start-->
-    <x-testimonials />
+    {{-- <x-testimonials /> --}}
     <!--Testimonials One End-->
     <!--Company Logos One Start-->
     {{-- <x-company-clients /> --}}
     <!--Company Logos One End-->
-    
+
     <!--Blog One Start-->
     <x-blog.presentation />
     <!--Blog One End-->

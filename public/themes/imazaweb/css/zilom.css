@@ -3772,7 +3772,7 @@ ul {
 .testimonials-one {
     position: relative;
     display: block;
-    padding: 120px 0px 108px;
+    padding: 20px 0px 10px;
     background: var(--thm-base);
     overflow: hidden;
 }
@@ -3783,7 +3783,7 @@ ul {
     bottom: 0;
     right: 0;
     background: #ffffff;
-    height: 425px;
+    height: 25px;
     content: "";
 }
 
