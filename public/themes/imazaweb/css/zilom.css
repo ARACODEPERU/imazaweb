@@ -22,14 +22,16 @@
     --thm-font: 'Kumbh Sans', sans-serif;
     --thm-reey-font: 'reeyregular';
     /*--thm-base: #4d5fe3; ORIGINAL DE PLANTILLA */
-    --thm-base: #833fdb; /* DESPEGAR MARKETING */
+    /* --thm-base: #833fdb;  DESPEGAR MARKETING */
+    --thm-base: #c843be;  DESPEGAR MARKETING 
     --thm-base-rgb: 77, 95, 227;
     --thm-primary: #ffd45f;
     --thm-primary-rgb: 255, 212, 95;
     --thm-gray: #757783;
     --thm-gray-rgb: 117, 119, 131;
     /*--thm-black: #1c1e27;  ORIGINAL DE PLANTILLA */
-    --thm-black: #c843be; /* DESPEGAR MARKETING */
+    /* --thm-black: #c843be; DESPEGAR MARKETING */
+    --thm-black: #5298d3; /* DESPEGAR MARKETING */
     --thm-black-rgb: 28, 30, 39;
 }
 
@@ -4500,7 +4502,7 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
-    background-color: var(--thm-black);
+    background-color: var(--thm-base);
     mix-blend-mode: luminosity;
     opacity: 0.15;
     position: absolute;
@@ -4512,7 +4514,7 @@ ul {
 
 .footer-one {
     position: relative;
-    background-color: var(--thm-black);
+    background-color: var(--thm-base);
 }
 
 
@@ -4728,7 +4730,7 @@ ul {
     transform-origin: center;
     transform-style: preserve-3d;
     transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
-    background: var(--thm-base);
+    background: var(--thm-black);
 }
 
 .footer-widget__social-links-list li a:hover:before {
