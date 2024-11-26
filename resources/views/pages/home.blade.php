@@ -36,7 +36,6 @@
         </div>
     </section>
 
-
     <!--Features One Start-->
     <x-features />
     <!--Features One End-->
@@ -80,7 +79,7 @@
         </div>
     </section>
 
-    <section style="padding: 120px 0px; background: #f8f8f8;">
+    <section style="padding: 140px 0px; background: #f8f8f8;">
         <div class="auto-container" style="">
             <div class="row">
                 <div class="col-md-12">
@@ -168,7 +167,7 @@
         </div>
     </section>
 
-    <section class="testimonials-one clearfix" style="padding: 120px 0px;">
+    <section class="testimonials-one clearfix" style="padding: 140px 0px;">
         <div class="auto-container" style="height: 450px;">
             <div class="row">
                 <div class="col-md-2"></div>
@@ -280,6 +279,125 @@
             </div>
         </div>
     </section>
+
+    <section style="padding: 140px 0px;">
+        <div class="auto-container" style="">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center;">
+                        Con DESPEGA CHAT, podrás crear tu propio asistente virtual con inteligencia artificial en tan solo unos clics.
+                    </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonials-one__wrapper">
+                        <div class="testimonials-one__pattern">
+                            <img src="{{ URL('themes/imazaweb/images/pattern/testimonials-one-left-pattern.png') }}" alt="" />
+                        </div>
+                        <div class="shape1">
+                            <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                            <p style="line-height: 25px;">
+                                                Comprende y responde a los mensajes de audio de tus clientes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                            <p style="line-height: 25px;">
+                                                Interpreta imágenes y brinda respuestas basadas en eso.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                            <p style="line-height: 25px;">
+                                                Humaniza tu atención.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                            <p style="line-height: 25px;">
+                                                Nuestra IA espera al cliente finalizar con el envío de todos sus mensajes para 
+                                                entender su idea y luego responde con naturalidad.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <h4 style="color: #833fdb; text-align:center">
+                                ¡Contáctanos para una asesoría gratuita y descubre cómo podemos ayudarte a automatizar tu atención al cliente de manera efectiva!
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 140px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1 style="font-size: 40px;">
+                        LA AUTOMATIZACIÓN HA LLEGADO PARA QUEDARSE
+                    </h1>
+                    <br>
+                    <p>
+                        <b>
+                            Atiende a cientos de clientes simultáneamente con la agilidad de la inteligencia artificial.
+                        </b>
+                        <br> 
+                        Nuestra tecnología te permite crear tu chatbot en minutos y crear experiencias únicas para tus clientes.
+                    </p>
+                </div>
+                <div class="col-md-7">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/automatizacion.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 140px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <br><br><br><br>
+                    <h1 style="font-size: 40px;">
+                        INTEGRACIONES VIA API Y WEBHOOK
+                    </h1>
+                    <br>
+                    <p>
+                        <b>
+                            Integra tu WhatsApp con otras plataformas.
+                        </b>
+                        <br> 
+                        Mediante la integración de sistemas CRM, hojas de cálculo y otras fuentes de datos, 
+                        se puede lograr una atención al cliente omnicanal y altamente segmentada.
+                    </p>
+                </div>
+                <div class="col-md-7" style="text-align:center;">
+                    <img style="width: 85%;" src="{{ asset('themes/imazaweb/images/integracion.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <!--About One Start-->
         {{-- <x-about /> --}}

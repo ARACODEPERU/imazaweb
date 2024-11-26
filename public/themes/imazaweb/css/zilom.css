@@ -3775,6 +3775,7 @@ ul {
     padding: 20px 0px 10px;
     background: var(--thm-base);
     overflow: hidden;
+    
 }
 
 .testimonials-one::before {
