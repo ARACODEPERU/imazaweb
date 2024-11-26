@@ -350,10 +350,10 @@
         </div>
     </section>
 
-    <section style="padding: 140px 0px;">
+    <section style="padding: 140px 0px; background: #f8f8f8;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-5">
+            <div class="row box-zoom">
+                <div class="col-md-4">
                     <h1 style="font-size: 40px;">
                         LA AUTOMATIZACIÓN HA LLEGADO PARA QUEDARSE
                     </h1>
@@ -366,8 +366,9 @@
                         Nuestra tecnología te permite crear tu chatbot en minutos y crear experiencias únicas para tus clientes.
                     </p>
                 </div>
-                <div class="col-md-7">
-                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/automatizacion.jpg') }}" alt="">
+                <div class="col-md-8" style="text-align:center;">
+                    <br>
+                    <img style="width: 99%; padding: 10px;" src="{{ asset('themes/imazaweb/images/automatizacion.jpg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -375,7 +376,7 @@
 
     <section style="padding: 140px 0px;">
         <div class="container">
-            <div class="row">
+            <div class="row box-zoom">
                 <div class="col-md-5">
                     <br><br><br><br>
                     <h1 style="font-size: 40px;">
@@ -397,6 +398,82 @@
             </div>
         </div>
     </section>
+
+    <section style="padding: 140px 0px; background: #f8f8f8;">
+        <div class="container">
+            <div class="row box-zoom">
+                <div class="col-md-5">
+                    <br><br><br><br>
+                    <h1 style="font-size: 40px;">
+                        PLANIFICA TUS COMUNICACIONES CON ANTICIPACIÓN
+                    </h1>
+                    <br>
+                    <p>
+                        <b>
+                            Optimiza tu gestión del tiempo con recordatorios automáticos
+                        </b>
+                        <br> 
+                        Programa mensajes personalizados para enviarlos automáticamente a tus clientes o 
+                        grupos de WhatsApp. Ideal para recordatorios de citas, reuniones o lanzamientos.
+                    </p>
+                </div>
+                <div class="col-md-7" style="text-align:center;">
+                    <img style="width: 85%;" src="{{ asset('themes/imazaweb/images/') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 140px 0px;">
+        <div class="container">
+            <div class="row box-zoom">
+                <div class="col-md-5">
+                    <br><br><br><br>
+                    <h1 style="font-size: 40px;">
+                        MIDE EL ÉXITO DE TU EQUIPO COMERCIAL
+                    </h1>
+                    <br>
+                    <p>
+                        <b>
+                            Gestiona de forma eficiente todas las etapas del proceso de venta
+                        </b>
+                        <br> 
+                        Toma el control total de tu gestión comercial y mejora la eficiencia de tu equipo de ventas. 
+                        Conoce en detalle las métricas de atención al cliente, identifica a tus mejores vendedores y optimiza tus procesos comerciales.
+                    </p>
+                </div>
+                <div class="col-md-7" style="text-align:center;">
+                    <img style="width: 85%;" src="{{ asset('themes/imazaweb/images/') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 140px 0px; background: #f8f8f8;">
+        <div class="container">
+            <div class="row box-zoom">
+                <div class="col-md-5">
+                    <br><br><br><br>
+                    <h1 style="font-size: 40px;">
+                        UNE LA POTENCIA DE UN CRM CON LA VERSATILIDAD DE WHATSAPP
+                    </h1>
+                    <br>
+                    <p>
+                        <b>
+                            Asigna clientes entre tus vendedores de forma automatizada e inteligente
+                        </b>
+                        <br> 
+                        Descubre la solución perfecta para gestionar tus conversaciones de WhatsApp. Con un CRM multiagente, 
+                        podrás mejorar la colaboración en equipo, optimizar la asignación de clientes y obtener una visión completa de tu negocio.
+                    </p>
+                </div>
+                <div class="col-md-7" style="text-align:center;">
+                    <img style="width: 85%;" src="{{ asset('themes/imazaweb/images/') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
         <!--About One Start-->

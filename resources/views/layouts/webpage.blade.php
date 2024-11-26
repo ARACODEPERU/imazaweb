@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/vendors/owl-carousel/owl.theme.default.min.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/vendors/twentytwenty/twentytwenty.css') }}" />
 
+    <!-- aracode styles -->
+    <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/aracode.css') }}" />
     <!-- template styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom-responsive.css') }}" />
