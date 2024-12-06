@@ -398,60 +398,78 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="box-plane-celeste box-zoom">
-                        <h2 class="plane-title">STANDARD</h2>
-                        <p class="plane-price">$59/mes</p>
-                        <p class="plane-subtitle">$45/Anual</p>
-                        <ul class="box-plane-ul">
-                            <li>CRM multicuenta</li>
-                            <li>1 usuario</li>
-                            <li>Hasta 5 cuentas WhatsApp</li>
-                            <li>Chatbot con y sin IA</li>
-                            <li>Flujos de trabajo</li>
-                            <li>Disparos masivos de remarketing</li>
-                            <li>Importar y exportar datos</li>
-                            <li>Embudos de venta (etiquetas)</li>
-                            <li>Soporte por WhatsApp</li>
-                        </ul>
+                        <div class="plane-body">
+                            <h2 class="plane-title">STANDARD</h2>
+                            <p class="plane-price">$59/mes</p>
+                            <p class="plane-subtitle">$45/Anual</p>
+                            <ul class="box-plane-ul">
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Hasta 5 cuentas WhatsApp</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Chatbot con y sin IA</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Flujos de trabajo</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Disparos masivos de remarketing</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Importar y exportar datos</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Embudos de venta (etiquetas)</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="about-one__btn" style="margin-top: 0px;">
+                            <a href="" class="thm-btn">Comenzar ahora</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="box-plane-blue box-zoom">
-                        <h2 class="plane-title">PROFESIONAL</h2>
-                        <p class="plane-price">$89/mes</p>
-                        <p class="plane-subtitle">$65/Anual</p>
-                        <ul class="box-plane-ul">
-                            <li>Todo el Plan Standard +</li>
-                            <li>IA que entiende audios para brindar respuestas adecuadas</li>
-                            <li>Conexion a Facebook e Instagram</li>
-                            <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
-                        </ul>
+                        <div class="plane-body">
+                            <h2 class="plane-title">PROFESIONAL</h2>
+                            <p class="plane-price">$89/mes</p>
+                            <p class="plane-subtitle">$65/Anual</p>
+                            <ul class="box-plane-ul">
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexion a Facebook e Instagram</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="about-one__btn" style="margin-top: 0px;">
+                            <a href="" class="thm-btn">Comenzar ahora</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="box-plane-more box-zoom">
-                        <h2 class="plane-title">PREMIUM</h2>
-                        <p class="plane-price">(Desde $ 350)</p>
-                        <p class="plane-subtitle">Funciones adicionales</p>
-                        <ul class="box-plane-ul">
-                            <li>Traslado de chats entre agentes.</li>
-                            <li>Asignación automática entre agentes.</li>
-                            <li>Mensajes de seguimiento automáticos</li>
-                        </ul>
+                        <div class="plane-body">
+                            <h2 class="plane-title">PREMIUM</h2>
+                            <p class="plane-price">(Desde $ 350)</p>
+                            <p class="plane-subtitle">Funciones adicionales</p>
+                            <ul class="box-plane-ul">
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Asignación automática entre agentes.</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Mensajes de seguimiento automáticos</li>
+                            </ul>
+                            <br>
+                            <p class="plane-subtitle">Funciones personalizado</p>
+                            <ul class="box-plane-ul">
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Creación de chatbots personalizados</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia automática</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitamos a tu equipo de Ventas</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte premium y asesoría profesional</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> ** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
+                                    A partir del segundo mes, disfruta del servicio por solo $139, o si prefieres, 
+                                    nosotros nos encargamos de todo por ti cada mes.
+                                    ¡Tú decides!
+                                </li>
+                            </ul>
+                        </div>
                         <br>
-                        <p class="plane-subtitle">Funciones personalizado</p>
-                        <ul class="box-plane-ul">
-                            <li>Creación de chatbots personalizados</li>
-                            <li>Identificamos el problema</li>
-                            <li>Co-creamos la automatización</li>
-                            <li>Implementamos la estrategia automática</li>
-                            <li>Capacitamos a tu equipo de Ventas</li>
-                            <li>Soporte premium y asesoría profesional</li>
-                            <li>** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
-                                A partir del segundo mes, disfruta del servicio por solo $139, o si prefieres, 
-                                nosotros nos encargamos de todo por ti cada mes.
-                                ¡Tú decides!
-                            </li>
-                        </ul>
+                        <div class="about-one__btn" style="margin-top: 0px;">
+                            <a href="" class="thm-btn">Comenzar ahora</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -461,7 +479,7 @@
                 border: 4px solid #5298d3;/* Borde con color azul */
                 border-radius: 20px;   /* Borde redondeado de 20px */
                 padding: 50px 30px; /* Fondo blanco */
-                text-align: center;    /* Centrar texto */
+                text-align: center;   /* Centrar texto */
             }
             .box-plane-blue {
                 border: 4px solid #2D8CFF; /* Borde con color azul */
@@ -475,12 +493,16 @@
                 padding: 50px 30px; /* Fondo blanco */
                 text-align: center;    /* Centrar texto */
             }
+            
+            .plane-body {
+                height: 920px; 
+            }
             .plane-title{
                 text-align: center;
             }
             .plane-price{
                 text-align: center;
-                font-size: 20px;
+                font-size: 25px;
                 font-weight: 700;
                 color: #c843be;
             }
