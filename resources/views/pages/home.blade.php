@@ -250,7 +250,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="font-size: 50px; text-align:center; color: #5b5a5a;">
-                        <b style="color: #5298d3;">Con DESPEGA CHAT,</b>
+                        <b style="color: #2D8CFF;">Con DESPEGA CHAT,</b>
                         podrás crear tu propio asistente virtual con inteligencia artificial en tan solo unos clics.
                     </h1>
                 </div>
