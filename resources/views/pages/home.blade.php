@@ -7,8 +7,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="font-size: 60px; text-align:center; color: #5b5a5a;">
-                        "Eleva la experiencia de tus clientes y haz crecer tu negocio con <b style="color: #c843be;">Despega Chat y el poder de la IA"</b>
+                    <h1 style="font-size: 60px; text-align:center; color: #2D8CFF;">
+                        "Eleva la experiencia de tus clientes y haz crecer tu negocio con <b style="color: #c843be; font-weight: 900;">Despega Chat y el poder de la IA"</b>
                     </h1>
                 </div>
             </div>

@@ -28,10 +28,11 @@
     --thm-primary: #ffd45f;
     --thm-primary-rgb: 255, 212, 95;
     --thm-gray: #757783;
-    --thm-gray-rgb: 117, 119, 131;
+    --thm-gray-rgb: 117, 119, 131; 
     /*--thm-black: #1c1e27;  ORIGINAL DE PLANTILLA */
     /* --thm-black: #c843be; DESPEGAR MARKETING */
-    --thm-black: #5298d3; /* DESPEGAR MARKETING */
+    /* --thm-black: #5298d3; */
+    --thm-black: #2D8CFF;/* DESPEGAR MARKETING */
     --thm-black-rgb: 28, 30, 39;
 }
 
