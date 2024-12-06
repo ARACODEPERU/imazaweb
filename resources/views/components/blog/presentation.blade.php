@@ -1,4 +1,4 @@
-<section class="blog-one">
+<section class="blog-one" style=" background: #f8f8f8;">
     <div class="container">
         <div class="section-title text-center">
             <span class="section-title__tagline">{{ $blog_title[0]->content }}</span>

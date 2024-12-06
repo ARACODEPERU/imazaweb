@@ -460,7 +460,7 @@
                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitamos a tu equipo de Ventas</li>
                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte premium y asesoría profesional</li>
                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> ** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
-                                    A partir del segundo mes, disfruta del servicio por solo $139, o si prefieres, 
+                                    A partir del segundo mes, disfruta del servicio por solo <b>$139</b>, o si prefieres, 
                                     nosotros nos encargamos de todo por ti cada mes.
                                     ¡Tú decides!
                                 </li>
