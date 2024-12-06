@@ -381,6 +381,161 @@
         </div>
     </section>
 
+    
+    <section style="padding: 140px 0px;">
+        <div class="auto-container" style="">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center;">
+                        PLANES RAZONABLES Y FLEXIBLES
+                    </h1>
+                    <p style="text-align:center;">
+                        Planes que se adaptan a las necesidades de pequeñas, medianas y grandes empresas.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-plane-celeste box-zoom">
+                        <h2 class="plane-title">STANDARD</h2>
+                        <p class="plane-price">$59/mes</p>
+                        <p class="plane-subtitle">$45/Anual</p>
+                        <ul class="box-plane-ul">
+                            <li>CRM multicuenta</li>
+                            <li>1 usuario</li>
+                            <li>Hasta 5 cuentas WhatsApp</li>
+                            <li>Chatbot con y sin IA</li>
+                            <li>Flujos de trabajo</li>
+                            <li>Disparos masivos de remarketing</li>
+                            <li>Importar y exportar datos</li>
+                            <li>Embudos de venta (etiquetas)</li>
+                            <li>Soporte por WhatsApp</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-plane-blue box-zoom">
+                        <h2 class="plane-title">PROFESIONAL</h2>
+                        <p class="plane-price">$89/mes</p>
+                        <p class="plane-subtitle">$65/Anual</p>
+                        <ul class="box-plane-ul">
+                            <li>Todo el Plan Standard +</li>
+                            <li>IA que entiende audios para brindar respuestas adecuadas</li>
+                            <li>Conexion a Facebook e Instagram</li>
+                            <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-plane-more box-zoom">
+                        <h2 class="plane-title">PREMIUM</h2>
+                        <p class="plane-price">(Desde $ 350)</p>
+                        <p class="plane-subtitle">Funciones adicionales</p>
+                        <ul class="box-plane-ul">
+                            <li>Traslado de chats entre agentes.</li>
+                            <li>Asignación automática entre agentes.</li>
+                            <li>Mensajes de seguimiento automáticos</li>
+                        </ul>
+                        <br>
+                        <p class="plane-subtitle">Funciones personalizado</p>
+                        <ul class="box-plane-ul">
+                            <li>Creación de chatbots personalizados</li>
+                            <li>Identificamos el problema</li>
+                            <li>Co-creamos la automatización</li>
+                            <li>Implementamos la estrategia automática</li>
+                            <li>Capacitamos a tu equipo de Ventas</li>
+                            <li>Soporte premium y asesoría profesional</li>
+                            <li>** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
+                                A partir del segundo mes, disfruta del servicio por solo $139, o si prefieres, 
+                                nosotros nos encargamos de todo por ti cada mes.
+                                ¡Tú decides!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .box-plane-celeste {
+                border: 4px solid #5298d3;/* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center;    /* Centrar texto */
+            }
+            .box-plane-blue {
+                border: 4px solid #2D8CFF; /* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center;    /* Centrar texto */
+            }
+            .box-plane-more {
+                border: 4px solid #c843be;  /* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center;    /* Centrar texto */
+            }
+            .plane-title{
+                text-align: center;
+            }
+            .plane-price{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                color: #c843be;
+            }
+            .plane-subtitle{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .box-plane-ul{
+                list-style: none; /* Elimina las viñetas */
+                padding: 0;       /* Elimina el espacio por defecto */
+                margin: 0;
+                text-align: left;        /* Elimina márgenes adicionales */
+            }
+        </style>
+    </section>
+
+
+    {{-- <section class="pricing">
+        <div class="pricing-container">
+            <div class="plan">
+                <h2>Básico</h2>
+                <p class="price">$10/mes</p>
+                <ul>
+                    <li>1 Usuario</li>
+                    <li>5 GB de Almacenamiento</li>
+                    <li>Soporte Básico</li>
+                </ul>
+                <button>Elegir Plan</button>
+            </div>
+            <div class="plan highlighted">
+                <h2>Pro</h2>
+                <p class="price">$20/mes</p>
+                <ul>
+                    <li>5 Usuarios</li>
+                    <li>50 GB de Almacenamiento</li>
+                    <li>Soporte Prioritario</li>
+                </ul>
+                <button>Elegir Plan</button>
+            </div>
+            <div class="plan">
+                <h2>Premium</h2>
+                <p class="price">$50/mes</p>
+                <ul>
+                    <li>Usuarios Ilimitados</li>
+                    <li>Almacenamiento Ilimitado</li>
+                    <li>Soporte 24/7</li>
+                </ul>
+                <button>Elegir Plan</button>
+            </div>
+        </div>
+    </section> --}}
+    
+
     {{-- <section style="padding: 140px 0px;">
         <div class="container">
             <div class="row box-zoom">
