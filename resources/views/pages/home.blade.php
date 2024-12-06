@@ -53,6 +53,46 @@
             <div class="row">
                 <div class="col-md-3" style="text-align: center;">
                     <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/chateabots.png') }}" alt="">
+                    <div style="height: 10px; background-color: #c843be;  margin-bottom: 10px;"></div>
+                    <h3>Chatea</h3>
+                    <p>Nuestros bots humanizados atienden a tus clientes 24/7.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/remarketing.png') }}" alt="">
+                    <div style="height: 10px; background-color: #c843be;  margin-bottom: 10px;"></div>
+                    <h3>Prospecta</h3>
+                    <p>Campañas de remarketing a todos tus clientes sin riesgos de bloqueo.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/automatiza.png') }}" alt="">
+                    <div style="height: 10px; background-color: #c843be;  margin-bottom: 10px;"></div>
+                    <h3>Automatiza</h3>
+                    <p>Nuestros bots humanizados responden a tus clientes 24/7 con la precisión que necesitan.</p>
+                </div>
+                <div class="col-md-3" style="text-align: center;">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/vende.png') }}" alt="">
+                    <div style="height: 10px; background-color: #c843be;  margin-bottom: 10px;"></div>
+                    <h3>Vende</h3>
+                    <p>Cierra más negocios y lleva a tu empresa a un nivel más alto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    {{-- <section style="padding: 20px 0px 80px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center;">
+                        Descubre la fórmula para vender más en WhatsApp
+                    </h1>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3" style="text-align: center;">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/chateabots.png') }}" alt="">
                     <div style="height: 10px; background-color: #ac8dd4; margin-bottom: 10px;"></div>
                     <h3>Chatea</h3>
                     <p>Nuestros bots humanizados atienden a tus clientes 24/7.</p>
@@ -77,7 +117,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section style="padding: 140px 0px; background: #f8f8f8;">
         <div class="auto-container" style="">
@@ -300,7 +340,7 @@
                         <div class="row">
                             <div class="col-md-2"></div>
                             <div class="col-md-8">
-                                <h4 style="color: #833fdb; text-align:center">
+                                <h4 style="color: #c843be;   text-align:center">
                                     Es decir, interactúa contigo de forma natural, entendiendo tanto tus palabras como tus imágenes.
                                 </h4>
                             </div>
@@ -342,7 +382,7 @@
             <div class="row box-zoom">
                 <div class="col-md-5">
                     <br><br><br><br>
-                    <h1 style="font-size: 40px;">
+                    <h1 style="font-size: 35px;">
                         INTEGRACIONES VIA API Y WEBHOOK
                     </h1>
                     <br>
@@ -455,16 +495,10 @@
                             <br>
                             <p class="plane-subtitle">Funciones personalizado</p>
                             <ul class="box-plane-ul">
-                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Creación de chatbots personalizados</li>
                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
-                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia automática</li>
-                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitamos a tu equipo de Ventas</li>
-                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte premium y asesoría profesional</li>
-                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> ** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
-                                    A partir del segundo mes, disfruta del servicio por solo <b>$139</b>, o si prefieres, 
-                                    nosotros nos encargamos de todo por ti cada mes.
-                                    ¡Tú decides!
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia</li>
+                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitación comercial</li>
                                 </li>
                             </ul>
                         </div>
@@ -473,6 +507,17 @@
                             <a href="" class="thm-btn">Comenzar ahora</a>
                         </div>
                     </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="color: #c843be;   text-align:center; font-sixe: 12px;">
+                        PARA EL PLAN PREMIUM:  ** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
+                        A partir del segundo mes, disfruta del servicio por solo <b>$139</b>, o si prefieres, 
+                        nosotros nos encargamos de todo por ti cada mes.
+                        ¡Tú decides!
+                    </p>
                 </div>
             </div>
         </div>
@@ -497,7 +542,7 @@
             }
             
             .plane-body {
-                height: 920px; 
+                height: 500px; 
             }
             .plane-title{
                 text-align: center;
