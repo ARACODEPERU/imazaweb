@@ -316,7 +316,8 @@
         <div class="container">
             <div class="row box-zoom">
                 <div class="col-md-4">
-                    <h1 style="font-size: 40px;">
+                    <br><br>
+                    <h1 style="font-size: 30px;">
                         LA AUTOMATIZACIÓN HA LLEGADO PARA QUEDARSE
                     </h1>
                     <br>
