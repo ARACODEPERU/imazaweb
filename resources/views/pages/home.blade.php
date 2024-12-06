@@ -7,8 +7,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="font-size: 60px; text-align:center;">
-                        "Eleva la experiencia de tus clientes y haz crecer tu negocio con Despega Chat"
+                    <h1 style="font-size: 60px; text-align:center; color: #5b5a5a;">
+                        "Eleva la experiencia de tus clientes y haz crecer tu negocio con <b style="color: #c843be;">Despega Chat y el poder de la IA"</b>
                     </h1>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                             <img src="{{ URL('themes/imazaweb/images/shapes/thm-shape3.png') }}" alt="" />
                         </div>
                         <div class="row">
-                            <div class="col-xl-12">
+                            <div class="col-md-12">
                                 <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
@@ -117,10 +117,10 @@
                                         data-wow-duration="1500ms">
                                         <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
                                             <h3>
-                                                Chatbots ilimitados para tu sitio web:
+                                                Integración de tu página web y redes sociales: 
                                             </h3>
                                             <p>
-                                                Mejora la experiencia de usuario en tu sitio web con chatbots.
+                                                Mejora la experiencia de usuario en tu sitio web y redes sociales con atención al instante.
                                             </p>
                                         </div>
                                     </div>
@@ -132,29 +132,6 @@
                                             </h3>
                                             <p>
                                                 A diferencia de otros, nuestros planes no se establecen por cantidad de contactos mensuales.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
-                                        data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
-                                            <h3>
-                                                Envía emails personalizados al instante:
-                                            </h3>
-                                            <p>
-                                                Delega el envío de correos electrónicos y adapta cada mensaje a tus clientes.
-                                                ¡Simplifica tu trabajo!
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
-                                        data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
-                                            <h3>
-                                                Nadie te dejará en visto:
-                                            </h3>
-                                            <p>
-                                                Hazles seguimiento automatizado a tus clientes.
                                             </p>
                                         </div>
                                     </div>
@@ -200,23 +177,11 @@
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
                                             <p style="font-size: 20px;">
-                                                Conecta Messenger, Instagram, WhatsApp business y WhatsApp Api, Web site,
-                                                Telegram, Email y otros.
+                                                Conecta Messenger, Instagram, WhatsApp Business y WhatsApp Api, Web site, Telegram, Email y otros.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
-                                        data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
-                                            <p style="font-size: 20px;">
-                                                Agenda el envío de seguimientos automatizados para tus clientes.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
                                         <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
                                             <h4 class="testimonials-one__single-title">
@@ -227,6 +192,17 @@
                                             </p>
                                         </div>
                                     </div>
+                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
+                                        data-wow-duration="1500ms">
+                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
+                                            <h4 class="testimonials-one__single-title">
+                                                <i class="fa fa-check" style="font-size: 30px;"></i>
+                                            </h4>
+                                            <p style="font-size: 20px;">
+                                                Organiza tus chats según el estado en tu proceso de venta.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
                                         <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
@@ -234,7 +210,7 @@
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
                                             <p style="font-size: 20px;">
-                                                Organiza tus chats con etiquetas ilimitadas.
+                                                Entrena a la IA para conocer tus productos, responder con imágenes, audios, documentos y brindar asesoría 24/7.
                                             </p>
                                         </div>
                                     </div>
@@ -245,7 +221,7 @@
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
                                             <p style="font-size: 20px;">
-                                                Analiza las métricas clave de tus conversaciones.
+                                                Organiza tus chats por niveles de urgencia.
                                             </p>
                                         </div>
                                     </div>
@@ -256,18 +232,7 @@
                                                 <i class="fa fa-check" style="font-size: 30px;"></i>
                                             </h4>
                                             <p style="font-size: 20px;">
-                                                Utiliza Chat gpt para sugerir mejores respuestas en vivo.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
-                                        data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
-                                            <p style="font-size: 20px;">
-                                                Organiza tus chats por niveles de urgencia.
+                                                Segmenta tu audiencia para campañas masivas más efectivas.
                                             </p>
                                         </div>
                                     </div>
@@ -284,8 +249,9 @@
         <div class="auto-container" style="">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 style="font-size: 50px; text-align:center;">
-                        Con DESPEGA CHAT, podrás crear tu propio asistente virtual con inteligencia artificial en tan solo unos clics.
+                    <h1 style="font-size: 50px; text-align:center; color: #5b5a5a;">
+                        <b style="color: #5298d3;">Con DESPEGA CHAT,</b>
+                        podrás crear tu propio asistente virtual con inteligencia artificial en tan solo unos clics.
                     </h1>
                 </div>
             </div>
@@ -314,7 +280,7 @@
                                         data-wow-duration="1500ms">
                                         <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
                                             <p style="line-height: 25px;">
-                                                Interpreta imágenes y brinda respuestas basadas en eso.
+                                                Humaniza tu atención.
                                             </p>
                                         </div>
                                     </div>
@@ -322,16 +288,7 @@
                                         data-wow-duration="1500ms">
                                         <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
                                             <p style="line-height: 25px;">
-                                                Humaniza tu atención.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
-                                        data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
-                                            <p style="line-height: 25px;">
-                                                Nuestra IA espera al cliente finalizar con el envío de todos sus mensajes para 
-                                                entender su idea y luego responde con naturalidad.
+                                                Nuestra IA espera al cliente finalizar con el envío de todos sus mensajes para entender su idea y luego responde con naturalidad.
                                             </p>
                                         </div>
                                     </div>
@@ -340,9 +297,13 @@
                         </div>
                         <br><br>
                         <div class="row">
-                            <h4 style="color: #833fdb; text-align:center">
-                                ¡Contáctanos para una asesoría gratuita y descubre cómo podemos ayudarte a automatizar tu atención al cliente de manera efectiva!
-                            </h4>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <h4 style="color: #833fdb; text-align:center">
+                                    Es decir, interactúa contigo de forma natural, entendiendo tanto tus palabras como tus imágenes.
+                                </h4>
+                            </div>
+                            <div class="col-md-2"></div>
                         </div>
                     </div>
                 </div>
