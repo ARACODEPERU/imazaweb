@@ -151,7 +151,8 @@
                 <div class="col-md-8">
                     <div class="section-title text-center">
                         <h1 style="font-size: 50px; text-align:center; color: #fff;">
-                            Características generales de Despega Chat
+                            Características generales de <br>
+                            Despega Chat
                         </h1>
                         <br>
                     </div>
