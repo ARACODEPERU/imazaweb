@@ -370,12 +370,8 @@
                     </h1>
                     <br>
                     <p>
-                        <b>
-                            Optimiza tu gestión del tiempo con recordatorios automáticos
-                        </b>
-                        <br> 
-                        Programa mensajes personalizados para enviarlos automáticamente a tus clientes o 
-                        grupos de WhatsApp. Ideal para recordatorios de citas, reuniones o lanzamientos.
+                        Programa mensajes personalizados para enviarlos automáticamente a tus 
+                        clientes o grupos de WhatsApp. Ideal para recordatorios de citas, reuniones o lanzamientos.
                     </p>
                 </div>
                 <div class="col-md-7" style="text-align:center;">
@@ -385,7 +381,7 @@
         </div>
     </section>
 
-    <section style="padding: 140px 0px;">
+    {{-- <section style="padding: 140px 0px;">
         <div class="container">
             <div class="row box-zoom">
                 <div class="col-md-5">
@@ -433,7 +429,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 
