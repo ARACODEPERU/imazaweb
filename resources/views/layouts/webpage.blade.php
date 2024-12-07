@@ -39,6 +39,7 @@
 
     <!-- aracode styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/aracode.css') }}" />
+    <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/sky-tabs.css') }}" />
     <!-- template styles -->
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom.css') }}" />
     <link rel="stylesheet" href="{{ URL('themes/imazaweb/css/zilom-responsive.css') }}" />

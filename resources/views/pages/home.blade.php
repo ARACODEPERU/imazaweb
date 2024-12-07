@@ -430,8 +430,172 @@
                     </p>
                 </div>
             </div>
-            <br><br>
-            <div class="row">
+            <br>
+
+            <div class="sky-tabs sky-tabs-pos-top-center sky-tabs-anim-flip sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked="" id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><b>MENSUAL</b></span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><b>ANUAL</b></span></span></label>
+				
+				<ul>
+					<li class="sky-tab-content-1">					
+						<div class="container">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-blue box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">STANDARD</h2>
+                                            <p class="plane-price">$59</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Hasta 5 cuentas WhatsApp</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Chatbot con y sin IA</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Flujos de trabajo</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Disparos masivos de remarketing</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Importar y exportar datos</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Embudos de venta (etiquetas)</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-more box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">PROFESIONAL</h2>
+                                            <p class="plane-price">$89</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexion a Facebook e Instagram</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-blue box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">PREMIUM</h2>
+                                            <p class="plane-price">(Desde $ 350)</p>
+                                            <p class="plane-subtitle">Funciones adicionales</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Asignación automática entre agentes.</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Mensajes de seguimiento automáticos</li>
+                                            </ul>
+                                            <br>
+                                            <p class="plane-subtitle">Funciones personalizado</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitación comercial</li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</li>
+					
+					<li class="sky-tab-content-2">					
+						<div class="container">
+                            <div class="row">
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-blue box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">STANDARD</h2>
+                                            <p class="plane-price">$59</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Hasta 5 cuentas WhatsApp</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Chatbot con y sin IA</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Flujos de trabajo</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Disparos masivos de remarketing</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Importar y exportar datos</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Embudos de venta (etiquetas)</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-more box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">PROFESIONAL</h2>
+                                            <p class="plane-price">$89</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexion a Facebook e Instagram</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-blue box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">PREMIUM</h2>
+                                            <p class="plane-price">(Desde $350)</p>
+                                            <p class="plane-subtitle">Funciones adicionales</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Asignación automática entre agentes.</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Mensajes de seguimiento automáticos</li>
+                                            </ul>
+                                            <br>
+                                            <p class="plane-subtitle">Funciones personalizado</p>
+                                            <ul class="box-plane-ul">
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia</li>
+                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitación comercial</li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+					</li>
+				</ul>
+			</div>
+
+
+
+
+            {{-- <div class="row">
                 <div class="col-md-4">
                     <div class="box-plane-blue box-zoom">
                         <div class="plane-body">
@@ -502,7 +666,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -536,7 +700,7 @@
             }
             
             .plane-body {
-                height: 500px; 
+                height: 410px; 
             }
             .plane-title{
                 text-align: center;
