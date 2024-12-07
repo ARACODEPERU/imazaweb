@@ -352,9 +352,9 @@
         </div>
     </section>
 
-    <section style="padding: 140px 0px; background: #f8f8f8;">
+    <section style="padding: 140px 0px; background: #cdcccc;">
         <div class="container">
-            <div class="row box-zoom">
+            <div class="row box-zoom"  style="background: #fff;">
                 <div class="col-md-4">
                     <br><br>
                     <h1 style="font-size: 30px;">
@@ -402,9 +402,9 @@
         </div>
     </section>
 
-    <section style="padding: 140px 0px; background: #f8f8f8;">
+    <section style="padding: 140px 0px; background: #cdcccc;"">
         <div class="container">
-            <div class="row box-zoom">
+            <div class="row box-zoom"   style="background: #fff;">
                 <div class="col-md-5">
                     <br><br><br><br>
                     <h1 style="font-size: 40px;">
