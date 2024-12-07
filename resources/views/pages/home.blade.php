@@ -146,7 +146,8 @@
                                 <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                        <div class="testimonials-one__single-inner" 
+                                             style="padding: 25px; height: 250px; border: 4px solid #c843be; border-radius: 20px;">
                                             <h3>Automatización intuitiva:</h3>
                                             <p>
                                                 Diseña chatbots inteligentes con solo unos clics sin necesidad de ser un experto en programación.
@@ -155,7 +156,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 250px; border: 4px solid #c843be; border-radius: 20px;">
                                             <h3>
                                                 Integración de tu página web y redes sociales: 
                                             </h3>
@@ -166,7 +168,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 250px;">
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 250px; border: 4px solid #c843be; border-radius: 20px;">
                                             <h3>
                                                 Sin restricciones en tus comunicaciones:
                                             </h3>
@@ -213,10 +216,8 @@
                                 <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner" 
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Conecta Messenger, Instagram, WhatsApp Business y WhatsApp Api, Web site, Telegram, Email y otros.
                                             </p>
@@ -224,10 +225,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Gestiona múltiples cuentas de WhatsApp desde un solo panel.
                                             </p>
@@ -235,10 +234,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Organiza tus chats según el estado en tu proceso de venta.
                                             </p>
@@ -246,10 +243,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Entrena a la IA para conocer tus productos, responder con imágenes, audios, documentos y brindar asesoría 24/7.
                                             </p>
@@ -257,10 +252,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Organiza tus chats por niveles de urgencia.
                                             </p>
@@ -268,10 +261,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 200px;">
-                                            <h4 class="testimonials-one__single-title">
-                                                <i class="fa fa-check" style="font-size: 30px;"></i>
-                                            </h4>
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 200px; border: 4px solid #c843be; border-radius: 20px;">
                                             <p style="font-size: 20px;">
                                                 Segmenta tu audiencia para campañas masivas más efectivas.
                                             </p>
@@ -311,7 +302,8 @@
                                 <div class="testimonials-one__carousel owl-carousel owl-theme owl-dot-type1">
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="0ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                        <div class="testimonials-one__single-inner" 
+                                             style="padding: 25px; height: 150px; border: 4px solid #2d8cff; border-radius: 20px;">
                                             <p style="line-height: 25px;">
                                                 Comprende y responde a los mensajes de audio de tus clientes.
                                             </p>
@@ -319,7 +311,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="100ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 150px; border: 4px solid #2d8cff; border-radius: 20px;">
                                             <p style="line-height: 25px;">
                                                 Humaniza tu atención.
                                             </p>
@@ -327,7 +320,8 @@
                                     </div>
                                     <div class="testimonials-one__single wow fadeInUp" data-wow-delay="200ms"
                                         data-wow-duration="1500ms">
-                                        <div class="testimonials-one__single-inner" style="padding: 25px; height: 150px;">
+                                        <div class="testimonials-one__single-inner"
+                                             style="padding: 25px; height: 150px; border: 4px solid #2d8cff; border-radius: 20px;">
                                             <p style="line-height: 25px;">
                                                 Nuestra IA espera al cliente finalizar con el envío de todos sus mensajes para entender su idea y luego responde con naturalidad.
                                             </p>
@@ -439,7 +433,7 @@
             <br><br>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="box-plane-celeste box-zoom">
+                    <div class="box-plane-blue box-zoom">
                         <div class="plane-body">
                             <h2 class="plane-title">STANDARD</h2>
                             <p class="plane-price">$59/mes</p>
@@ -463,7 +457,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="box-plane-blue box-zoom">
+                    <div class="box-plane-more box-zoom">
                         <div class="plane-body">
                             <h2 class="plane-title">PROFESIONAL</h2>
                             <p class="plane-price">$89/mes</p>
@@ -482,7 +476,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="box-plane-more box-zoom">
+                    <div class="box-plane-blue box-zoom">
                         <div class="plane-body">
                             <h2 class="plane-title">PREMIUM</h2>
                             <p class="plane-price">(Desde $ 350)</p>
