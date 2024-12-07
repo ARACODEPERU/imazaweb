@@ -17,12 +17,12 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-3">
                     <div class="about-one__btn" style="margin-top: 0px;">
-                        <a href="" class="thm-btn">Comienza Gratis</a>
+                        <a href="https://app.marketingdespega.com/user/login" class="thm-btn">Comienza Gratis</a>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="categories-one__btn" style="margin-top: 0px;">
-                        <a href="" class="thm-btn">Agenda una Demo</a>
+                        <a href="" class="thm-btn-2">Agenda una Demo</a>
                     </div>
                 </div>
                 <div class="col-md-3"></div>

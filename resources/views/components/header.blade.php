@@ -66,7 +66,7 @@
                                     <a href="{{ route('web_nosotros') }}">Nosotros</a>
                                 </li> --}}
                                 <li class="{{ Route::currentRouteName()== 'web_despegachatvendedores' ? "dropdown current" : '' }}">
-                                    <a href="{{ route('web_despegachatvendedores') }}">CRM - Vendedores</a>
+                                    <a href="{{ route('web_despegachatvendedores') }}" class="nav-a">CRM - Vendedores</a>
                                 </li>
                                 {{-- <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
@@ -136,8 +136,8 @@
                                     {{-- <div class="main-menu__right-search-box">
                                         <a href="{{ route('login') }}" target="_bla_k" class="thm-btn">Campus Virtual</a>
                                     </div> --}}
-                                    <div class="main-menu__right-search-box">
-                                        <a href="{{ route('web_contacto') }}" target="_bla_k" class="thm-btn">Contactanos</a>
+                                    <div class="categories-one__btn">
+                                        <a href="{{ route('web_contacto') }}" target="_bla_k" class="thm-btn-contacto">Contactanos</a>
                                     </div>
                                 </div>
                             </div>
