@@ -522,7 +522,7 @@
                                     <div class="box-plane-blue box-zoom">
                                         <div class="plane-body">
                                             <h2 class="plane-title">STANDARD</h2>
-                                            <p class="plane-price">$59</p>
+                                            <p class="plane-price">$45</p>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
@@ -545,7 +545,7 @@
                                     <div class="box-plane-more box-zoom">
                                         <div class="plane-body">
                                             <h2 class="plane-title">PROFESIONAL</h2>
-                                            <p class="plane-price">$89</p>
+                                            <p class="plane-price">$65</p>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
