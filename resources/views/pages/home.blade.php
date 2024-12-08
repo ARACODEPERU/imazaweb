@@ -448,6 +448,7 @@
                                         <div class="plane-body">
                                             <h2 class="plane-title">STANDARD</h2>
                                             <p class="plane-price">$59</p>
+                                            <br>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
@@ -471,6 +472,7 @@
                                         <div class="plane-body">
                                             <h2 class="plane-title">PROFESIONAL</h2>
                                             <p class="plane-price">$89</p>
+                                            <br>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
@@ -488,7 +490,8 @@
                                     <div class="box-plane-blue box-zoom">
                                         <div class="plane-body">
                                             <h2 class="plane-title">PREMIUM</h2>
-                                            <p class="plane-price">(Desde $ 350)</p>
+                                            <p class="plane-price-premium">(Desde $ 350)</p>
+                                            <br>
                                             <p class="plane-subtitle">Funciones adicionales</p>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
@@ -523,6 +526,7 @@
                                         <div class="plane-body">
                                             <h2 class="plane-title">STANDARD</h2>
                                             <p class="plane-price">$45</p>
+                                            <br>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
@@ -546,6 +550,7 @@
                                         <div class="plane-body">
                                             <h2 class="plane-title">PROFESIONAL</h2>
                                             <p class="plane-price">$65</p>
+                                            <br>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
@@ -563,7 +568,8 @@
                                     <div class="box-plane-blue box-zoom">
                                         <div class="plane-body">
                                             <h2 class="plane-title">PREMIUM</h2>
-                                            <p class="plane-price">(Desde $350)</p>
+                                            <p class="plane-price-premium">(Desde $350)</p>
+                                            <br>
                                             <p class="plane-subtitle">Funciones adicionales</p>
                                             <ul class="box-plane-ul">
                                                 <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
@@ -717,6 +723,12 @@
                 text-align: center;
             }
             .plane-price{
+                text-align: center;
+                font-size: 45px;
+                font-weight: 700;
+                color: #c843be;
+            }
+            .plane-price-premium{
                 text-align: center;
                 font-size: 25px;
                 font-weight: 700;
