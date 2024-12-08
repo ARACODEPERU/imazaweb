@@ -13,7 +13,7 @@
 	padding: 0;
 	outline: none;
 	border: 0;
-	background: none;
+	background: none;	
 }
 .sky-tabs {
 	position: relative;
@@ -21,6 +21,7 @@
 	font-size: 0;
 	text-align: left;
 	color: #666;
+	
 }
 .sky-tabs > input {
 	position: absolute;
@@ -38,6 +39,9 @@
 	font-size: 13px;
 	line-height: 45px;
 	cursor: pointer;
+
+	background: #c3c3c3;
+	width: 20%;
 }
 .sky-tabs > label.inverse {
 	float: right;
@@ -49,7 +53,7 @@
 }
 .sky-tabs > label span {
 	display: block;
-	padding: 5px;
+	padding: 5px 10px;
 	background: rgba(255,255,255,0.9);
 }
 .sky-tabs > label span span {
@@ -59,11 +63,12 @@
 	-o-transition: background 0.4s, color 0.4s;
 	-ms-transition: background 0.4s, color 0.4s;
 	-moz-transition: background 0.4s, color 0.4s;
-	-webkit-transition: background 0.4s, color 0.4s;	
+	-webkit-transition: background 0.4s, color 0.4s;
+	border: 2px solid #2D8CFF;
 }
 .sky-tabs > label:hover span span {
 	background: #2D8CFF;
-	color: #fff;	
+	color: #fff;
 }
 .sky-tabs > label.disabled span span {
 	background: transparent;

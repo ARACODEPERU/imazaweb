@@ -439,7 +439,7 @@
 				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
 				<label for="sky-tab2"><span><span><b>ANUAL</b></span></span></label>
 				
-				<ul>
+				<ul  style="background: #c3c3c3; border-radius: 20px;">
 					<li class="sky-tab-content-1">					
 						<div class="container">
                             <div class="row">
@@ -684,19 +684,30 @@
                 border: 4px solid #5298d3;/* Borde con color azul */
                 border-radius: 20px;   /* Borde redondeado de 20px */
                 padding: 50px 30px; /* Fondo blanco */
-                text-align: center;   /* Centrar texto */
+                text-align: center; 
             }
+
+            .box-plane-celeste:hover {
+                background: #fff;
+            }
+            
             .box-plane-blue {
                 border: 4px solid #2D8CFF; /* Borde con color azul */
                 border-radius: 20px;   /* Borde redondeado de 20px */
                 padding: 50px 30px; /* Fondo blanco */
-                text-align: center;    /* Centrar texto */
+                text-align: center; 
+            }
+            .box-plane-blue:hover {
+                background: #fff;
             }
             .box-plane-more {
                 border: 4px solid #c843be;  /* Borde con color azul */
                 border-radius: 20px;   /* Borde redondeado de 20px */
                 padding: 50px 30px; /* Fondo blanco */
-                text-align: center;    /* Centrar texto */
+                text-align: center;   
+            }
+            .box-plane-more:hover {
+                background: #fff;
             }
             
             .plane-body {
