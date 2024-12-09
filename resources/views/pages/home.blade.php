@@ -282,7 +282,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="font-size: 50px; text-align:center; color: #5b5a5a;">
-                        <b style="color: #2D8CFF;">Con DESPEGA CHAT,</b>
+                        <b style="color: #c843be;">Con DESPEGA CHAT,</b>
                         podrás crear tu propio asistente virtual con inteligencia artificial en tan solo unos clics.
                     </h1>
                 </div>
@@ -450,15 +450,15 @@
                                             <p class="plane-price">$59</p>
                                             <br>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Hasta 5 cuentas WhatsApp</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Chatbot con y sin IA</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Flujos de trabajo</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Disparos masivos de remarketing</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Importar y exportar datos</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Embudos de venta (etiquetas)</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                                                <li>CRM multicuenta</li>
+                                                <li>1 usuario</li>
+                                                <li>Hasta 5 cuentas WhatsApp</li>
+                                                <li>Chatbot con y sin IA</li>
+                                                <li>Flujos de trabajo</li>
+                                                <li>Disparos masivos de remarketing</li>
+                                                <li>Importar y exportar datos</li>
+                                                <li>Embudos de venta (etiquetas)</li>
+                                                <li>Soporte por WhatsApp</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -474,10 +474,10 @@
                                             <p class="plane-price">$89</p>
                                             <br>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexion a Facebook e Instagram</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                                                <li>Todo el Plan Standard +</li>
+                                                <li>IA que entiende audios para brindar respuestas adecuadas</li>
+                                                <li>Conexion a Facebook e Instagram</li>
+                                                <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -494,18 +494,17 @@
                                             <br>
                                             <p class="plane-subtitle">Funciones adicionales</p>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Asignación automática entre agentes.</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Mensajes de seguimiento automáticos</li>
+                                                <li>Traslado de chats entre agentes.</li>
+                                                <li>Asignación automática entre agentes.</li>
+                                                <li>Mensajes de seguimiento automáticos</li>
                                             </ul>
                                             <br>
                                             <p class="plane-subtitle">Funciones personalizado</p>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitación comercial</li>
-                                                </li>
+                                                <li>Identificamos el problema</li>
+                                                <li>Co-creamos la automatización</li>
+                                                <li>Implementamos la estrategia</li>
+                                                <li>Capacitación comercial</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -528,15 +527,15 @@
                                             <p class="plane-price">$45</p>
                                             <br>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> CRM multicuenta</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> 1 usuario</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Hasta 5 cuentas WhatsApp</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Chatbot con y sin IA</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Flujos de trabajo</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Disparos masivos de remarketing</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Importar y exportar datos</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Embudos de venta (etiquetas)</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Soporte por WhatsApp</li>
+                                                <li>CRM multicuenta</li>
+                                                <li>1 usuario</li>
+                                                <li>Hasta 5 cuentas WhatsApp</li>
+                                                <li>Chatbot con y sin IA</li>
+                                                <li>Flujos de trabajo</li>
+                                                <li>Disparos masivos de remarketing</li>
+                                                <li>Importar y exportar datos</li>
+                                                <li>Embudos de venta (etiquetas)</li>
+                                                <li>Soporte por WhatsApp</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -552,10 +551,10 @@
                                             <p class="plane-price">$65</p>
                                             <br>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Todo el Plan Standard +</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> IA que entiende audios para brindar respuestas adecuadas</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexion a Facebook e Instagram</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
+                                                <li>Todo el Plan Standard +</li>
+                                                <li>IA que entiende audios para brindar respuestas adecuadas</li>
+                                                <li>Conexion a Facebook e Instagram</li>
+                                                <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -572,18 +571,17 @@
                                             <br>
                                             <p class="plane-subtitle">Funciones adicionales</p>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Traslado de chats entre agentes.</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Asignación automática entre agentes.</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Mensajes de seguimiento automáticos</li>
+                                                <li>Traslado de chats entre agentes.</li>
+                                                <li>Asignación automática entre agentes.</li>
+                                                <li>Mensajes de seguimiento automáticos</li>
                                             </ul>
                                             <br>
                                             <p class="plane-subtitle">Funciones personalizado</p>
                                             <ul class="box-plane-ul">
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Identificamos el problema</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Co-creamos la automatización</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Implementamos la estrategia</li>
-                                                <li><i class="fa fa-check-circle" aria-hidden="true"></i> Capacitación comercial</li>
-                                                </li>
+                                                <li>Identificamos el problema</li>
+                                                <li>Co-creamos la automatización</li>
+                                                <li>Implementamos la estrategia</li>
+                                                <li>Capacitación comercial</li>
                                             </ul>
                                         </div>
                                         <br>
@@ -597,9 +595,6 @@
 					</li>
 				</ul>
 			</div>
-
-
-
 
             {{-- <div class="row">
                 <div class="col-md-4">
@@ -676,8 +671,8 @@
             <br>
             <div class="row">
                 <div class="col-md-12">
-                    <p style="color: #c843be;   text-align:center; font-sixe: 12px;">
-                        PARA EL PLAN PREMIUM:  ** En el primer mes, capacitamos a tu equipo para dominar la automatización. 
+                    <p style="text-align:center; font-sixe: 12px;">
+                        <b style="color: #c843be;">PARA EL PLAN PREMIUM:</b> En el primer mes, capacitamos a tu equipo para dominar la automatización. 
                         A partir del segundo mes, disfruta del servicio por solo <b>$139</b>, o si prefieres, 
                         nosotros nos encargamos de todo por ti cada mes.
                         ¡Tú decides!
@@ -744,7 +739,7 @@
                 list-style: none; /* Elimina las viñetas */
                 padding: 0;       /* Elimina el espacio por defecto */
                 margin: 0;
-                text-align: left;        /* Elimina márgenes adicionales */
+                text-align: center;        /* Elimina márgenes adicionales */
             }
         </style>
     </section>
