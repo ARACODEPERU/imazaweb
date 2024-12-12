@@ -49,7 +49,6 @@
                 </div>
             </div>
             <br>
-            
             <div class="row">
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
@@ -78,9 +77,17 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="categories-one__btn" style="margin-top: 0px; text-align:center;">
+                        <a href="" class="thm-btn-2">Agenda una Demo</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </section>
-
     
     <section style="padding: 100px 0px;  background: #f8f8f8;">
         <div class="container">
@@ -118,6 +125,120 @@
                             <p>
                                 Aunque la automatización está al centro, aseguramos que siempre haya espacio para una conexión humana, 
                                 porque entendemos que cada cliente es único.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <h4>Etiquetado inteligente por niveles de intención de compra:</h4>
+                            <p>
+                                Clasificamos tus conversaciones automáticamente ayudando a tu equipo comercial a 
+                                enfocar sus esfuerzos en quienes tienen mayor probabilidad de cerrar una venta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <h4>Seguimiento automático:</h4>
+                            <p>
+                                Un seguimiento efectivo aumenta las probabilidades de cerrar ventas, y nosotros lo 
+                                automatizamos para que aceleres tus ventas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <h4>Asignación equitativa de leads:</h4>
+                            <p>
+                                Repartimos prospectos de manera justa entre tu equipo comercial, 
+                                fomentando la colaboración y maximizando resultados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <h4>Mensajes de remarketing impactantes:</h4>
+                            <p>
+                                Llegamos a tus clientes con mensajes personalizados en los momentos clave, 
+                                reactivando su interés y manteniéndolos cerca de tu marca.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section style="padding: 80px 0px 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="about-two__text-box" style="text-align: center;">
+                        <h1 style="color: #c843be;">¿Por qué elegirnos?</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-empowerment"></span>
+                        </div> 
+                        <div class="features-one__single-text">
+                            <p>
+                                En cada interacción, buscamos generar confianza, inspirar acción y 
+                                fortalecer la lealtad de tus clientes. Nuestro sistema trabaja por ti las 
+                                24 horas del día, asegurando que tu negocio nunca se detenga.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <p>
+                                No se trata solo de automatizar, sino de construir relaciones duraderas 
+                                y significativas con cada cliente. En Despega Chat, te ayudamos a humanizar tu marca, 
+                                combinando el poder de la inteligencia artificial con un enfoque cálido y auténtico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <p>
+                                Nuestra misión es que cada interacción refleje lo mejor de tu negocio, 
+                                con la eficiencia de la tecnología y el toque humano que tus clientes valoran.
                             </p>
                         </div>
                     </div>
