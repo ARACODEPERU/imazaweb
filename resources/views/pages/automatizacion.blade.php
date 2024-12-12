@@ -25,81 +25,106 @@
     </section>
     <!--Page Header End-->
     
-    <!--About Two Start-->
-    <section class="about-two">
+    <section style="padding: 80px 0px 100px 0px;">
         <div class="container">
-            <div class="about-two__bottom-content">
-                <div class="row">
-                    <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about-two__text-box">
-                            <h1 class="">¿Pierdes ventas por no atender a tiempo a tus clientes en WhatsApp?</h1>
-                            <p class="about-two__text-box-text">
-                                Deja de perder clientes por no responder a tiempo en WhatsApp. Con nuestra asesoría, 
-                                podrás automatizar la atención al cliente y garantizar respuestas rápidas y eficientes 
-                                las 24 horas del día, liberando a tu equipo para que cierre las ventas en llamadas.
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 60px; text-align:center; color: #2D8CFF;">
+                        Automatización de Atención al Cliente en WhatsApp
+                    </h1>
+                    <p class="about-two__text-box-text" style="text-align: center;">
+                        Imagina que tus clientes siempre reciban la respuesta que necesitan, justo cuando la esperan. 
+                        Nuestra agencia automatiza la atención de tus clientes y a la vez creamos experiencias memorables 
+                        que conectan con las emociones.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="about-two__text-box" style="text-align: center;">
+                        <h1 style="color: #c843be;">¿Qué podemos hacer por ti?</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-empowerment"></span>
+                        </div> 
+                        <div class="features-one__single-text">
+                            <h4>Atención instantánea en WhatsApp:</h4>
+                            <p>
+                                Integramos a tu equipo comercial en una sola cuenta de WhatsApp, con 
+                                herramientas que automatizan el seguimiento, asignan agentes en tiempo real 
+                                y te permiten tener control absoluto de cada interacción. 
                             </p>
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about-two__single-img">
-                            {{-- <img src="{{ asset('storage/'.$visions[3]->content) }}" alt=""/> --}}
-                            <img src="" alt=""/>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
                         </div>
-                    </div>
-                    <div class="col-md-8 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4>Beneficios de nuestra Asesoría:</h4>
-                        <ul style="list-style: none;">
-                            <li>
-                                <b>•	Automatización 24/7: </b> Implementa sistemas que permiten atender a 
-                                tus clientes de manera automática en cualquier momento.
-                            </li>
-                            <li>
-                                <b>•	Integración de Equipos: </b> Centraliza la atención de todos tus vendedores 
-                                en un único número de WhatsApp, mejorando la coordinación y eficiencia.
-                            </li>
-                            <li>
-                                <b>•	Respuestas Rápidas: </b> Crea y guarda mensajes automáticos para responder 
-                                rápidamente a las consultas más frecuentes.
-                            </li>
-                            <li>
-                                <b>•	Gestión de Clientes: </b> Utiliza etiquetas y un CRM integrado para organizar 
-                                y gestionar la información de tus clientes de manera efectiva.
-                            </li>
-                            <li>
-                                <b>•	Acceso Multidispositivo: </b> Permite que tu equipo atienda a los clientes 
-                                desde cualquier dispositivo, en cualquier lugar.
-                            </li>
-                            <li>
-                                <b>•	Transferencia de Conversaciones: </b> Facilita la transferencia de conversaciones 
-                                entre diferentes áreas o agentes, asegurando una atención continua y sin interrupciones.
-                            </li>
-                            <li>
-                                <b>•	Envíos Masivos: </b> Realiza envíos masivos de mensajes promocionales para 
-                                mantener a tus clientes informados y aumentar tus ventas.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4 style="color: #833fdb; text-align:center">
-                            Prepárate para transformar tu atención al cliente y llevar tus ventas a nuevas alturas.  
-                        </h4>
-                        <br>
-                        <h4 style="color: #833fdb; text-align:center">
-                            ¡Contáctanos para una asesoría gratuita y descubre cómo podemos ayudarte a automatizar tu atención al cliente de manera efectiva!
-                        </h4>
+                        <div class="features-one__single-text">
+                            <h4>Integración total:</h4>
+                            <p>Unimos tu página web, CRM y otras plataformas en un ecosistema fluido, donde todo trabaja en armonía para hacer crecer tu negocio.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--About Two End-->
 
+    
+    <section style="padding: 100px 0px;  background: #f8f8f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="about-two__text-box" style="text-align: center;">
+                        <h1 style="color: #c843be;">¿Cómo lo hacemos?</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-empowerment"></span>
+                        </div> 
+                        <div class="features-one__single-text">
+                            <h4>Flujos de trabajo automáticos:</h4>
+                            <p>
+                                Diseñamos interacciones que responden con precisión y rapidez, demostrando que tu marca siempre está 
+                                presente y lista para ayudar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-icon">
+                            <span class="icon-human-resources-1"></span>
+                        </div>
+                        <div class="features-one__single-text">
+                            <h4>Atención humanizada y cercana:</h4>
+                            <p>
+                                Aunque la automatización está al centro, aseguramos que siempre haya espacio para una conexión humana, 
+                                porque entendemos que cada cliente es único.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <div id="whatsapp">
         <a href="" class="wtsapp" data-bs-toggle="modal" data-bs-target="#exampleModal">
