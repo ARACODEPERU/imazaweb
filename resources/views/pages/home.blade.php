@@ -679,6 +679,143 @@
                     </p>
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    ¿Cuáles son las diferencias entre los planes Standard, Professional y Premium?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                        <b> Standard:</b> Ideal para iniciar tu proceso de automatización. 
+                                            Configura fácilmente las funciones y empieza a optimizar tu atención al cliente.
+                                        </li>
+                                        <li>
+                                            <b>Professional:</b> Lleva la automatización al siguiente nivel con integración 
+                                            de redes sociales, chat web y otros aplicativos. Todo en una sola plataforma y bajo tu control.
+                                        </li>
+                                        <li>
+                                            <b>Premium:</b> Experimenta una automatización avanzada. Integra a tu equipo comercial 
+                                            en una sola línea de WhatsApp, deriva a los clientes entre tu equipo comercial de manera automática y equitativa, 
+                                            además realiza seguimientos efectivos. En el primer mes, capacitamos a tu equipo para dominar la automatización. 
+                                            Desde el segundo mes, disfruta del servicio por $139 o déjalo en nuestras manos. ¡Tú decides!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Necesito conocimientos técnicos para configurar el chatbot?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Crear chatbots de atención automática 24/7 nunca fue tan fácil. No necesitas saber programar; hemos 
+                                    diseñado todo para que sea simple y accesible para ti.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Puedo conectar múltiples cuentas de WhatsApp?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, en los planes Standard y Professional puedes hacerlo. En el plan Premium, no es necesario, ya que todos 
+                                    tus agentes se conectan a la línea de WhatsApp de tu empresa, lo que te permite mantener un control total 
+                                    y auditar cada interacción fácilmente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Los planes tienen restricciones por cantidad de contactos?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    No, ninguna restricción.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Qué soporte ofrecen durante y después de la implementación?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Nuestra IA está diseñada para ofrecerte soporte inmediato por WhatsApp. Si no puede resolver tu consulta, 
+                                    uno de nuestros agentes estará disponible para ayudarte durante el horario de oficina. Además, 
+                                    recibirás asesoría permanente sobre las buenas prácticas de comunicación en WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Puedo segmentar mi audiencia para campañas masivas?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, puedes cargar tus archivos con distintas variables para personalizar 
+                                    cada mensaje en tus campañas y adaptarlos a tus clientes.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Cómo se realiza la facturación de los planes?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    De manera automática, y lo enviaremos a tu correo electrónico.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Puedo cambiar de plan más adelante?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Si, puedes migrar de plan en cualquier momento sin penalidades.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Ofrecen soluciones personalizadas para empresas grandes?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sí, con el plan Premium podemos realizar reuniones para identificar tus necesidades y 
+                                    ofrecer soluciones de automatización personalizadas para tu negocio.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <style>
             .box-plane-celeste {
