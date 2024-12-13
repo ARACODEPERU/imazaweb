@@ -19,73 +19,129 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!--Page Header End-->
     
-    <!--About Two Start-->
-    <section class="about-two">
+    <section style="padding: 100px 0px 140px 0px;">
         <div class="container">
-            <div class="about-two__bottom-content">
-                <div class="row">
-                    <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about-two__text-box">
-                            <h1 class="">¿Estás listo para llevar tu negocio al siguiente nivel?</h1>
-                            <p class="about-two__text-box-text">
-                                En un mundo en constante evolución, la automatización y el marketing estratégico son las 
-                                claves para el éxito. Con nuestra capacitación, adquirirás las habilidades y el conocimiento 
-                                necesarios para transformar tu negocio y alcanzar resultados extraordinarios.
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 60px; text-align:center; color: #2D8CFF;">
+                        Transforma tu Negocio con Capacitaciones en Automatización y Marketing
+                    </h1>
+                    <p class="about-two__text-box-text" style="text-align: center;">
+                        En Despega, diseñamos capacitaciones personalizadas para empresas que buscan 
+                        optimizar su operación, mejorar su atención al cliente y aumentar sus ventas 
+                        mediante soluciones digitales.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="about-two__text-box" style="text-align: center;">
+                        <h1 style="color: #c843be;">¿Qué podemos hacer por ti?</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Automatización en WhatsApp:</h4>
+                            <p>
+                                Configura sistemas inteligentes que trabajan por ti: atención al cliente instantánea y 
+                                ventas automáticas disponibles 24/7.
                             </p>
                         </div>
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="about-two__single-img">
-                            {{-- <img src="{{ asset('storage/'.$visions[3]->content) }}" alt=""/> --}}
-                            <img src="" alt=""/>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Automatización Web:</h4>
+                            <p>
+                                Convierte tu página web en una máquina de oportunidades, captando clientes de forma eficiente 
+                                y automatizada.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-md-8 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4>Nuestra capacitación te ofrece:</h4>
-                        <ul style="list-style: none;">
-                            <li>
-                                <b>a) Descubrir y aplicar</b> los secretos de la automatización y el marketing estratégico con 
-                                contenidos prácticos diseñados para una implementación inmediata. Desde el primer día, 
-                                transformarás tu negocio con estrategias probadas y efectivas.
-                            </li>
-                            <li>
-                                <b>b) Despertarás tu pasión</b> por el marketing digital y la gestión comercial con <b>expertos que 
-                                    inspiran.</b> Aprenderás con un enfoque <b>estratégico y práctico,</b> y llevarás tu negocio a un paso adelante de tu competencia.
-                            </li>
-                            <li>
-                                c) Con nuestra <b>plataforma E-Learning,</b> no solo tendrás acceso a un conocimiento invaluable; lo tendrás <b>para siempre.</b> 
-                                Revivirás cada lección, cada descubrimiento, siempre que lo necesites. Además, recibirás un certificado que valida tu 
-                                capacitación y la de tu equipo, <b>sin preocuparte por la fecha de vencimiento.</b>
-                            </li>
-                        </ul>
+                </div>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Automatización en Redes Sociales:</h4>
+                            <p>
+                                Impulsa el engagement y las conversiones con flujos diseñados para conectar con tu 
+                                audiencia en el momento justo.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <h4 style="color: #833fdb;">
-                            Invertir en capacitación es invertir en el futuro de tu negocio.
-                        </h4>
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="features-one__single">
+                        <div class="features-one__single-text">
+                            <h4>Estrategias de Marketing Automatizado:</h4>
+                            <p>
+                                Aprende a atraer y fidelizar clientes con campañas integradas que optimizan 
+                                cada etapa del proceso de venta.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--About Two End-->
-
-    <!--Why Choose One Start-->
-    <x-why-choose-one />
-    <!--Why Choose One End-->
-
+    
+    
+    <section style="padding: 140px 0px; background: #f8f8f8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                    <div class="about-two__text-box" style="text-align: center;">
+                        <h1 style="color: #c843be;">¿Por qué elegirnos?</h1>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/example-3.jpg') }}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <p>
+                                        Con nuestra experiencia, simplificarás procesos complejos, 
+                                        empoderarás a tu equipo con las herramientas adecuadas y 
+                                        asegurarás el crecimiento sostenible de tu negocio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h4 style="color: #c843be;   text-align:center">
+                        ¡Contáctanos y transforma la forma vender en tu empresa!
+                    </h4>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
     
     <div id="whatsapp">
         <a href="" class="wtsapp" data-bs-toggle="modal" data-bs-target="#exampleModal">
