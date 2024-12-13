@@ -324,6 +324,161 @@
         </div>
     </section>
 
+        
+    <section style="padding: 140px 0px;">
+        <div class="auto-container" style="">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="font-size: 50px; text-align:center;">
+                        PLANES RAZONABLES Y FLEXIBLES
+                    </h1>
+                    <p style="text-align:center;">
+                        Planes que se adaptan a las necesidades de pequeñas, medianas y grandes empresas.
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="sky-tabs sky-tabs-pos-top-center sky-tabs-anim-flip sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked="" id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1"><span><span><b>MENSUAL</b></span></span></label>
+				
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><b>ANUAL</b></span></span></label>
+				
+				<ul  style="background: #c3c3c3; border-radius: 20px;">
+					<li class="sky-tab-content-1">					
+						<div class="container">
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-blue box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">LIDER EN VENTAS</h2>
+                                            <p class="plane-price">$19</p>
+                                            <br>
+                                            <ul class="box-plane-ul">
+                                                <li>Disparos masivos ilimitados </li>
+                                                <li>Bots ilimitados</li>
+                                                <li>Etiquetas automáticas</li>
+                                                <li>Flujo de trabajo automatizado</li>
+                                                <li>Menú desplegable</li>
+                                                <li>Recordatorios automáticos</li>
+                                                <li>Soporte por WhatsApp</li>
+                                                <li>Tablero Kanban</li>
+                                                <li>Importar/exportar contactos</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+					</li>
+					
+					<li class="sky-tab-content-2">					
+						<div class="container">
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4" style="padding: 10px 20px;">
+                                    <div class="box-plane-more box-zoom">
+                                        <div class="plane-body">
+                                            <h2 class="plane-title">LIDER EN VENTAS</h2>
+                                            <p class="plane-price">$9</p>
+                                            <p>(Ahorra más del 50%)</p>
+                                            <br>
+                                            <ul class="box-plane-ul">
+                                                <li>Disparos masivos ilimitados </li>
+                                                <li>Bots ilimitados</li>
+                                                <li>Etiquetas automáticas</li>
+                                                <li>Flujo de trabajo automatizado</li>
+                                                <li>Menú desplegable</li>
+                                                <li>Recordatorios automáticos</li>
+                                                <li>Soporte por WhatsApp</li>
+                                                <li>Tablero Kanban</li>
+                                                <li>Importar/exportar contactos</li>
+                                            </ul>
+                                        </div>
+                                        <br>
+                                        <div class="about-one__btn" style="margin-top: 0px;">
+                                            <a href="" class="thm-btn">Comenzar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+					</li>
+				</ul>
+			</div>
+        </div>
+        <style>
+            .box-plane-celeste {
+                border: 4px solid #5298d3;/* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center; 
+            }
+
+            .box-plane-celeste:hover {
+                background: #fff;
+            }
+            
+            .box-plane-blue {
+                border: 4px solid #2D8CFF; /* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center; 
+            }
+            .box-plane-blue:hover {
+                background: #fff;
+            }
+            .box-plane-more {
+                border: 4px solid #c843be;  /* Borde con color azul */
+                border-radius: 20px;   /* Borde redondeado de 20px */
+                padding: 50px 30px; /* Fondo blanco */
+                text-align: center;   
+            }
+            .box-plane-more:hover {
+                background: #fff;
+            }
+            
+            .plane-body {
+                height: 410px; 
+            }
+            .plane-title{
+                text-align: center;
+            }
+            .plane-price{
+                text-align: center;
+                font-size: 45px;
+                font-weight: 700;
+                color: #c843be;
+            }
+            .plane-price-premium{
+                text-align: center;
+                font-size: 25px;
+                font-weight: 700;
+                color: #c843be;
+            }
+            .plane-subtitle{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .box-plane-ul{
+                list-style: none; /* Elimina las viñetas */
+                padding: 0;       /* Elimina el espacio por defecto */
+                margin: 0;
+                text-align: center;        /* Elimina márgenes adicionales */
+            }
+        </style>
+    </section>
     
     <div id="whatsapp">
         <a href="" class="wtsapp" data-bs-toggle="modal" data-bs-target="#exampleModal">
