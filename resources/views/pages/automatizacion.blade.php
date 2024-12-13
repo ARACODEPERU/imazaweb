@@ -243,6 +243,17 @@
                 </div>
                 <div class="col-md-4"></div>
             </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h4 style="color: #c843be;   text-align:center">
+                        ¡Contáctanos ahora y comienza a escribir el próximo capítulo de éxito para tu empresa!
+                    </h4>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
         </div>
     </section>
     
