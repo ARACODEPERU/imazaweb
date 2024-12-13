@@ -19,13 +19,12 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!--Page Header End-->
     
-    <section style="padding: 80px 0px 100px 0px;">
+    <section style="padding: 100px 0px 140px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -50,38 +49,40 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-empowerment"></span>
-                        </div> 
-                        <div class="features-one__single-text">
-                            <h4>Atención instantánea en WhatsApp:</h4>
-                            <p>
-                                Integramos a tu equipo comercial en una sola cuenta de WhatsApp, con 
-                                herramientas que automatizan el seguimiento, asignan agentes en tiempo real 
-                                y te permiten tener control absoluto de cada interacción. 
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-md-6">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/example.jpg') }}" alt="">
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <h4>Atención instantánea en WhatsApp:</h4>
+                                    <p>
+                                        Integramos a tu equipo comercial en una sola cuenta de WhatsApp, con 
+                                        herramientas que automatizan el seguimiento, asignan agentes en tiempo real 
+                                        y te permiten tener control absoluto de cada interacción. 
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="features-one__single-text">
-                            <h4>Integración total:</h4>
-                            <p>Unimos tu página web, CRM y otras plataformas en un ecosistema fluido, donde todo trabaja en armonía para hacer crecer tu negocio.</p>
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <h4>Integración total:</h4>
+                                    <p>Unimos tu página web, CRM y otras plataformas en un ecosistema fluido, donde todo trabaja en armonía para hacer crecer tu negocio.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <div class="categories-one__btn" style="margin-top: 0px; text-align:center;">
-                        <a href="" class="thm-btn-2">Agenda una Demo</a>
+                <div class="col-md-4" style="text-align: center;">
+                    <div class="categories-one__btn" style="margin-top: 0px;">
+                        <a href="" class="thm-btn-2">Agenda una Demo Gratuita</a>
                     </div>
                 </div>
                 <div class="col-md-4"></div>
@@ -89,7 +90,7 @@
         </div>
     </section>
     
-    <section style="padding: 100px 0px;  background: #f8f8f8;">
+    <section style="padding: 140px 0px;  background: #f8f8f8;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -99,13 +100,9 @@
                 </div>
             </div>
             <br>
-            
             <div class="row">
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-empowerment"></span>
-                        </div> 
                         <div class="features-one__single-text">
                             <h4>Flujos de trabajo automáticos:</h4>
                             <p>
@@ -115,11 +112,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
                         <div class="features-one__single-text">
                             <h4>Atención humanizada y cercana:</h4>
                             <p>
@@ -131,9 +125,6 @@
                 </div>
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
                         <div class="features-one__single-text">
                             <h4>Etiquetado inteligente por niveles de intención de compra:</h4>
                             <p>
@@ -143,11 +134,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
                         <div class="features-one__single-text">
                             <h4>Seguimiento automático:</h4>
                             <p>
@@ -157,11 +145,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
                         <div class="features-one__single-text">
                             <h4>Asignación equitativa de leads:</h4>
                             <p>
@@ -173,9 +158,6 @@
                 </div>
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
                         <div class="features-one__single-text">
                             <h4>Mensajes de remarketing impactantes:</h4>
                             <p>
@@ -186,11 +168,20 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="text-align: center;">
+                    <div class="categories-one__btn" style="margin-top: 0px;">
+                        <a href="" class="thm-btn-2">Agenda una Demo Gratuita</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
         </div>
     </section>
     
-    
-    <section style="padding: 80px 0px 100px 0px;">
+    <section style="padding: 140px 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
@@ -200,49 +191,57 @@
                 </div>
             </div>
             <br>
-            
             <div class="row">
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-empowerment"></span>
-                        </div> 
-                        <div class="features-one__single-text">
-                            <p>
-                                En cada interacción, buscamos generar confianza, inspirar acción y 
-                                fortalecer la lealtad de tus clientes. Nuestro sistema trabaja por ti las 
-                                24 horas del día, asegurando que tu negocio nunca se detenga.
-                            </p>
+                <div class="col-md-6">
+                    <img style="width: 100%;" src="{{ asset('themes/imazaweb/images/example-2.jpg') }}" alt="">
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <p>
+                                        En cada interacción, buscamos generar confianza, inspirar acción y 
+                                        fortalecer la lealtad de tus clientes. Nuestro sistema trabaja por ti las 
+                                        24 horas del día, asegurando que tu negocio nunca se detenga.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <p>
+                                        No se trata solo de automatizar, sino de construir relaciones duraderas 
+                                        y significativas con cada cliente. En Despega Chat, te ayudamos a humanizar tu marca, 
+                                        combinando el poder de la inteligencia artificial con un enfoque cálido y auténtico.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="features-one__single">
+                                <div class="features-one__single-text">
+                                    <p>
+                                        Nuestra misión es que cada interacción refleje lo mejor de tu negocio, 
+                                        con la eficiencia de la tecnología y el toque humano que tus clientes valoran.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
-                        <div class="features-one__single-text">
-                            <p>
-                                No se trata solo de automatizar, sino de construir relaciones duraderas 
-                                y significativas con cada cliente. En Despega Chat, te ayudamos a humanizar tu marca, 
-                                combinando el poder de la inteligencia artificial con un enfoque cálido y auténtico.
-                            </p>
-                        </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="text-align: center;">
+                    <div class="categories-one__btn" style="margin-top: 0px;">
+                        <a href="" class="thm-btn-2">Agenda una Demo Gratuita</a>
                     </div>
                 </div>
-                <div class="col-md-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="features-one__single">
-                        <div class="features-one__single-icon">
-                            <span class="icon-human-resources-1"></span>
-                        </div>
-                        <div class="features-one__single-text">
-                            <p>
-                                Nuestra misión es que cada interacción refleje lo mejor de tu negocio, 
-                                con la eficiencia de la tecnología y el toque humano que tus clientes valoran.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-md-4"></div>
             </div>
         </div>
     </section>
