@@ -242,7 +242,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 style="font-size: 50px; text-align:center;">
-                        Funciones de Marketing que te facilitarán la vida y aumentarán tus ventas con WhatsApp.
+                        Funciones de Marketing en WhatsApp que te harán cerrar más ventas
                     </h1>
                 </div>
             </div>
