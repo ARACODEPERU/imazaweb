@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="categories-one__btn" style="margin-top: 0px;">
-                        <a href="" class="thm-btn-2">Agenda una Demo</a>
+                        <a href="https://calendly.com/despegachat" class="thm-btn-2">Agenda una Demo</a>
                     </div>
                 </div>
                 <div class="col-md-3"></div>
@@ -30,7 +30,7 @@
             <br>
             <div class="row">
                 <div class="col-md-12">
-                    <img src="https://cdn.prod.website-files.com/6410e1eea16628fb630ae69b/6633ac66eb9bb448a48b2284_inboxmercately.webp" alt="">
+                    <img src="{{ asset('themes/imazaweb/images/portadaweb.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -475,7 +475,7 @@
                                             <br>
                                             <ul class="box-plane-ul">
                                                 <li>Todo el Plan Standard +</li>
-                                                <li>IA que entiende audios para brindar respuestas adecuadas</li>
+                                                {{-- <li>IA que entiende audios para brindar respuestas adecuadas</li> --}}
                                                 <li>Conexion a Facebook e Instagram</li>
                                                 <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
                                             </ul>
@@ -552,7 +552,7 @@
                                             <br>
                                             <ul class="box-plane-ul">
                                                 <li>Todo el Plan Standard +</li>
-                                                <li>IA que entiende audios para brindar respuestas adecuadas</li>
+                                                {{-- <li>IA que entiende audios para brindar respuestas adecuadas</li> --}}
                                                 <li>Conexion a Facebook e Instagram</li>
                                                 <li>Conexión vía WEBHOOK y/o API GET a otras plataformas</li>
                                             </ul>

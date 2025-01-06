@@ -65,9 +65,9 @@
                                 {{-- <li class="{{ Route::currentRouteName()== 'web_nosotros' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_nosotros') }}">Nosotros</a>
                                 </li> --}}
-                                <li class="{{ Route::currentRouteName()== 'web_despegachatvendedores' ? "dropdown current" : '' }}">
+                                {{-- <li class="{{ Route::currentRouteName()== 'web_despegachatvendedores' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_despegachatvendedores') }}" class="nav-a">CRM - Vendedores</a>
-                                </li>
+                                </li> --}}
                                 {{-- <li class="{{ Route::currentRouteName()== 'web_cursos' ? "dropdown current" : '' }}">
                                     <a href="{{ route('web_cursos') }}">Cursos</a>
                                     <ul>
